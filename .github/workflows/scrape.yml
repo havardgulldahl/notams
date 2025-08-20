@@ -2,7 +2,7 @@ name: Update NOTAMs
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    - cron: "0 1 * * *"   # every day at 01 am
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install requests beautifulsoup4
-      - run: python scraper.py
+      - run: python scripts/scraper.py
       - name: Commit and push
         run: |
           git config user.name "github-actions"
