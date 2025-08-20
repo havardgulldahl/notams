@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Russian NOTAMs Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+    body, html { margin:0; padding:0; height:100%; }
+    #map { width:100%; height:100%; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+// init map
+const map = L.map('map').setView([55, 37], 4); // center Russia
+
+// basemap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 12,
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// load NOTAMs GeoJSON
+fetch('notams.geojson')
+  .then(r => r.json())
+  .then(data => {
+    L.geoJSON(data, {
+      onEachFeature: (feature, layer) => {
+        layer.bindPopup(`<b>NOTAM</b><br><a href="${feature.properties.url}" target="_blank">source</a><br>${feature.properties.text}`);
+      }
+    }).addTo(map);
+  });
+</script>
+</body>
+</html>

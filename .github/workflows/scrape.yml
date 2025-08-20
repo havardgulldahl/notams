@@ -1,0 +1,24 @@
+name: Update NOTAMs
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - run: pip install requests beautifulsoup4
+      - run: python scraper.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/notams.geojson
+          git commit -m "Update NOTAMs"
+          git push
