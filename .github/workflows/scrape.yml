@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
-      - run: mv current/* history/
+      - run: mv current/* history/ || true
       - run: pip install requests beautifulsoup4
       - run: python scripts/scraper.py
       - name: Commit and push
