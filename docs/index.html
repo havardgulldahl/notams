@@ -34,70 +34,46 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // lazy load NOTAMs GeoJSON layers
-    const layers = ['A', 'C', 'G', 'L', 'P', 'Q', 'U', 'V', 'W', 'Z'];
+    // NOTAM series explanations
     const notamSeriesExplained = {
-      "A": "Series A — International NOTAMs of general interest (distributed worldwide via AFTN).",
-      "B": "Series B — Domestic NOTAMs of general interest within Russia (not usually distributed internationally).",
-      "G": "Series G — GNSS, GPS, GLONASS, and satellite navigation related NOTAMs.",
-      "D": "Series D — Air defense restrictions and temporary restricted airspace (military, security).",
-      "E": "Series E — En-route airspace information (affecting ATS routes, upper airspace structures).",
-      "Zh": "Series Zh — Military NOTAMs of national interest (distributed inside Russia).",
-      "Z": "Series Z — Exercises, rocket launches, and space activity NOTAMs (missile tests, cosmodromes).",
-      "I": "Series I — Local informational NOTAMs of limited significance (not distributed internationally).",
-      "K": "Series K — Aerodrome NOTAMs (runway closures, airport facilities, lighting, equipment).",
-      "L": "Series L — Lighting, visual aids, and aerodrome equipment serviceability NOTAMs.",
-      "N": "Series N — Radio navigation aids (VOR, NDB, DME, ILS, GBAS, etc.).",
-      "S": "Series S — Surface condition NOTAMs (snow, ice, contamination, braking action).",
-      "U": "Series U — Urgent operational NOTAMs (airspace restrictions, emergencies).",
-      "Kh": "Series Kh — Helicopter operations NOTAMs and heliport information.",
-      "Ts": "Series Ts — State aviation NOTAMs (mainly government or special services).",
-      "Y": "Series Y — Temporary segregated airspace and restricted zones not covered by Series D or Z.",
-      "Ya": "Series Ya — Miscellaneous NOTAMs not falling into the above categories (catch-all)."
+      "A": "International NOTAMs of general interest (distributed worldwide via AFTN).",
+      "B": "Domestic NOTAMs of general interest within Russia (not usually distributed internationally).",
+      "G": "GNSS, GPS, GLONASS, and satellite navigation related NOTAMs.",
+      "D": "Air defense restrictions and temporary restricted airspace (military, security).",
+      "E": "En-route airspace information (affecting ATS routes, upper airspace structures).",
+      "Zh": "Military NOTAMs of national interest (distributed inside Russia).",
+      "Z": "Exercises, rocket launches, and space activity NOTAMs (missile tests, cosmodromes).",
+      "I": "Local informational NOTAMs of limited significance (not distributed internationally).",
+      "K": "Aerodrome NOTAMs (runway closures, airport facilities, lighting, equipment).",
+      "L": "Lighting, visual aids, and aerodrome equipment serviceability NOTAMs.",
+      "N": "Radio navigation aids (VOR, NDB, DME, ILS, GBAS, etc.).",
+      "S": "Surface condition NOTAMs (snow, ice, contamination, braking action).",
+      "U": "Urgent operational NOTAMs (airspace restrictions, emergencies).",
+      "Kh": "Helicopter operations NOTAMs and heliport information.",
+      "Ts": "State aviation NOTAMs (mainly government or special services).",
+      "Y": "Temporary segregated airspace and restricted zones not covered by Series D or Z.",
+      "Ya": "Miscellaneous NOTAMs not falling into the above categories (catch-all)."
     };
+    const layers = ['A', 'C', 'G', 'L', 'P', 'Q', 'U', 'V', 'W', 'Z'];
     const layerGroup = L.layerGroup().addTo(map);
 
-    // create UI for layer selection
-    const layerControl = L.control({ position: 'topright' });
-    layerControl.onAdd = function () {
-      const div = L.DomUtil.create('div', 'layer-control');
-      div.style.backgroundColor = 'white';
-      div.style.padding = '10px';
-      div.style.borderRadius = '5px';
-      div.style.boxShadow = '0 2px 6px rgba(0,0,0,0.3)';
-      div.innerHTML = layers.map(layer => `
-    <label>
-      <input type="radio" name="layer" value="${layer}" />
-      Layer ${layer}
-    </label><br>
-  `).join('');
-      div.querySelector('input').checked = true; // select the first layer by default
-      return div;
-    };
-    layerControl.addTo(map);
-
-    // handle layer change
-    map.on('moveend', () => {
-      const selectedLayer = document.querySelector('input[name="layer"]:checked').value;
-      const bounds = map.getBounds();
-      fetch(`${selectedLayer}.geojson`)
+    // Load all NOTAM layers at once
+    layers.forEach(layer => {
+      fetch(`${layer}.geojson`)
         .then(r => r.json())
         .then(data => {
-          layerGroup.clearLayers();
           L.geoJSON(data, {
-            filter: (feature) => {
-              const [lng, lat] = feature.geometry.coordinates;
-              return bounds.contains([lat, lng]);
-            },
-            onEachFeature: (feature, layer) => {
-              layer.bindPopup(`<b>NOTAM</b><br><a href="${feature.properties.url}" target="_blank">source</a><br>${feature.properties.text}`);
+            onEachFeature: (feature, l) => {
+              // Use the NOTAM series description in the popup
+              const series = layer;
+              const desc = notamSeriesExplained[series] || '';
+              l.bindPopup(
+                `<b>NOTAM Series ${series}</b><br><i>${desc}</i><br><a href="${feature.properties.url}" target="_blank">source</a><br>${feature.properties.text}`
+              );
             }
           }).addTo(layerGroup);
         });
     });
-
-    // trigger initial load
-    map.fire('moveend');
   </script>
 </body>
 
