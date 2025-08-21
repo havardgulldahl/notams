@@ -13,7 +13,12 @@ jobs:
     steps:
       - name: Checkout
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
-      - run: mv current/* history/ || true
+      - run: |
+          if ls current/*.html 1> /dev/null 2>&1; then
+            for z in current/*.html; do
+              git mv -kf "$z" "history/$(basename "$z")";
+            done
+          fi
       - run: pip install requests beautifulsoup4
       - run: python scripts/scraper.py
       - name: Commit and push

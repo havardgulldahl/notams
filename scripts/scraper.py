@@ -197,8 +197,6 @@ def parse_notam_files(
                     "lon": float(row["longitude_deg"]),
                 }
 
-    geojson = {"type": "FeatureCollection", "features": []}
-
     for file_path in html_files:
         with open(file_path, "r", encoding="utf-8") as f:
             soup = BeautifulSoup(f.read(), "html.parser")
@@ -222,6 +220,7 @@ def parse_notam_files(
         if buffer and current_airport:
             messages.append((current_airport, " ".join(buffer)))
 
+        geojson = {"type": "FeatureCollection", "features": []}
         # Build features
         for airport, notam_text in messages:
             expanded = expand_abbreviations(notam_text)
@@ -272,8 +271,6 @@ def parse_notam_files(
         with open(output + notam_class + ".geojson", "w", encoding="utf-8") as f:
             json.dump(geojson, f, indent=2, ensure_ascii=False)
         print(f"✅ Combined NOTAMs saved to {notam_class}.geojson")
-
-    return geojson
 
 
 def main() -> None:
