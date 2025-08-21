@@ -2,9 +2,9 @@ name: Parse NOTAMS
 
 on:
   workflow_run:
-    workflows: ["Fetch NOTAMs"]   # trigger when the fetch workflow completes
-    types:
-      - completed
+    #workflows: ["Fetch NOTAMs"]   # trigger when the fetch workflow completes
+    #types:
+      #- completed
   workflow_dispatch:
 
 
