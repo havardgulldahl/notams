@@ -27,34 +27,6 @@ def parse_html_list(html: str) -> List[str]:
         files.append(filename)
     return files
 
-def parse_notam_html(url: str) -> Dict[str, Any]:
-    """Download and extract NOTAM text from one HTML document."""
-    r = fetch(url)
-    # store file in history directory
-    with open(f"history/{url.split('/')[-1]}", "w", encoding="utf-8") as file:
-        file.write(r.text)
-    soup = BeautifulSoup(r.text, "html.parser")
-    text: str = soup.get_text(separator="\n", strip=True)
-
-    # try to extract coordinates (pattern like N5543.0 E03736.0)
-    coords: List[str] = re.findall(r"N\d{2,4}\.\d{1,2}\s*E\d{2,4}\.\d{1,2}", text)
-    lon: Optional[float] = None
-    lat: Optional[float] = None
-    if coords:
-        # crude conversion to decimal degrees
-        match = re.match(r"N(\d{2,4}\.\d{1,2})\s*E(\d{2,4}\.\d{1,2})", coords[0])
-        if match:
-            lat = float(match.group(1)[:-3])  # simplification
-            lon = float(match.group(2)[:-3])
-
-    return {
-        "url": url,
-        "text": text[:500] + "...",  # short preview
-        "lat": lat,
-        "lon": lon
-    }
-
-
 def main() -> None:
     print(f"Fetching NOTAM index page: {BASE_URL}")
     html: str = fetch(BASE_URL).text
@@ -62,31 +34,14 @@ def main() -> None:
     files: List[str] = parse_html_list(html)
     print(f"Found {len(files)} NOTAM files.")
 
-    features: List[Dict[str, Any]] = []
     for i, f in enumerate(files, 1):
         url: str = BASE_URL + f
-        print(f"[{i}/{len(files)}] Processing: {url}")
-        try:
-            data: Dict[str, Any] = parse_notam_html(url)
-            if data["lat"] and data["lon"]:
-                features.append({
-                    "type": "Feature",
-                    "geometry": {"type": "Point", "coordinates": [data["lon"], data["lat"]]},
-                    "properties": {"url": data["url"], "text": data["text"]}
-                })
-        except Exception as e:
-            print("Failed:", url, e)
+        print(f"[{i}/{len(files)}] Downloading: {url}")
+        # store notam in current/ directory
+        with open(f"current/{f}", "w", encoding="utf-8") as file:
+            file.write(fetch(url).text)
 
-    geojson: Dict[str, Any] = {
-        "type": "FeatureCollection",
-        "features": features,
-        "metadata": {"updated": datetime.utcnow().isoformat() + "Z"}
-    }
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(geojson, f, ensure_ascii=False, indent=2)
-
-    print(f"Saved {len(features)} NOTAMs to {OUTPUT_FILE}")
+    print(f"Saved {len(files)} NOTAMs to current/")
 
 if __name__ == "__main__":
     main()
