@@ -11,10 +11,8 @@ jobs:
     permissions:
       contents: write  # to allow pushing changes
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
+      - name: Checkout
+        run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
       - run: mv current/* history/
       - run: pip install requests beautifulsoup4
       - run: python scripts/scraper.py
