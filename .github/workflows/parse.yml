@@ -5,6 +5,7 @@ on:
     workflows: ["Fetch NOTAMs"]   # trigger when the fetch workflow completes
     types:
       - completed
+  workflow_dispatch:
 
 
 jobs:
