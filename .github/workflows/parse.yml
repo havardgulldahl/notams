@@ -25,7 +25,7 @@ jobs:
         id: collect
         run: |
           # Concatenate all files in current/ into one input file
-          cat current/* > all_notams.txt
+          cat current/G* > all_notams.txt
           echo "notams<<EOF" >> $GITHUB_OUTPUT
           cat all_notams.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
