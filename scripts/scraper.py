@@ -312,6 +312,11 @@ def main() -> None:
         timestamp = files[0][1:11]
         with open("current/.scrape_timestamp", "w", encoding="utf-8") as file:
             file.write(timestamp)
+        with open("docs/scrape_timestamp", "w", encoding="utf-8") as file:
+            # convert YYMMDDHH to YYYY-MM-DD HH:MM
+            file.write(
+                f"20{timestamp[:2]}-{timestamp[2:4]}-{timestamp[4:6]} {timestamp[6:8]}:{timestamp[8:10]}"
+            )
     except IndexError:
         print("No files found to extract timestamp.")
 
