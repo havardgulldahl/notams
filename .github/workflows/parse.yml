@@ -1,9 +1,11 @@
 name: Parse NOTAMS
 
 on:
-  schedule:
-    - cron: "0 1 * * *"   # every day at 01 am
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Fetch NOTAMs"]   # trigger when the fetch workflow completes
+    types:
+      - completed
+
 
 jobs:
   summarize_notams:
