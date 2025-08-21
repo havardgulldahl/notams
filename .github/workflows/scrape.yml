@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # to allow pushing changes
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -20,5 +22,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add docs/notams.geojson
+          git add history/*
           git commit -m "Update NOTAMs"
           git push

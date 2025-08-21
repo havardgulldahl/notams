@@ -7,7 +7,7 @@ from datetime import datetime
 
 from typing import List, Dict, Any, Optional
 
-BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/?lang=en"
+BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
 OUTPUT_FILE: str = "docs/notams.geojson"  # GitHub Pages serves from /docs
 
 def fetch(url: str) -> requests.Response:
@@ -19,10 +19,12 @@ def parse_html_list(html: str) -> List[str]:
     """Find NOTAM files listed on the page"""
     soup = BeautifulSoup(html, "html.parser")
     files: List[str] = []
-    for link in soup.find_all("a"):
-        href = link.get("href", "")
-        if href.endswith(".htm") or href.endswith(".html"):
-            files.append(href)
+    # loop through all <td> tags with title="File: ..."
+    rx = re.compile(r"location='(.*)_eng.html'")
+    for link in soup.find_all("td", onclick=rx, width=""):
+        # extract filename from the attribute title="File: A2508210553_eng.html" 
+        filename = link.get("title", "").strip()
+        files.append(filename)
     return files
 
 def parse_notam_html(url: str) -> Dict[str, Any]:
@@ -32,7 +34,7 @@ def parse_notam_html(url: str) -> Dict[str, Any]:
     with open(f"history/{url.split('/')[-1]}", "w", encoding="utf-8") as file:
         file.write(r.text)
     soup = BeautifulSoup(r.text, "html.parser")
-    text: str = soup.get_text(" ", strip=True)
+    text: str = soup.get_text(separator="\n", strip=True)
 
     # try to extract coordinates (pattern like N5543.0 E03736.0)
     coords: List[str] = re.findall(r"N\d{2,4}\.\d{1,2}\s*E\d{2,4}\.\d{1,2}", text)
@@ -54,12 +56,16 @@ def parse_notam_html(url: str) -> Dict[str, Any]:
 
 
 def main() -> None:
+    print(f"Fetching NOTAM index page: {BASE_URL}")
     html: str = fetch(BASE_URL).text
+    print("Parsing NOTAM file list...")
     files: List[str] = parse_html_list(html)
+    print(f"Found {len(files)} NOTAM files.")
 
     features: List[Dict[str, Any]] = []
-    for f in files:
-        url: str = f if f.startswith("http") else "https://www.caica.ru" + f
+    for i, f in enumerate(files, 1):
+        url: str = BASE_URL + f
+        print(f"[{i}/{len(files)}] Processing: {url}")
         try:
             data: Dict[str, Any] = parse_notam_html(url)
             if data["lat"] and data["lon"]:
