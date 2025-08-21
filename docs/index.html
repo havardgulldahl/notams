@@ -53,6 +53,11 @@
       margin-right: 6px;
       border-radius: 3px;
     }
+
+    pre {
+      white-space: pre-wrap;
+      font-size: 13px;
+    }
   </style>
 </head>
 
@@ -72,7 +77,7 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Your available dataset layers
+    // Available dataset layers
     const layers = ['A', 'C', 'G', 'L', 'P', 'Q', 'U', 'V', 'W', 'Z'];
 
     // Russian NOTAM series descriptions
@@ -145,11 +150,17 @@
                 ? `<br><a href="${feature.properties.url}" target="_blank">Source</a>`
                 : "";
               const text = feature.properties?.text
-                ? `<pre style="white-space:pre-wrap;">${feature.properties.text}</pre>`
+                ? `<pre>${feature.properties.text}</pre>`
                 : "";
+              const expanded = feature.properties?.expanded
+                ? `<hr><b>Expanded:</b><br><pre>${feature.properties.expanded}</pre>`
+                : "";
+
               layer.bindPopup(`
                 <b>Series ${series}</b><br>
-                <i>${desc}</i>${url}<br>${text}
+                <i>${desc}</i>${url}<br>
+                ${text}
+                ${expanded}
               `);
             }
           }).addTo(group);
