@@ -4428,7 +4428,7 @@
       "properties": {
         "airport": "UIUU",
         "location": "Baikal International Airport",
-        "expanded": "(G0314/25 NOTAM Replacement G0135/25 Q)UIII/QGWXX/IV/NBO/EA/000/999/5149N10727E025 A)UIUU B)2506300630 C)2509302359 E)Global Navigation Satellite System Interruptions Possible Within Aerodrome AREA.) (G0444/25 NOTAM Replacement G0438/25 Q)UIII/QGWAU/I/NBO/EA/000/999/5148N10726E150 A)UIUU B)2508150640 C)2508220800 Estimated E)Runway 08 AND Runway 26: GNSS Landing System Approach NOT PROVIDED.)",
+        "expanded": "(G0314/25 NOTAM Replacement G0135/25 Q)UIII/QGWXX/IV/NBO/EA/000/999/5149N10727E025 A)UIUU B)2506300630 C)2509302359 E)Global Navigation Satellite System Interruptions Possible Within Aerodrome AREA.) (G0462/25 NOTAM Replacement G0444/25 Q)UIII/QGWAU/I/NBO/EA/000/999/5148N10726E150 A)UIUU B)2508220530 C)2508290800 Estimated E)Runway 08 AND Runway 26: GNSS Landing System Approach NOT PROVIDED.)",
         "lower_ft": 0,
         "upper_ft": 99900
       }
@@ -13015,7 +13015,7 @@
       "properties": {
         "airport": "URWA",
         "location": "Astrakhan Narimanovo Boris M. Kustodiev International Airport",
-        "expanded": "(G0236/25 NOTAM Replacement G0150/25 Q)URRV/QGWAU/I/NBO/EA/000/999/4617N04800E150 A)URWA B)2505270940 C)2508271200 Estimated E)Global Navigation Satellite System OPERATION Within Aerodrome AREA UNRELIABLE. VECTORING WILL BE PROVIDED BY ACFT CREW REQUEST.)",
+        "expanded": "(G0463/25 NOTAM Replacement G0236/25 Q)URRV/QGWAU/I/NBO/EA/000/999/4617N04800E150 A)URWA B)2508221025 C)2511211200 Estimated E)Global Navigation Satellite System OPERATION Within Aerodrome AREA UNRELIABLE. VECTORING WILL BE PROVIDED UPON ACFT CREW REQUEST.)",
         "lower_ft": 0,
         "upper_ft": 99900
       }
