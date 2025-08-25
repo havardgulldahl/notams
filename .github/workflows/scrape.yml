@@ -19,7 +19,7 @@ jobs:
               git mv -kf "$z" "history/$(basename "$z")";
             done
           fi
-      - run: pip install requests beautifulsoup4
+      - run: pip install requests beautifulsoup4 git+https://github.com/havardgulldahl/PyNotam.git
       - run: python scripts/scraper.py
       - name: Commit and push
         env:
