@@ -120,7 +120,7 @@
       const div = document.createElement("div");
       div.className = 'legend-entry';
       div.dataset.series = series;
-      div.innerHTML = `<span style="background:${color}"></span><b class="series-label" style="cursor:pointer;" title="Click to show only this layer">${series}</b>: ${notamSeriesExplained[series] || ''} <a href="#" class="solo-link" data-series="${series}" style="font-size:11px; margin-left:4px;">[only]</a>`;
+      div.innerHTML = `<span style="background:${color}"></span><b class="series-label" style="cursor:pointer;" title="Click to show only this layer">${series}</b>: ${notamSeriesExplained[series] || ''} <a href="#" class="solo-link" data-series="${series}" style="font-size:11px; margin-left:4px;">[only]</a><a href="${series}.geojson" download style="font-size:11px; margin-left:4px;" title="Download ${series}.geojson">[geojson]</a>`;
       legendDiv.appendChild(div);
     });
 
@@ -163,16 +163,20 @@
               const text = feature.properties?.text
                 ? `<pre>${feature.properties.text}</pre>`
                 : "";
-              const expanded = feature.properties?.expanded
-                ? `<hr><b>Expanded:</b><br><pre>${feature.properties.expanded}</pre>`
-                : "";
-
               layer.bindPopup(`
                 <b>Series ${series}</b><br>
-                <i>${desc}</i>${url}<br>
+                <i style="font-size:smaller">${desc}</i>${url}<br>
                 ${text}
-                ${expanded}
+                <button class="download-notam" style="margin-top:6px;">Download GeoJSON</button>
               `);
+              layer.on('popupopen', (e) => {
+                const el = e.popup.getElement();
+                if (!el) return;
+                const btn = el.querySelector('.download-notam');
+                if (btn) {
+                  btn.addEventListener('click', () => downloadGeoJSON(feature, series), { once: true });
+                }
+              });
             }
           }).addTo(group);
         })
@@ -233,6 +237,21 @@
         })
         .catch(() => console.error("Failed to fetch timestamp"));
     })();
+
+    // Download a single feature as GeoJSON
+    function downloadGeoJSON(feature, series) {
+      if (!feature) return;
+      const fc = { type: 'FeatureCollection', features: [feature] };
+      const id = (feature.properties && (feature.properties.notam_id || feature.properties.id)) || 'notam';
+      const name = `notam_${series}_${id}.geojson`.replace(/[^A-Za-z0-9_.-]/g, '_');
+      const blob = new Blob([JSON.stringify(fc, null, 2)], { type: 'application/geo+json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    }
   </script>
 </body>
 
