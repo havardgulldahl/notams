@@ -64,7 +64,7 @@
 <body>
   <div id="map"></div>
   <div class="info-panel">
-    <h2>Russian NOTAMs</h2>
+    <h2 id="mapTitle">Russian NOTAMs</h2>
     <div class="legend" id="legend"></div>
   </div>
 
@@ -219,6 +219,20 @@
       }
     });
     document.getElementById('showAllBtn').addEventListener('click', () => showAll());
+
+    // Fetch timestamp and update title
+    (function updateTitle() {
+      const titleEl = document.getElementById('mapTitle');
+      fetch("scrape_timestamp")
+        .then(r => { if (!r.ok) throw new Error(); return r.text(); })
+        .then(txt => {
+          const date = txt.trim();
+          if (date) {
+            titleEl.textContent = `Russian NOTAMs, updated ${date}`;
+          }
+        })
+        .catch(() => console.error("Failed to fetch timestamp"));
+    })();
   </script>
 </body>
 
