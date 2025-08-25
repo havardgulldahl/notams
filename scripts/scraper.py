@@ -6,7 +6,9 @@ import math
 import requests
 import re
 from bs4 import BeautifulSoup
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, cast
+from bs4.element import Tag
+import notam  # pynotam library
 
 BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
 OUTPUT_FILE: str = "docs/notams.geojson"  # GitHub Pages serves from /docs
@@ -23,15 +25,24 @@ def fetch(url: str, timeout: int = 10) -> Optional[requests.Response]:
 
 
 def parse_html_list(html: str) -> List[str]:
-    """Find NOTAM files listed on the page"""
+    """Find NOTAM files listed on the page.
+
+    Extracts file names from <td> elements that have an onclick attribute matching
+    the expected pattern. Safely handles elements without a title attribute.
+    """
     soup = BeautifulSoup(html, "html.parser")
     files: List[str] = []
-    # loop through all <td> tags with title="File: ..."
     rx = re.compile(r"location='(.*)_eng.html'")
-    for link in soup.find_all("td", onclick=rx, width=""):
-        # extract filename from the attribute title="A2508210553_eng.html"
-        filename = link.get("title", "").strip()
-        files.append(filename)
+    for node in soup.find_all("td", onclick=rx, width=""):
+        if isinstance(node, Tag):
+            title_val = node.get("title")
+            if isinstance(title_val, list):  # BeautifulSoup may return list
+                if title_val:
+                    title_val = title_val[0]
+            if isinstance(title_val, str):
+                filename = title_val.strip()
+                if filename:
+                    files.append(filename)
     return files
 
 
@@ -173,8 +184,11 @@ def circle_polygon(
 def polygon_geometry(
     coords: list[tuple[Optional[float], Optional[float]]],
 ) -> dict[str, Any]:
-    lonlat = [[lon, lat] for lat, lon in coords if lat and lon]
-    lonlat.append(lonlat[0])
+    lonlat = [[lon, lat] for lat, lon in coords if lat is not None and lon is not None]
+    if len(lonlat) < 3:
+        # Fallback to empty geometry-like structure (GeoJSON validity minimal)
+        return {"type": "Polygon", "coordinates": [[[]]]}
+    lonlat.append(lonlat[0])  # close ring
     return {"type": "Polygon", "coordinates": [lonlat]}
 
 
@@ -184,93 +198,148 @@ def polygon_geometry(
 def parse_notam_files(
     html_files: list[str], airports_csv: str = "airports.csv", output: str = "."
 ) -> None:
-    # Load airport database
-    airport_locations = {}
-    with open(airports_csv, newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            # extract ident,type,name,latitude_deg,longitude_deg
-            for z in ["ident", "type", "name", "latitude_deg", "longitude_deg"]:
-                airport_locations[row["ident"]] = {
-                    "name": row["name"],
-                    "lat": float(row["latitude_deg"]),
-                    "lon": float(row["longitude_deg"]),
-                }
+    """Parse NOTAM HTML files, decode each record with pynotam, and output GeoJSON per class.
+
+    Each HTML file is assumed to contain multiple NOTAM records separated by blank lines.
+    A GeoJSON file per NOTAM series (first letter of source filename) is produced.
+    """
+
+    # Load airport database (ident -> name, lat, lon)
+    airport_locations: dict[str, dict[str, float | str]] = {}
+    try:
+        with open(airports_csv, newline="", encoding="utf-8") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                try:
+                    airport_locations[row["ident"]] = {
+                        "name": row.get("name", ""),
+                        "lat": float(row["latitude_deg"]),
+                        "lon": float(row["longitude_deg"]),
+                    }
+                except (KeyError, ValueError):
+                    continue
+    except FileNotFoundError:
+        print(
+            f"⚠ Airport CSV '{airports_csv}' not found; proceeding without airport enrichment."
+        )
+
+    def dms_min_to_decimal(coord: str) -> Optional[float]:
+        """Convert a coordinate like 5535N or 03716E to decimal degrees."""
+        m = re.match(r"^(\d+)([NSEW])$", coord)
+        if not m:
+            return None
+        value, hemi = m.groups()
+        # Split value into degrees and minutes (last 2 digits = minutes, rest = degrees)
+        if len(value) < 3:
+            return None
+        deg = int(value[:-2])
+        minutes = int(value[-2:])
+        dec = deg + minutes / 60.0
+        if hemi in ("S", "W"):
+            dec = -dec
+        return dec
 
     for file_path in html_files:
-        with open(file_path, "r", encoding="utf-8") as f:
-            soup = BeautifulSoup(f.read(), "html.parser")
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                soup = BeautifulSoup(f.read(), "html.parser")
+        except FileNotFoundError:
+            print(f"⚠ File not found: {file_path}")
+            continue
 
         raw_text = soup.get_text("\n")
-        lines = [l.strip() for l in raw_text.splitlines() if l.strip()]
+        records = [rec.strip() for rec in raw_text.split("\n\n") if rec.strip()]
 
-        messages = []
-        current_airport = None
-        buffer = []
+        geojson: dict[str, Any] = {"type": "FeatureCollection", "features": []}
 
-        for line in lines:
-            if re.match(r"^[A-Z]{4}:$", line):
-                if buffer and current_airport:
-                    messages.append((current_airport, " ".join(buffer)))
-                    buffer = []
-                current_airport = line.replace(":", "")
-            else:
-                buffer.append(line)
+        for rec in records:
+            try:
+                decoded = notam.Notam.from_str(rec)
+            except Exception as e:
+                print(f"Failed to decode NOTAM record: {e}")
+                continue
 
-        if buffer and current_airport:
-            messages.append((current_airport, " ".join(buffer)))
+            # Build geometry
+            geometry: Optional[dict[str, Any]] = None
+            area = getattr(decoded, "area", None)
+            if area and area.get("lat") and area.get("long"):
+                lat_raw = area.get("lat")
+                lon_raw = area.get("long")
+                lat_dec = dms_min_to_decimal(lat_raw)
+                lon_dec = dms_min_to_decimal(lon_raw)
+                if lat_dec is not None and lon_dec is not None:
+                    radius = area.get("radius")
+                    if (
+                        isinstance(radius, (int, float)) and radius and radius < 500
+                    ):  # heuristic
+                        geometry = circle_polygon(lat_dec, lon_dec, float(radius))
+                    else:
+                        geometry = {"type": "Point", "coordinates": [lon_dec, lat_dec]}
 
-        geojson = {"type": "FeatureCollection", "features": []}
-        # Build features
-        for airport, notam_text in messages:
-            expanded = expand_abbreviations(notam_text)
-            geometry = None
-            lower_ft = None
-            upper_ft = None
+            # Fallback using first location code
+            if geometry is None:
+                locs = getattr(decoded, "location", []) or []
+                if locs:
+                    loc = locs[0]
+                    ap = airport_locations.get(loc)
+                    if ap:
+                        geometry = {
+                            "type": "Point",
+                            "coordinates": [ap["lon"], ap["lat"]],
+                        }
+                # FIR fallback
+                if geometry is None and decoded.fir in fir_centers:
+                    lon_fir, lat_fir = fir_centers[decoded.fir]
+                    geometry = {"type": "Point", "coordinates": [lon_fir, lat_fir]}
 
-            q_match = re.search(r"Q\)([A-Z0-9/]+)", notam_text)
-            if q_match:
-                q_data = parse_q_line("Q)" + q_match.group(1))
-                if q_data:
-                    lower_ft, upper_ft = q_data.get("lower_ft"), q_data.get("upper_ft")
-                    if q_data["type"] == "circle":
-                        geometry = circle_polygon(
-                            q_data["lat"], q_data["lon"], q_data["radius_nm"]
-                        )
-                    elif q_data["type"] == "polygon":
-                        geometry = polygon_geometry(q_data["coordinates"])
-                    elif q_data["type"] == "fir":
-                        fir = q_data["fir"]
-                        if fir in fir_centers:
-                            lon, lat = fir_centers[fir]
-                            geometry = {"type": "Point", "coordinates": [lon, lat]}
-
-            if geometry is None and airport in airport_locations:
-                coords = [
-                    airport_locations[airport]["lon"],
-                    airport_locations[airport]["lat"],
-                ]
-                geometry = {"type": "Point", "coordinates": coords}
-
-            feature = {
-                "type": "Feature",
-                "geometry": geometry,
-                "properties": {
-                    "airport": airport,
-                    "location": airport_locations.get(airport, {}).get("name"),
-                    # "raw": notam_text,
-                    "expanded": expanded,
-                    "lower_ft": lower_ft,
-                    "upper_ft": upper_ft,
-                },
+            traffic = getattr(decoded, "traffic_type", None)
+            purpose = getattr(decoded, "purpose", None)
+            scope = getattr(decoded, "scope", None)
+            locations_val = getattr(decoded, "location", None)
+            props = {
+                "notam_id": decoded.notam_id,
+                "notam_type": decoded.notam_type,
+                "fir": decoded.fir,
+                "notam_code": decoded.notam_code,
+                # Convert potential set/list fields to sorted lists (or keep None)
+                "traffic_type": (
+                    sorted(list(traffic))
+                    if isinstance(traffic, (set, list, tuple))
+                    else traffic
+                ),
+                "purpose": (
+                    sorted(list(purpose))
+                    if isinstance(purpose, (set, list, tuple))
+                    else purpose
+                ),
+                "scope": (
+                    sorted(list(scope))
+                    if isinstance(scope, (set, list, tuple))
+                    else scope
+                ),
+                "fl_lower": decoded.fl_lower,
+                "fl_upper": decoded.fl_upper,
+                "valid_from": str(decoded.valid_from),
+                "valid_till": str(decoded.valid_till),
+                "schedule": decoded.schedule,
+                "body": decoded.body,
+                "locations": (
+                    list(locations_val)
+                    if isinstance(locations_val, (set, list, tuple))
+                    else locations_val
+                ),
+                "area_raw": decoded.area,
             }
-            geojson["features"].append(feature)
 
-        # Save GeoJSON
+            geojson["features"].append(
+                {"type": "Feature", "geometry": geometry, "properties": props}
+            )
+
         notam_class = file_path.split("/")[-1][0:1]
-        with open(output + notam_class + ".geojson", "w", encoding="utf-8") as f:
+        out_path = f"{output}{notam_class}.geojson"
+        with open(out_path, "w", encoding="utf-8") as f:
             json.dump(geojson, f, indent=2, ensure_ascii=False)
-        print(f"✅ Combined NOTAMs saved to {notam_class}.geojson")
+        print(f"✅ Decoded NOTAMs saved to {out_path}")
 
 
 def main() -> None:
