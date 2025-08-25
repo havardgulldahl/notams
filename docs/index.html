@@ -110,19 +110,30 @@
 
     // Legend
     const legendDiv = document.getElementById("legend");
+    // Control bar (show all)
+    const controlBar = document.createElement('div');
+    controlBar.style.marginBottom = '6px';
+    controlBar.innerHTML = '<button id="showAllBtn" style="margin-bottom:4px;">Show All</button><br/>';
+    legendDiv.appendChild(controlBar);
     layers.forEach(series => {
       const color = seriesColors[series] || "#333";
       const div = document.createElement("div");
-      div.innerHTML = `<span style="background:${color}"></span><b>${series}</b>: ${notamSeriesExplained[series] || ''}`;
+      div.className = 'legend-entry';
+      div.dataset.series = series;
+      div.innerHTML = `<span style="background:${color}"></span><b class="series-label" style="cursor:pointer;" title="Click to show only this layer">${series}</b>: ${notamSeriesExplained[series] || ''} <a href="#" class="solo-link" data-series="${series}" style="font-size:11px; margin-left:4px;">[only]</a>`;
       legendDiv.appendChild(div);
     });
 
     // Layer storage
     const seriesLayers = {};
 
-    // Load each local GeoJSON file
+    // Load each local GeoJSON file; show only selected series by default
+    const defaultVisible = new Set(['G', 'L']);
     layers.forEach(series => {
-      const group = L.layerGroup().addTo(map);
+      const group = L.layerGroup();
+      if (defaultVisible.has(series)) {
+        group.addTo(map);
+      }
       seriesLayers[series] = group;
 
       fetch(`${series}.geojson`)
@@ -170,6 +181,44 @@
 
     // Layer control
     L.control.layers(null, seriesLayers, { collapsed: false }).addTo(map);
+
+    // Helper functions to isolate or show all
+    function showOnly(series) {
+      layers.forEach(s => {
+        const grp = seriesLayers[s];
+        if (!grp) return;
+        if (s === series) {
+          if (!map.hasLayer(grp)) grp.addTo(map);
+        } else {
+          if (map.hasLayer(grp)) map.removeLayer(grp);
+        }
+      });
+    }
+    function showAll() {
+      layers.forEach(s => {
+        const grp = seriesLayers[s];
+        if (grp && !map.hasLayer(grp)) grp.addTo(map);
+      });
+    }
+
+    // Event delegation for legend entries
+    legendDiv.addEventListener('click', (e) => {
+      const soloAnchor = e.target.closest('a.solo-link');
+      if (soloAnchor) {
+        e.preventDefault();
+        const series = soloAnchor.dataset.series;
+        if (series) showOnly(series);
+        return;
+      }
+      const label = e.target.closest('.series-label');
+      if (label) {
+        const parent = label.closest('.legend-entry');
+        if (parent && parent.dataset.series) {
+          showOnly(parent.dataset.series);
+        }
+      }
+    });
+    document.getElementById('showAllBtn').addEventListener('click', () => showAll());
   </script>
 </body>
 
