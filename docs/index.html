@@ -168,6 +168,7 @@
                 <i style="font-size:smaller">${desc}</i>${url}<br>
                 ${text}
                 <button class="download-notam" style="margin-top:6px;">Download GeoJSON</button>
+                <a class="link-yandex" target=_blank>Yandex Sat</a>
               `);
               layer.on('popupopen', (e) => {
                 const el = e.popup.getElement();
@@ -175,6 +176,10 @@
                 const btn = el.querySelector('.download-notam');
                 if (btn) {
                   btn.addEventListener('click', () => downloadGeoJSON(feature, series), { once: true });
+                }
+                const href = el.querySelector('.link-yandex');
+                if (href) {
+                  href.setAttribute("href", linkYandex(feature, series));
                 }
               });
             }
@@ -251,6 +256,29 @@
       document.body.appendChild(a);
       a.click();
       setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    }
+
+    // Return a formatted link to yandex sat
+    function linkYandex(feature, series) {
+      if (!feature || !feature.geometry || !feature.geometry.coordinates) return;
+
+      // Leaflet GeoJSON usually stores coordinates as [lon, lat]
+      let coords = feature.geometry.coordinates;
+
+      // Handle Point geometry vs Polygon/LineString (just take first point)
+      let lon, lat;
+      if (feature.geometry.type === "Point") {
+        [lon, lat] = coords;
+      } else if (Array.isArray(coords[0])) {
+        [lon, lat] = coords[0]; // first coordinate pair
+      }
+
+      if (lat === undefined || lon === undefined) return;
+
+      // Construct Yandex Maps satellite link
+      const YANDEX_SAT = `https://yandex.com/maps/?l=sat&ll=${lon}%2C${lat}&z=17`;
+
+      return YANDEX_SAT;
     }
   </script>
 </body>
