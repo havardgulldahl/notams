@@ -270,7 +270,7 @@
       if (feature.geometry.type === "Point") {
         [lon, lat] = coords;
       } else if (Array.isArray(coords[0])) {
-        [lon, lat] = coords[0]; // first coordinate pair
+        [lon, lat] = coords[0][0]; // first coordinate pair
       }
 
       if (lat === undefined || lon === undefined) return;
