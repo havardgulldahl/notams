@@ -58,6 +58,24 @@
       white-space: pre-wrap;
       font-size: 13px;
     }
+
+    /* Hide legend (series list) on narrow/mobile screens to maximize map space */
+    @media (max-width: 640px) {
+      .info-panel .legend {
+        /* legendDiv */
+        display: none;
+      }
+
+      .info-panel {
+        max-width: 55%;
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+
+      .info-panel h2 {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -65,6 +83,8 @@
   <div id="map"></div>
   <div class="info-panel">
     <h2 id="mapTitle">Russian NOTAMs</h2>
+    <a href="https://www.caica.ru/ANI_Official/notam/notam_series/" style="font-size: xx-small;"
+      target="_blank">source</a>
     <div class="legend" id="legend"></div>
   </div>
 
