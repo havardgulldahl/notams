@@ -175,8 +175,10 @@ def parse_notam_files(
             print(f"⚠ File not found: {file_path}")
             continue
 
-        # remove clutter
-        soup.find("title").decompose()
+        # remove clutter (guard: title tag may be missing in minimal test HTML)
+        title_tag = soup.find("title")
+        if title_tag:
+            title_tag.decompose()
         for tag in soup.find_all("font", {"color": "red"}):
             tag.decompose()
 
