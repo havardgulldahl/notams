@@ -4107,8 +4107,8 @@
         ]
       },
       "properties": {
-        "title": "G0500/25 for Vladivostok International Airport",
-        "text": "From: 2025-09-04 23:05:00+00:00\nTo: 2025-09-07 23:59:00+00:00\n\nGround Based Augmentation System 108.150MHZ Channel 22061, Channel 20417/20828:\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 07/25 Procedure NOT PROVIDED."
+        "title": "G0504/25 for Vladivostok International Airport",
+        "text": "From: 2025-09-07 23:50:00+00:00\nTo: 2025-09-14 23:59:00+00:00\n\nGround Based Augmentation System 108.150MHZ Channel 22061, Channel 20417/20828:\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 07/25 Procedure NOT PROVIDED."
       }
     },
     {
