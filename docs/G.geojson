@@ -268,7 +268,11 @@
               67.16385903540369
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 250.0
+        }
       },
       "properties": {
         "title": "G0415/25 for Yakutsk Airport",
@@ -542,7 +546,11 @@
               62.49971923687371
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0449/25 for Yakutsk Airport",
@@ -816,7 +824,11 @@
               74.41498208790888
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0479/25 for Yakutsk Airport",
@@ -1090,7 +1102,11 @@
               59.39831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0341/25 for Chulman Airport",
@@ -1364,7 +1380,11 @@
               63.21498208790889
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0237/25 for Lensk Airport",
@@ -1638,7 +1658,11 @@
               52.03323225860786
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 9.0
+        }
       },
       "properties": {
         "title": "G0307/25 for Khabarovsk Novy Airport",
@@ -1912,7 +1936,11 @@
               51.03164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0456/25 for Khabarovsk Novy Airport",
@@ -2186,7 +2214,11 @@
               66.88164875457558
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0379/25 for Provideniya Bay Airport",
@@ -2460,7 +2492,11 @@
               62.39831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0412/25 for Sokol Airport",
@@ -2734,7 +2770,11 @@
               72.28164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0460/25 for Pevek Airport",
@@ -3008,7 +3048,11 @@
               53.58305257020703
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0300/25 for Yelizovo Airport",
@@ -3282,7 +3326,11 @@
               55.648315421242245
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0439/25 for Yelizovo Airport",
@@ -3556,7 +3604,11 @@
               47.74831542124224
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0082/25 for Iturup Airport",
@@ -3830,7 +3882,11 @@
               49.38164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0421/25 for Yuzhno-Sakhalinsk Airport",
@@ -4104,7 +4160,11 @@
               45.89831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0504/25 for Vladivostok International Airport",
@@ -4378,7 +4438,11 @@
               52.4497192368737
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0467/25 for Chita-Kadala International Airport",
@@ -4652,7 +4716,11 @@
               56.78305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0480/25 for Bratsk Airport",
@@ -4926,7 +4994,11 @@
               60.2649820879089
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0423/25 for Irkutsk International Airport",
@@ -5200,7 +5272,11 @@
               52.683052570207046
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0473/25 for Irkutsk International Airport",
@@ -5474,7 +5550,11 @@
               52.23305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0314/25 for Baikal International Airport",
@@ -5748,7 +5828,11 @@
               54.29831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0501/25 for Baikal International Airport",
@@ -6022,7 +6106,11 @@
               65.01638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0428/25 for Talagi Airport",
@@ -6296,7 +6384,11 @@
               67.09831542124222
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0475/25 for Talagi Airport",
@@ -6570,11 +6662,15 @@
               67.09831542124222
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
-        "title": "G0476/25 for Talagi Airport",
-        "text": "From: 2025-09-10 00:00:00+00:00\nTo: 2025-12-09 23:59:00+00:00\n\nGround Based Augmentation System Channel 20665/21076: RNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 08/26\nProcedure NOT PROVIDED."
+        "title": "G0509/25 for Talagi Airport",
+        "text": "From: 2025-09-10 00:00:00+00:00\nTo: 2025-12-09 23:59:00+00:00\n\nGround Based Augmentation System Channel 20665/21076 NOT PROVIDE: RNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System),\nGNSS Landing System 08/26.\nDO NOT USE FLW AERONAUTICAL CHARTS:\nIAC ILS Z CAT I, LOC Z Runway 08(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-97),\nIAC ILS Z CAT I, LOC Z Runway 26(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-98),\nSID RNAV Runway 08(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-139),\nSID RNAV Runway 26(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-140),\nSTAR RNAV Runway 08(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-147),\nSTAR RNAV Runway 26(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-148),\nIAC GNSS Landing System Runway 08(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-155),\nIAC GNSS Landing System Runway 26(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-156),\nIAC RNP Runway 08(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-157),\nIAC RNP Runway 26(Aeronautical Information Publication PAGE Aerodrome 2.1 ULAA-158)."
       }
     },
     {
@@ -6844,7 +6940,11 @@
               68.04971923687371
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0461/25 for Naryan Mar Airport",
@@ -7118,7 +7218,11 @@
               62.29831542124222
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0320/25 for Pulkovo Airport",
@@ -7392,7 +7496,11 @@
               60.21638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0342/25 for Pulkovo Airport",
@@ -7666,7 +7774,11 @@
               62.89887694749481
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 100.0
+        }
       },
       "properties": {
         "title": "G0291/25 for None",
@@ -7954,7 +8066,11 @@
               69.9649820879089
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0406/25 for None",
@@ -8228,7 +8344,11 @@
               71.26498208790892
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0430/25 for Murmansk Airport",
@@ -8502,7 +8622,11 @@
               60.28164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0310/25 for Pskov Airport",
@@ -8776,7 +8900,11 @@
               58.199719236873705
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0392/25 for Pskov Airport",
@@ -9050,7 +9178,11 @@
               64.38164875457558
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0502/25 for Petrozavodsk Airport",
@@ -9324,7 +9456,11 @@
               62.299719236873706
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0503/25 for Petrozavodsk Airport",
@@ -9598,7 +9734,11 @@
               61.781648754575556
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0471/25 for Vologda Airport",
@@ -9872,7 +10012,11 @@
               55.299719236873706
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0400/25 for Khrabrovo Airport",
@@ -10146,7 +10290,11 @@
               56.231648754575566
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0308/25 for Abakan International Airport",
@@ -10420,7 +10568,11 @@
               53.78305257020705
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0336/25 for Barnaul Airport",
@@ -10694,7 +10846,11 @@
               64.08164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0468/25 for Podkamennaya Tunguska Airport",
@@ -10968,7 +11124,11 @@
               61.16329750915113
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 300.0
+        }
       },
       "properties": {
         "title": "G0394/25 for Krasnoyarsk International Airport",
@@ -11242,7 +11402,11 @@
               57.514982087908905
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0450/25 for Novosibirsk Tolmachevo Airport",
@@ -11516,7 +11680,11 @@
               58.347753894989644
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 200.0
+        }
       },
       "properties": {
         "title": "G0458/25 for Novosibirsk Tolmachevo Airport",
@@ -11790,7 +11958,11 @@
               55.383052570207035
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0445/25 for Omsk Central Airport",
@@ -12064,7 +12236,11 @@
               56.29831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0328/25 for Spichenkovo Airport",
@@ -12338,7 +12514,11 @@
               47.548315421242236
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0298/25 for None",
@@ -12612,7 +12792,11 @@
               48.381087228322976
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 200.0
+        }
       },
       "properties": {
         "title": "G0418/25 for None",
@@ -12886,7 +13070,11 @@
               45.416385903540366
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0281/25 for Anapa Vityazevo Airport",
@@ -13160,7 +13348,11 @@
               47.49831542124224
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0465/25 for Anapa Vityazevo Airport",
@@ -13434,7 +13626,11 @@
               44.999719236873716
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0364/25 for Gelendzhik Airport",
@@ -13708,7 +13904,11 @@
               45.4497192368737
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0288/25 for Krasnodar Pashkovsky International Airport",
@@ -13982,7 +14182,11 @@
               47.53164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0470/25 for Krasnodar Pashkovsky International Airport",
@@ -14256,7 +14460,11 @@
               45.881648754575565
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0260/25 for Grozny Airport",
@@ -14530,11 +14738,293 @@
               43.79971923687371
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0466/25 for Grozny Airport",
         "text": "From: 2025-08-26 15:40:00+00:00\nTo: 2025-11-28 07:00:00+00:00\n\nInterruptions Possible IN Global Navigation Satellite System OPERATION Within Aerodrome AREA."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              45.7,
+              45.881648754575565
+            ],
+            [
+              46.051574983800094,
+              45.86909473239428
+            ],
+            [
+              46.39930514133282,
+              45.83157047134606
+            ],
+            [
+              46.739403623495974,
+              45.76948726378558
+            ],
+            [
+              47.06819783376881,
+              45.68352358296835
+            ],
+            [
+              47.38218239920857,
+              45.5746147903646
+            ],
+            [
+              47.67806742315482,
+              45.443939167777316
+            ],
+            [
+              47.95282086684526,
+              45.292900683237264
+            ],
+            [
+              48.20370421730215,
+              45.12310897318312
+            ],
+            [
+              48.42830093206526,
+              44.93635707038049
+            ],
+            [
+              48.62453748186096,
+              44.73459742700493
+            ],
+            [
+              48.79069711731655,
+              44.519916777030545
+            ],
+            [
+              48.92542674754005,
+              44.2945103549384
+            ],
+            [
+              49.027737525071565,
+              44.06065594334868
+            ],
+            [
+              49.09699987795157,
+              43.82068816561516
+            ],
+            [
+              49.13293381575938,
+              43.57697337585022
+            ],
+            [
+              49.13559536739429,
+              43.33188543300551
+            ],
+            [
+              49.10535999228906,
+              43.08778258151195
+            ],
+            [
+              49.042903753666025,
+              42.846985601669644
+            ],
+            [
+              48.94918296290855,
+              42.611757340596185
+            ],
+            [
+              48.8254129081812,
+              42.38428369030579
+            ],
+            [
+              48.67304617694382,
+              42.16665604382086
+            ],
+            [
+              48.49375097821081,
+              41.96085523289835
+            ],
+            [
+              48.289389771783036,
+              41.76873693130933
+            ],
+            [
+              48.061998421984555,
+              41.59201849466319
+            ],
+            [
+              47.81376601488598,
+              41.43226720039004
+            ],
+            [
+              47.54701541152775,
+              41.29088984851842
+            ],
+            [
+              47.264184555207024,
+              41.16912368420216
+            ],
+            [
+              46.96780850768395,
+              41.06802860556665
+            ],
+            [
+              46.660502155959996,
+              40.98848062452869
+            ],
+            [
+              46.34494350660376,
+              40.93116655313448
+            ],
+            [
+              46.02385746690858,
+              40.896579893177844
+            ],
+            [
+              45.7,
+              40.8850179120911
+            ],
+            [
+              45.376142533091425,
+              40.896579893177844
+            ],
+            [
+              45.055056493396236,
+              40.93116655313448
+            ],
+            [
+              44.73949784404,
+              40.98848062452869
+            ],
+            [
+              44.43219149231605,
+              41.06802860556665
+            ],
+            [
+              44.135815444792975,
+              41.16912368420216
+            ],
+            [
+              43.85298458847225,
+              41.29088984851842
+            ],
+            [
+              43.58623398511402,
+              41.43226720039004
+            ],
+            [
+              43.338001578015444,
+              41.59201849466319
+            ],
+            [
+              43.11061022821696,
+              41.76873693130933
+            ],
+            [
+              42.90624902178919,
+              41.96085523289835
+            ],
+            [
+              42.72695382305618,
+              42.16665604382086
+            ],
+            [
+              42.574587091818806,
+              42.38428369030579
+            ],
+            [
+              42.45081703709145,
+              42.611757340596185
+            ],
+            [
+              42.357096246333974,
+              42.846985601669644
+            ],
+            [
+              42.29464000771094,
+              43.08778258151195
+            ],
+            [
+              42.26440463260571,
+              43.33188543300551
+            ],
+            [
+              42.26706618424062,
+              43.57697337585022
+            ],
+            [
+              42.30300012204844,
+              43.82068816561516
+            ],
+            [
+              42.37226247492844,
+              44.06065594334868
+            ],
+            [
+              42.474573252459955,
+              44.2945103549384
+            ],
+            [
+              42.60930288268345,
+              44.519916777030545
+            ],
+            [
+              42.775462518139044,
+              44.73459742700493
+            ],
+            [
+              42.971699067934736,
+              44.93635707038049
+            ],
+            [
+              43.196295782697845,
+              45.12310897318312
+            ],
+            [
+              43.44717913315475,
+              45.292900683237264
+            ],
+            [
+              43.721932576845184,
+              45.443939167777316
+            ],
+            [
+              44.01781760079143,
+              45.5746147903646
+            ],
+            [
+              44.33180216623119,
+              45.68352358296835
+            ],
+            [
+              44.66059637650402,
+              45.76948726378558
+            ],
+            [
+              45.00069485866718,
+              45.83157047134606
+            ],
+            [
+              45.348425016199904,
+              45.86909473239428
+            ],
+            [
+              45.7,
+              45.881648754575565
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
+      },
+      "properties": {
+        "title": "G0511/25 for Grozny Airport",
+        "text": "From: 2025-09-10 12:00:00+00:00\nTo: 2025-12-10 12:00:00+00:00\n\nRunway 08 GNSS Landing System Approach NOT Available DUE TO Ground Based Augmentation System 08 Channel 20417 FAILURE."
       }
     },
     {
@@ -14804,7 +15294,11 @@
               43.23305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0380/25 for Makhachkala Uytash International Airport",
@@ -15078,7 +15572,11 @@
               46.698315421242235
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0432/25 for Mineralnyye Vody Airport",
@@ -15352,7 +15850,11 @@
               44.649719236873715
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0442/25 for Mineralnyye Vody Airport",
@@ -15626,7 +16128,11 @@
               45.998315421242225
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0384/25 for Nalchik Airport",
@@ -15900,7 +16406,11 @@
               43.93305257020703
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0391/25 for Nalchik Airport",
@@ -16174,7 +16684,11 @@
               45.69831542124224
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0304/25 for Vladikavkaz Beslan International Airport",
@@ -16448,11 +16962,293 @@
               43.61638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0305/25 for Vladikavkaz Beslan International Airport",
         "text": "From: 2025-06-26 14:55:00+00:00\nTo: 2025-12-26 18:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE POSSIBLE Within Aerodrome AREA,\nRADAR VECTORING PROVIDED UPON ACFT CREW REQ."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              45.0,
+              43.73305257020704
+            ],
+            [
+              45.056480774807206,
+              43.73103372266657
+            ],
+            [
+              45.11240633356709,
+              43.724997028621075
+            ],
+            [
+              45.16722725317935,
+              43.715001826494586
+            ],
+            [
+              45.22040562239534,
+              43.701146325313566
+            ],
+            [
+              45.271420614153364,
+              43.68356658146195
+            ],
+            [
+              45.31977384179411,
+              43.66243508448944
+            ],
+            [
+              45.36499443393588,
+              43.637958969868116
+            ],
+            [
+              45.40664376832025,
+              43.610377881071976
+            ],
+            [
+              45.44431981148035,
+              43.579961507391225
+            ],
+            [
+              45.47766101841639,
+              43.5470068274239
+            ],
+            [
+              45.50634975435184,
+              43.511835091163256
+            ],
+            [
+              45.53011520884612,
+              43.47478857599176
+            ],
+            [
+              45.54873578082114,
+              43.436227153689565
+            ],
+            [
+              45.56204092119726,
+              43.39652470677187
+            ],
+            [
+              45.569912427633284,
+              43.35606543310666
+            ],
+            [
+              45.57228519315622,
+              43.31524007786414
+            ],
+            [
+              45.569147417117655,
+              43.274442131456865
+            ],
+            [
+              45.56054029282707,
+              43.23406403129489
+            ],
+            [
+              45.54655719132848,
+              43.19449340396101
+            ],
+            [
+              45.52734236508002,
+              43.15610938286482
+            ],
+            [
+              45.50308919877301,
+              43.11927903461945
+            ],
+            [
+              45.47403803722217,
+              43.08435392535819
+            ],
+            [
+              45.440473622228986,
+              43.051666856020766
+            ],
+            [
+              45.40272217164086,
+              43.02152879333913
+            ],
+            [
+              45.36114813458756,
+              42.99422602087964
+            ],
+            [
+              45.31615065716725,
+              42.97001753208827
+            ],
+            [
+              45.26815979277698,
+              42.9491326848636
+            ],
+            [
+              45.21763249093203,
+              42.93176913477176
+            ],
+            [
+              45.16504839788913,
+              42.91809106163039
+            ],
+            [
+              45.11090550176424,
+              42.90822770183619
+            ],
+            [
+              45.05571565419462,
+              42.90227219649398
+            ],
+            [
+              45.0,
+              42.9002807631263
+            ],
+            [
+              44.94428434580538,
+              42.90227219649398
+            ],
+            [
+              44.88909449823576,
+              42.90822770183619
+            ],
+            [
+              44.83495160211087,
+              42.91809106163039
+            ],
+            [
+              44.78236750906797,
+              42.93176913477176
+            ],
+            [
+              44.73184020722302,
+              42.9491326848636
+            ],
+            [
+              44.68384934283275,
+              42.97001753208827
+            ],
+            [
+              44.63885186541244,
+              42.99422602087964
+            ],
+            [
+              44.59727782835914,
+              43.02152879333913
+            ],
+            [
+              44.559526377771014,
+              43.051666856020766
+            ],
+            [
+              44.52596196277783,
+              43.08435392535819
+            ],
+            [
+              44.49691080122699,
+              43.11927903461945
+            ],
+            [
+              44.47265763491998,
+              43.15610938286482
+            ],
+            [
+              44.45344280867152,
+              43.19449340396101
+            ],
+            [
+              44.43945970717293,
+              43.23406403129489
+            ],
+            [
+              44.430852582882345,
+              43.274442131456865
+            ],
+            [
+              44.42771480684378,
+              43.31524007786414
+            ],
+            [
+              44.430087572366716,
+              43.35606543310666
+            ],
+            [
+              44.43795907880274,
+              43.39652470677187
+            ],
+            [
+              44.45126421917886,
+              43.436227153689565
+            ],
+            [
+              44.46988479115388,
+              43.47478857599176
+            ],
+            [
+              44.49365024564816,
+              43.511835091163256
+            ],
+            [
+              44.52233898158361,
+              43.5470068274239
+            ],
+            [
+              44.55568018851965,
+              43.579961507391225
+            ],
+            [
+              44.59335623167974,
+              43.610377881071976
+            ],
+            [
+              44.63500556606412,
+              43.637958969868116
+            ],
+            [
+              44.68022615820589,
+              43.66243508448944
+            ],
+            [
+              44.728579385846636,
+              43.68356658146195
+            ],
+            [
+              44.77959437760466,
+              43.701146325313566
+            ],
+            [
+              44.83277274682065,
+              43.715001826494586
+            ],
+            [
+              44.88759366643291,
+              43.724997028621075
+            ],
+            [
+              44.943519225192794,
+              43.73103372266657
+            ],
+            [
+              45.0,
+              43.73305257020704
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
+      },
+      "properties": {
+        "title": "G0510/25 for Magas Airport",
+        "text": "From: 2025-09-09 08:00:00+00:00\nTo: 2025-12-28 20:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE POSSIBLE Within Aerodrome AREA, RADAR VECTORING PROVIDED UPON\nACFT CREW REQ."
       }
     },
     {
@@ -16722,7 +17518,11 @@
               45.53305257020705
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0293/25 for Stavropol Shpakovskoye Airport",
@@ -16996,7 +17796,11 @@
               49.98164875457558
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0272/25 for Platov International Airport",
@@ -17270,7 +18074,11 @@
               47.91638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0273/25 for Platov International Airport",
@@ -17544,7 +18352,11 @@
               43.86638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0474/25 for Sochi International Airport",
@@ -17818,7 +18630,11 @@
               48.78164875457556
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0463/25 for Astrakhan Narimanovo Boris M. Kustodiev International Airport",
@@ -18092,7 +18908,11 @@
               46.78305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0493/25 for Elista Airport",
@@ -18366,7 +19186,11 @@
               49.199719236873705
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0265/25 for Volgograd International Airport",
@@ -18640,7 +19464,11 @@
               51.2649820879089
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0266/25 for Volgograd International Airport",
@@ -18914,7 +19742,11 @@
               57.08316487545755
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 15.0
+        }
       },
       "properties": {
         "title": "G0440/25 for Izhevsk Airport",
@@ -19188,7 +20020,11 @@
               60.981648754575566
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0274/25 for Pobedilovo Airport",
@@ -19462,7 +20298,11 @@
               67.96498208790892
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0490/25 for Nadym Airport",
@@ -19736,7 +20576,11 @@
               60.41498208790889
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0443/25 for Perm International Airport",
@@ -20010,7 +20854,11 @@
               59.24831542124224
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0496/25 for Koltsovo Airport",
@@ -20284,7 +21132,11 @@
               59.231648754575566
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0505/25 for Koltsovo Airport",
@@ -20558,7 +21410,11 @@
               63.41217445664596
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 400.0
+        }
       },
       "properties": {
         "title": "G0378/25 for None",
@@ -20832,7 +21688,11 @@
               57.58305257020703
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0373/25 for Roshchino International Airport",
@@ -21106,7 +21966,11 @@
               55.89971923687371
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0297/25 for Kurgan Airport",
@@ -21380,7 +22244,11 @@
               57.94831542124224
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0499/25 for Kurgan Airport",
@@ -21654,7 +22522,11 @@
               57.03164875457556
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0339/25 for Grabtsevo Airport",
@@ -21928,7 +22800,11 @@
               55.49994384737474
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 5.0
+        }
       },
       "properties": {
         "title": "G0243/25 for Domodedovo International Airport",
@@ -22202,7 +23078,11 @@
               60.04831542124222
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0279/25 for Tunoshna Airport",
@@ -22476,7 +23356,11 @@
               58.464982087908886
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0285/25 for Sheremetyevo International Airport",
@@ -22750,7 +23634,11 @@
               53.13164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0482/25 for Belgorod International Airport",
@@ -23024,7 +23912,11 @@
               53.116385903540376
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0277/25 for Lipetsk Airport",
@@ -23298,7 +24190,11 @@
               54.31498208790891
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0355/25 for Voronezh International Airport",
@@ -23580,7 +24476,11 @@
               60.5799641758178
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 300.0
+        }
       },
       "properties": {
         "title": "G0327/25 for None",
@@ -23854,7 +24754,11 @@
               57.33305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0495/25 for None",
@@ -24128,7 +25032,11 @@
               58.08164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0316/25 for Vnukovo International Airport",
@@ -24402,7 +25310,11 @@
               56.01638590354037
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0317/25 for Vnukovo International Airport",
@@ -24676,7 +25588,11 @@
               69.98164875457559
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0454/25 for Vorkuta Airport",
@@ -24950,7 +25866,11 @@
               58.08164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0372/25 for Kazan International Airport",
@@ -25224,7 +26144,11 @@
               58.048315421242236
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0313/25 for Begishevo Airport",
@@ -25498,7 +26422,11 @@
               59.18164875457557
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0309/25 for Yoshkar-Ola Airport",
@@ -25772,7 +26700,11 @@
               54.68305257020703
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0359/25 for Ulyanovsk Baratayevka Airport",
@@ -26046,7 +26978,11 @@
               52.21638590354038
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0338/25 for Orenburg Central Airport",
@@ -26320,7 +27256,11 @@
               51.48305257020705
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0177/25 for Orsk Airport",
@@ -26594,7 +27534,11 @@
               54.5497192368737
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0280/25 for Saransk Airport",
@@ -26868,7 +27812,11 @@
               52.13305257020704
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0451/25 for Gagarin International Airport",
@@ -27142,7 +28090,11 @@
               54.21498208790891
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0452/25 for Gagarin International Airport",
@@ -27416,7 +28368,11 @@
               54.966385903540356
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
         "title": "G0360/25 for Ufa International Airport",
@@ -27690,7 +28646,11 @@
               55.99831542124223
             ]
           ]
-        ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 150.0
+        }
       },
       "properties": {
         "title": "G0206/25 for Kurumoch International Airport",
