@@ -430,3 +430,13 @@ def build_geometry(
 class StubNotam:
     area: Optional[Mapping[str, Any]]
     location: Optional[Iterable[str]]
+
+
+if __name__ == "__main__":
+    # cli, get notam data from stdin
+    import sys
+    import json
+
+    notamdata = sys.stdin.read()
+    geom = build_geometry(notamdata, {})
+    print(json.dumps(geom, indent=2))
