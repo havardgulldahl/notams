@@ -10,9 +10,14 @@ from typing import List, Dict, Any, Optional
 from bs4.element import Tag
 import notam  # pynotam library
 
+# Local geometry utilities (extracted for testability)
+try:  # Support running as module or script
+    from .geo import circle_polygon, build_geometry, MAX_CIRCLE_RADIUS_NM
+except ImportError:  # pragma: no cover
+    from geo import circle_polygon, build_geometry, MAX_CIRCLE_RADIUS_NM  # type: ignore
+
 BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
-# Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
-MAX_CIRCLE_RADIUS_NM = 500
+# NOTE: MAX_CIRCLE_RADIUS_NM now imported from geo.py
 
 
 def fetch(url: str, timeout: int = 10) -> Optional[requests.Response]:
@@ -84,39 +89,14 @@ def expand_abbreviations(text: str) -> str:
     return text
 
 
-def circle_polygon(
-    lat: float, lon: float, radius_nm: float, n_points: int = 64
-) -> dict[str, Any]:
-    R = 6371000.0  # Earth radius meters
-    radius_m = radius_nm * 1852
-    lat_rad = math.radians(lat)
-    lon_rad = math.radians(lon)
-    d = radius_m / R
-
-    coords = []
-    for i in range(n_points):
-        brng = 2 * math.pi * i / n_points
-        lat2 = math.asin(
-            math.sin(lat_rad) * math.cos(d)
-            + math.cos(lat_rad) * math.sin(d) * math.cos(brng)
-        )
-        lon2 = lon_rad + math.atan2(
-            math.sin(brng) * math.sin(d) * math.cos(lat_rad),
-            math.cos(d) - math.sin(lat_rad) * math.sin(lat2),
-        )
-        coords.append([math.degrees(lon2), math.degrees(lat2)])
-    coords.append(coords[0])
-    return {"type": "Polygon", "coordinates": [coords]}
-
-
 def polygon_geometry(
     coords: list[tuple[Optional[float], Optional[float]]],
 ) -> dict[str, Any]:
+    """(Deprecated) Polygon helper retained for backward compatibility."""
     lonlat = [[lon, lat] for lat, lon in coords if lat is not None and lon is not None]
     if len(lonlat) < 3:
-        # Fallback to empty geometry-like structure (GeoJSON validity minimal)
         return {"type": "Polygon", "coordinates": [[[]]]}
-    lonlat.append(lonlat[0])  # close ring
+    lonlat.append(lonlat[0])
     return {"type": "Polygon", "coordinates": [lonlat]}
 
 
@@ -147,22 +127,6 @@ def parse_notam_files(
         print(
             f"⚠ Airport CSV '{airports_csv}' not found; proceeding without airport enrichment."
         )
-
-    def dms_min_to_decimal(coord: str) -> Optional[float]:
-        """Convert a coordinate like 5535N or 03716E to decimal degrees."""
-        m = re.match(r"^(\d+)([NSEW])$", coord)
-        if not m:
-            return None
-        value, hemi = m.groups()
-        # Split value into degrees and minutes (last 2 digits = minutes, rest = degrees)
-        if len(value) < 3:
-            return None
-        deg = int(value[:-2])
-        minutes = int(value[-2:])
-        dec = deg + minutes / 60.0
-        if hemi in ("S", "W"):
-            dec = -dec
-        return dec
 
     success_count = 0
     failure_count = 0
@@ -202,36 +166,10 @@ def parse_notam_files(
                 continue
             success_count += 1
 
-            # Build geometry
-            geometry: Optional[dict[str, Any]] = None
-            area = getattr(decoded, "area", None)
-            if area and area.get("lat") and area.get("long"):
-                lat_raw = area.get("lat")
-                lon_raw = area.get("long")
-                lat_dec = dms_min_to_decimal(lat_raw)
-                lon_dec = dms_min_to_decimal(lon_raw)
-                if lat_dec is not None and lon_dec is not None:
-                    radius = area.get("radius")
-                    if (
-                        isinstance(radius, (int, float))
-                        and radius
-                        and radius < MAX_CIRCLE_RADIUS_NM
-                    ):  # heuristic
-                        geometry = circle_polygon(lat_dec, lon_dec, float(radius))
-                    else:
-                        geometry = {"type": "Point", "coordinates": [lon_dec, lat_dec]}
-
-            # Fallback using first location code
-            if geometry is None:
-                locs = getattr(decoded, "location", []) or []
-                if locs:
-                    loc = locs[0]
-                    ap = airport_locations.get(loc)
-                    if ap:
-                        geometry = {
-                            "type": "Point",
-                            "coordinates": [ap["lon"], ap["lat"]],
-                        }
+            # Build geometry via extracted helper for testability
+            geometry: Optional[dict[str, Any]] = build_geometry(
+                decoded, airport_locations, MAX_CIRCLE_RADIUS_NM
+            )
 
             traffic = getattr(decoded, "traffic_type", None)
             purpose = getattr(decoded, "purpose", None)
@@ -271,11 +209,15 @@ def parse_notam_files(
                 ),
                 "area_raw": decoded.area,
             }
-            airport_name = (
-                airport_locations.get(decoded.location[0])["name"]
-                if decoded.location and decoded.location[0] in airport_locations
-                else None
-            )
+            airport_name = None
+            try:
+                if decoded.location:
+                    first_loc = decoded.location[0]
+                    ap = airport_locations.get(first_loc)
+                    if ap:
+                        airport_name = ap.get("name")  # type: ignore[index]
+            except Exception:  # pragma: no cover - defensive
+                airport_name = None
             props = {
                 "title": f"{decoded.notam_id} for {airport_name}",
                 "text": f"From: {str(decoded.valid_from)}\nTo: {str(decoded.valid_till)}\n\n{expand_abbreviations(decoded.body) if decoded.body else ''}",
