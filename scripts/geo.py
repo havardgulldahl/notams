@@ -49,7 +49,11 @@ def dms_min_to_decimal(coord: str) -> Optional[float]:
 def circle_polygon(
     lat: float, lon: float, radius_nm: float, n_points: int = 64
 ) -> Dict[str, Any]:
-    """Generate an approximate circle polygon around (lat, lon) with radius in NM."""
+    """Generate an approximate circle polygon around (lat, lon) with radius in NM.
+
+    Returns a GeoJSON-like geometry (Polygon). A non-standard 'meta' member is
+    included to expose lightweight shape provenance for tests / downstream logic.
+    """
     R = 6371000.0  # meters
     radius_m = radius_nm * 1852
     lat_rad = math.radians(lat)
@@ -69,7 +73,113 @@ def circle_polygon(
         )
         coords.append([math.degrees(lon2), math.degrees(lat2)])
     coords.append(coords[0])  # close ring
-    return {"type": "Polygon", "coordinates": [coords]}
+    return {
+        "type": "Polygon",
+        "coordinates": [coords],
+        "meta": {"shape": "circle", "radius_nm": radius_nm},
+    }
+
+
+def ellipse_polygon(
+    lat: float,
+    lon: float,
+    major_km: float,
+    minor_km: float,
+    azimuth_deg: float | None,
+    n_points: int = 72,
+) -> Dict[str, Any]:
+    """Approximate an oriented ellipse.
+
+    major_km / minor_km are *axis lengths* (NOT semi-axes). We convert to semi-axis
+    internally. Orientation: azimuth measured clockwise from North to the major axis.
+    If azimuth is None we assume 0 (major axis aligned with geographic North).
+    Small-distance planar approximation (sufficient for sub-100km NOTAM extents).
+    """
+    R = 6371000.0
+    a = (major_km * 1000.0) / 2.0  # semi-major meters
+    b = (minor_km * 1000.0) / 2.0  # semi-minor meters
+    theta = math.radians(azimuth_deg or 0.0)
+    lat_rad = math.radians(lat)
+
+    coords: List[List[float]] = []
+    for i in range(n_points):
+        t = 2 * math.pi * i / n_points
+        # Ellipse with major axis along Y (north) before rotation
+        y = a * math.cos(t)  # north offset
+        x = b * math.sin(t)  # east offset
+        # Rotate clockwise by theta (to align major axis to azimuth from north)
+        # Clockwise rotation matrix applied to (x,y):
+        xr = x * math.cos(theta) + y * math.sin(theta)
+        yr = -x * math.sin(theta) + y * math.cos(theta)
+        dlat = (yr / R) * (180.0 / math.pi)
+        dlon = (xr / (R * math.cos(lat_rad))) * (180.0 / math.pi)
+        coords.append([lon + dlon, lat + dlat])
+    coords.append(coords[0])
+    return {
+        "type": "Polygon",
+        "coordinates": [coords],
+        "meta": {
+            "shape": "ellipse",
+            "major_km": major_km,
+            "minor_km": minor_km,
+            "azimuth_deg": azimuth_deg,
+        },
+    }
+
+
+def sector_wedge_polygon(
+    lat: float,
+    lon: float,
+    radius_nm: float,
+    azm_start: float,
+    azm_end: float,
+    step_deg: float = 5.0,
+) -> Dict[str, Any]:
+    """Approximate a sector (wedge) as a polygon defined by azimuth start-end + radius.
+
+    If the end azimuth is numerically less than start, it is assumed to wrap across 360.
+    Bearings are treated clockwise from North. Uses great-circle projection similar to
+    circle generation. Adds a center point so wedge is a closed polygon.
+    """
+    # Normalize angles
+    azm_start = azm_start % 360.0
+    azm_end = azm_end % 360.0
+    span = (azm_end - azm_start) % 360.0
+    if span == 0:  # full circle fallback
+        return circle_polygon(lat, lon, radius_nm)
+
+    R = 6371000.0
+    radius_m = radius_nm * 1852
+    lat_rad = math.radians(lat)
+    lon_rad = math.radians(lon)
+    d = radius_m / R
+
+    coords: List[List[float]] = []
+    # Start at center
+    coords.append([lon, lat])
+    steps = max(2, int(span / step_deg) + 1)
+    for i in range(steps + 1):  # include end bearing
+        brng = math.radians(azm_start + (span * i / steps))
+        lat2 = math.asin(
+            math.sin(lat_rad) * math.cos(d)
+            + math.cos(lat_rad) * math.sin(d) * math.cos(brng)
+        )
+        lon2 = lon_rad + math.atan2(
+            math.sin(brng) * math.sin(d) * math.cos(lat_rad),
+            math.cos(d) - math.sin(lat_rad) * math.sin(lat2),
+        )
+        coords.append([math.degrees(lon2), math.degrees(lat2)])
+    coords.append(coords[0])
+    return {
+        "type": "Polygon",
+        "coordinates": [coords],
+        "meta": {
+            "shape": "sector",
+            "radius_nm": radius_nm,
+            "azimuth_start": azm_start,
+            "azimuth_end": azm_end,
+        },
+    }
 
 
 def build_geometry(
@@ -160,17 +270,23 @@ def build_geometry(
         text = decoded.upper().replace("\n", " ")
         polygons: List[Dict[str, Any]] = []
 
-        # ---- Circles ----
+        # ---- Circles (extended units KM / NM / M) ----
         for m in re.finditer(
-            r"CIRCLE RADIUS\s+([0-9]+(?:\.[0-9]+)?)KM\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])",
+            r"CIRCLE RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])",
             text,
         ):
-            km = float(m.group(1))
-            center = m.group(2)
+            value = float(m.group(1))
+            unit = m.group(2)
+            center = m.group(3)
             ll = parse_latlon(center)
             if ll:
-                nm = km * 0.539957
-                polygons.append(circle_polygon(ll[0], ll[1], nm))
+                if unit == "KM":
+                    radius_nm = value * 0.539957
+                elif unit == "M":
+                    radius_nm = value / 1852.0
+                else:  # NM
+                    radius_nm = value
+                polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
 
         # ---- Coordinate chains (areas) ----
         for chain_match in re.finditer(
@@ -182,32 +298,82 @@ def build_geometry(
             if poly:
                 polygons.append(poly)
 
-        # ---- Sector (approximate by circle) ----
+        # ---- Sector with azimuth range (wedge). Fallback to circle if azimuth missing ----
+        # Pattern variant: WI SECTOR CENTRE <coord> AZM 321-144 DEG RADIUS 8KM.
+        sector_wedge_seen = False
         for m in re.finditer(
-            r"SECTOR CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW]).*?RADIUS\s+([0-9]+(?:\.[0-9]+)?)KM",
+            r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+AZ(?:M|IMUTH)\s+(\d{1,3})-(\d{1,3})\s+DEG(?:REES)?\s+RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
             text,
         ):
             centre = m.group(1)
-            km = float(m.group(2))
+            a_start = float(m.group(2))
+            a_end = float(m.group(3))
+            radius_value = float(m.group(4))
+            radius_unit = m.group(5)
             ll = parse_latlon(centre)
             if ll:
-                polygons.append(circle_polygon(ll[0], ll[1], km * 0.539957))
+                if radius_unit == "KM":
+                    radius_nm = radius_value * 0.539957
+                elif radius_unit == "M":
+                    radius_nm = radius_value / 1852.0
+                else:
+                    radius_nm = radius_value
+                polygons.append(
+                    sector_wedge_polygon(ll[0], ll[1], radius_nm, a_start, a_end)
+                )
+                sector_wedge_seen = True
+        # Fallback simpler sector (no azimuths) -> circle approximation
+        for m in re.finditer(
+            r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW]).*?RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
+            text,
+        ):
+            # Skip ones we already parsed above (with AZM) by simple substring test
+            if "AZM" in m.group(0) or "AZIMUTH" in m.group(0) or sector_wedge_seen:
+                continue
+            centre = m.group(1)
+            radius_value = float(m.group(2))
+            radius_unit = m.group(3)
+            ll = parse_latlon(centre)
+            if ll:
+                if radius_unit == "KM":
+                    radius_nm = radius_value * 0.539957
+                elif radius_unit == "M":
+                    radius_nm = radius_value / 1852.0
+                else:
+                    radius_nm = radius_value
+                polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
 
-        # ---- Ellipse (approximate by circle using first axis /2) ----
+        # ---- Ellipse (create oriented ellipse polygon if azimuth present) ----
         for m in re.finditer(
-            r"ELLIPSE CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+WITH AXES DIMENSIONS\s+([0-9]+(?:\.[0-9]+)?)X([0-9]+(?:\.[0-9]+)?)KM",
+            r"ELLIPSE CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+WITH AXES DIMENSIONS\s+([0-9]+(?:\.[0-9]+)?)X([0-9]+(?:\.[0-9]+)?)(KM|NM|M)(?:\s+AZM OF MAJOR AXIS\s+(\d{1,3})DEG)?",
             text,
         ):
             centre = m.group(1)
-            a_km = float(m.group(2))
+            major = float(m.group(2))
+            minor = float(m.group(3))
+            unit = m.group(4)
+            azm = m.group(5)
+            azm_val = float(azm) if azm is not None else None
             ll = parse_latlon(centre)
             if ll:
-                polygons.append(circle_polygon(ll[0], ll[1], (a_km / 2.0) * 0.539957))
+                # Units: treat NM as nautical miles (convert to km) / M as meters
+                if unit == "NM":
+                    major_km = major * 1.852
+                    minor_km = minor * 1.852
+                elif unit == "M":
+                    major_km = major / 1000.0
+                    minor_km = minor / 1000.0
+                else:
+                    major_km = major
+                    minor_km = minor
+                polygons.append(
+                    ellipse_polygon(ll[0], ll[1], major_km, minor_km, azm_val)
+                )
 
         # ---- Line corridor (within X KM either side of line) -> extract LineString ----
         line_strings: List[Dict[str, Any]] = []
         for m in re.finditer(
-            r"WI\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE\s+((?:\d{4,6}[NS]\d{5,7}[EW]-)+\d{4,6}[NS]\d{5,7}[EW])",
+            r"W(?:I|ITHIN)\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE(?:\s+JOINING POINTS:?)?\s+((?:\d{4,6}[NS]\d{5,7}[EW]-)+\d{4,6}[NS]\d{5,7}[EW])",
             text,
         ):
             width_km = float(m.group(1))

@@ -190,7 +190,12 @@ def test_parse_notam_various(raw, expected_type):
     geojson = build_geometry(decoded, {})
     if geojson is None:
         raise AssertionError("Geometry should not be None")
-    assert geojson["type"] in ["Polygon", "MultiPolygon"]
+    assert geojson["type"] in [
+        "Polygon",
+        "MultiPolygon",
+        "LineString",
+        "MultiLineString",
+    ]
     assert geojson["type"] == expected_type
     assert "coordinates" in geojson
     assert len(geojson["coordinates"]) > 0
