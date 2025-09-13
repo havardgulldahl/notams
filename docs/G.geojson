@@ -6113,8 +6113,8 @@
         }
       },
       "properties": {
-        "title": "G0501/25 for Baikal International Airport",
-        "text": "From: 2025-09-05 03:50:00+00:00\nTo: 2025-09-12 08:00:00+00:00\n\nRunway 08 AND Runway 26: GNSS Landing System Approach NOT PROVIDED."
+        "title": "G0520/25 for Baikal International Airport",
+        "text": "From: 2025-09-12 01:24:00+00:00\nTo: 2025-09-26 08:00:00+00:00\n\nRunway 08 AND Runway 26: GNSS Landing System Approach NOT PROVIDED."
       }
     },
     {
@@ -18081,8 +18081,8 @@
         }
       },
       "properties": {
-        "title": "G0272/25 for Platov International Airport",
-        "text": "From: 2025-06-11 08:40:00+00:00\nTo: 2025-09-13 05:00:00+00:00\n\nRunway 05/23 GNSS Landing System Procedure NOT PRIVIDED DUE TO Ground Based Augmentation System CH22089, CH20445/20856\nFAILURE."
+        "title": "G0521/25 for Platov International Airport",
+        "text": "From: 2025-09-12 03:04:00+00:00\nTo: 2025-12-12 05:00:00+00:00\n\nRunway 05/23 GNSS Landing System Procedure NOT PROVIDED DUE TO Ground Based Augmentation System CH22089, CH20445/20856\nFAILURE."
       }
     },
     {
@@ -18359,8 +18359,8 @@
         }
       },
       "properties": {
-        "title": "G0273/25 for Platov International Airport",
-        "text": "From: 2025-06-15 05:00:00+00:00\nTo: 2025-09-13 05:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE Possible Within Aerodrome AREA. VECTORING PROVIDED UPON CREW\nREQ."
+        "title": "G0522/25 for Platov International Airport",
+        "text": "From: 2025-09-12 03:05:00+00:00\nTo: 2025-12-12 05:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE Possible Within Aerodrome AREA. VECTORING PROVIDED UPON CREW\nREQ."
       }
     },
     {
