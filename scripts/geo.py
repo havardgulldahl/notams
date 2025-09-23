@@ -19,7 +19,7 @@ import re
 from notam import Notam
 
 # Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
-MAX_CIRCLE_RADIUS_NM = 500
+MAX_CIRCLE_RADIUS_NM = 200
 
 
 def dms_min_to_decimal(coord: str) -> Optional[float]:
@@ -243,26 +243,7 @@ def build_geometry(
             coords.append(coords[0])
         return {"type": "Polygon", "coordinates": [coords]}
 
-    # see if notam already has an Area
-
-    area = getattr(notam, "area", None)
-    if False and isinstance(area, Mapping):
-        lat_raw = area.get("lat")
-        lon_raw = area.get("long")
-        if isinstance(lat_raw, str) and isinstance(lon_raw, str):
-            lat_dec = dms_min_to_decimal(lat_raw)
-            lon_dec = dms_min_to_decimal(lon_raw)
-            if lat_dec is not None and lon_dec is not None:
-                radius = area.get("radius")
-                if (
-                    isinstance(radius, (int, float))
-                    and radius
-                    and radius < max_circle_radius_nm
-                ):
-                    return circle_polygon(lat_dec, lon_dec, float(radius))
-                return {"type": "Point", "coordinates": [lon_dec, lat_dec]}
-
-    # Fall back to interpreting text
+    # start interpreting text
     if isinstance(notam, Notam):
         decoded: str = notam.decoded()
     else:
@@ -413,6 +394,24 @@ def build_geometry(
     if polygons and line_strings:
         # Mixed geometry types – fall back to a GeometryCollection
         return {"type": "GeometryCollection", "geometries": polygons + line_strings}
+
+    # see if notam already has an Area
+    area = getattr(notam, "area", None)
+    if isinstance(area, Mapping):
+        lat_raw = area.get("lat")
+        lon_raw = area.get("long")
+        if isinstance(lat_raw, str) and isinstance(lon_raw, str):
+            lat_dec = dms_min_to_decimal(lat_raw)
+            lon_dec = dms_min_to_decimal(lon_raw)
+            if lat_dec is not None and lon_dec is not None:
+                radius = area.get("radius")
+                if (
+                    isinstance(radius, (int, float))
+                    and radius
+                    and radius < max_circle_radius_nm
+                ):
+                    return circle_polygon(lat_dec, lon_dec, float(radius))
+                return {"type": "Point", "coordinates": [lon_dec, lat_dec]}
 
     # Fallback: airport location lookup (object path or we failed above)
     print(f"====Fallback: airport location lookup (object path or we failed above===")
