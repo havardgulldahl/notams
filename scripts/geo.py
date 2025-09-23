@@ -16,6 +16,7 @@ from dataclasses import dataclass
 from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence
 import math
 import re
+from notam import Notam
 
 # Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
 MAX_CIRCLE_RADIUS_NM = 500
@@ -183,14 +184,11 @@ def sector_wedge_polygon(
 
 
 def build_geometry(
-    decoded: Any,
+    notam: Notam | str,
     airport_locations: Mapping[str, Mapping[str, float | str]],
     max_circle_radius_nm: float = MAX_CIRCLE_RADIUS_NM,
 ) -> Optional[Dict[str, Any]]:
-    """Infer a (simplified) GeoJSON geometry for a decoded NOTAM or decoded text.
-
-    Backwards compatible behaviour for unit tests using ``StubNotam`` objects, while
-    also supporting the real library where ``decoded()`` returns a string body.
+    """Infer a (simplified) GeoJSON geometry for a PyNotam Notam class, or raw text.
 
     Added lightweight textual geometry parsing for patterns used in tests:
       * Polygons expressed as a chain of coordinate pairs ``LATLON-LATLON-...``
@@ -198,8 +196,6 @@ def build_geometry(
       * Multiple enumerated geometries (return ``MultiPolygon``)
       * Sectors / Ellipse / Line corridor – approximated as circles or simple polygons
 
-    Accuracy is not the goal here; only geometry *type* and basic structure so tests
-    can assert on ``Polygon`` vs ``MultiPolygon``.
     """
 
     # ------------------ Helper helpers ------------------
@@ -247,9 +243,10 @@ def build_geometry(
             coords.append(coords[0])
         return {"type": "Polygon", "coordinates": [coords]}
 
-    # If decoded object exposes .area (StubNotam path)
-    area = getattr(decoded, "area", None)
-    if isinstance(area, Mapping):
+    # see if notam already has an Area
+
+    area = getattr(notam, "area", None)
+    if False and isinstance(area, Mapping):
         lat_raw = area.get("lat")
         lon_raw = area.get("long")
         if isinstance(lat_raw, str) and isinstance(lon_raw, str):
@@ -265,157 +262,161 @@ def build_geometry(
                     return circle_polygon(lat_dec, lon_dec, float(radius))
                 return {"type": "Point", "coordinates": [lon_dec, lat_dec]}
 
-    # Text parsing path if decoded is a string
-    if isinstance(decoded, str):
-        text = decoded.upper().replace("\n", " ")
-        polygons: List[Dict[str, Any]] = []
+    # Fall back to interpreting text
+    if isinstance(notam, Notam):
+        decoded: str = notam.decoded()
+    else:
+        decoded = notam
 
-        # ---- Circles (extended units KM / NM / M) ----
-        for m in re.finditer(
-            r"CIRCLE RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])",
-            text,
-        ):
-            value = float(m.group(1))
-            unit = m.group(2)
-            center = m.group(3)
-            ll = parse_latlon(center)
+    text = decoded.upper().replace("\n", " ")
+    polygons: List[Dict[str, Any]] = []
+
+    # ---- Circles (extended units KM / NM / M) ----
+    for m in re.finditer(
+        r"CIRCLE RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])",
+        text,
+    ):
+        value = float(m.group(1))
+        unit = m.group(2)
+        center = m.group(3)
+        ll = parse_latlon(center)
+        if ll:
+            if unit == "KM":
+                radius_nm = value * 0.539957
+            elif unit == "M":
+                radius_nm = value / 1852.0
+            else:  # NM
+                radius_nm = value
+            polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
+
+    # ---- Coordinate chains (areas) ----
+    for chain_match in re.finditer(
+        r"((?:\d{4,6}[NS]\d{5,7}[EW]-){2,}\d{4,6}[NS]\d{5,7}[EW])", text
+    ):
+        chain_str = chain_match.group(1)
+        chain = [c for c in chain_str.split("-") if c]
+        poly = polygon_from_chain(chain)
+        if poly:
+            polygons.append(poly)
+
+    # ---- Sector with azimuth range (wedge). Fallback to circle if azimuth missing ----
+    # Pattern variant: WI SECTOR CENTRE <coord> AZM 321-144 DEG RADIUS 8KM.
+    sector_wedge_seen = False
+    for m in re.finditer(
+        r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+AZ(?:M|IMUTH)\s+(\d{1,3})-(\d{1,3})\s+DEG(?:REES)?\s+RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
+        text,
+    ):
+        centre = m.group(1)
+        a_start = float(m.group(2))
+        a_end = float(m.group(3))
+        radius_value = float(m.group(4))
+        radius_unit = m.group(5)
+        ll = parse_latlon(centre)
+        if ll:
+            if radius_unit == "KM":
+                radius_nm = radius_value * 0.539957
+            elif radius_unit == "M":
+                radius_nm = radius_value / 1852.0
+            else:
+                radius_nm = radius_value
+            polygons.append(
+                sector_wedge_polygon(ll[0], ll[1], radius_nm, a_start, a_end)
+            )
+            sector_wedge_seen = True
+    # Fallback simpler sector (no azimuths) -> circle approximation
+    for m in re.finditer(
+        r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW]).*?RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
+        text,
+    ):
+        # Skip ones we already parsed above (with AZM) by simple substring test
+        if "AZM" in m.group(0) or "AZIMUTH" in m.group(0) or sector_wedge_seen:
+            continue
+        centre = m.group(1)
+        radius_value = float(m.group(2))
+        radius_unit = m.group(3)
+        ll = parse_latlon(centre)
+        if ll:
+            if radius_unit == "KM":
+                radius_nm = radius_value * 0.539957
+            elif radius_unit == "M":
+                radius_nm = radius_value / 1852.0
+            else:
+                radius_nm = radius_value
+            polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
+
+    # ---- Ellipse (create oriented ellipse polygon if azimuth present) ----
+    for m in re.finditer(
+        r"ELLIPSE CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+WITH AXES DIMENSIONS\s+([0-9]+(?:\.[0-9]+)?)X([0-9]+(?:\.[0-9]+)?)(KM|NM|M)(?:\s+AZM OF MAJOR AXIS\s+(\d{1,3})DEG)?",
+        text,
+    ):
+        centre = m.group(1)
+        major = float(m.group(2))
+        minor = float(m.group(3))
+        unit = m.group(4)
+        azm = m.group(5)
+        azm_val = float(azm) if azm is not None else None
+        ll = parse_latlon(centre)
+        if ll:
+            # Units: treat NM as nautical miles (convert to km) / M as meters
+            if unit == "NM":
+                major_km = major * 1.852
+                minor_km = minor * 1.852
+            elif unit == "M":
+                major_km = major / 1000.0
+                minor_km = minor / 1000.0
+            else:
+                major_km = major
+                minor_km = minor
+            polygons.append(ellipse_polygon(ll[0], ll[1], major_km, minor_km, azm_val))
+
+    # ---- Line corridor (within X KM either side of line) -> extract LineString ----
+    line_strings: List[Dict[str, Any]] = []
+    for m in re.finditer(
+        r"W(?:I|ITHIN)\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE(?:\s+JOINING POINTS:?)?\s+((?:\d{4,6}[NS]\d{5,7}[EW]-)+\d{4,6}[NS]\d{5,7}[EW])",
+        text,
+    ):
+        width_km = float(m.group(1))
+        chain_str = m.group(2)
+        chain = [c for c in chain_str.split("-") if c]
+        coords: List[List[float]] = []
+        for c in chain:
+            ll = parse_latlon(c)
             if ll:
-                if unit == "KM":
-                    radius_nm = value * 0.539957
-                elif unit == "M":
-                    radius_nm = value / 1852.0
-                else:  # NM
-                    radius_nm = value
-                polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
+                coords.append([ll[1], ll[0]])  # lon, lat
+        if len(coords) >= 2:
+            line_strings.append(
+                {
+                    "type": "LineString",
+                    "coordinates": coords,
+                    # Preserve corridor width for potential downstream buffering
+                    "properties": {"corridor_width_km": width_km},
+                }
+            )
 
-        # ---- Coordinate chains (areas) ----
-        for chain_match in re.finditer(
-            r"((?:\d{4,6}[NS]\d{5,7}[EW]-){2,}\d{4,6}[NS]\d{5,7}[EW])", text
-        ):
-            chain_str = chain_match.group(1)
-            chain = [c for c in chain_str.split("-") if c]
-            poly = polygon_from_chain(chain)
-            if poly:
-                polygons.append(poly)
-
-        # ---- Sector with azimuth range (wedge). Fallback to circle if azimuth missing ----
-        # Pattern variant: WI SECTOR CENTRE <coord> AZM 321-144 DEG RADIUS 8KM.
-        sector_wedge_seen = False
-        for m in re.finditer(
-            r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+AZ(?:M|IMUTH)\s+(\d{1,3})-(\d{1,3})\s+DEG(?:REES)?\s+RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
-            text,
-        ):
-            centre = m.group(1)
-            a_start = float(m.group(2))
-            a_end = float(m.group(3))
-            radius_value = float(m.group(4))
-            radius_unit = m.group(5)
-            ll = parse_latlon(centre)
-            if ll:
-                if radius_unit == "KM":
-                    radius_nm = radius_value * 0.539957
-                elif radius_unit == "M":
-                    radius_nm = radius_value / 1852.0
-                else:
-                    radius_nm = radius_value
-                polygons.append(
-                    sector_wedge_polygon(ll[0], ll[1], radius_nm, a_start, a_end)
-                )
-                sector_wedge_seen = True
-        # Fallback simpler sector (no azimuths) -> circle approximation
-        for m in re.finditer(
-            r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW]).*?RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
-            text,
-        ):
-            # Skip ones we already parsed above (with AZM) by simple substring test
-            if "AZM" in m.group(0) or "AZIMUTH" in m.group(0) or sector_wedge_seen:
-                continue
-            centre = m.group(1)
-            radius_value = float(m.group(2))
-            radius_unit = m.group(3)
-            ll = parse_latlon(centre)
-            if ll:
-                if radius_unit == "KM":
-                    radius_nm = radius_value * 0.539957
-                elif radius_unit == "M":
-                    radius_nm = radius_value / 1852.0
-                else:
-                    radius_nm = radius_value
-                polygons.append(circle_polygon(ll[0], ll[1], radius_nm))
-
-        # ---- Ellipse (create oriented ellipse polygon if azimuth present) ----
-        for m in re.finditer(
-            r"ELLIPSE CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+WITH AXES DIMENSIONS\s+([0-9]+(?:\.[0-9]+)?)X([0-9]+(?:\.[0-9]+)?)(KM|NM|M)(?:\s+AZM OF MAJOR AXIS\s+(\d{1,3})DEG)?",
-            text,
-        ):
-            centre = m.group(1)
-            major = float(m.group(2))
-            minor = float(m.group(3))
-            unit = m.group(4)
-            azm = m.group(5)
-            azm_val = float(azm) if azm is not None else None
-            ll = parse_latlon(centre)
-            if ll:
-                # Units: treat NM as nautical miles (convert to km) / M as meters
-                if unit == "NM":
-                    major_km = major * 1.852
-                    minor_km = minor * 1.852
-                elif unit == "M":
-                    major_km = major / 1000.0
-                    minor_km = minor / 1000.0
-                else:
-                    major_km = major
-                    minor_km = minor
-                polygons.append(
-                    ellipse_polygon(ll[0], ll[1], major_km, minor_km, azm_val)
-                )
-
-        # ---- Line corridor (within X KM either side of line) -> extract LineString ----
-        line_strings: List[Dict[str, Any]] = []
-        for m in re.finditer(
-            r"W(?:I|ITHIN)\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE(?:\s+JOINING POINTS:?)?\s+((?:\d{4,6}[NS]\d{5,7}[EW]-)+\d{4,6}[NS]\d{5,7}[EW])",
-            text,
-        ):
-            width_km = float(m.group(1))
-            chain_str = m.group(2)
-            chain = [c for c in chain_str.split("-") if c]
-            coords: List[List[float]] = []
-            for c in chain:
-                ll = parse_latlon(c)
-                if ll:
-                    coords.append([ll[1], ll[0]])  # lon, lat
-            if len(coords) >= 2:
-                line_strings.append(
-                    {
-                        "type": "LineString",
-                        "coordinates": coords,
-                        # Preserve corridor width for potential downstream buffering
-                        "properties": {"corridor_width_km": width_km},
-                    }
-                )
-
-        # ----- Geometry return resolution order -----
-        if polygons and not line_strings:
-            if len(polygons) == 1:
-                return polygons[0]
-            multi = {"type": "MultiPolygon", "coordinates": []}  # type: ignore[typeddict-item]
-            for p in polygons:
-                if p.get("type") == "Polygon":
-                    multi["coordinates"].append(p["coordinates"])  # type: ignore[index]
-            if multi["coordinates"]:  # type: ignore[index]
-                return multi  # type: ignore[return-value]
-        if line_strings and not polygons:
-            if len(line_strings) == 1:
-                return line_strings[0]
-            return {
-                "type": "MultiLineString",
-                "coordinates": [ls["coordinates"] for ls in line_strings],
-            }
-        if polygons and line_strings:
-            # Mixed geometry types – fall back to a GeometryCollection
-            return {"type": "GeometryCollection", "geometries": polygons + line_strings}
+    # ----- Geometry return resolution order -----
+    if polygons and not line_strings:
+        if len(polygons) == 1:
+            return polygons[0]
+        multi = {"type": "MultiPolygon", "coordinates": []}  # type: ignore[typeddict-item]
+        for p in polygons:
+            if p.get("type") == "Polygon":
+                multi["coordinates"].append(p["coordinates"])  # type: ignore[index]
+        if multi["coordinates"]:  # type: ignore[index]
+            return multi  # type: ignore[return-value]
+    if line_strings and not polygons:
+        if len(line_strings) == 1:
+            return line_strings[0]
+        return {
+            "type": "MultiLineString",
+            "coordinates": [ls["coordinates"] for ls in line_strings],
+        }
+    if polygons and line_strings:
+        # Mixed geometry types – fall back to a GeometryCollection
+        return {"type": "GeometryCollection", "geometries": polygons + line_strings}
 
     # Fallback: airport location lookup (object path or we failed above)
+    print(f"====Fallback: airport location lookup (object path or we failed above===")
+
     locs = getattr(decoded, "location", []) or []
     if locs:
         first = next(iter(locs), None)
@@ -425,8 +426,6 @@ def build_geometry(
     return None
 
 
-# Convenience dataclass for tests / examples
-@dataclass
 class StubNotam:
     area: Optional[Mapping[str, Any]]
     location: Optional[Iterable[str]]
@@ -435,8 +434,18 @@ class StubNotam:
 if __name__ == "__main__":
     # cli, get notam data from stdin
     import sys
+    import notam
     import json
 
-    notamdata = sys.stdin.read()
-    geom = build_geometry(notamdata, {})
+    # notamdata = sys.stdin.read()
+    notamdata = """(Q1402/25 NOTAMN
+Q)ULLL/QRTCA/IV/BO/W/000/050/5850N03021E007
+A)ULLL B)2509050601 C)2509101659
+D)05-10 0601-1659
+E)AIRSPACE CLSD WI AREA:
+585540N0302058E-584944N0300958E-584550N0301234E-584435N0302132E-
+584622N0302833E-585006N0303155E-585418N0302932E-585540N0302058E.
+F)SFC  G)1500M AMSL)"""
+    notam = notam.Notam.from_str(notamdata)
+    geom = build_geometry(notam, {})
     print(json.dumps(geom, indent=2))
