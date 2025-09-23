@@ -166,7 +166,6 @@ def parse_notam_files(
                 continue
             success_count += 1
 
-            # Build geometry via extracted helper for testability
             geometry: Optional[dict[str, Any]] = build_geometry(
                 decoded, airport_locations, MAX_CIRCLE_RADIUS_NM
             )
@@ -297,11 +296,11 @@ def main() -> None:
 if __name__ == "__main__":
     import sys, os
 
-    main()
-
-    # files = os.listdir("current")
-    # parse_notam_files(
-    # html_files=[f"current/{f}" for f in files if f.endswith(".html")],
-    # airports_csv="ru-airports.csv",
-    # output="docs/",
-    # )
+    if len(sys.argv) == 1:
+        main()
+    else:
+        parse_notam_files(
+            html_files=sys.argv[1:],  # e.g. files under current/*.html
+            airports_csv="ru-airports.csv",
+            output="docs/",
+        )
