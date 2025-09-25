@@ -1123,8 +1123,8 @@
         }
       },
       "properties": {
-        "title": "G0237/25 for Lensk Airport",
-        "text": "From: 2025-05-28 01:55:00+00:00\nTo: 2025-09-25 23:59:00+00:00\n\nRunway 25 AND Runway 07: Ground Based Augmentation System GNSS Landing System Approach Procedure NOT PROVIDED."
+        "title": "G0554/25 for Lensk Airport",
+        "text": "From: 2025-09-24 01:31:00+00:00\nTo: 2025-12-24 23:59:00+00:00\n\nGround Based Augmentation System Runway 25 AND Runway 07: GNSS Landing System Approach PROCEDURES NOT Available."
       }
     },
     {
@@ -10597,8 +10597,8 @@
         }
       },
       "properties": {
-        "title": "G0308/25 for Abakan International Airport",
-        "text": "From: 2025-06-27 06:45:00+00:00\nTo: 2025-09-27 23:59:00+00:00\n\nRunway 02/20: Ground Based Augmentation System Channel 20412/20823 GNSS Landing System Procedure NOT Available."
+        "title": "G0555/25 for Abakan International Airport",
+        "text": "From: 2025-09-24 05:30:00+00:00\nTo: 2025-12-28 23:59:00+00:00\n\nRunway 02/20: Ground Based Augmentation System Channel 20412/20823 GNSS Landing System Procedure NOT PROVIDE."
       }
     },
     {
