@@ -11153,8 +11153,8 @@
         }
       },
       "properties": {
-        "title": "G0559/25 for Kemerovo Airport",
-        "text": "From: 2025-09-29 06:00:00+00:00\nTo: 2025-09-29 09:00:00+00:00\n\nGround Based Augmentation System (Ground Based Augmentation System/H): G05A CH20625, G23A CH21036, UNEE 113.350 Channel 22269\nRNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), GNSS Landing System 05/23 PROCEDURES NOT PROVIDED."
+        "title": "G0561/25 for Kemerovo Airport",
+        "text": "From: 2025-09-30 06:00:00+00:00\nTo: 2025-09-30 09:00:00+00:00\n\nRNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), GNSS Landing System 05/23 Procedure NOT PROVIDED DUE\nTO Ground Based Augmentation System (Ground Based Augmentation System/H) G05A CH20625, G23A CH21036, UNEE 113.350 Channel 22269\nFAILURE."
       }
     },
     {
