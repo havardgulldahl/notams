@@ -19820,20 +19820,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          60.8,
-          56.75
-        ]
-      },
-      "properties": {
-        "title": "G0378/25 for None",
-        "text": "From: 2025-07-24 04:37:00+00:00\nTo: 2025-10-25 23:59:00+00:00\n\nYEKATERINBURG FIR Global Navigation Satellite System OPERATION UNRELIABLE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [

@@ -28119,20 +28119,6 @@
         ]
       },
       "properties": {
-        "title": "U0953/25 for None",
-        "text": "From: 2025-07-25 06:19:00+00:00\nTo: 2025-10-25 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE AVIATION AUTHORITIES\nOF CZECH REPUBLIC AS TO ALL ACFT OWNED, CHARTERED, OPERATED OR\nOTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN FEDERATION AND\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\nRUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF CZECH REPUBLIC (Aeronautical Information Publication SUP 16/22),\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY NOTIFY\nTHAT ALL ACFT OWNED, CHARTERED, OPERATED OR OTHERWISE CONTROLLED\nBY CITIZENS OF CZECH REPUBLIC OR BY ANY OPERATOR HOLDING AIR\nOPERATOR CERTIFCIATE (AOC) ISSUED BY THE AUTHORITIES OF CZECH\nREPUBLIC ARE PROHIBITED TO ENTER, EXIT AND OVERFLY AIRSPACE OF\nTHE RUSSIAN FEDERATION WIE UNTIL 23.59 UTC 25 OCT 2025 Estimated, EXCEPT\nFOR ACFT IN EMERGENCY SITUATION AND FLIGHTS OPERATED UNDER SPECIAL\nPERMISSION GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR\nTHE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\nAPPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U0966/25 for None",
         "text": "From: 2025-07-30 07:07:00+00:00\nTo: 2025-10-30 23:59:00+00:00\n\nAS RESPONSE MEASURE TO THE FLIGHT BAN ISSUED BY AUTHORITIES OF\nFEDERAL REPUBLIC OF GERMANY PROHIBITING ANY ACFT OWNED, CHARTERED\nOR OPERATED BY CITIZENS OF THE RUSSIAN FEDERATION OR OTHERWISE\nCONTROLLED BY NATURAL OR LEGAL PERSONS OF THE RUSSIAN FEDERATION\nAS WELL AS OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES TO ENTER, EXIT OR\nOVERFLY GERMAN AIRSPACE EXCEPT FOR HUM FLT UNDER PERMISSION\nOF THE GERMAN MINISTRY OF DIGITAL TECHNOLOGY AND TRANSPORT AND\nCASES OF EMERG LDG OR EMERG OVERFLIGHT (Aeronautical Information Publication SUP IFR 41/24),\nAVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY DECLARE THE\nPROHIBITION TO ALL ACFT OWNED, CHARTERED OR OPERATED BY CITIZENS\nOF THE FEDERAL REPUBLIC OF GERMANY OR OTHERWISE CONTROLLED BY\nNATURAL OR LEGAL PERSONS OR ENTITY FROM THE FEDERAL REPUBLIC OF\nGERMANY AND OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED\nBY AUTHORITIES OF THE FEDERAL REPUBLIC OF GERMANY TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION WIE UNTIL \n2359 UTC 30 OCT 2025 Estimated, EXC FOR ACFT IN EMERGENCY, HUMANITARIAN\nAND SANITARY FLTS AND CASES WHEN A SPECIAL PERMISSION FOR FLIGHTS\nIS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OF THE RUSSIAN\nFEDERATION OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\nFEDERATION AS APPROPRIATE."
       }
@@ -28739,6 +28725,20 @@
       "properties": {
         "title": "U1381/25 for None",
         "text": "From: 2025-10-20 10:14:00+00:00\nTo: 2026-01-19 23:59:00+00:00\n\nAS A RESPONSE MESURE TO THE DECISION OF ALBANIAN AVIATION\nAUTHORITIES TO PROHIBIT ALL ACFT OWNED, CHARTERED, OPERATED OR \nOTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN FEDERATION AND ALL\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\nRUSSIAN FEDERATION AUTHORITIES FROM ENTERING, EXITING AND \nOVERFLYING THE AIRSPACE OF ALBANIA (NOTAM A0367/25), \nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM \nOF THE PROHIBITION ON ALL ACFT OWNED, CHARTERED, OPERATED OR\nOTHERWISE CONTROLLED BY CITIZENS OF ALBANIA AND ALL OPERATORS\nHOLDING AOC ISSUED BY ALBANIAN AUTHORITIES, ENTERING, EXITING AND\nOVERFLYING THE AIRSPACE OF THE RUSSIAN FEDERATION \nWIE UNTIL 2359 UTC 190126 Estimated, EXCEPT FOR AIRCRAFT IN EMERGENCY, \nHUM, SAR FLT AND FLT OPERATED WITH SPECIAL PERMISSION GRANTED BY \nTHE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS\nOF THE RUSSIAN FEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1409/25 for None",
+        "text": "From: 2025-10-25 05:51:00+00:00\nTo: 2026-01-25 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE AVIATION AUTHORITIES\nOF CZECH REPUBLIC AS TO ALL ACFT OWNED, CHARTERED, OPERATED OR\nOTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN FEDERATION AND\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\nRUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF CZECH REPUBLIC (Aeronautical Information Publication SUP 16/22),\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY NOTIFY\nTHAT ALL ACFT OWNED, CHARTERED, OPERATED OR OTHERWISE CONTROLLED\nBY CITIZENS OF CZECH REPUBLIC OR BY ANY OPERATOR HOLDING AIR\nOPERATOR CERTIFCIATE (AOC) ISSUED BY THE AUTHORITIES OF CZECH\nREPUBLIC ARE PROHIBITED TO ENTER, EXIT AND OVERFLY AIRSPACE OF\nTHE RUSSIAN FEDERATION WIE UNTIL 23.59 UTC 25 JAN 2026 Estimated, EXCEPT\nFOR ACFT IN EMERGENCY SITUATION AND FLIGHTS OPERATED UNDER SPECIAL\nPERMISSION GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR\nTHE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\nAPPROPRIATE."
       }
     },
     {
@@ -40043,284 +40043,6 @@
       "properties": {
         "title": "U1137/25 for Kurumoch International Airport",
         "text": "From: 2025-09-05 11:26:00+00:00\nTo: 2025-12-05 23:59:00+00:00\n\nRUSSKIY KAMESHKIR DME IRM 109.0MHZ Unserviceable."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              52.083333333333336,
-              58.048315421242236
-            ],
-            [
-              52.54575389970911,
-              58.035462392206774
-            ],
-            [
-              53.002763122212016,
-              57.99705462265888
-            ],
-            [
-              53.449048293509264,
-              57.93354322157988
-            ],
-            [
-              53.87949017984458,
-              57.84567067584589
-            ],
-            [
-              54.28925054028382,
-              57.7344572100473
-            ],
-            [
-              54.67384933913495,
-              57.601182461233236
-            ],
-            [
-              55.02922937907702,
-              57.44736316699152
-            ],
-            [
-              55.35180690817265,
-              57.27472767122431
-            ],
-            [
-              55.638507604991986,
-              57.08518810347564
-            ],
-            [
-              55.88678814524548,
-              56.8808110867236
-            ],
-            [
-              56.09464423892581,
-              56.66378778183151
-            ],
-            [
-              56.26060655840191,
-              56.436403994235924
-            ],
-            [
-              56.383726337058114,
-              56.20101096140176
-            ],
-            [
-              56.46355260712814,
-              55.95999731961925
-            ],
-            [
-              56.500103082348346,
-              55.71576262623126
-            ],
-            [
-              56.493830604154496,
-              55.47069269677918
-            ],
-            [
-              56.4455868922382,
-              55.22713691193675
-            ],
-            [
-              56.3565851042097,
-              54.98738756021539
-            ],
-            [
-              56.22836244434971,
-              54.753661210939384
-            ],
-            [
-              56.062743792066215,
-              54.528082057889634
-            ],
-            [
-              55.86180706464341,
-              54.312667136066935
-            ],
-            [
-              55.62785079811059,
-              54.10931329022336
-            ],
-            [
-              55.3633642312221,
-              53.919785761760764
-            ],
-            [
-              55.07100001303918,
-              53.745708257818364
-            ],
-            [
-              54.75354952371884,
-              53.58855437051774
-            ],
-            [
-              54.41392069802348,
-              53.449640223317765
-            ],
-            [
-              54.05511816772148,
-              53.33011823350476
-            ],
-            [
-              53.680225487863716,
-              53.230971893617905
-            ],
-            [
-              53.29238917826117,
-              53.153011489046875
-            ],
-            [
-              52.89480429100851,
-              53.09687068341974
-            ],
-            [
-              52.4907012037509,
-              53.063003917283595
-            ],
-            [
-              52.083333333333336,
-              53.05168457875777
-            ],
-            [
-              51.67596546291577,
-              53.063003917283595
-            ],
-            [
-              51.27186237565816,
-              53.09687068341974
-            ],
-            [
-              50.874277488405504,
-              53.153011489046875
-            ],
-            [
-              50.486441178802956,
-              53.230971893617905
-            ],
-            [
-              50.11154849894519,
-              53.33011823350476
-            ],
-            [
-              49.75274596864319,
-              53.449640223317765
-            ],
-            [
-              49.41311714294784,
-              53.58855437051774
-            ],
-            [
-              49.09566665362749,
-              53.745708257818364
-            ],
-            [
-              48.80330243544457,
-              53.919785761760764
-            ],
-            [
-              48.53881586855608,
-              54.10931329022336
-            ],
-            [
-              48.304859602023264,
-              54.312667136066935
-            ],
-            [
-              48.10392287460046,
-              54.528082057889634
-            ],
-            [
-              47.93830422231696,
-              54.753661210939384
-            ],
-            [
-              47.81008156245697,
-              54.98738756021539
-            ],
-            [
-              47.721079774428475,
-              55.22713691193675
-            ],
-            [
-              47.672836062512175,
-              55.47069269677918
-            ],
-            [
-              47.666563584318325,
-              55.71576262623126
-            ],
-            [
-              47.70311405953853,
-              55.95999731961925
-            ],
-            [
-              47.78294032960856,
-              56.20101096140176
-            ],
-            [
-              47.90606010826476,
-              56.436403994235924
-            ],
-            [
-              48.07202242774086,
-              56.66378778183151
-            ],
-            [
-              48.27987852142118,
-              56.8808110867236
-            ],
-            [
-              48.528159061674685,
-              57.08518810347564
-            ],
-            [
-              48.81485975849402,
-              57.27472767122431
-            ],
-            [
-              49.13743728758965,
-              57.44736316699152
-            ],
-            [
-              49.492817327531725,
-              57.601182461233236
-            ],
-            [
-              49.877416126382855,
-              57.7344572100473
-            ],
-            [
-              50.28717648682209,
-              57.84567067584589
-            ],
-            [
-              50.71761837315741,
-              57.93354322157988
-            ],
-            [
-              51.163903544454655,
-              57.99705462265888
-            ],
-            [
-              51.62091276695756,
-              58.035462392206774
-            ],
-            [
-              52.083333333333336,
-              58.048315421242236
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 150.0
-        }
-      },
-      "properties": {
-        "title": "U1197/25 for Kurumoch International Airport",
-        "text": "From: 2025-09-16 07:00:00+00:00\nTo: 2025-12-16 07:00:00+00:00\n\nNIZHNEKAMSK/BEGISHEVO VORDME BGS 111.6 MHZ: VOR Unserviceable."
       }
     },
     {
