@@ -6127,8 +6127,8 @@
         }
       },
       "properties": {
-        "title": "G0607/25 for Bratsk Airport",
-        "text": "From: 2025-10-28 01:00:00+00:00\nTo: 2025-10-28 08:00:00+00:00\n\nGround Based Augmentation System (H)12, Ground Based Augmentation System(H)30, Ground Based Augmentation System(H) Unserviceable DUE TO MAINT."
+        "title": "G0608/25 for Bratsk Airport",
+        "text": "From: 2025-10-28 07:50:00+00:00\nTo: 2025-10-29 08:00:00+00:00\n\nGround Based Augmentation System (H)12, Ground Based Augmentation System(H)30, Ground Based Augmentation System(H) Unserviceable DUE TO MAINT."
       }
     },
     {
@@ -10597,8 +10597,8 @@
         }
       },
       "properties": {
-        "title": "G0400/25 for Khrabrovo Airport",
-        "text": "From: 2025-07-31 12:40:00+00:00\nTo: 2025-10-24 23:59:00+00:00\n\nGlobal Navigation Satellite System Interruptions Possible Within Aerodrome AREA."
+        "title": "G0609/25 for Khrabrovo Airport",
+        "text": "From: 2025-10-28 08:40:00+00:00\nTo: 2026-02-28 23:59:00+00:00\n\nGlobal Navigation Satellite System Interruptions Possible Within Aerodrome AREA."
       }
     },
     {
