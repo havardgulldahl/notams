@@ -1968,284 +1968,6 @@
         "coordinates": [
           [
             [
-              142.7,
-              49.34831542124223
-            ],
-            [
-              143.07567852524684,
-              49.335691703566006
-            ],
-            [
-              143.44718229704645,
-              49.297961423641446
-            ],
-            [
-              143.81040252921744,
-              49.23554492121113
-            ],
-            [
-              144.16136029162772,
-              49.14913524057974
-            ],
-            [
-              144.49626637069196,
-              49.03968711076063
-            ],
-            [
-              144.81157539629683,
-              48.90840202572291
-            ],
-            [
-              145.10403286637458,
-              48.75670989263031
-            ],
-            [
-              145.37071409736927,
-              48.58624779704198
-            ],
-            [
-              145.60905455143964,
-              48.398836483213586
-            ],
-            [
-              145.81687140535774,
-              48.19645516480409
-            ],
-            [
-              145.99237660221345,
-              47.98121526894835
-            ],
-            [
-              146.13418194295883,
-              47.75533367930406
-            ],
-            [
-              146.24129701679112,
-              47.52110598712052
-            ],
-            [
-              146.31312093218716,
-              47.28088018994939
-            ],
-            [
-              146.34942889639498,
-              47.03703120153807
-            ],
-            [
-              146.35035470849076,
-              46.79193645926617
-            ],
-            [
-              146.31637019166038,
-              46.54795284175512
-            ],
-            [
-              146.24826250792694,
-              46.30739504236676
-            ],
-            [
-              146.14711018704674,
-              46.072515486391566
-            ],
-            [
-              146.01425857353635,
-              45.84548583190308
-            ],
-            [
-              145.85129526264708,
-              45.62838005670668
-            ],
-            [
-              145.66002596610642,
-              45.42315910602779
-            ],
-            [
-              145.44245112774124,
-              45.23165705657494
-            ],
-            [
-              145.2007435015904,
-              45.055568741104494
-            ],
-            [
-              144.93722681281776,
-              44.89643877221598
-            ],
-            [
-              144.6543555451368,
-              44.75565190344601
-            ],
-            [
-              144.3546958369237,
-              44.63442466853129
-            ],
-            [
-              144.04090742034182,
-              44.53379824487595
-            ],
-            [
-              143.7157265018069,
-              44.454632493875124
-            ],
-            [
-              143.38194945597826,
-              44.39760113811709
-            ],
-            [
-              143.04241718718953,
-              44.36318804311164
-            ],
-            [
-              142.7,
-              44.35168457875777
-            ],
-            [
-              142.35758281281042,
-              44.36318804311164
-            ],
-            [
-              142.0180505440217,
-              44.39760113811709
-            ],
-            [
-              141.68427349819308,
-              44.454632493875124
-            ],
-            [
-              141.35909257965812,
-              44.53379824487595
-            ],
-            [
-              141.04530416307625,
-              44.63442466853129
-            ],
-            [
-              140.74564445486314,
-              44.75565190344601
-            ],
-            [
-              140.4627731871822,
-              44.89643877221598
-            ],
-            [
-              140.19925649840954,
-              45.055568741104494
-            ],
-            [
-              139.9575488722587,
-              45.23165705657494
-            ],
-            [
-              139.73997403389356,
-              45.42315910602779
-            ],
-            [
-              139.54870473735286,
-              45.62838005670668
-            ],
-            [
-              139.3857414264636,
-              45.845485831903076
-            ],
-            [
-              139.2528898129532,
-              46.072515486391566
-            ],
-            [
-              139.151737492073,
-              46.30739504236676
-            ],
-            [
-              139.08362980833957,
-              46.54795284175512
-            ],
-            [
-              139.04964529150922,
-              46.79193645926617
-            ],
-            [
-              139.050571103605,
-              47.03703120153807
-            ],
-            [
-              139.0868790678128,
-              47.28088018994939
-            ],
-            [
-              139.15870298320885,
-              47.52110598712052
-            ],
-            [
-              139.26581805704112,
-              47.755333679304066
-            ],
-            [
-              139.4076233977865,
-              47.98121526894835
-            ],
-            [
-              139.5831285946422,
-              48.196455164804085
-            ],
-            [
-              139.7909454485603,
-              48.398836483213586
-            ],
-            [
-              140.0292859026307,
-              48.58624779704198
-            ],
-            [
-              140.2959671336254,
-              48.75670989263031
-            ],
-            [
-              140.58842460370312,
-              48.90840202572291
-            ],
-            [
-              140.903733629308,
-              49.03968711076063
-            ],
-            [
-              141.23863970837226,
-              49.14913524057974
-            ],
-            [
-              141.5895974707825,
-              49.23554492121113
-            ],
-            [
-              141.95281770295352,
-              49.297961423641446
-            ],
-            [
-              142.3243214747531,
-              49.335691703566006
-            ],
-            [
-              142.7,
-              49.34831542124223
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 150.0
-        }
-      },
-      "properties": {
-        "title": "U1394/25 for Khabarovsk Novy Airport",
-        "text": "From: 2025-10-28 23:00:00+00:00\nTo: 2025-10-30 06:00:00+00:00\n\nYUZHNO-SAKHALINSK/KHOMUTO DVORDME YS 114.9 MHZ Unserviceable DUE SKED WIP."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               159.88333333333333,
               61.74820311599172
             ],
@@ -13752,454 +13474,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                39.4,
-                43.8
-              ],
-              [
-                30.583333333333332,
-                43.5
-              ],
-              [
-                30.416666666666668,
-                44.25
-              ],
-              [
-                29.983333333333334,
-                45.15
-              ],
-              [
-                39.4,
-                43.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                29.566666666666666,
-                45.416666666666664
-              ],
-              [
-                28.733333333333334,
-                45.21666666666667
-              ],
-              [
-                28.516666666666666,
-                45.5
-              ],
-              [
-                29.116666666666667,
-                46.38333333333333
-              ],
-              [
-                29.566666666666666,
-                45.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                30.116666666666667,
-                46.416666666666664
-              ],
-              [
-                29.15,
-                48.0
-              ],
-              [
-                27.716666666666665,
-                48.45
-              ],
-              [
-                26.8,
-                48.416666666666664
-              ],
-              [
-                30.116666666666667,
-                46.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                25.0,
-                47.8
-              ],
-              [
-                22.983333333333334,
-                48.05
-              ],
-              [
-                22.15,
-                48.416666666666664
-              ],
-              [
-                22.85,
-                49.03333333333333
-              ],
-              [
-                25.0,
-                47.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                22.733333333333334,
-                49.55
-              ],
-              [
-                24.066666666666666,
-                50.416666666666664
-              ],
-              [
-                23.6,
-                51.53333333333333
-              ],
-              [
-                23.635555555555555,
-                51.94222222222222
-              ],
-              [
-                22.733333333333334,
-                49.55
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                24.134722222222223,
-                51.99166666666667
-              ],
-              [
-                26.352500000000003,
-                52.57055555555556
-              ],
-              [
-                31.671944444444446,
-                52.277499999999996
-              ],
-              [
-                31.581944444444446,
-                52.32833333333333
-              ],
-              [
-                24.134722222222223,
-                51.99166666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.62611111111111,
-                52.4925
-              ],
-              [
-                31.5575,
-                52.51777777777777
-              ],
-              [
-                31.674722222222222,
-                52.56222222222222
-              ],
-              [
-                31.56722222222222,
-                52.59638888888889
-              ],
-              [
-                31.62611111111111,
-                52.4925
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.5,
-                52.69333333333333
-              ],
-              [
-                31.592777777777776,
-                52.73444444444444
-              ],
-              [
-                31.586944444444445,
-                52.79388888888889
-              ],
-              [
-                31.243333333333336,
-                53.03444444444444
-              ],
-              [
-                31.5,
-                52.69333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.389166666666664,
-                53.09805555555556
-              ],
-              [
-                31.401944444444442,
-                53.21194444444445
-              ],
-              [
-                31.57777777777778,
-                53.19361111111111
-              ],
-              [
-                31.628333333333334,
-                53.23111111111111
-              ],
-              [
-                31.389166666666664,
-                53.09805555555556
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.919722222222223,
-                53.10138888888889
-              ],
-              [
-                32.236111111111114,
-                53.10444444444445
-              ],
-              [
-                32.447222222222216,
-                53.21027777777778
-              ],
-              [
-                32.48833333333334,
-                53.30361111111111
-              ],
-              [
-                31.919722222222223,
-                53.10138888888889
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.73361111111111,
-                53.3325
-              ],
-              [
-                32.757222222222225,
-                53.45805555555556
-              ],
-              [
-                32.473333333333336,
-                53.54833333333333
-              ],
-              [
-                32.41111111111111,
-                53.651111111111106
-              ],
-              [
-                32.73361111111111,
-                53.3325
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.5,
-                53.690555555555555
-              ],
-              [
-                32.45888888888889,
-                53.73027777777778
-              ],
-              [
-                32.36555555555556,
-                53.718611111111116
-              ],
-              [
-                32.13,
-                53.814166666666665
-              ],
-              [
-                32.5,
-                53.690555555555555
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.770555555555553,
-                53.796388888888885
-              ],
-              [
-                31.888333333333332,
-                54.05888888888889
-              ],
-              [
-                31.317777777777778,
-                54.244166666666665
-              ],
-              [
-                31.266666666666666,
-                54.4
-              ],
-              [
-                31.770555555555553,
-                53.796388888888885
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                35.25,
-                54.61666666666667
-              ],
-              [
-                35.333333333333336,
-                54.05833333333333
-              ],
-              [
-                37.6,
-                54.233333333333334
-              ],
-              [
-                41.36666666666667,
-                52.733333333333334
-              ],
-              [
-                35.25,
-                54.61666666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                43.95,
-                48.78333333333333
-              ],
-              [
-                43.65,
-                47.733333333333334
-              ],
-              [
-                46.88333333333333,
-                47.833333333333336
-              ],
-              [
-                47.71666666666667,
-                46.21666666666667
-              ],
-              [
-                43.95,
-                48.78333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                49.166666666666664,
-                44.11666666666667
-              ],
-              [
-                41.36666666666667,
-                45.63333333333333
-              ],
-              [
-                39.4,
-                43.8
-              ],
-              [
-                49.166666666666664,
-                44.11666666666667
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "title": "U1392/25 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nTEMPO DANGER AREA ACT Within AREA WITH COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25A04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25B04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25C04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25D04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Point",
         "coordinates": [
           41.43333333333333,
@@ -14643,6 +13917,454 @@
       "properties": {
         "title": "U1425/25 for None",
         "text": "From: 2025-10-30 00:45:00+00:00\nTo: 2025-11-05 00:45:00+00:00\n\nTEMPO DANGER AREA ACT:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                39.4,
+                43.8
+              ],
+              [
+                30.583333333333332,
+                43.5
+              ],
+              [
+                30.416666666666668,
+                44.25
+              ],
+              [
+                29.983333333333334,
+                45.15
+              ],
+              [
+                39.4,
+                43.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                29.566666666666666,
+                45.416666666666664
+              ],
+              [
+                28.733333333333334,
+                45.21666666666667
+              ],
+              [
+                28.516666666666666,
+                45.5
+              ],
+              [
+                29.116666666666667,
+                46.38333333333333
+              ],
+              [
+                29.566666666666666,
+                45.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                30.116666666666667,
+                46.416666666666664
+              ],
+              [
+                29.15,
+                48.0
+              ],
+              [
+                27.716666666666665,
+                48.45
+              ],
+              [
+                26.8,
+                48.416666666666664
+              ],
+              [
+                30.116666666666667,
+                46.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.0,
+                47.8
+              ],
+              [
+                22.983333333333334,
+                48.05
+              ],
+              [
+                22.15,
+                48.416666666666664
+              ],
+              [
+                22.85,
+                49.03333333333333
+              ],
+              [
+                25.0,
+                47.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                22.733333333333334,
+                49.55
+              ],
+              [
+                24.066666666666666,
+                50.416666666666664
+              ],
+              [
+                23.6,
+                51.53333333333333
+              ],
+              [
+                23.635555555555555,
+                51.94222222222222
+              ],
+              [
+                22.733333333333334,
+                49.55
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                24.134722222222223,
+                51.99166666666667
+              ],
+              [
+                26.352500000000003,
+                52.57055555555556
+              ],
+              [
+                31.671944444444446,
+                52.277499999999996
+              ],
+              [
+                31.581944444444446,
+                52.32833333333333
+              ],
+              [
+                24.134722222222223,
+                51.99166666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.62611111111111,
+                52.4925
+              ],
+              [
+                31.5575,
+                52.51777777777777
+              ],
+              [
+                31.674722222222222,
+                52.56222222222222
+              ],
+              [
+                31.56722222222222,
+                52.59638888888889
+              ],
+              [
+                31.62611111111111,
+                52.4925
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.5,
+                52.69333333333333
+              ],
+              [
+                31.592777777777776,
+                52.73444444444444
+              ],
+              [
+                31.586944444444445,
+                52.79388888888889
+              ],
+              [
+                31.243333333333336,
+                53.03444444444444
+              ],
+              [
+                31.5,
+                52.69333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.389166666666664,
+                53.09805555555556
+              ],
+              [
+                31.401944444444442,
+                53.21194444444445
+              ],
+              [
+                31.57777777777778,
+                53.19361111111111
+              ],
+              [
+                31.628333333333334,
+                53.23111111111111
+              ],
+              [
+                31.389166666666664,
+                53.09805555555556
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.919722222222223,
+                53.10138888888889
+              ],
+              [
+                32.236111111111114,
+                53.10444444444445
+              ],
+              [
+                32.447222222222216,
+                53.21027777777778
+              ],
+              [
+                32.48833333333334,
+                53.30361111111111
+              ],
+              [
+                31.919722222222223,
+                53.10138888888889
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.73361111111111,
+                53.3325
+              ],
+              [
+                32.757222222222225,
+                53.45805555555556
+              ],
+              [
+                32.473333333333336,
+                53.54833333333333
+              ],
+              [
+                32.41111111111111,
+                53.651111111111106
+              ],
+              [
+                32.73361111111111,
+                53.3325
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.5,
+                53.690555555555555
+              ],
+              [
+                32.45888888888889,
+                53.73027777777778
+              ],
+              [
+                32.36555555555556,
+                53.718611111111116
+              ],
+              [
+                32.13,
+                53.814166666666665
+              ],
+              [
+                32.5,
+                53.690555555555555
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.770555555555553,
+                53.796388888888885
+              ],
+              [
+                31.888333333333332,
+                54.05888888888889
+              ],
+              [
+                31.317777777777778,
+                54.244166666666665
+              ],
+              [
+                31.266666666666666,
+                54.4
+              ],
+              [
+                31.770555555555553,
+                53.796388888888885
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                35.25,
+                54.61666666666667
+              ],
+              [
+                35.333333333333336,
+                54.05833333333333
+              ],
+              [
+                37.6,
+                54.233333333333334
+              ],
+              [
+                41.36666666666667,
+                52.733333333333334
+              ],
+              [
+                35.25,
+                54.61666666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                43.95,
+                48.78333333333333
+              ],
+              [
+                43.65,
+                47.733333333333334
+              ],
+              [
+                46.88333333333333,
+                47.833333333333336
+              ],
+              [
+                47.71666666666667,
+                46.21666666666667
+              ],
+              [
+                43.95,
+                48.78333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                49.166666666666664,
+                44.11666666666667
+              ],
+              [
+                41.36666666666667,
+                45.63333333333333
+              ],
+              [
+                39.4,
+                43.8
+              ],
+              [
+                49.166666666666664,
+                44.11666666666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "title": "U1438/25 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nTEMPO DANGER AREA FOR ACFT FLT ACT Within COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25A04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25B04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25C04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25D04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -23205,6 +22927,34 @@
         ]
       },
       "properties": {
+        "title": "U1272/25D05 for None",
+        "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL EVEN Within FL080-510)-G914 TAFIK.\n2.5. TO URMO Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL EVEN Within FL080-510)-G914 GORAK.\n2.6. TO URMS Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.0,
+          46.0
+        ]
+      },
+      "properties": {
+        "title": "U1272/25E05 for None",
+        "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nEVEN Within FL080-510)-G914 AMLUG.\n2.7. TO URMG Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530).\n2.8. TO URML Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT RIRAN (FROM ITAKA TO RIRAN\nCRUISING LVL EVEN Within FL070-530)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.0,
+          46.0
+        ]
+      },
+      "properties": {
         "title": "U1272/25A05 for None",
         "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nATS RTE ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) FOR FLT TO URWA Aerodrome\nFROM URSS, URMT, URMM, URMN, URMO, URMS, URMG, URML Aerodrome AND VICE\nVERSA:\n1. ATS RTE FOR ARR TO URWA Aerodrome:\n1.1. FROM URSS Aerodrome:\n- ERSAR-DCT BEMES-DCT ITAKA (FROM ERSAR TO ITAKA CRUISING LVL ODD\nWithin FL290-530)-DCT TEREK-G242 ZELENGA NDB (ZG) (FL Within FL050-530).\n1.2. FROM URMT Aerodrome:\n- GIRTI-B494 RISKA-R227 BEMES-DCT ITAKA (FROM BEMES TO ITAKA\nCRUISING LVL ODD Within FL290-530)-DCT TEREK-G242 ZELENGA NDB (ZG) \n(FL Within FL050-530).\n1.3. FROM URMM Aerodrome:\n- URILU-R227 BEMES-DCT ITAKA (FROM BEMES TO ITAKA CRUISING LVL ODD\nWithin FL290-530)-DCT TEREK-G242 ZELENGA NDB (ZG) (FL Within FL050-530).\n1.4. FROM URMN Aerodrome:\n- TAFIK-G914 GORAK-R103 LELOT-DCT BEMES (FROM LELOT TO BEMES TFC\nUNIDIRECTIONAL, CRUISING LVL ODD Within FL070-530)-DCT ITAKA (FROM\nBEMES TO ITAKA TFC UNIDIRECTIONAL, CRUISING LVL ODD"
       }
@@ -23235,34 +22985,6 @@
       "properties": {
         "title": "U1272/25C05 for None",
         "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nCRUISING LVL ODD Within FL110-530)-DCT TEREK-G242 ZELENGA NDB (ZG) \n(Within FL050-530).\n2. ATS RTE FOR DEP FROM URWA:\n2.1. TO URSS Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-DCT\nMEMZA-DCT VENFO-DCT BINOL (FROM ITAKA TO BINOL CRUISING LVL EVEN\nWithin FL180-530).\n2.2. TO URMT Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-DCT\nMEMZA (FROM ITAKA TO MEMZA CRUISING LVL EVEN Within FL180-FL530)-A962\nRUGIK.\n2.3. TO URMM Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-DCT\nMEMZA (FROM ITAKA TO MEMZA CRUISING LVL EVEN Within FL180-530)-A962\nOKARU.\n2.4. TO URMN Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          43.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "title": "U1272/25D05 for None",
-        "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL EVEN Within FL080-510)-G914 TAFIK.\n2.5. TO URMO Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL EVEN Within FL080-510)-G914 GORAK.\n2.6. TO URMS Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530)-DCT GASNI (FROM REMKA TO\nGASNI CRUISING LVL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          43.0,
-          46.0
-        ]
-      },
-      "properties": {
-        "title": "U1272/25E05 for None",
-        "text": "From: 2025-09-29 07:20:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nEVEN Within FL080-510)-G914 AMLUG.\n2.7. TO URMG Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT OBBUD-DCT AMKOL (FROM ITAKA TO\nAMKOL CRUISING LVL EVEN Within FL180-530)-DCT REMKA (FROM AMKOL TO\nREMKA CRUISING LVL EVEN Within FL080-530).\n2.8. TO URML Aerodrome:\n- ZELENGA NDB (ZG)-G242 TEREK-DCT ITAKA (FROM TEREK TO ITAKA\nCRUISING LVL EVEN Within FL070-530)-DCT RIRAN (FROM ITAKA TO RIRAN\nCRUISING LVL EVEN Within FL070-530)."
       }
     },
     {
@@ -25129,454 +24851,6 @@
       "properties": {
         "title": "U1382/25 for None",
         "text": "From: 2025-10-20 11:30:00+00:00\nTo: 2026-03-21 12:00:00+00:00\n\nSTAVROPOL/SHPAKOVSKOYE VORDME STW 114.90 MHZ:\n- VOR Available UPTO DIST 20KM,\n- DME Available UPTO DIST 134KM."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                39.4,
-                43.8
-              ],
-              [
-                30.583333333333332,
-                43.5
-              ],
-              [
-                30.416666666666668,
-                44.25
-              ],
-              [
-                29.983333333333334,
-                45.15
-              ],
-              [
-                39.4,
-                43.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                29.566666666666666,
-                45.416666666666664
-              ],
-              [
-                28.733333333333334,
-                45.21666666666667
-              ],
-              [
-                28.516666666666666,
-                45.5
-              ],
-              [
-                29.116666666666667,
-                46.38333333333333
-              ],
-              [
-                29.566666666666666,
-                45.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                30.116666666666667,
-                46.416666666666664
-              ],
-              [
-                29.15,
-                48.0
-              ],
-              [
-                27.716666666666665,
-                48.45
-              ],
-              [
-                26.8,
-                48.416666666666664
-              ],
-              [
-                30.116666666666667,
-                46.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                25.0,
-                47.8
-              ],
-              [
-                22.983333333333334,
-                48.05
-              ],
-              [
-                22.15,
-                48.416666666666664
-              ],
-              [
-                22.85,
-                49.03333333333333
-              ],
-              [
-                25.0,
-                47.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                22.733333333333334,
-                49.55
-              ],
-              [
-                24.066666666666666,
-                50.416666666666664
-              ],
-              [
-                23.6,
-                51.53333333333333
-              ],
-              [
-                23.635555555555555,
-                51.94222222222222
-              ],
-              [
-                22.733333333333334,
-                49.55
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                24.134722222222223,
-                51.99166666666667
-              ],
-              [
-                26.352500000000003,
-                52.57055555555556
-              ],
-              [
-                31.671944444444446,
-                52.277499999999996
-              ],
-              [
-                31.581944444444446,
-                52.32833333333333
-              ],
-              [
-                24.134722222222223,
-                51.99166666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.62611111111111,
-                52.4925
-              ],
-              [
-                31.5575,
-                52.51777777777777
-              ],
-              [
-                31.674722222222222,
-                52.56222222222222
-              ],
-              [
-                31.56722222222222,
-                52.59638888888889
-              ],
-              [
-                31.62611111111111,
-                52.4925
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.5,
-                52.69333333333333
-              ],
-              [
-                31.592777777777776,
-                52.73444444444444
-              ],
-              [
-                31.586944444444445,
-                52.79388888888889
-              ],
-              [
-                31.243333333333336,
-                53.03444444444444
-              ],
-              [
-                31.5,
-                52.69333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.389166666666664,
-                53.09805555555556
-              ],
-              [
-                31.401944444444442,
-                53.21194444444445
-              ],
-              [
-                31.57777777777778,
-                53.19361111111111
-              ],
-              [
-                31.628333333333334,
-                53.23111111111111
-              ],
-              [
-                31.389166666666664,
-                53.09805555555556
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.919722222222223,
-                53.10138888888889
-              ],
-              [
-                32.236111111111114,
-                53.10444444444445
-              ],
-              [
-                32.447222222222216,
-                53.21027777777778
-              ],
-              [
-                32.48833333333334,
-                53.30361111111111
-              ],
-              [
-                31.919722222222223,
-                53.10138888888889
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.73361111111111,
-                53.3325
-              ],
-              [
-                32.757222222222225,
-                53.45805555555556
-              ],
-              [
-                32.473333333333336,
-                53.54833333333333
-              ],
-              [
-                32.41111111111111,
-                53.651111111111106
-              ],
-              [
-                32.73361111111111,
-                53.3325
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.5,
-                53.690555555555555
-              ],
-              [
-                32.45888888888889,
-                53.73027777777778
-              ],
-              [
-                32.36555555555556,
-                53.718611111111116
-              ],
-              [
-                32.13,
-                53.814166666666665
-              ],
-              [
-                32.5,
-                53.690555555555555
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.770555555555553,
-                53.796388888888885
-              ],
-              [
-                31.888333333333332,
-                54.05888888888889
-              ],
-              [
-                31.317777777777778,
-                54.244166666666665
-              ],
-              [
-                31.266666666666666,
-                54.4
-              ],
-              [
-                31.770555555555553,
-                53.796388888888885
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                35.25,
-                54.61666666666667
-              ],
-              [
-                35.333333333333336,
-                54.05833333333333
-              ],
-              [
-                37.6,
-                54.233333333333334
-              ],
-              [
-                41.36666666666667,
-                52.733333333333334
-              ],
-              [
-                35.25,
-                54.61666666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                43.95,
-                48.78333333333333
-              ],
-              [
-                43.65,
-                47.733333333333334
-              ],
-              [
-                46.88333333333333,
-                47.833333333333336
-              ],
-              [
-                47.71666666666667,
-                46.21666666666667
-              ],
-              [
-                43.95,
-                48.78333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                49.166666666666664,
-                44.11666666666667
-              ],
-              [
-                41.36666666666667,
-                45.63333333333333
-              ],
-              [
-                39.4,
-                43.8
-              ],
-              [
-                49.166666666666664,
-                44.11666666666667
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "title": "U1392/25 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nTEMPO DANGER AREA ACT Within AREA WITH COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25A04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25B04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25C04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25D04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -27574,6 +26848,454 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                39.4,
+                43.8
+              ],
+              [
+                30.583333333333332,
+                43.5
+              ],
+              [
+                30.416666666666668,
+                44.25
+              ],
+              [
+                29.983333333333334,
+                45.15
+              ],
+              [
+                39.4,
+                43.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                29.566666666666666,
+                45.416666666666664
+              ],
+              [
+                28.733333333333334,
+                45.21666666666667
+              ],
+              [
+                28.516666666666666,
+                45.5
+              ],
+              [
+                29.116666666666667,
+                46.38333333333333
+              ],
+              [
+                29.566666666666666,
+                45.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                30.116666666666667,
+                46.416666666666664
+              ],
+              [
+                29.15,
+                48.0
+              ],
+              [
+                27.716666666666665,
+                48.45
+              ],
+              [
+                26.8,
+                48.416666666666664
+              ],
+              [
+                30.116666666666667,
+                46.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.0,
+                47.8
+              ],
+              [
+                22.983333333333334,
+                48.05
+              ],
+              [
+                22.15,
+                48.416666666666664
+              ],
+              [
+                22.85,
+                49.03333333333333
+              ],
+              [
+                25.0,
+                47.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                22.733333333333334,
+                49.55
+              ],
+              [
+                24.066666666666666,
+                50.416666666666664
+              ],
+              [
+                23.6,
+                51.53333333333333
+              ],
+              [
+                23.635555555555555,
+                51.94222222222222
+              ],
+              [
+                22.733333333333334,
+                49.55
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                24.134722222222223,
+                51.99166666666667
+              ],
+              [
+                26.352500000000003,
+                52.57055555555556
+              ],
+              [
+                31.671944444444446,
+                52.277499999999996
+              ],
+              [
+                31.581944444444446,
+                52.32833333333333
+              ],
+              [
+                24.134722222222223,
+                51.99166666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.62611111111111,
+                52.4925
+              ],
+              [
+                31.5575,
+                52.51777777777777
+              ],
+              [
+                31.674722222222222,
+                52.56222222222222
+              ],
+              [
+                31.56722222222222,
+                52.59638888888889
+              ],
+              [
+                31.62611111111111,
+                52.4925
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.5,
+                52.69333333333333
+              ],
+              [
+                31.592777777777776,
+                52.73444444444444
+              ],
+              [
+                31.586944444444445,
+                52.79388888888889
+              ],
+              [
+                31.243333333333336,
+                53.03444444444444
+              ],
+              [
+                31.5,
+                52.69333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.389166666666664,
+                53.09805555555556
+              ],
+              [
+                31.401944444444442,
+                53.21194444444445
+              ],
+              [
+                31.57777777777778,
+                53.19361111111111
+              ],
+              [
+                31.628333333333334,
+                53.23111111111111
+              ],
+              [
+                31.389166666666664,
+                53.09805555555556
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.919722222222223,
+                53.10138888888889
+              ],
+              [
+                32.236111111111114,
+                53.10444444444445
+              ],
+              [
+                32.447222222222216,
+                53.21027777777778
+              ],
+              [
+                32.48833333333334,
+                53.30361111111111
+              ],
+              [
+                31.919722222222223,
+                53.10138888888889
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.73361111111111,
+                53.3325
+              ],
+              [
+                32.757222222222225,
+                53.45805555555556
+              ],
+              [
+                32.473333333333336,
+                53.54833333333333
+              ],
+              [
+                32.41111111111111,
+                53.651111111111106
+              ],
+              [
+                32.73361111111111,
+                53.3325
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.5,
+                53.690555555555555
+              ],
+              [
+                32.45888888888889,
+                53.73027777777778
+              ],
+              [
+                32.36555555555556,
+                53.718611111111116
+              ],
+              [
+                32.13,
+                53.814166666666665
+              ],
+              [
+                32.5,
+                53.690555555555555
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.770555555555553,
+                53.796388888888885
+              ],
+              [
+                31.888333333333332,
+                54.05888888888889
+              ],
+              [
+                31.317777777777778,
+                54.244166666666665
+              ],
+              [
+                31.266666666666666,
+                54.4
+              ],
+              [
+                31.770555555555553,
+                53.796388888888885
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                35.25,
+                54.61666666666667
+              ],
+              [
+                35.333333333333336,
+                54.05833333333333
+              ],
+              [
+                37.6,
+                54.233333333333334
+              ],
+              [
+                41.36666666666667,
+                52.733333333333334
+              ],
+              [
+                35.25,
+                54.61666666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                43.95,
+                48.78333333333333
+              ],
+              [
+                43.65,
+                47.733333333333334
+              ],
+              [
+                46.88333333333333,
+                47.833333333333336
+              ],
+              [
+                47.71666666666667,
+                46.21666666666667
+              ],
+              [
+                43.95,
+                48.78333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                49.166666666666664,
+                44.11666666666667
+              ],
+              [
+                41.36666666666667,
+                45.63333333333333
+              ],
+              [
+                39.4,
+                43.8
+              ],
+              [
+                49.166666666666664,
+                44.11666666666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "title": "U1438/25 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nTEMPO DANGER AREA FOR ACFT FLT ACT Within COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25A04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25B04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25C04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25D04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -28459,20 +28181,6 @@
         ]
       },
       "properties": {
-        "title": "U0966/25 for None",
-        "text": "From: 2025-07-30 07:07:00+00:00\nTo: 2025-10-30 23:59:00+00:00\n\nAS RESPONSE MEASURE TO THE FLIGHT BAN ISSUED BY AUTHORITIES OF\nFEDERAL REPUBLIC OF GERMANY PROHIBITING ANY ACFT OWNED, CHARTERED\nOR OPERATED BY CITIZENS OF THE RUSSIAN FEDERATION OR OTHERWISE\nCONTROLLED BY NATURAL OR LEGAL PERSONS OF THE RUSSIAN FEDERATION\nAS WELL AS OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES TO ENTER, EXIT OR\nOVERFLY GERMAN AIRSPACE EXCEPT FOR HUM FLT UNDER PERMISSION\nOF THE GERMAN MINISTRY OF DIGITAL TECHNOLOGY AND TRANSPORT AND\nCASES OF EMERG LDG OR EMERG OVERFLIGHT (Aeronautical Information Publication SUP IFR 41/24),\nAVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY DECLARE THE\nPROHIBITION TO ALL ACFT OWNED, CHARTERED OR OPERATED BY CITIZENS\nOF THE FEDERAL REPUBLIC OF GERMANY OR OTHERWISE CONTROLLED BY\nNATURAL OR LEGAL PERSONS OR ENTITY FROM THE FEDERAL REPUBLIC OF\nGERMANY AND OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED\nBY AUTHORITIES OF THE FEDERAL REPUBLIC OF GERMANY TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION WIE UNTIL \n2359 UTC 30 OCT 2025 Estimated, EXC FOR ACFT IN EMERGENCY, HUMANITARIAN\nAND SANITARY FLTS AND CASES WHEN A SPECIAL PERMISSION FOR FLIGHTS\nIS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OF THE RUSSIAN\nFEDERATION OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\nFEDERATION AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U0969/25 for None",
         "text": "From: 2025-07-31 09:49:00+00:00\nTo: 2025-11-16 23:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE AVIATION AUTHORITIES\nOF SPAIN STIPULATING THAT ALL AIRCRAFT OWNED, CHARTERED, OPERATED\nOR OTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN FEDERATION AND\nALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\nRUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED TO ENTER, EXIT AND\nOVERFLY AIRSPACE OF SPAIN AND CANARY ISLANDS (NOTAM B5740/25, \nB5741/25).\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM \nTHAT ALL AIRCRAFT OWNED, CHARTERED OR OPERATED OR OTHERWISE \nCONTROLLED BY CITIZENS OF SPAIN AND ALL OPERATORS HOLDING (AOC) \nISSUED BY THE SPANISH AUTHORITIES ARE PROHIBITED TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION WIE TILL 2300 (PAC4)\nUTC 16.11.25, EXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN \nFLIGHTS, MEDICAL FLIGHTS AS WELL AS IN CASES WHEN A SPECIAL\nPERMISSION FOR FLIGHT OPERATIONS IS GRANTED BY THE FEDERAL AIR\nTRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\nFEDERATION AS APPROPRIATE."
       }
@@ -29079,6 +28787,20 @@
       "properties": {
         "title": "U1412/25 for None",
         "text": "From: 2025-10-27 08:02:00+00:00\nTo: 2025-11-10 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF HUNGARY\nSTIPULATING THAT ALL AIRCRAFT REGISTERED IN RUSSIAN FEDERATION AND\nALL AIRCRAFT OWNED, CHARTERED OR OPERATED BY ANY RUSSIAN NATURAL\nOR LEGAL PERSON AND ALL OPERATORS HOLDING OPERATING LICENCE (OL)\nOR ITS EQUIVALENT ISSUED BY RUSSIAN FEDERATION AUTHORITIES,\nINCLUDING AS MARKETING CARRIER ARE PROHIBITED TO ENTER, EXIT OR\nOVERFLY HUNGARIAN AIRSPACE, AS PER NOTAM A7424/25,\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY INFORM THAT ALL\nAIRCRAFT REGISTERED IN HUNGARY AND ALL AIRCRAFT OWNED, CHARTERED\nOR OPERATED BY ANY NATURAL OR LEGAL PERSON OF HUNGARY, AIR\nCARRIERS HOLDING OL OR ITS EQUIVALENT ISSUED BY HUNGARIAN\nAUTHORITIES, INCLUDING COMMERCIAL AIR CARRIERS, ARE PROHIBITED TO\nENTER, EXIT OR OVERFLY AIRSPACE OF RUSSIAN FEDERATION WIE\nUNTIL 2359 UTC 10 NOV 2025 Estimated, EXCEPT FOR AIRCRAFT IN EMERGENCY,\nHUMANITARIAN FLIGHTS, AMBULANCE FLIGHTS AND CASES WHEN SPECIAL\nPERMISSION FOR OPS IS GRANTED BY FEDERAL AIR TRANSPORT AGENCY OR\nMINISTRY OF FOREIGN AFFAIRS OF RUSSIAN FEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1433/25 for None",
+        "text": "From: 2025-10-30 09:25:00+00:00\nTo: 2026-01-30 23:59:00+00:00\n\nAS RESPONSE MEASURE TO THE FLIGHT BAN ISSUED BY AUTHORITIES OF\nFEDERAL REPUBLIC OF GERMANY PROHIBITING ANY ACFT OWNED, CHARTERED\nOR OPERATED BY CITIZENS OF THE RUSSIAN FEDERATION OR OTHERWISE\nCONTROLLED BY NATURAL OR LEGAL PERSONS OF THE RUSSIAN FEDERATION\nAS WELL AS OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES TO ENTER, EXIT OR\nOVERFLY GERMAN AIRSPACE EXCEPT FOR HUM FLT UNDER PERMISSION\nOF THE GERMAN MINISTRY OF DIGITAL TECHNOLOGY AND TRANSPORT AND\nCASES OF EMERG LDG OR EMERG OVERFLIGHT (Aeronautical Information Publication SUP IFR 41/24),\nAVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY DECLARE THE\nPROHIBITION TO ALL ACFT OWNED, CHARTERED OR OPERATED BY CITIZENS\nOF THE FEDERAL REPUBLIC OF GERMANY OR OTHERWISE CONTROLLED BY\nNATURAL OR LEGAL PERSONS OR ENTITY FROM THE FEDERAL REPUBLIC OF\nGERMANY AND OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED\nBY AUTHORITIES OF THE FEDERAL REPUBLIC OF GERMANY TO ENTER, EXIT OR\nOVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION WIE UNTIL \n2359 UTC 30 JAN 2026 Estimated, EXC FOR ACFT IN EMERGENCY, HUMANITARIAN\nAND SANITARY FLTS AND CASES WHEN A SPECIAL PERMISSION FOR FLIGHTS\nIS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OF THE RUSSIAN\nFEDERATION OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\nFEDERATION AS APPROPRIATE."
       }
     },
     {
@@ -30469,284 +30191,6 @@
       "properties": {
         "title": "U0977/25 for None",
         "text": "From: 2025-08-03 00:00:00+00:00\nTo: 2025-11-03 23:59:00+00:00\n\nGLOTAEVO DME GLW 113.5 MHZ CH82X Unserviceable DUE TO TECR."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              37.7,
-              58.798315421242236
-            ],
-            [
-              38.17236963544793,
-              58.78543744107164
-            ],
-            [
-              38.639180813768235,
-              58.746955987472454
-            ],
-            [
-              39.09497788898572,
-              58.68332561100188
-            ],
-            [
-              39.534506799143614,
-              58.595294318079006
-            ],
-            [
-              39.9528060668078,
-              58.48388962379574
-            ],
-            [
-              40.3452868650479,
-              58.35039983002836
-            ],
-            [
-              40.70779975965977,
-              58.196351255986606
-            ],
-            [
-              41.03668662661149,
-              58.02348225692879
-            ],
-            [
-              41.32881715594552,
-              57.833714917944384
-            ],
-            [
-              41.58161020584929,
-              57.629125305838365
-            ],
-            [
-              41.793040997084354,
-              57.41191311054761
-            ],
-            [
-              41.961635695620664,
-              57.18437141883057
-            ],
-            [
-              42.08645530201625,
-              56.94885724943901
-            ],
-            [
-              42.167070953756316,
-              56.70776335280376
-            ],
-            [
-              42.20353277228582,
-              56.463491650322844
-            ],
-            [
-              42.19633428135491,
-              56.21842856735505
-            ],
-            [
-              42.14637422362832,
-              55.974922406213324
-            ],
-            [
-              42.05491734387571,
-              55.73526281454503
-            ],
-            [
-              41.92355542099608,
-              55.501662332015755
-            ],
-            [
-              41.75416954308242,
-              55.27623994397128
-            ],
-            [
-              41.54889434834998,
-              55.06100653329276
-            ],
-            [
-              41.3100847121536,
-              54.85785209876903
-            ],
-            [
-              41.040285152976,
-              54.668534597416894
-            ],
-            [
-              40.74220206018218,
-              54.49467026666081
-            ],
-            [
-              40.4186787122592,
-              54.33772528768036
-            ],
-            [
-              40.07267295282574,
-              54.19900866139314
-            ],
-            [
-              39.70723731834029,
-              54.07966618166968
-            ],
-            [
-              39.32550136111871,
-              53.980675405069064
-            ],
-            [
-              38.930655878986684,
-              53.90284153160034
-            ],
-            [
-              38.525938744001465,
-              53.84679412604442
-            ],
-            [
-              38.11462201311367,
-              53.81298462379032
-            ],
-            [
-              37.7,
-              53.80168457875776
-            ],
-            [
-              37.28537798688633,
-              53.81298462379032
-            ],
-            [
-              36.87406125599854,
-              53.84679412604442
-            ],
-            [
-              36.46934412101332,
-              53.90284153160034
-            ],
-            [
-              36.074498638881295,
-              53.980675405069064
-            ],
-            [
-              35.69276268165972,
-              54.07966618166968
-            ],
-            [
-              35.32732704717426,
-              54.19900866139314
-            ],
-            [
-              34.981321287740805,
-              54.33772528768036
-            ],
-            [
-              34.657797939817826,
-              54.49467026666081
-            ],
-            [
-              34.359714847024016,
-              54.668534597416894
-            ],
-            [
-              34.0899152878464,
-              54.85785209876903
-            ],
-            [
-              33.85110565165002,
-              55.06100653329276
-            ],
-            [
-              33.64583045691759,
-              55.27623994397128
-            ],
-            [
-              33.476444579003925,
-              55.501662332015755
-            ],
-            [
-              33.3450826561243,
-              55.73526281454503
-            ],
-            [
-              33.25362577637168,
-              55.974922406213324
-            ],
-            [
-              33.2036657186451,
-              56.21842856735505
-            ],
-            [
-              33.19646722771419,
-              56.463491650322844
-            ],
-            [
-              33.23292904624368,
-              56.70776335280376
-            ],
-            [
-              33.31354469798376,
-              56.94885724943901
-            ],
-            [
-              33.43836430437934,
-              57.18437141883057
-            ],
-            [
-              33.60695900291566,
-              57.411913110547594
-            ],
-            [
-              33.81838979415071,
-              57.629125305838365
-            ],
-            [
-              34.07118284405448,
-              57.833714917944384
-            ],
-            [
-              34.363313373388515,
-              58.02348225692879
-            ],
-            [
-              34.692200240340235,
-              58.196351255986606
-            ],
-            [
-              35.0547131349521,
-              58.35039983002836
-            ],
-            [
-              35.4471939331922,
-              58.48388962379574
-            ],
-            [
-              35.86549320085639,
-              58.595294318079006
-            ],
-            [
-              36.30502211101429,
-              58.68332561100188
-            ],
-            [
-              36.760819186231764,
-              58.746955987472454
-            ],
-            [
-              37.22763036455208,
-              58.78543744107164
-            ],
-            [
-              37.7,
-              58.798315421242236
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 150.0
-        }
-      },
-      "properties": {
-        "title": "U1070/25 for None",
-        "text": "From: 2025-08-27 07:51:00+00:00\nTo: 2025-10-30 23:59:00+00:00\n\nDME KOSTINO IKO 113.200 MHZ: LIMITED COVERAGE 119 KM."
       }
     },
     {
@@ -36326,454 +35770,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                39.4,
-                43.8
-              ],
-              [
-                30.583333333333332,
-                43.5
-              ],
-              [
-                30.416666666666668,
-                44.25
-              ],
-              [
-                29.983333333333334,
-                45.15
-              ],
-              [
-                39.4,
-                43.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                29.566666666666666,
-                45.416666666666664
-              ],
-              [
-                28.733333333333334,
-                45.21666666666667
-              ],
-              [
-                28.516666666666666,
-                45.5
-              ],
-              [
-                29.116666666666667,
-                46.38333333333333
-              ],
-              [
-                29.566666666666666,
-                45.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                30.116666666666667,
-                46.416666666666664
-              ],
-              [
-                29.15,
-                48.0
-              ],
-              [
-                27.716666666666665,
-                48.45
-              ],
-              [
-                26.8,
-                48.416666666666664
-              ],
-              [
-                30.116666666666667,
-                46.416666666666664
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                25.0,
-                47.8
-              ],
-              [
-                22.983333333333334,
-                48.05
-              ],
-              [
-                22.15,
-                48.416666666666664
-              ],
-              [
-                22.85,
-                49.03333333333333
-              ],
-              [
-                25.0,
-                47.8
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                22.733333333333334,
-                49.55
-              ],
-              [
-                24.066666666666666,
-                50.416666666666664
-              ],
-              [
-                23.6,
-                51.53333333333333
-              ],
-              [
-                23.635555555555555,
-                51.94222222222222
-              ],
-              [
-                22.733333333333334,
-                49.55
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                24.134722222222223,
-                51.99166666666667
-              ],
-              [
-                26.352500000000003,
-                52.57055555555556
-              ],
-              [
-                31.671944444444446,
-                52.277499999999996
-              ],
-              [
-                31.581944444444446,
-                52.32833333333333
-              ],
-              [
-                24.134722222222223,
-                51.99166666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.62611111111111,
-                52.4925
-              ],
-              [
-                31.5575,
-                52.51777777777777
-              ],
-              [
-                31.674722222222222,
-                52.56222222222222
-              ],
-              [
-                31.56722222222222,
-                52.59638888888889
-              ],
-              [
-                31.62611111111111,
-                52.4925
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.5,
-                52.69333333333333
-              ],
-              [
-                31.592777777777776,
-                52.73444444444444
-              ],
-              [
-                31.586944444444445,
-                52.79388888888889
-              ],
-              [
-                31.243333333333336,
-                53.03444444444444
-              ],
-              [
-                31.5,
-                52.69333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.389166666666664,
-                53.09805555555556
-              ],
-              [
-                31.401944444444442,
-                53.21194444444445
-              ],
-              [
-                31.57777777777778,
-                53.19361111111111
-              ],
-              [
-                31.628333333333334,
-                53.23111111111111
-              ],
-              [
-                31.389166666666664,
-                53.09805555555556
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.919722222222223,
-                53.10138888888889
-              ],
-              [
-                32.236111111111114,
-                53.10444444444445
-              ],
-              [
-                32.447222222222216,
-                53.21027777777778
-              ],
-              [
-                32.48833333333334,
-                53.30361111111111
-              ],
-              [
-                31.919722222222223,
-                53.10138888888889
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.73361111111111,
-                53.3325
-              ],
-              [
-                32.757222222222225,
-                53.45805555555556
-              ],
-              [
-                32.473333333333336,
-                53.54833333333333
-              ],
-              [
-                32.41111111111111,
-                53.651111111111106
-              ],
-              [
-                32.73361111111111,
-                53.3325
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                32.5,
-                53.690555555555555
-              ],
-              [
-                32.45888888888889,
-                53.73027777777778
-              ],
-              [
-                32.36555555555556,
-                53.718611111111116
-              ],
-              [
-                32.13,
-                53.814166666666665
-              ],
-              [
-                32.5,
-                53.690555555555555
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                31.770555555555553,
-                53.796388888888885
-              ],
-              [
-                31.888333333333332,
-                54.05888888888889
-              ],
-              [
-                31.317777777777778,
-                54.244166666666665
-              ],
-              [
-                31.266666666666666,
-                54.4
-              ],
-              [
-                31.770555555555553,
-                53.796388888888885
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                35.25,
-                54.61666666666667
-              ],
-              [
-                35.333333333333336,
-                54.05833333333333
-              ],
-              [
-                37.6,
-                54.233333333333334
-              ],
-              [
-                41.36666666666667,
-                52.733333333333334
-              ],
-              [
-                35.25,
-                54.61666666666667
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                43.95,
-                48.78333333333333
-              ],
-              [
-                43.65,
-                47.733333333333334
-              ],
-              [
-                46.88333333333333,
-                47.833333333333336
-              ],
-              [
-                47.71666666666667,
-                46.21666666666667
-              ],
-              [
-                43.95,
-                48.78333333333333
-              ]
-            ]
-          ],
-          [
-            [
-              [
-                49.166666666666664,
-                44.11666666666667
-              ],
-              [
-                41.36666666666667,
-                45.63333333333333
-              ],
-              [
-                39.4,
-                43.8
-              ],
-              [
-                49.166666666666664,
-                44.11666666666667
-              ]
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "title": "U1392/25 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nTEMPO DANGER AREA ACT Within AREA WITH COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25A04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25B04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25C04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1393/25D04 for None",
-        "text": "From: 2025-10-24 00:45:00+00:00\nTo: 2025-10-30 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -37782,264 +36778,264 @@
         "coordinates": [
           [
             [
-              48.21666666666667,
-              56.74831542124223
+              37.7,
+              58.798315421242236
             ],
             [
-              48.662975643867206,
-              56.735503252485195
+              38.17236963544793,
+              58.78543744107164
             ],
             [
-              49.10410914728015,
-              56.69721616286614
+              38.639180813768235,
+              58.746955987472454
             ],
             [
-              49.53498377377593,
-              56.63389966530519
+              39.09497788898572,
+              58.68332561100188
             ],
             [
-              49.950696829433355,
-              56.54628726725035
+              39.534506799143614,
+              58.595294318079006
             ],
             [
-              50.34660835049774,
-              56.4353873237757
+              39.9528060668078,
+              58.48388962379574
             ],
             [
-              50.718413786215876,
-              56.30246535061365
+              40.3452868650479,
+              58.35039983002836
             ],
             [
-              51.06220525440121,
-              56.14902245009685
+              40.70779975965977,
+              58.196351255986606
             ],
             [
-              51.3745200112116,
-              55.97677060456225
+              41.03668662661149,
+              58.02348225692879
             ],
             [
-              51.65237553417978,
-              55.787605643521346
+              41.32881715594552,
+              57.833714917944384
             ],
             [
-              51.89329133453115,
-              55.58357869430725
+              41.58161020584929,
+              57.629125305838365
             ],
             [
-              52.095298236559955,
-              55.36686688667746
+              41.793040997084354,
+              57.41191311054761
             ],
             [
-              52.2569363513035,
-              55.13974400867774
+              41.961635695620664,
+              57.18437141883057
             ],
             [
-              52.377243311116054,
-              54.904551714219544
+              42.08645530201625,
+              56.94885724943901
             ],
             [
-              52.45573452083291,
-              54.66367177276175
+              42.167070953756316,
+              56.70776335280376
             ],
             [
-              52.49237723393381,
-              54.41949973778489
+              42.20353277228582,
+              56.463491650322844
             ],
             [
-              52.487560201789265,
-              54.174420301312765
+              42.19633428135491,
+              56.21842856735505
             ],
             [
-              52.442060498731834,
-              53.93078450243793
+              42.14637422362832,
+              55.974922406213324
             ],
             [
-              52.35700892398368,
-              53.690888872409445
+              42.05491734387571,
+              55.73526281454503
             ],
             [
-              52.23385514961633,
-              53.456956529191785
+              41.92355542099608,
+              55.501662332015755
             ],
             [
-              52.07433354361911,
-              53.23112018077111
+              41.75416954308242,
+              55.27623994397128
             ],
             [
-              51.880430365538004,
-              53.0154069579613
+              41.54889434834998,
+              55.06100653329276
             ],
             [
-              51.654352820535436,
-              52.81172497236096
+              41.3100847121536,
+              54.85785209876903
             ],
             [
-              51.39850027294553,
-              52.62185148132525
+              41.040285152976,
+              54.668534597416894
             ],
             [
-              51.11543776542493,
-              52.44742253709575
+              40.74220206018218,
+              54.49467026666081
             ],
             [
-              50.8078718646602,
-              52.28992399940316
+              40.4186787122592,
+              54.33772528768036
             ],
             [
-              50.478628757283886,
-              52.15068379795706
+              40.07267295282574,
+              54.19900866139314
             ],
             [
-              50.1306344469118,
-              52.03086534158933
+              39.70723731834029,
+              54.07966618166968
             ],
             [
-              49.76689685115371,
-              51.93146198307245
+              39.32550136111871,
+              53.980675405069064
             ],
             [
-              49.39048956202025,
-              51.85329246175999
+              38.930655878986684,
+              53.90284153160034
             ],
             [
-              49.00453701047442,
-              51.796997259466146
+              38.525938744001465,
+              53.84679412604442
             ],
             [
-              48.61220076246651,
-              51.76303581794989
+              38.11462201311367,
+              53.81298462379032
             ],
             [
-              48.21666666666667,
-              51.75168457875777
+              37.7,
+              53.80168457875776
             ],
             [
-              47.82113257086684,
-              51.76303581794989
+              37.28537798688633,
+              53.81298462379032
             ],
             [
-              47.42879632285892,
-              51.796997259466146
+              36.87406125599854,
+              53.84679412604442
             ],
             [
-              47.042843771313095,
-              51.85329246175999
+              36.46934412101332,
+              53.90284153160034
             ],
             [
-              46.666436482179634,
-              51.93146198307245
+              36.074498638881295,
+              53.980675405069064
             ],
             [
-              46.302698886421545,
-              52.03086534158933
+              35.69276268165972,
+              54.07966618166968
             ],
             [
-              45.95470457604946,
-              52.15068379795706
+              35.32732704717426,
+              54.19900866139314
             ],
             [
-              45.625461468673144,
-              52.28992399940316
+              34.981321287740805,
+              54.33772528768036
             ],
             [
-              45.317895567908415,
-              52.44742253709575
+              34.657797939817826,
+              54.49467026666081
             ],
             [
-              45.03483306038781,
-              52.62185148132525
+              34.359714847024016,
+              54.668534597416894
             ],
             [
-              44.77898051279791,
-              52.81172497236096
+              34.0899152878464,
+              54.85785209876903
             ],
             [
-              44.55290296779534,
-              53.0154069579613
+              33.85110565165002,
+              55.06100653329276
             ],
             [
-              44.35899978971423,
-              53.2311201807711
+              33.64583045691759,
+              55.27623994397128
             ],
             [
-              44.19947818371701,
-              53.456956529191785
+              33.476444579003925,
+              55.501662332015755
             ],
             [
-              44.07632440934967,
-              53.690888872409445
+              33.3450826561243,
+              55.73526281454503
             ],
             [
-              43.99127283460151,
-              53.930784502437945
+              33.25362577637168,
+              55.974922406213324
             ],
             [
-              43.94577313154408,
-              54.174420301312765
+              33.2036657186451,
+              56.21842856735505
             ],
             [
-              43.940956099399536,
-              54.419499737784875
+              33.19646722771419,
+              56.463491650322844
             ],
             [
-              43.97759881250043,
-              54.66367177276175
+              33.23292904624368,
+              56.70776335280376
             ],
             [
-              44.05609002221729,
-              54.904551714219544
+              33.31354469798376,
+              56.94885724943901
             ],
             [
-              44.17639698202984,
-              55.13974400867774
+              33.43836430437934,
+              57.18437141883057
             ],
             [
-              44.33803509677339,
-              55.36686688667746
+              33.60695900291566,
+              57.411913110547594
             ],
             [
-              44.54004199880219,
-              55.58357869430725
+              33.81838979415071,
+              57.629125305838365
             ],
             [
-              44.78095779915356,
-              55.787605643521346
+              34.07118284405448,
+              57.833714917944384
             ],
             [
-              45.05881332212174,
-              55.97677060456225
+              34.363313373388515,
+              58.02348225692879
             ],
             [
-              45.37112807893213,
-              56.14902245009685
+              34.692200240340235,
+              58.196351255986606
             ],
             [
-              45.71491954711747,
-              56.30246535061365
+              35.0547131349521,
+              58.35039983002836
             ],
             [
-              46.086724982835605,
-              56.4353873237757
+              35.4471939331922,
+              58.48388962379574
             ],
             [
-              46.48263650389999,
-              56.54628726725035
+              35.86549320085639,
+              58.595294318079006
             ],
             [
-              46.89834955955742,
-              56.63389966530519
+              36.30502211101429,
+              58.68332561100188
             ],
             [
-              47.329224186053196,
-              56.69721616286614
+              36.760819186231764,
+              58.746955987472454
             ],
             [
-              47.77035768946614,
-              56.735503252485195
+              37.22763036455208,
+              58.78543744107164
             ],
             [
-              48.21666666666667,
-              56.74831542124223
+              37.7,
+              58.798315421242236
             ]
           ]
         ],
@@ -38049,8 +37045,456 @@
         }
       },
       "properties": {
-        "title": "U0021/25 for Kurumoch International Airport",
-        "text": "From: 2025-01-28 00:00:00+00:00\nTo: 2025-12-31 23:59:00+00:00\n\nULYANOVSK/BARATAYEVKA VORDME BMK 113.4MHZ Unserviceable DUE TO FLTCK EXPIRED."
+        "title": "U1432/25 for None",
+        "text": "From: 2025-10-31 00:00:00+00:00\nTo: 2026-01-30 23:59:00+00:00\n\nKOSTINO DME IKO 113.2 MHZ CH79X: RESTRICTIONS ACT AT DIST 119KM."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                39.4,
+                43.8
+              ],
+              [
+                30.583333333333332,
+                43.5
+              ],
+              [
+                30.416666666666668,
+                44.25
+              ],
+              [
+                29.983333333333334,
+                45.15
+              ],
+              [
+                39.4,
+                43.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                29.566666666666666,
+                45.416666666666664
+              ],
+              [
+                28.733333333333334,
+                45.21666666666667
+              ],
+              [
+                28.516666666666666,
+                45.5
+              ],
+              [
+                29.116666666666667,
+                46.38333333333333
+              ],
+              [
+                29.566666666666666,
+                45.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                30.116666666666667,
+                46.416666666666664
+              ],
+              [
+                29.15,
+                48.0
+              ],
+              [
+                27.716666666666665,
+                48.45
+              ],
+              [
+                26.8,
+                48.416666666666664
+              ],
+              [
+                30.116666666666667,
+                46.416666666666664
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                25.0,
+                47.8
+              ],
+              [
+                22.983333333333334,
+                48.05
+              ],
+              [
+                22.15,
+                48.416666666666664
+              ],
+              [
+                22.85,
+                49.03333333333333
+              ],
+              [
+                25.0,
+                47.8
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                22.733333333333334,
+                49.55
+              ],
+              [
+                24.066666666666666,
+                50.416666666666664
+              ],
+              [
+                23.6,
+                51.53333333333333
+              ],
+              [
+                23.635555555555555,
+                51.94222222222222
+              ],
+              [
+                22.733333333333334,
+                49.55
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                24.134722222222223,
+                51.99166666666667
+              ],
+              [
+                26.352500000000003,
+                52.57055555555556
+              ],
+              [
+                31.671944444444446,
+                52.277499999999996
+              ],
+              [
+                31.581944444444446,
+                52.32833333333333
+              ],
+              [
+                24.134722222222223,
+                51.99166666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.62611111111111,
+                52.4925
+              ],
+              [
+                31.5575,
+                52.51777777777777
+              ],
+              [
+                31.674722222222222,
+                52.56222222222222
+              ],
+              [
+                31.56722222222222,
+                52.59638888888889
+              ],
+              [
+                31.62611111111111,
+                52.4925
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.5,
+                52.69333333333333
+              ],
+              [
+                31.592777777777776,
+                52.73444444444444
+              ],
+              [
+                31.586944444444445,
+                52.79388888888889
+              ],
+              [
+                31.243333333333336,
+                53.03444444444444
+              ],
+              [
+                31.5,
+                52.69333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.389166666666664,
+                53.09805555555556
+              ],
+              [
+                31.401944444444442,
+                53.21194444444445
+              ],
+              [
+                31.57777777777778,
+                53.19361111111111
+              ],
+              [
+                31.628333333333334,
+                53.23111111111111
+              ],
+              [
+                31.389166666666664,
+                53.09805555555556
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.919722222222223,
+                53.10138888888889
+              ],
+              [
+                32.236111111111114,
+                53.10444444444445
+              ],
+              [
+                32.447222222222216,
+                53.21027777777778
+              ],
+              [
+                32.48833333333334,
+                53.30361111111111
+              ],
+              [
+                31.919722222222223,
+                53.10138888888889
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.73361111111111,
+                53.3325
+              ],
+              [
+                32.757222222222225,
+                53.45805555555556
+              ],
+              [
+                32.473333333333336,
+                53.54833333333333
+              ],
+              [
+                32.41111111111111,
+                53.651111111111106
+              ],
+              [
+                32.73361111111111,
+                53.3325
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                32.5,
+                53.690555555555555
+              ],
+              [
+                32.45888888888889,
+                53.73027777777778
+              ],
+              [
+                32.36555555555556,
+                53.718611111111116
+              ],
+              [
+                32.13,
+                53.814166666666665
+              ],
+              [
+                32.5,
+                53.690555555555555
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                31.770555555555553,
+                53.796388888888885
+              ],
+              [
+                31.888333333333332,
+                54.05888888888889
+              ],
+              [
+                31.317777777777778,
+                54.244166666666665
+              ],
+              [
+                31.266666666666666,
+                54.4
+              ],
+              [
+                31.770555555555553,
+                53.796388888888885
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                35.25,
+                54.61666666666667
+              ],
+              [
+                35.333333333333336,
+                54.05833333333333
+              ],
+              [
+                37.6,
+                54.233333333333334
+              ],
+              [
+                41.36666666666667,
+                52.733333333333334
+              ],
+              [
+                35.25,
+                54.61666666666667
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                43.95,
+                48.78333333333333
+              ],
+              [
+                43.65,
+                47.733333333333334
+              ],
+              [
+                46.88333333333333,
+                47.833333333333336
+              ],
+              [
+                47.71666666666667,
+                46.21666666666667
+              ],
+              [
+                43.95,
+                48.78333333333333
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                49.166666666666664,
+                44.11666666666667
+              ],
+              [
+                41.36666666666667,
+                45.63333333333333
+              ],
+              [
+                39.4,
+                43.8
+              ],
+              [
+                49.166666666666664,
+                44.11666666666667
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "title": "U1438/25 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nTEMPO DANGER AREA FOR ACFT FLT ACT Within COORD:\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n440700N0491000E-453800N0412200E-434800N0392400E."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25A04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nATS RTE SEGMENTS CLSD:\nA100 KRASNYY SULIN NDB(KL)- ARNAD\nA102 BABUR-NALEM\nA225 GUKOL-TIKNA\nA245 ANAKA-ARNAD\nA277 GAMAN-LAMET\nA712 TAMAK-DIBRO\nA805 GAMAN-PIRIL\nA808 BASED-AMEPU\nA813 KENEN-KRASNYY SULIN NDB(KL)\nA87 TAMAK-AZABI\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\nA902 PARAT-DIBRO\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\nA915 UPADA-BEBID\nA916 MOROZOVSK VORDME(MOR)-GAMTU\nA917 UNRID-INBAL\nA924 DERUG-RALAN\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\nA962 NETMI-KULED\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\nA964 ELISTA VORDME (ELI)-NOKLI\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\nB147 REDMA-TISOM\nB238 AMDEL-TEDRU\nB367 LIMAS-MOBIT\nB450 OGURA-OLPIS\nB491 RANIS-PALER\nB493 FASAD-TIKNA\nB494 OLGIN-LEGNA\nB549 RENAT-AGOY NDB (AG)\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\nB945 ZENZELI NDB(UP)-AMKOL\nB947 TAMAK-PARAT\nB950 LAMET-AGOY NDB (AG)\nB967 ROKMO-DOBEK\nB967 SUPED-NUGRI\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\nG128 NATIT-EGORLYKSKAYA NDB(ER)\nG247 OGURA-SMOLENSKAYA NDB(SM)\nG364 TOKNO-GAMTU\nG476 REDMA-OLGIN\nG481 ELISTA VORDME (ELI)-TONGI\nG487 ZELENGA NDB(ZG)-UGBES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25B04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nG534 GOTIL-TOROS\nG822 SOTUB-OLENA\nG823 TOKNO-RIDLA\nG835 RIDLA-TIBET\nG900 OBABI-LODBI\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\nG904 FASAD-UNRID\nG918 KULED-NOSAK\nG919 TIKHORETSK NDB(UH)-KULOM\nG923 ELISTA VORDME(ELI)-OLPIS\nL4 OSBEM-TITAG\nL4 LINRU-KUBOK\nL749 BUGOR-DOSED\nL850 TISOM-BAMUP\nL851 ADINA-ROMOK\nL856 GODBI-SALAR\nL91 USSEZ-KEPED\nL96 TISOR-TIMTU\nL98 LOGBO-KUGOS\nL981 POGOD-SOBLO\nL99 TUREL-SOBLO\nM136 MAPUT-AMDAN\nM406 TISOM-OTPOL\nM435 LAROM-RASIL\nM54 UMSIS-DIMOB\nM55 TOBLO-ABUTO\nM63 LUMAT-UTALU\nM64 LULED-LUMAT\nM747 TALAM-MAPUT\nM850 NIKOLA NDB(NL)-IPKOR\nM853 REBKO-UTOMU\nM853 NALEG-TUMIT\nM854 SUGUL-RASIL\nM856 DIGAM-ROMOK\nM860 DIGAM-KUGOS\nM861 BIRMA-ROMOK\nM986 TIRAS-ABUTO\nM987 KUBOK-LUGIL\nM995 ROROL-FORMA\nN156 MASOL-SUPUD\nN166 UMSIS-EMGER\nN180 RONIT-SUPUD\nN181 OBARO-PIMEN\nN190 GEMRO-PALER\nN191 BUSAP-GAMAN\nN50 LASKA-LIDUS\nN50 OBABI-UDAPO\nN604 INKOM-NIBTA\nN604 GOBUN-LUGIL\nN609 GODBI-ULNER\nN613 SOGTA-INKOM\nN72 TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\nN72 NOKLI-KUDAS\nN82 UMSUR-RODAT\nP142 GOBUN-ELRIS\nP148 TUMIT-UMKEL\nP163 RINGU-DOSED\nP29 SUBOG-SUMOL\nP29 BERUN-FORMA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25C04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nP567 OLENA-OTRAD\nP604 RUKIN-GIMKI\nP987 GUMLA-BETEG\nR122 ELISTA VORDME(ELI)-AZABI\nR230 OLENA-RUTEP\nR242 ABLOG-AMEPU\nR710 ZELENGA NDB(ZG)-ROKMO\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\nR807 NIRGA-TONGI\nT145 INRUG-ARNAD\nT248 RALUR-NIKOLA NDB(NL)\nT273 ASKIL-DIVEK\nT294 GODBI-ABUTO\nT296 BERUN-BUKUB\nT322 UBONA-TENRI\nT323 UBONA-BUKUB\nT325 UNORI-LEKDO\nT344 TURAT-OBARO\nT379 DERFU-DOSAB\nT383 ELRIS-ASDES\nT384 BEPLU-INKIN\nT386 PETUK-ATLOG\nT387 AMAMU-OLARA\nT461 LIMPI-OLFID\nT464 INBUS-GODBI\nT469 BERUN-TENRI\nT502 TISOM-NIKOLA NDB(NL)\nT504 SUGUL-BERTU\nT515 INBAK-MABEP\nT521 INBUS-OBARO\nT535 MABIR-NULNA\nT542 RIRAB-AMAMU\nT555 RENAT-ROMOK\nT557 TISNI-BERUN\nT561 SIROTINSKAYA NDB(ST)-GODBI\nT611 PEPOR-RAMUT\nT614 LINRU-OSPER\nT628 NEGLE-RAMUT\nT685 NISUT-RENAT\nT687 OLENA-NISUT\nT688 NEROB-TOKNO\nT748 KANON-RINGU\nT795 OBESI-UROBI\nT817 ARNAD-SIMFEROPOL VORDME(SI)\nT828 EMGAS-NIBIM\nT829 ANIGI-AMKAT\nT832 EMGAS-ATLOG\nT835 UNIGA-NETOT\nW316 ANAKA-AMEPU\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\nW343 SMOLENSKAYA NDB(SM)-ANAKA\nW54 UST-LABINSK NDB(NZ)-PELEM\nW70 ANAKA-AMEPU\nW79 AMEPU-ULKOT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1439/25D04 for None",
+        "text": "From: 2025-11-05 00:45:00+00:00\nTo: 2025-11-11 00:45:00+00:00\n\nW87 DUBOS-LIDUS\nW93 RYAZANSKAYA NDB(XT)-KURAD\nKR379 TIVPO-IGZAR\nKR380 KANON-FITEZ\nKR382 VILFE-LIDTE\nKR383 ONFAS-IRFON\nKR384 OTVEK-LOZBO\nKR386 KANON-IPGUR\nKR387 BEPLU-TUGPI\nKR389 NETOT-INKIN\nKR391 ZUDME-OLFID\nKR392 TEKVE-TISNI\nKR702 TISNI-POSTO\nKR708 RONUM-OKTYABRSKIY NDB(FE)\nKR841 PILOK-APSOK\nKR843 GIKSU-PIMEN\nKR844 GIBRA-PEMIP\nKR845 ORTOG-ROKBU\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -38607,284 +38051,6 @@
       "properties": {
         "title": "U0369/25 for Kurumoch International Airport",
         "text": "From: 2025-04-02 00:00:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDME SHUMERLYA FREQ 112.00 MHZ, Channel 57X\nREAD ID IXY INSTEAD OF PUBLISHED.\nReference Aeronautical Information Publication GEN 2.5, ENR 4.1-9, ENRC 7."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              58.61666666666667,
-              53.5649820879089
-            ],
-            [
-              59.02872969120302,
-              53.5522590402771
-            ],
-            [
-              59.43610906651706,
-              53.5142352280842
-            ],
-            [
-              59.83420003028908,
-              53.45134412967269
-            ],
-            [
-              60.21855286789502,
-              53.36429992262685
-            ],
-            [
-              60.58494380405396,
-              53.25408537264086
-            ],
-            [
-              60.929438428737605,
-              53.121935490960496
-            ],
-            [
-              61.24844593422074,
-              52.96931752097531
-            ],
-            [
-              61.53876299314861,
-              52.797907906448394
-            ],
-            [
-              61.79760668814705,
-              52.60956694510567
-            ],
-            [
-              62.02263646234587,
-              52.40631184243761
-            ],
-            [
-              62.21196555584327,
-              52.190288855550996
-            ],
-            [
-              62.36416279600759,
-              51.963745162218835
-            ],
-            [
-              62.47824590329229,
-              51.7290010138482
-            ],
-            [
-              62.55366765537176,
-              51.4884226412857
-            ],
-            [
-              62.590296327991204,
-              51.24439628710689
-            ],
-            [
-              62.58839181573848,
-              50.99930364407643
-            ],
-            [
-              62.54857874921107,
-              50.75549889210594
-            ],
-            [
-              62.47181778747831,
-              50.51528744893745
-            ],
-            [
-              62.35937609616752,
-              50.28090648504298
-            ],
-            [
-              62.212797839275176,
-              50.05450720161123
-            ],
-            [
-              62.03387533087403,
-              49.83813883168286
-            ],
-            [
-              61.82462132152575,
-              49.63373429742915
-            ],
-            [
-              61.587242740181736,
-              49.44309743971129
-            ],
-            [
-              61.32411607937099,
-              49.26789172764514
-            ],
-            [
-              61.03776450078692,
-              49.109630354136875
-            ],
-            [
-              60.73083664942279,
-              48.96966762655908
-            ],
-            [
-              60.40608709535143,
-              48.84919156841211
-            ],
-            [
-              60.06635827054862,
-              48.74921765671171
-            ],
-            [
-              59.71456373093229,
-              48.670583629975106
-            ],
-            [
-              59.35367254810991,
-              48.613945312311564
-            ],
-            [
-              58.98669461845565,
-              48.57977340976565
-            ],
-            [
-              58.61666666666667,
-              48.568351245424445
-            ],
-            [
-              58.2466387148777,
-              48.57977340976565
-            ],
-            [
-              57.87966078522342,
-              48.613945312311564
-            ],
-            [
-              57.51876960240104,
-              48.670583629975106
-            ],
-            [
-              57.16697506278472,
-              48.74921765671171
-            ],
-            [
-              56.8272462379819,
-              48.84919156841211
-            ],
-            [
-              56.50249668391054,
-              48.96966762655908
-            ],
-            [
-              56.19556883254642,
-              49.109630354136875
-            ],
-            [
-              55.909217253962346,
-              49.26789172764514
-            ],
-            [
-              55.6460905931516,
-              49.44309743971129
-            ],
-            [
-              55.408712011807594,
-              49.63373429742915
-            ],
-            [
-              55.1994580024593,
-              49.83813883168286
-            ],
-            [
-              55.02053549405815,
-              50.05450720161123
-            ],
-            [
-              54.87395723716582,
-              50.28090648504298
-            ],
-            [
-              54.76151554585503,
-              50.51528744893745
-            ],
-            [
-              54.68475458412227,
-              50.75549889210594
-            ],
-            [
-              54.644941517594845,
-              50.99930364407643
-            ],
-            [
-              54.64303700534213,
-              51.24439628710689
-            ],
-            [
-              54.67966567796157,
-              51.4884226412857
-            ],
-            [
-              54.755087430041044,
-              51.7290010138482
-            ],
-            [
-              54.86917053732575,
-              51.963745162218835
-            ],
-            [
-              55.021367777490056,
-              52.190288855550996
-            ],
-            [
-              55.21069687098746,
-              52.40631184243761
-            ],
-            [
-              55.435726645186286,
-              52.60956694510567
-            ],
-            [
-              55.69457034018472,
-              52.797907906448394
-            ],
-            [
-              55.984887399112594,
-              52.96931752097531
-            ],
-            [
-              56.30389490459572,
-              53.121935490960496
-            ],
-            [
-              56.64838952927938,
-              53.25408537264086
-            ],
-            [
-              57.01478046543831,
-              53.36429992262685
-            ],
-            [
-              57.39913330304425,
-              53.45134412967269
-            ],
-            [
-              57.79722426681627,
-              53.5142352280842
-            ],
-            [
-              58.204603642130316,
-              53.5522590402771
-            ],
-            [
-              58.61666666666667,
-              53.5649820879089
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 150.0
-        }
-      },
-      "properties": {
-        "title": "U0388/25 for Kurumoch International Airport",
-        "text": "From: 2025-04-07 00:00:00+00:00\nTo: 2025-10-30 23:59:00+00:00\n\nORSK VORDME NRK 113.700MHZ/CH84X Operation AS FLW:\n- DME Operation WO RESTRICTION,\n- VOR Operation UP TO DIST 196KM AT ALT 6100M."
       }
     },
     {
@@ -40674,6 +39840,76 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1420/25A05 for None",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\n1. FLT RTE ESTABLISHED Within ROSTOV-NA-DONU (URRV) AND SAMARA (UWWW)\nFOR TFC WO CROSSING AKTOBE FIR (UATT):\n- ABAGI B105 NIMTA (ABAGI TO NIMTA TFC UNIDIRECTIONAL, CRUISING\n  LVL ODD Within FL135-540)-B105 NATIT-DCT MOLED (NIMTA TO MOLED TFC\n  UNIDIRECTIONAL, CRUISING LVL EVEN Within FL100-540).\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-\n  P135 ABNOT.\n- ABNOT-P135 UROBO-R807 MOLED (ABNOT TO MOLED CRUISING LVL EVEN\n  Within FL070-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-\n  DCT MEMZA-DCT VENFO-DCT BINOL (ITAKA TO BINOL CRUISING LVL EVEN\n  Within FL180-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TOITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS (ITAKA TO KUDAS\n  CRUISING LVL EVEN Within FL290-430)-N72 BISNA (KUDAS TO BISNA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1420/25B05 for None",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nCRUISING LVL ODD Within FL210-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS-DCT PINMU-A955 LURIS \n  (ITAKA TO LURIS CRUISING LVL EVEN Within FL290-430).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS-DCT PINMU-B477 KUFAN \n  (ITAKA TO KUFAN CRUISING LVL EVEN Within FL290-430).\n- ERSAR-DCT BEMES-DCT VULFI-DCT TUVGI (ERSAR TO TUVGI CRUISING LVL\n  ODD Within FL290-530).\n- LURIS-A955 PINMU-DCT KUDAS-DCT ITAKA (LURIS TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- KUFAN-B477 PINMU-DCT KUDAS-DCT ITAKA (KUFAN TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- MOTEG-B945 PINMU (MOTEG TO PINMU CRUISISNG LVL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1420/25C05 for None",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nEVEN Within FL090-530)-DCT KUDAS-DCT ITAKA (PINMU TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- TUVGI-DCT EVZUN-DCT ZIZAR-DCT VAZLU-DCT UZZID (TUVGI TO UZZID\n  TFC UNIDIRECTIONAL, CRUISING LVL ODD Within FL330-FL530)-DCT\n  NOKLI-N72 TUSAB (UZZID TO TUSAB TFC UNIDIRECTIONAL, CRUISING LVL\n  ODD Within FL090-FL530).\n- TUSAB-N72 VOLGOGRAD/GUMRAK VORDME (WGD) (TUSAB TO\n  VOLGOGRAD/GUMRAK VORDME (WGD) TFC UNIDIRECTIONAL, CRUISING LVL\n  ODD Within FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (OBABI TO\n  GEKPA TFC UNIDIRECTIONAL, CRUISING LVL ODD Within FL210-FL530).\n- TUSAB-R807 UROBO-P135 ABNOT (TUSAB TO ABNOT TFC UNIDIRECTIONAL,\n  CRUISING LVL ODD Within FL070-FL530).\n2. FLT RTE ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) FOR TFC\nOVERFLYING AKTOBE FIR (UATT):\n- IPLED-DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL (IPLED"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1420/25D05 for None",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nTO BINOL TFC UNIDIRECTIONAL, CRUISING LVL EVEN Within FL180-510).\n- IPLED G96 PINMU (IPLED TO PINMU TFC UNIDIRECTIONAL, CRUISING\n  LVL EVEN Within FL130-530)-A955 LURIS (PINMU TO LURIS CRUISING LVL\n   EVEN Within FL290-430).\n- IPLED G96 PINMU (IPLED TO PINMU TFC UNIDIRECTIONAL, CRUISING LVL\n  EVEN Within FL130-530)-B477 KUFAN (PINMU TO KUFAN CRUISING LVL EVEN\n  Within FL290-430).\n- IPLED A921 KUFAN (TFC UNIDIRECTIONAL, CRUISING LVL EVEN Within\n  FL210-530).\n- ERSAR-DCT BEMES DCT ITAKA (ERSAR TO ITAKA TFC UNIDIRECTIONAL,\n  CRUISING LVL ODD Within FL290-FL530).\n- LURIS-A955 PINMU-DCT KUDAS-DCT ITAKA (LURIS TO ITAKA CRUISING \n  LVL ODD Within FL290-430).\n- KUFAN-B477 PINMU-DCT KUDAS-DCT ITAKA (KUFAN TO ITAKA CRUISING\n  LVL ODD FL290-430).\n- KUFAN DCT PIKAN (TFC UNIDIRECTIONAL, CRUISING LVL ODD Within\n  FL210-530).\n- MOTEG-B945 PINMU (MOTEG TO PINMU CRUISING LVL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1420/25E05 for None",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nODD Within FL090-530)-DCT KUDAS-DCT ITAKA (PINMU TO ITAKA CRUISING\n  LVL ODD Within FL290-430).\n3. FPL AND ASSOCIATED MSG MUST BE SUBMITTED IN ADVANCE AND IN\n  FULL. IN ORDER TO PROVIDE SAFE AND ORGANIZED AIR TFC FLOW MAIN\n  AIR TRAFFIC MANAGEMENT CENTRE (MATMC) MAY IMPLEMENT TFC\n  REGULATIONS BY SUBMITTING SAM MSG WITH ASSIGNED Estimated TIME OVER\n  CRP FOR PLANNED FLT RTE.\n  ASSIGNED ESTIMATED TIME OVER CRP SPECIFIED IN SAM MSG ITEM\n  18 AFTER ,,ETO/,, INDICATOR.\n  UPON RECEIVING SAM MSG AIRLINES FLT OPS SER AND ATS IN Aerodrome OF\n  DEP MUST TIMELY INFORM ACFT CREWS ABOUT REQUIREMENT TO \n  ADHERE TO ASSIGNED ESTIMATED TIME OVER CRP (ETO) Within 5 MIN."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -40945,78 +40181,286 @@
         }
       },
       "properties": {
-        "title": "U1353/25 for Kurumoch International Airport",
-        "text": "From: 2025-10-14 07:30:00+00:00\nTo: 2025-12-04 23:59:00+00:00\n\nDVORDME SRN 108.4 MHZ: DVOR Unserviceable."
+        "title": "U1431/25 for Kurumoch International Airport",
+        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2025-12-04 23:59:00+00:00\n\nSARANSK DVORDME SRN 108.4 MHZ: \n- DME Operation WO RESTRICTIONS,\n- DVOR Operation UPTO DIST 128KM AT ALT 6100M."
       }
     },
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
+        "type": "Polygon",
         "coordinates": [
-          44.0,
-          47.0
-        ]
+          [
+            [
+              48.21666666666667,
+              54.66638590354037
+            ],
+            [
+              48.28723213041564,
+              54.664360459231354
+            ],
+            [
+              48.35709717925621,
+              54.658304234894096
+            ],
+            [
+              48.42556897461399,
+              54.64827733845632
+            ],
+            [
+              48.49196972296247,
+              54.63437922677842
+            ],
+            [
+              48.55564393191557,
+              54.61674763196779
+            ],
+            [
+              48.61596535382484,
+              54.59555707962682
+            ],
+            [
+              48.67234352443005,
+              54.57101701980905
+            ],
+            [
+              48.72422981352512,
+              54.543369596517195
+            ],
+            [
+              48.771122915630805,
+              54.512887086033125
+            ],
+            [
+              48.812573720883776,
+              54.479869038139974
+            ],
+            [
+              48.84818951930793,
+              54.44463915732891
+            ],
+            [
+              48.877637504873285,
+              54.407541963348805
+            ],
+            [
+              48.90064755883678,
+              54.36893927195899
+            ],
+            [
+              48.917014304404795,
+              54.32920653750567
+            ],
+            [
+              48.92659843642018,
+              54.28872909900918
+            ],
+            [
+              48.92932734028643,
+              54.247898370884386
+            ],
+            [
+              48.925195023499434,
+              54.20710801829582
+            ],
+            [
+              48.91426139083743,
+              54.16675015555862
+            ],
+            [
+              48.896650900411046,
+              54.12721160402214
+            ],
+            [
+              48.87255064240759,
+              54.08887024360475
+            ],
+            [
+              48.842207885548454,
+              54.05209148967047
+            ],
+            [
+              48.80592713812864,
+              54.017224924327124
+            ],
+            [
+              48.76406677117632,
+              53.98460110855368
+            ],
+            [
+              48.717035250931986,
+              53.954528598887315
+            ],
+            [
+              48.66528702669229,
+              53.927291189770784
+            ],
+            [
+              48.60931811828735,
+              53.903145400111974
+            ],
+            [
+              48.54966144525483,
+              53.8823182201685
+            ],
+            [
+              48.486881937323105,
+              53.86500513255691
+            ],
+            [
+              48.42157146328699,
+              53.85136841900468
+            ],
+            [
+              48.35434361290647,
+              53.84153576241352
+            ],
+            [
+              48.28582836421161,
+              53.83559915187481
+            ],
+            [
+              48.21666666666667,
+              53.83361409645962
+            ],
+            [
+              48.147504969121734,
+              53.83559915187481
+            ],
+            [
+              48.078989720426875,
+              53.84153576241352
+            ],
+            [
+              48.01176187004636,
+              53.85136841900468
+            ],
+            [
+              47.94645139601024,
+              53.86500513255691
+            ],
+            [
+              47.88367188807852,
+              53.8823182201685
+            ],
+            [
+              47.824015215045996,
+              53.903145400111974
+            ],
+            [
+              47.768046306641054,
+              53.927291189770784
+            ],
+            [
+              47.71629808240136,
+              53.954528598887315
+            ],
+            [
+              47.66926656215703,
+              53.98460110855368
+            ],
+            [
+              47.627406195204706,
+              54.017224924327124
+            ],
+            [
+              47.59112544778489,
+              54.05209148967047
+            ],
+            [
+              47.560782690925755,
+              54.08887024360475
+            ],
+            [
+              47.5366824329223,
+              54.12721160402214
+            ],
+            [
+              47.51907194249591,
+              54.16675015555862
+            ],
+            [
+              47.50813830983391,
+              54.20710801829582
+            ],
+            [
+              47.50400599304692,
+              54.247898370884386
+            ],
+            [
+              47.506734896913166,
+              54.28872909900918
+            ],
+            [
+              47.51631902892854,
+              54.32920653750567
+            ],
+            [
+              47.532685774496564,
+              54.36893927195899
+            ],
+            [
+              47.55569582846006,
+              54.407541963348805
+            ],
+            [
+              47.585143814025415,
+              54.44463915732891
+            ],
+            [
+              47.62075961244957,
+              54.479869038139974
+            ],
+            [
+              47.66221041770254,
+              54.512887086033125
+            ],
+            [
+              47.709103519808224,
+              54.543369596517195
+            ],
+            [
+              47.7609898089033,
+              54.57101701980905
+            ],
+            [
+              47.817367979508504,
+              54.59555707962682
+            ],
+            [
+              47.877689401417776,
+              54.61674763196779
+            ],
+            [
+              47.94136361037087,
+              54.63437922677842
+            ],
+            [
+              48.007764358719356,
+              54.64827733845632
+            ],
+            [
+              48.07623615407714,
+              54.658304234894096
+            ],
+            [
+              48.146101202917706,
+              54.664360459231354
+            ],
+            [
+              48.21666666666667,
+              54.66638590354037
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
       },
       "properties": {
-        "title": "U1420/25A05 for None",
-        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\n1. FLT RTE ESTABLISHED Within ROSTOV-NA-DONU (URRV) AND SAMARA (UWWW)\nFOR TFC WO CROSSING AKTOBE FIR (UATT):\n- ABAGI B105 NIMTA (ABAGI TO NIMTA TFC UNIDIRECTIONAL, CRUISING\n  LVL ODD Within FL135-540)-B105 NATIT-DCT MOLED (NIMTA TO MOLED TFC\n  UNIDIRECTIONAL, CRUISING LVL EVEN Within FL100-540).\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-\n  P135 ABNOT.\n- ABNOT-P135 UROBO-R807 MOLED (ABNOT TO MOLED CRUISING LVL EVEN\n  Within FL070-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-\n  DCT MEMZA-DCT VENFO-DCT BINOL (ITAKA TO BINOL CRUISING LVL EVEN\n  Within FL180-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TOITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS (ITAKA TO KUDAS\n  CRUISING LVL EVEN Within FL290-430)-N72 BISNA (KUDAS TO BISNA"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U1420/25B05 for None",
-        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nCRUISING LVL ODD Within FL210-530).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS-DCT PINMU-A955 LURIS \n  (ITAKA TO LURIS CRUISING LVL EVEN Within FL290-430).\n- MOLED-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (MOLED TO ITAKA\n  CRUISING LVL EVEN Within FL330-530)-DCT KUDAS-DCT PINMU-B477 KUFAN \n  (ITAKA TO KUFAN CRUISING LVL EVEN Within FL290-430).\n- ERSAR-DCT BEMES-DCT VULFI-DCT TUVGI (ERSAR TO TUVGI CRUISING LVL\n  ODD Within FL290-530).\n- LURIS-A955 PINMU-DCT KUDAS-DCT ITAKA (LURIS TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- KUFAN-B477 PINMU-DCT KUDAS-DCT ITAKA (KUFAN TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- MOTEG-B945 PINMU (MOTEG TO PINMU CRUISISNG LVL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U1420/25C05 for None",
-        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nEVEN Within FL090-530)-DCT KUDAS-DCT ITAKA (PINMU TO ITAKA CRUISING\n  LVL ODD Within FL290-430)-DCT TUVGI (ITAKA TO TUVGI CRUISING LVL\n  ODD Within FL330-530).\n- TUVGI-DCT EVZUN-DCT ZIZAR-DCT VAZLU-DCT UZZID (TUVGI TO UZZID\n  TFC UNIDIRECTIONAL, CRUISING LVL ODD Within FL330-FL530)-DCT\n  NOKLI-N72 TUSAB (UZZID TO TUSAB TFC UNIDIRECTIONAL, CRUISING LVL\n  ODD Within FL090-FL530).\n- TUSAB-N72 VOLGOGRAD/GUMRAK VORDME (WGD) (TUSAB TO\n  VOLGOGRAD/GUMRAK VORDME (WGD) TFC UNIDIRECTIONAL, CRUISING LVL\n  ODD Within FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (OBABI TO\n  GEKPA TFC UNIDIRECTIONAL, CRUISING LVL ODD Within FL210-FL530).\n- TUSAB-R807 UROBO-P135 ABNOT (TUSAB TO ABNOT TFC UNIDIRECTIONAL,\n  CRUISING LVL ODD Within FL070-FL530).\n2. FLT RTE ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) FOR TFC\nOVERFLYING AKTOBE FIR (UATT):\n- IPLED-DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL (IPLED"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U1420/25D05 for None",
-        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nTO BINOL TFC UNIDIRECTIONAL, CRUISING LVL EVEN Within FL180-510).\n- IPLED G96 PINMU (IPLED TO PINMU TFC UNIDIRECTIONAL, CRUISING\n  LVL EVEN Within FL130-530)-A955 LURIS (PINMU TO LURIS CRUISING LVL\n   EVEN Within FL290-430).\n- IPLED G96 PINMU (IPLED TO PINMU TFC UNIDIRECTIONAL, CRUISING LVL\n  EVEN Within FL130-530)-B477 KUFAN (PINMU TO KUFAN CRUISING LVL EVEN\n  Within FL290-430).\n- IPLED A921 KUFAN (TFC UNIDIRECTIONAL, CRUISING LVL EVEN Within\n  FL210-530).\n- ERSAR-DCT BEMES DCT ITAKA (ERSAR TO ITAKA TFC UNIDIRECTIONAL,\n  CRUISING LVL ODD Within FL290-FL530).\n- LURIS-A955 PINMU-DCT KUDAS-DCT ITAKA (LURIS TO ITAKA CRUISING \n  LVL ODD Within FL290-430).\n- KUFAN-B477 PINMU-DCT KUDAS-DCT ITAKA (KUFAN TO ITAKA CRUISING\n  LVL ODD FL290-430).\n- KUFAN DCT PIKAN (TFC UNIDIRECTIONAL, CRUISING LVL ODD Within\n  FL210-530).\n- MOTEG-B945 PINMU (MOTEG TO PINMU CRUISING LVL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U1420/25E05 for None",
-        "text": "From: 2025-10-30 00:00:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nODD Within FL090-530)-DCT KUDAS-DCT ITAKA (PINMU TO ITAKA CRUISING\n  LVL ODD Within FL290-430).\n3. FPL AND ASSOCIATED MSG MUST BE SUBMITTED IN ADVANCE AND IN\n  FULL. IN ORDER TO PROVIDE SAFE AND ORGANIZED AIR TFC FLOW MAIN\n  AIR TRAFFIC MANAGEMENT CENTRE (MATMC) MAY IMPLEMENT TFC\n  REGULATIONS BY SUBMITTING SAM MSG WITH ASSIGNED Estimated TIME OVER\n  CRP FOR PLANNED FLT RTE.\n  ASSIGNED ESTIMATED TIME OVER CRP SPECIFIED IN SAM MSG ITEM\n  18 AFTER ,,ETO/,, INDICATOR.\n  UPON RECEIVING SAM MSG AIRLINES FLT OPS SER AND ATS IN Aerodrome OF\n  DEP MUST TIMELY INFORM ACFT CREWS ABOUT REQUIREMENT TO \n  ADHERE TO ASSIGNED ESTIMATED TIME OVER CRP (ETO) Within 5 MIN."
+        "title": "U1437/25 for Kurumoch International Airport",
+        "text": "From: 2025-10-31 00:00:00+00:00\nTo: 2026-01-26 23:59:00+00:00\n\nULYANOVSK/BARATAEVKA VORDME BMK 113.4MHZ:\n- VOR Operation RANGE RESTRICTED 153KM ALT 6100M,\n- DME Operation RANGE RESTRICTED 172KM ALT 6100M."
       }
     }
   ]
