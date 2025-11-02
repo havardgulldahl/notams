@@ -46,6 +46,46 @@
       margin-top: 5px;
     }
 
+    /* Multi-feature selector popup styles */
+    .multi-feature-popup {
+      max-width: 350px;
+    }
+
+    .feature-selector {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .feature-selector li {
+      padding: 8px 10px;
+      margin: 4px 0;
+      background: #f5f5f5;
+      border-left: 4px solid #333;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .feature-selector li:hover {
+      background: #e8e8e8;
+    }
+
+    .feature-selector .series-badge {
+      display: inline-block;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: white;
+      margin-right: 6px;
+      font-size: 12px;
+    }
+
+    .feature-selector .feature-title {
+      font-size: 13px;
+    }
+
     .legend span {
       display: inline-block;
       width: 14px;
@@ -146,6 +186,8 @@
 
     // Layer storage
     const seriesLayers = {};
+    // Store all layers with their feature data for overlap detection
+    const allFeatureLayers = [];
 
     // Load each local GeoJSON file; show only selected series by default
     const defaultVisible = new Set(['G', 'L']);
@@ -176,31 +218,16 @@
               });
             },
             onEachFeature: (feature, layer) => {
-              const desc = notamSeriesExplained[series] || "Unknown series";
-              const url = feature.properties?.url
-                ? `<br><a href="${feature.properties.url}" target="_blank">Source</a>`
-                : "";
-              const text = feature.properties?.text
-                ? `<pre>${feature.properties.text}</pre>`
-                : "";
-              layer.bindPopup(`
-                <b>Series ${series}</b><br>
-                <i style="font-size:smaller">${desc}</i>${url}<br>
-                ${text}
-                <button class="download-notam" style="margin-top:6px;">Download GeoJSON</button>
-                <a class="link-yandex" target=_blank>Yandex Sat</a>
-              `);
-              layer.on('popupopen', (e) => {
-                const el = e.popup.getElement();
-                if (!el) return;
-                const btn = el.querySelector('.download-notam');
-                if (btn) {
-                  btn.addEventListener('click', () => downloadGeoJSON(feature, series), { once: true });
-                }
-                const href = el.querySelector('.link-yandex');
-                if (href) {
-                  href.setAttribute("href", linkYandex(feature, series));
-                }
+              // Store feature metadata with layer for later retrieval
+              layer.featureData = { feature, series };
+              allFeatureLayers.push({ layer, feature, series, group });
+
+              // Create popup content but don't bind it yet (we'll handle clicks manually)
+              layer.popupContent = createPopupContent(feature, series);
+              
+              // Disable default click behavior - we'll handle it in the map click handler
+              layer.on('click', function(e) {
+                L.DomEvent.stopPropagation(e);
               });
             }
           }).addTo(group);
@@ -210,6 +237,167 @@
 
     // Layer control
     L.control.layers(null, seriesLayers, { collapsed: false }).addTo(map);
+
+    // Create popup content for a feature
+    function createPopupContent(feature, series) {
+      const desc = notamSeriesExplained[series] || "Unknown series";
+      const url = feature.properties?.url
+        ? `<br><a href="${feature.properties.url}" target="_blank">Source</a>`
+        : "";
+      const text = feature.properties?.text
+        ? `<pre>${feature.properties.text}</pre>`
+        : "";
+      return `
+        <b>Series ${series}</b><br>
+        <i style="font-size:smaller">${desc}</i>${url}<br>
+        ${text}
+        <button class="download-notam" style="margin-top:6px;">Download GeoJSON</button>
+        <a class="link-yandex" target=_blank>Yandex Sat</a>
+      `;
+    }
+
+    // Setup popup event handlers
+    function setupPopupHandlers(popup, feature, series) {
+      popup.on('add', () => {
+        const el = popup.getElement();
+        if (!el) return;
+        const btn = el.querySelector('.download-notam');
+        if (btn) {
+          btn.addEventListener('click', () => downloadGeoJSON(feature, series), { once: true });
+        }
+        const href = el.querySelector('.link-yandex');
+        if (href) {
+          href.setAttribute("href", linkYandex(feature, series));
+        }
+      });
+    }
+
+    // Open a popup for a specific feature
+    function openFeaturePopup(layer, feature, series, latlng) {
+      const popup = L.popup({ maxWidth: 400 })
+        .setLatLng(latlng)
+        .setContent(layer.popupContent || createPopupContent(feature, series));
+      
+      setupPopupHandlers(popup, feature, series);
+      popup.openOn(map);
+    }
+
+    // Handle map clicks to detect overlapping features
+    // Point click tolerance in degrees (~55km at equator)
+    const POINT_CLICK_TOLERANCE_DEGREES = 0.5;
+    
+    map.on('click', function(e) {
+      // Find all features at the click point
+      const clickedFeatures = [];
+      const point = e.latlng;
+
+      allFeatureLayers.forEach(({ layer, feature, series, group }) => {
+        // Only check visible layers
+        if (!map.hasLayer(group)) return;
+
+        // Check if the click is within this feature
+        let isInside = false;
+        
+        if (feature.geometry.type === 'Point') {
+          const [lon, lat] = feature.geometry.coordinates;
+          const distance = Math.sqrt(
+            Math.pow(point.lat - lat, 2) + 
+            Math.pow(point.lng - lon, 2)
+          );
+          isInside = distance < POINT_CLICK_TOLERANCE_DEGREES;
+        } else if (feature.geometry.type === 'Polygon') {
+          // Use precise point-in-polygon check
+          const coords = feature.geometry.coordinates[0];
+          isInside = pointInPolygon(point, coords);
+        } else if (feature.geometry.type === 'MultiPolygon') {
+          // Check each polygon in the MultiPolygon
+          feature.geometry.coordinates.forEach(polygonCoords => {
+            const coords = polygonCoords[0];
+            if (pointInPolygon(point, coords)) {
+              isInside = true;
+            }
+          });
+        }
+
+        if (isInside) {
+          clickedFeatures.push({ layer, feature, series });
+        }
+      });
+
+      // If multiple features found, show selector
+      if (clickedFeatures.length > 1) {
+        showFeatureSelector(clickedFeatures, point);
+      } else if (clickedFeatures.length === 1) {
+        // Single feature - open its popup directly
+        const { layer, feature, series } = clickedFeatures[0];
+        openFeaturePopup(layer, feature, series, point);
+      }
+      // If no features, do nothing (default Leaflet behavior)
+    });
+
+    // Point-in-polygon algorithm (ray casting)
+    function pointInPolygon(point, coords) {
+      let inside = false;
+      const x = point.lng;
+      const y = point.lat;
+
+      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
+        const xi = coords[i][0];
+        const yi = coords[i][1];
+        const xj = coords[j][0];
+        const yj = coords[j][1];
+
+        const intersect = ((yi > y) !== (yj > y)) &&
+          (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+        if (intersect) inside = !inside;
+      }
+
+      return inside;
+    }
+
+    // Show a selector popup when multiple features overlap
+    function showFeatureSelector(features, latlng) {
+      let html = '<div class="multi-feature-popup">';
+      html += `<b>${features.length} overlapping features found</b><br>`;
+      html += '<p style="font-size:12px;margin:4px 0;">Click on a feature to view details:</p>';
+      html += '<ul class="feature-selector">';
+      
+      features.forEach((item, index) => {
+        const { feature, series } = item;
+        const color = seriesColors[series] || "#333";
+        const title = feature.properties?.title || feature.properties?.text?.substring(0, 50) || 'Untitled';
+        const displayTitle = title.length > 60 ? title.substring(0, 57) + '...' : title;
+        
+        html += `<li data-feature-index="${index}">`;
+        html += `<span class="series-badge" style="background-color:${color}">Series ${series}</span>`;
+        html += `<span class="feature-title">${displayTitle}</span>`;
+        html += '</li>';
+      });
+      
+      html += '</ul></div>';
+
+      const popup = L.popup({ maxWidth: 400, className: 'multi-selector-popup' })
+        .setLatLng(latlng)
+        .setContent(html);
+
+      // Add click handlers when popup is added to DOM
+      popup.on('add', () => {
+        const popupElement = popup.getElement();
+        if (!popupElement) return;
+
+        const items = popupElement.querySelectorAll('.feature-selector li');
+        items.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            map.closePopup(popup);
+            // Open the selected feature's popup
+            const { layer, feature, series } = features[index];
+            openFeaturePopup(layer, feature, series, latlng);
+          });
+        });
+      });
+
+      popup.openOn(map);
+    }
 
     // Helper functions to isolate or show all
     function showOnly(series) {
