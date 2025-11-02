@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# PyNotam dependencies (use pip install for these)
+_abbr.py
+_geo.py
+_parser.py
+cli.py
+notam.py
+timeutils.py
