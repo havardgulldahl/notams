@@ -246,10 +246,15 @@ def build_geometry(
     # start interpreting text
     if isinstance(notam, Notam):
         decoded: str = notam.decoded()
-    else:
+        text = decoded.upper().replace("\n", " ")
+    elif isinstance(notam, str):
         decoded = notam
+        text = decoded.upper().replace("\n", " ")
+    else:
+        # Not a Notam or string (e.g., StubNotam for testing), skip text parsing
+        text = ""
+        decoded = notam  # type: ignore
 
-    text = decoded.upper().replace("\n", " ")
     polygons: List[Dict[str, Any]] = []
 
     # ---- Circles (extended units KM / NM / M) ----
@@ -416,7 +421,7 @@ def build_geometry(
     # Fallback: airport location lookup (object path or we failed above)
     print(f"====Fallback: airport location lookup (object path or we failed above===")
 
-    locs = getattr(decoded, "location", []) or []
+    locs = getattr(notam, "location", []) or []
     if locs:
         first = next(iter(locs), None)
         ap = airport_locations.get(first) if first else None
@@ -425,9 +430,10 @@ def build_geometry(
     return None
 
 
+@dataclass
 class StubNotam:
-    area: Optional[Mapping[str, Any]]
-    location: Optional[Iterable[str]]
+    area: Optional[Mapping[str, Any]] = None
+    location: Optional[Iterable[str]] = None
 
 
 if __name__ == "__main__":
