@@ -245,8 +245,6 @@ def arc_polygon(
     Returns:
         A GeoJSON-like Polygon geometry representing the arc
     """
-    import math
-    
     R = 6371000.0  # Earth radius in meters
     radius_m = radius_nm * 1852
     
@@ -450,6 +448,7 @@ def build_geometry(
     # ---- Arc-based geometries ----
     # Pattern: coordinates THEN [CLOCKWISE|ANTICLOCKWISE] ALONG ARC RADIUS <n>KM CENTRE (<coord>) TO <coord>
     # Also handles: BY ARC OF A CIRCLE RADIUS OF <n>KM CENTRED AT (<coord>)
+    # TODO: Consider pre-compiling complex regex patterns at module level for performance
     for m in re.finditer(
         r"(\d{4,6}\s*[NS]\s*\d{5,7}\s*[EW])[^\d]*?"  # Start coordinate
         r"(?:THEN\s+)?(CLOCKWISE|ANTICLOCKWISE|COUNTER-CLOCKWISE)\s+"
@@ -648,8 +647,6 @@ def build_geometry(
                 return {"type": "Point", "coordinates": [lon_dec, lat_dec]}
 
     # Fallback: airport location lookup (object path or we failed above)
-    print(f"====Fallback: airport location lookup (object path or we failed above===")
-
     locs = getattr(notam, "location", []) or []
     if locs:
         first = next(iter(locs), None)
