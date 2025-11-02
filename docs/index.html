@@ -283,11 +283,13 @@
     }
 
     // Handle map clicks to detect overlapping features
+    // Point click tolerance in degrees (~55km at equator)
+    const POINT_CLICK_TOLERANCE_DEGREES = 0.5;
+    
     map.on('click', function(e) {
       // Find all features at the click point
       const clickedFeatures = [];
       const point = e.latlng;
-      const tolerance = 0.0001; // Small tolerance for point clicking
 
       allFeatureLayers.forEach(({ layer, feature, series, group }) => {
         // Only check visible layers
@@ -302,17 +304,11 @@
             Math.pow(point.lat - lat, 2) + 
             Math.pow(point.lng - lon, 2)
           );
-          isInside = distance < 0.5; // ~50km tolerance for points
+          isInside = distance < POINT_CLICK_TOLERANCE_DEGREES;
         } else if (feature.geometry.type === 'Polygon') {
-          // Use Leaflet's built-in containment check
-          const polygon = L.geoJSON(feature.geometry);
-          isInside = polygon.getBounds().contains(point);
-          
-          // More precise check using ray casting
-          if (isInside) {
-            const coords = feature.geometry.coordinates[0];
-            isInside = pointInPolygon(point, coords);
-          }
+          // Use precise point-in-polygon check
+          const coords = feature.geometry.coordinates[0];
+          isInside = pointInPolygon(point, coords);
         } else if (feature.geometry.type === 'MultiPolygon') {
           // Check each polygon in the MultiPolygon
           feature.geometry.coordinates.forEach(polygonCoords => {
@@ -382,11 +378,10 @@
 
       const popup = L.popup({ maxWidth: 400, className: 'multi-selector-popup' })
         .setLatLng(latlng)
-        .setContent(html)
-        .openOn(map);
+        .setContent(html);
 
-      // Add click handlers to list items
-      setTimeout(() => {
+      // Add click handlers when popup is added to DOM
+      popup.on('add', () => {
         const popupElement = popup.getElement();
         if (!popupElement) return;
 
@@ -399,7 +394,9 @@
             openFeaturePopup(layer, feature, series, latlng);
           });
         });
-      }, 100);
+      });
+
+      popup.openOn(map);
     }
 
     // Helper functions to isolate or show all
