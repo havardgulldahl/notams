@@ -233,41 +233,8 @@
                 L.DomEvent.stopPropagation(e);
                 
                 // Find all features at the click point (may be overlapping)
-                const clickedFeatures = [];
                 const point = e.latlng;
-
-                allFeatureLayers.forEach(({ layer: l, feature: f, series: s, group: g }) => {
-                  // Only check visible layers
-                  if (!map.hasLayer(g)) return;
-
-                  // Check if the click is within this feature
-                  let isInside = false;
-                  
-                  if (f.geometry.type === 'Point') {
-                    const [lon, lat] = f.geometry.coordinates;
-                    const distance = Math.sqrt(
-                      Math.pow(point.lat - lat, 2) + 
-                      Math.pow(point.lng - lon, 2)
-                    );
-                    isInside = distance < POINT_CLICK_TOLERANCE_DEGREES;
-                  } else if (f.geometry.type === 'Polygon') {
-                    // Use precise point-in-polygon check
-                    const coords = f.geometry.coordinates[0];
-                    isInside = pointInPolygon(point, coords);
-                  } else if (f.geometry.type === 'MultiPolygon') {
-                    // Check each polygon in the MultiPolygon
-                    f.geometry.coordinates.forEach(polygonCoords => {
-                      const coords = polygonCoords[0];
-                      if (pointInPolygon(point, coords)) {
-                        isInside = true;
-                      }
-                    });
-                  }
-
-                  if (isInside) {
-                    clickedFeatures.push({ layer: l, feature: f, series: s });
-                  }
-                });
+                const clickedFeatures = detectFeaturesAtPoint(point);
 
                 // If multiple features found, show selector
                 if (clickedFeatures.length > 1) {
@@ -331,11 +298,29 @@
       popup.openOn(map);
     }
 
-    // Handle map clicks to detect overlapping features
-    map.on('click', function(e) {
-      // Find all features at the click point
+    // Point-in-polygon algorithm (ray casting)
+    function pointInPolygon(point, coords) {
+      let inside = false;
+      const x = point.lng;
+      const y = point.lat;
+
+      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
+        const xi = coords[i][0];
+        const yi = coords[i][1];
+        const xj = coords[j][0];
+        const yj = coords[j][1];
+
+        const intersect = ((yi > y) !== (yj > y)) &&
+          (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+        if (intersect) inside = !inside;
+      }
+
+      return inside;
+    }
+
+    // Detect all features at a given point
+    function detectFeaturesAtPoint(point) {
       const clickedFeatures = [];
-      const point = e.latlng;
 
       allFeatureLayers.forEach(({ layer, feature, series, group }) => {
         // Only check visible layers
@@ -357,18 +342,28 @@
           isInside = pointInPolygon(point, coords);
         } else if (feature.geometry.type === 'MultiPolygon') {
           // Check each polygon in the MultiPolygon
-          feature.geometry.coordinates.forEach(polygonCoords => {
+          for (const polygonCoords of feature.geometry.coordinates) {
             const coords = polygonCoords[0];
             if (pointInPolygon(point, coords)) {
               isInside = true;
+              break; // Early exit when found
             }
-          });
+          }
         }
 
         if (isInside) {
           clickedFeatures.push({ layer, feature, series });
         }
       });
+
+      return clickedFeatures;
+    }
+
+    // Handle map clicks to detect overlapping features
+    map.on('click', function(e) {
+      // Find all features at the click point
+      const point = e.latlng;
+      const clickedFeatures = detectFeaturesAtPoint(point);
 
       // If multiple features found, show selector
       if (clickedFeatures.length > 1) {
@@ -380,26 +375,6 @@
       }
       // If no features, do nothing (default Leaflet behavior)
     });
-
-    // Point-in-polygon algorithm (ray casting)
-    function pointInPolygon(point, coords) {
-      let inside = false;
-      const x = point.lng;
-      const y = point.lat;
-
-      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
-        const xi = coords[i][0];
-        const yi = coords[i][1];
-        const xj = coords[j][0];
-        const yj = coords[j][1];
-
-        const intersect = ((yi > y) !== (yj > y)) &&
-          (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
-        if (intersect) inside = !inside;
-      }
-
-      return inside;
-    }
 
     // Show a selector popup when multiple features overlap
     function showFeatureSelector(features, latlng) {
