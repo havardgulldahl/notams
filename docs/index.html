@@ -189,6 +189,9 @@
     // Store all layers with their feature data for overlap detection
     const allFeatureLayers = [];
 
+    // Point click tolerance in degrees (~55km at equator)
+    const POINT_CLICK_TOLERANCE_DEGREES = 0.5;
+
     // Load each local GeoJSON file; show only selected series by default
     const defaultVisible = new Set(['G', 'L']);
     layers.forEach(series => {
@@ -225,9 +228,22 @@
               // Create popup content but don't bind it yet (we'll handle clicks manually)
               layer.popupContent = createPopupContent(feature, series);
               
-              // Disable default click behavior - we'll handle it in the map click handler
+              // Handle click on this layer
               layer.on('click', function(e) {
                 L.DomEvent.stopPropagation(e);
+                
+                // Find all features at the click point (may be overlapping)
+                const point = e.latlng;
+                const clickedFeatures = detectFeaturesAtPoint(point);
+
+                // If multiple features found, show selector
+                if (clickedFeatures.length > 1) {
+                  showFeatureSelector(clickedFeatures, point);
+                } else if (clickedFeatures.length === 1) {
+                  // Single feature - open its popup directly
+                  const { layer: l, feature: f, series: s } = clickedFeatures[0];
+                  openFeaturePopup(l, f, s, point);
+                }
               });
             }
           }).addTo(group);
@@ -282,14 +298,29 @@
       popup.openOn(map);
     }
 
-    // Handle map clicks to detect overlapping features
-    // Point click tolerance in degrees (~55km at equator)
-    const POINT_CLICK_TOLERANCE_DEGREES = 0.5;
-    
-    map.on('click', function(e) {
-      // Find all features at the click point
+    // Point-in-polygon algorithm (ray casting)
+    function pointInPolygon(point, coords) {
+      let inside = false;
+      const x = point.lng;
+      const y = point.lat;
+
+      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
+        const xi = coords[i][0];
+        const yi = coords[i][1];
+        const xj = coords[j][0];
+        const yj = coords[j][1];
+
+        const intersect = ((yi > y) !== (yj > y)) &&
+          (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+        if (intersect) inside = !inside;
+      }
+
+      return inside;
+    }
+
+    // Detect all features at a given point
+    function detectFeaturesAtPoint(point) {
       const clickedFeatures = [];
-      const point = e.latlng;
 
       allFeatureLayers.forEach(({ layer, feature, series, group }) => {
         // Only check visible layers
@@ -311,18 +342,28 @@
           isInside = pointInPolygon(point, coords);
         } else if (feature.geometry.type === 'MultiPolygon') {
           // Check each polygon in the MultiPolygon
-          feature.geometry.coordinates.forEach(polygonCoords => {
+          for (const polygonCoords of feature.geometry.coordinates) {
             const coords = polygonCoords[0];
             if (pointInPolygon(point, coords)) {
               isInside = true;
+              break; // Early exit when found
             }
-          });
+          }
         }
 
         if (isInside) {
           clickedFeatures.push({ layer, feature, series });
         }
       });
+
+      return clickedFeatures;
+    }
+
+    // Handle map clicks to detect overlapping features
+    map.on('click', function(e) {
+      // Find all features at the click point
+      const point = e.latlng;
+      const clickedFeatures = detectFeaturesAtPoint(point);
 
       // If multiple features found, show selector
       if (clickedFeatures.length > 1) {
@@ -334,26 +375,6 @@
       }
       // If no features, do nothing (default Leaflet behavior)
     });
-
-    // Point-in-polygon algorithm (ray casting)
-    function pointInPolygon(point, coords) {
-      let inside = false;
-      const x = point.lng;
-      const y = point.lat;
-
-      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
-        const xi = coords[i][0];
-        const yi = coords[i][1];
-        const xj = coords[j][0];
-        const yj = coords[j][1];
-
-        const intersect = ((yi > y) !== (yj > y)) &&
-          (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
-        if (intersect) inside = !inside;
-      }
-
-      return inside;
-    }
 
     // Show a selector popup when multiple features overlap
     function showFeatureSelector(features, latlng) {
