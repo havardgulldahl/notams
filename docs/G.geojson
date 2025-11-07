@@ -4,20 +4,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          122.0,
-          63.0
-        ]
-      },
-      "properties": {
-        "title": "G0415/25 for Yakutsk Airport",
-        "text": "From: 2025-08-07 00:00:00+00:00\nTo: 2025-11-06 23:59:00+00:00\n\nFIR YAKUTSK SECTOR WEST, SECTOR WEST 1, SECTOR SOUTH-WEST:\nPossible Global Navigation Satellite System Operation FALURE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -3347,8 +3333,8 @@
         }
       },
       "properties": {
-        "title": "G0412/25 for Sokol Airport",
-        "text": "From: 2025-08-05 23:10:00+00:00\nTo: 2025-11-07 09:30:00+00:00\n\nRunway 28: GNSS Landing System Approach NOT PROVIDED BY Ground Based Augmentation System CH21076."
+        "title": "G0631/25 for Sokol Airport",
+        "text": "From: 2025-11-06 23:15:00+00:00\nTo: 2026-02-06 09:30:00+00:00\n\nRunway 28: GNSS Landing System Approach NOT PROVIDED BY Ground Based Augmentation System CH21076."
       }
     },
     {
