@@ -3611,8 +3611,8 @@
         }
       },
       "properties": {
-        "title": "G0460/25 for Pevek Airport",
-        "text": "From: 2025-08-21 04:50:00+00:00\nTo: 2025-11-22 06:00:00+00:00\n\nRunway 17: Ground Based Augmentation System 20591 GNSS Landing System Approach NOT PROVIDED."
+        "title": "G0634/25 for Pevek Airport",
+        "text": "From: 2025-11-10 06:08:00+00:00\nTo: 2026-04-30 06:00:00+00:00\n\nRunway 17: Ground Based Augmentation System 20591 GNSS Landing System Approach NOT PROVIDED."
       }
     },
     {
@@ -4167,8 +4167,8 @@
         }
       },
       "properties": {
-        "title": "G0439/25 for Yelizovo Airport",
-        "text": "From: 2025-08-13 20:40:00+00:00\nTo: 2025-11-13 23:59:00+00:00\n\nGround Based Augmentation System Channel 22269, Channel 21858: RNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 34L\nProcedure NOT PROVIDED."
+        "title": "G0633/25 for Yelizovo Airport",
+        "text": "From: 2025-11-10 02:40:00+00:00\nTo: 2026-02-13 23:59:00+00:00\n\nGround Based Augmentation System Channel 22269, Channel 21858: RNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 34L\nProcedure NOT PROVIDED."
       }
     },
     {
