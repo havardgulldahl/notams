@@ -5557,8 +5557,8 @@
         }
       },
       "properties": {
-        "title": "G0591/25 for Chita-Kadala International Airport",
-        "text": "From: 2025-10-17 02:00:00+00:00\nTo: 2025-11-17 00:00:00+00:00\n\nRunway 29: GNSS Landing System PROCEDURES NOT Available."
+        "title": "G0635/25 for Chita-Kadala International Airport",
+        "text": "From: 2025-11-14 05:40:00+00:00\nTo: 2026-02-17 23:59:00+00:00\n\nRunway 29: GNSS Landing System PROCEDURES NOT Available."
       }
     },
     {
@@ -19243,8 +19243,8 @@
         }
       },
       "properties": {
-        "title": "G0588/25 for Perm International Airport",
-        "text": "From: 2025-10-14 09:30:00+00:00\nTo: 2025-11-14 10:00:00+00:00\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 03/21 NOT Available DUE TO Ground Based Augmentation System\nCH22309, CH20665/21076 FAILURE."
+        "title": "G0636/25 for Perm International Airport",
+        "text": "From: 2025-11-14 06:40:00+00:00\nTo: 2025-12-15 18:00:00+00:00\n\nGround Based Augmentation System Channel 22309, Channel 20665/21076: RNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System),\nGNSS Landing System 03/21 Procedure NOT PROVIDED."
       }
     },
     {
