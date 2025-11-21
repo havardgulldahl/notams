@@ -25673,8 +25673,8 @@
         }
       },
       "properties": {
-        "title": "G0451/25 for Gagarin International Airport",
-        "text": "From: 2025-08-19 07:00:00+00:00\nTo: 2025-11-27 19:59:00+00:00\n\nEXPECT MISSING OF Global Navigation Satellite System SIGNALS Within Aerodrome AREA."
+        "title": "G0644/25 for Gagarin International Airport",
+        "text": "From: 2025-11-20 04:30:00+00:00\nTo: 2026-02-26 19:59:00+00:00\n\nEXPECT MISSING OF Global Navigation Satellite System SIGNALS Within Aerodrome AREA."
       }
     },
     {
@@ -25951,8 +25951,8 @@
         }
       },
       "properties": {
-        "title": "G0452/25 for Gagarin International Airport",
-        "text": "From: 2025-08-19 07:00:00+00:00\nTo: 2025-11-27 19:59:00+00:00\n\nGround Based Augmentation System Channel 20587/20998: Runway 08/26 GNSS Landing System Procedure NOT PROVIDED."
+        "title": "G0645/25 for Gagarin International Airport",
+        "text": "From: 2025-11-20 04:50:00+00:00\nTo: 2026-02-26 19:59:00+00:00\n\nGround Based Augmentation System Channel 20587/20998: Runway 08/26 GNSS Landing System Procedure NOT PROVIDED."
       }
     },
     {
