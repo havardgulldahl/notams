@@ -12015,8 +12015,8 @@
         }
       },
       "properties": {
-        "title": "G0657/25 for Anapa Vityazevo Airport",
-        "text": "From: 2025-11-27 00:00:00+00:00\nTo: 2026-02-26 23:59:00+00:00\n\nGround Based Augmentation System Channel 22073, Channel 20429/Channel 20840: FLW Procedure NOT PROVIDED\nSID RNAV Runway 03, RVAV Runway 21 WITH IDENTIFICATION 2E, 2Y, 2F\n   (Aeronautical Information Publication Aerodrome 2.1 URKA-139,140),\nSTAR RNAV Runway 03, RNAV Runway 21 WITH IDENTIFICATION 2A, 2B\n   (Aeronautical Information Publication Aerodrome 2.1 URKA-147,148),\nIAC GNSS Landing System Runway 03, GNSS Landing System Runway 21 (Aeronautical Information Publication Aerodrome 2.1 URKA-155,156),\nIAC RNP Runway 03, RNP Runway 21 (Aeronautical Information Publication Aerodrome 2.1 URKA-157,158)."
+        "title": "G0666/25 for Anapa Vityazevo Airport",
+        "text": "From: 2025-11-29 07:39:00+00:00\nTo: 2026-02-26 23:59:00+00:00\n\nGround Based Augmentation System Channel 22073, Channel 20429/Channel 20840: FLW Procedure NOT PROVIDED:\nSID RNAV Runway 03, RNAV Runway 21 WITH IDENTIFICATION 2E, 2Y, 2F\n   (Aeronautical Information Publication PAGE Aerodrome 2.1 URKA-139,140),\nSTAR RNAV Runway 03, RNAV Runway 21 WITH IDENTIFICATION 2A, 2B\n   (Aeronautical Information Publication PAGE Aerodrome 2.1 URKA-147,148),\nIAC GNSS Landing System Runway 03, GNSS Landing System Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 URKA-155,156),\nIAC RNP Runway 03, RNP Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 URKA-157,158)."
       }
     },
     {
