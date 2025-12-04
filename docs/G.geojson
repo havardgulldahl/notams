@@ -18673,8 +18673,8 @@
         }
       },
       "properties": {
-        "title": "G0513/25 for Pobedilovo Airport",
-        "text": "From: 2025-09-10 08:30:00+00:00\nTo: 2025-12-13 23:59:00+00:00\n\nGround Based Augmentation System Channel 22120 CH20887/20476 \nRNAV (Global Navigation Satellite System) SID/STAR RNAV (Global Navigation Satellite System) GLS21/03 Procedure NOT PROVIDED."
+        "title": "G0675/25 for Pobedilovo Airport",
+        "text": "From: 2025-12-03 12:30:00+00:00\nTo: 2026-03-12 23:59:00+00:00\n\nGround Based Augmentation System CH22120 CH20887/20476: RNAV(Global Navigation Satellite System) SID/STAR RNAV(Global Navigation Satellite System) \nGNSS Landing System 21/03 Procedure NOT PROVIDED ."
       }
     },
     {
@@ -26778,6 +26778,20 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.15,
+          53.5
+        ]
+      },
+      "properties": {
+        "title": "G0533/25 for Kurumoch International Airport",
+        "text": "From: 2025-09-17 08:00:00+00:00\nTo: 2025-12-31 23:59:00+00:00\n\nSAMARA FIR: Global Navigation Satellite System FAILURE Possible."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -27049,22 +27063,8 @@
         }
       },
       "properties": {
-        "title": "G0206/25 for Kurumoch International Airport",
-        "text": "From: 2025-05-05 10:42:00+00:00\nTo: 2025-12-05 23:59:00+00:00\n\nGround Based Augmentation System Channel 20665/21076, Channel 21898:\nGNSS Landing System 05/23, GNSS Landing System 33 Procedure NOT PROVIDED."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          50.15,
-          53.5
-        ]
-      },
-      "properties": {
-        "title": "G0533/25 for Kurumoch International Airport",
-        "text": "From: 2025-09-17 08:00:00+00:00\nTo: 2025-12-31 23:59:00+00:00\n\nSAMARA FIR: Global Navigation Satellite System FAILURE Possible."
+        "title": "G0674/25 for Kurumoch International Airport",
+        "text": "From: 2025-12-03 09:30:00+00:00\nTo: 2026-02-18 23:59:00+00:00\n\nGround Based Augmentation System Channel 20665/21076, Channel 21898: GNSS Landing System 05/23, GNSS Landing System 33 Procedure NOT PROVIDED."
       }
     }
   ]
