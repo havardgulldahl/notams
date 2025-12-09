@@ -25306,6 +25306,284 @@
         "coordinates": [
           [
             [
+              147.95,
+              45.66638590354037
+            ],
+            [
+              148.0083988039748,
+              45.664366084923
+            ],
+            [
+              148.06622271723828,
+              45.6583265157645
+            ],
+            [
+              148.12290287965382,
+              45.64832664731026
+            ],
+            [
+              148.1778824138812,
+              45.634464871581656
+            ],
+            [
+              148.2306222225426,
+              45.61687749079385
+            ],
+            [
+              148.28060655687003,
+              45.59573729332902
+            ],
+            [
+              148.32734828808265,
+              45.571251754572636
+            ],
+            [
+              148.37039381874987,
+              45.54366088548371
+            ],
+            [
+              148.4093275784954,
+              45.513234755869576
+            ],
+            [
+              148.44377605633537,
+              45.48027072290245
+            ],
+            [
+              148.47341133046746,
+              45.44509039840182
+            ],
+            [
+              148.49795406516625,
+              45.40803639078365
+            ],
+            [
+              148.51717595333116,
+              45.36946885933475
+            ],
+            [
+              148.53090159194034,
+              45.32976191961534
+            ],
+            [
+              148.53900978596576,
+              45.28929993934979
+            ],
+            [
+              148.54143428402378,
+              45.24847376417056
+            ],
+            [
+              148.53816395602664,
+              45.20767691208343
+            ],
+            [
+              148.52924242926562,
+              45.1673017745771
+            ],
+            [
+              148.51476720463052,
+              45.12773586097054
+            ],
+            [
+              148.494888279033,
+              45.089358120937916
+            ],
+            [
+              148.46980630356884,
+              45.05253537823615
+            ],
+            [
+              148.43977030956293,
+              45.01761890654555
+            ],
+            [
+              148.4050750364661,
+              44.98494117607109
+            ],
+            [
+              148.3660578966987,
+              44.954812797193476
+            ],
+            [
+              148.32309561305965,
+              44.92751968504439
+            ],
+            [
+              148.27660056435738,
+              44.90332046644622
+            ],
+            [
+              148.22701687456887,
+              44.88244414822978
+            ],
+            [
+              148.17481628021872,
+              44.86508806354453
+            ],
+            [
+              148.12049380987804,
+              44.85141611041837
+            ],
+            [
+              148.06456330882335,
+              44.84155729451534
+            ],
+            [
+              148.007552841042,
+              44.8356045857816
+            ],
+            [
+              147.95,
+              44.833614096459634
+            ],
+            [
+              147.89244715895796,
+              44.8356045857816
+            ],
+            [
+              147.83543669117662,
+              44.84155729451534
+            ],
+            [
+              147.77950619012194,
+              44.85141611041837
+            ],
+            [
+              147.72518371978123,
+              44.86508806354453
+            ],
+            [
+              147.6729831254311,
+              44.88244414822978
+            ],
+            [
+              147.6233994356426,
+              44.90332046644622
+            ],
+            [
+              147.5769043869403,
+              44.92751968504439
+            ],
+            [
+              147.53394210330129,
+              44.954812797193476
+            ],
+            [
+              147.49492496353386,
+              44.98494117607109
+            ],
+            [
+              147.46022969043702,
+              45.01761890654555
+            ],
+            [
+              147.4301936964311,
+              45.05253537823615
+            ],
+            [
+              147.40511172096697,
+              45.089358120937916
+            ],
+            [
+              147.38523279536943,
+              45.12773586097054
+            ],
+            [
+              147.37075757073433,
+              45.1673017745771
+            ],
+            [
+              147.36183604397334,
+              45.20767691208343
+            ],
+            [
+              147.3585657159762,
+              45.24847376417056
+            ],
+            [
+              147.3609902140342,
+              45.28929993934979
+            ],
+            [
+              147.36909840805964,
+              45.32976191961534
+            ],
+            [
+              147.38282404666882,
+              45.36946885933475
+            ],
+            [
+              147.4020459348337,
+              45.40803639078365
+            ],
+            [
+              147.42658866953252,
+              45.44509039840182
+            ],
+            [
+              147.4562239436646,
+              45.48027072290245
+            ],
+            [
+              147.49067242150457,
+              45.513234755869576
+            ],
+            [
+              147.5296061812501,
+              45.54366088548371
+            ],
+            [
+              147.57265171191733,
+              45.571251754572636
+            ],
+            [
+              147.61939344312992,
+              45.59573729332902
+            ],
+            [
+              147.66937777745738,
+              45.61687749079385
+            ],
+            [
+              147.72211758611877,
+              45.634464871581656
+            ],
+            [
+              147.77709712034616,
+              45.64832664731026
+            ],
+            [
+              147.83377728276167,
+              45.6583265157645
+            ],
+            [
+              147.89160119602514,
+              45.664366084923
+            ],
+            [
+              147.95,
+              45.66638590354037
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 25.0
+        }
+      },
+      "properties": {
+        "title": "C6582/25 for Iturup Airport",
+        "text": "From: 2025-12-08 20:45:00+00:00\nTo: 2025-12-14 22:00:00+00:00\n\nTAR Unserviceable. RADAR CONTROL Within Aerodrome AREA NOT PROVIDED."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               104.18333333333334,
               52.78305257020704
             ],
@@ -42000,284 +42278,6 @@
         "coordinates": [
           [
             [
-              86.61666666666666,
-              67.5332771807081
-            ],
-            [
-              86.63802612899666,
-              67.53287477288576
-            ],
-            [
-              86.65917773203218,
-              67.53167146559942
-            ],
-            [
-              86.67991570212652,
-              67.52967896808752
-            ],
-            [
-              86.70003841353368,
-              67.52691666517758
-            ],
-            [
-              86.71935040423105,
-              67.52341142296935
-            ],
-            [
-              86.73766432298876,
-              67.5191973198433
-            ],
-            [
-              86.75480278640401,
-              67.51431530579018
-            ],
-            [
-              86.77060012597,
-              67.50881279383395
-            ],
-            [
-              86.78490400686945,
-              67.50274318804192
-            ],
-            [
-              86.7975769020378,
-              67.49616535327006
-            ],
-            [
-              86.80849740708443,
-              67.48914303237329
-            ],
-            [
-              86.81756138384593,
-              67.48174421711077
-            ],
-            [
-              86.82468292262607,
-              67.474040479394
-            ],
-            [
-              86.8297951155049,
-              67.4661062698544
-            ],
-            [
-              86.83285063542948,
-              67.45801819094956
-            ],
-            [
-              86.8338221180909,
-              67.44985425198217
-            ],
-            [
-              86.83270234580509,
-              67.44169311347522
-            ],
-            [
-              86.8295042347229,
-              67.43361332833688
-            ],
-            [
-              86.82426062866477,
-              67.4256925871602
-            ],
-            [
-              86.8170239046936,
-              67.4180069748439
-            ],
-            [
-              86.80786539718783,
-              67.41063024549726
-            ],
-            [
-              86.79687464865097,
-              67.40363312230922
-            ],
-            [
-              86.78415849678917,
-              67.39708262872787
-            ],
-            [
-              86.76984000851024,
-              67.3910414569167
-            ],
-            [
-              86.75405727245248,
-              67.38556737903505
-            ],
-            [
-              86.73696206244881,
-              67.38071270643943
-            ],
-            [
-              86.71871838498845,
-              67.37652380142165
-            ],
-            [
-              86.6995009242653,
-              67.37304064560058
-            ],
-            [
-              86.67949339881922,
-              67.37029646856242
-            ],
-            [
-              86.65888684409705,
-              67.368317439813
-            ],
-            [
-              86.63787783550102,
-              67.36712242656009
-            ],
-            [
-              86.61666666666666,
-              67.36672281929194
-            ],
-            [
-              86.5954554978323,
-              67.36712242656009
-            ],
-            [
-              86.57444648923627,
-              67.368317439813
-            ],
-            [
-              86.55383993451409,
-              67.37029646856242
-            ],
-            [
-              86.53383240906801,
-              67.37304064560058
-            ],
-            [
-              86.51461494834487,
-              67.37652380142165
-            ],
-            [
-              86.4963712708845,
-              67.38071270643943
-            ],
-            [
-              86.47927606088084,
-              67.38556737903505
-            ],
-            [
-              86.46349332482306,
-              67.3910414569167
-            ],
-            [
-              86.44917483654415,
-              67.39708262872787
-            ],
-            [
-              86.43645868468234,
-              67.40363312230922
-            ],
-            [
-              86.4254679361455,
-              67.41063024549726
-            ],
-            [
-              86.41630942863972,
-              67.4180069748439
-            ],
-            [
-              86.40907270466853,
-              67.4256925871602
-            ],
-            [
-              86.4038290986104,
-              67.43361332833688
-            ],
-            [
-              86.40063098752823,
-              67.44169311347522
-            ],
-            [
-              86.39951121524241,
-              67.44985425198217
-            ],
-            [
-              86.40048269790383,
-              67.45801819094956
-            ],
-            [
-              86.40353821782841,
-              67.4661062698544
-            ],
-            [
-              86.40865041070724,
-              67.474040479394
-            ],
-            [
-              86.4157719494874,
-              67.48174421711077
-            ],
-            [
-              86.42483592624889,
-              67.48914303237329
-            ],
-            [
-              86.4357564312955,
-              67.49616535327006
-            ],
-            [
-              86.44842932646387,
-              67.50274318804192
-            ],
-            [
-              86.4627332073633,
-              67.50881279383395
-            ],
-            [
-              86.47853054692929,
-              67.51431530579018
-            ],
-            [
-              86.49566901034456,
-              67.5191973198433
-            ],
-            [
-              86.51398292910226,
-              67.52341142296935
-            ],
-            [
-              86.53329491979964,
-              67.52691666517758
-            ],
-            [
-              86.55341763120678,
-              67.52967896808752
-            ],
-            [
-              86.57415560130114,
-              67.53167146559942
-            ],
-            [
-              86.59530720433666,
-              67.53287477288576
-            ],
-            [
-              86.61666666666666,
-              67.5332771807081
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 5.0
-        }
-      },
-      "properties": {
-        "title": "C6549/25 for Igarka Airport",
-        "text": "From: 2025-12-07 13:00:00+00:00\nTo: 2025-12-12 23:59:00+00:00\n\nGPU Unserviceable DUE TO MAINT."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               87.33333333333333,
               69.39994384737474
             ],
@@ -44769,8 +44769,8 @@
         }
       },
       "properties": {
-        "title": "C6524/25 for Norilsk-Alykel Airport",
-        "text": "From: 2025-12-08 03:30:00+00:00\nTo: 2026-03-28 05:00:00+00:00\n\nRunway 01/19 CLSD FOR ARR/DEP OF ALL ACFT TYPES."
+        "title": "C6558/25 for Norilsk-Alykel Airport",
+        "text": "From: 2025-12-09 03:30:00+00:00\nTo: 2025-12-13 05:00:00+00:00\n\nRunway 01/19 CLSD FOR ARR/DEP OF ALL TYP."
       }
     },
     {
@@ -56167,8 +56167,8 @@
         }
       },
       "properties": {
-        "title": "C4498/25 for Izhevsk Airport",
-        "text": "From: 2025-08-25 09:35:00+00:00\nTo: 2025-11-20 23:59:00+00:00\n\nPRIOR COORDINATION WITH Aerodrome MAIN OPERATOR REQ TO FPL Aerodrome FOR ACFT\nWITH FAULTY APU, BY PHONE 8(3412)630-544 OR \nE-MAIL: SNA(AT)IZHAVIA.SU, PDSP(AT)IZHAVIA.SU."
+        "title": "C6566/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 10:55:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGES IN GROUND MOVEMENT AND ACFT PARKING/DOCKING CHART ON\nAPN, FLW REQUIREMENTS IMPLEMENTED:\nSTANDS 12, 13:\n- PARKING ON STANDS 12, 13 ALLOWED BY TAX UNDER OWN ENGINE POWER OR\nBY PUSHBACK WITH TAIL DIRECTED TOWARDS NORTH, OR BY TOWING FACING\nNORTH.\n- ENTRY INTO STANDS 12, 13 FOR ALIGNMENT WITH TAIL TOWARDS NORTH:\nAFTER VACATING TWY, TAXI WITH LEFT TURN VIA TAX RTE 2, THEN TAXI IN\nUNDER MARSHALLER INSTRUCTIONS.\n- FOR ALIGNMENT FACING NORTH: TAXI AFTER TWY VACATION WITH LEFT \nTURN VIA TAX RTE 2 WITH STOP ON TAX RTE OR OTHER SUITABLE ACFT\nSTAND UNDER MARSHALLER INSTUCTIONS FOR FURTHER TOWING.\nTAX FM ACFT STANDS 12, 13 UNDER OWN ENG PWR OR TOWING FOR DEP BOTH\nALLOWED.\n- FOR TAX RTE 2, 3 AVAILABILITY FOR CERTAIN ACFT TYPE MOVEMENT SEE\nPAGE 2."
       }
     },
     {
@@ -56445,8 +56445,8 @@
         }
       },
       "properties": {
-        "title": "C4785/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:20:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 1:\n- PARKING OF ACFT ONTO STAND 1 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 1 SHALL BE EXECUTED\nSTRAIGHT VIA TAX RTE 1 FOLLOWED BY ACFT STOP ON STAND BY\nMARSHALLER'S INSTRUCTION. TAX INTO STAND 1 SHALL BE EXECUTED AT\nREDUCED SPEED AND ACFT CREW'S INCREASED CAUTION.\n- ACFT TAX FROM STAND 1 BFR DEP PERMITTED BY TOWING ONLY."
+        "title": "C6567/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:00:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGES IN GROUND MOVEMENT AND ACFT PARKING/DOCKING CHART ON\nAPN, FLW REQUIREMENTS IMPLEMENTED:\nSTAND 11:\n- PARKING ON STAND 11 BY TAX UNDER OWN ENGINE POWER OR BY PUSHBACK\nWITH TAIL DIRECTED TOWARDS NORTH, OR BY TOWING FACING NORTH.\n- ENTRY INTO STAND 11 FOR ALIGNMENT FACING NORTH:\nAFTER VACATING TWY, TAXI WITH LEFT TURN VIA TAX RTE 2, 3 THEN TAXI\nIN UNDER MARSHALLER INSTRUCTIONS OR TAXI AFTER TWY VACATION \nSTRAIGHT VIA TAX RTE 1 THEN STOP ON TAX PATH OR OTHER SUITABLE ACFT\nSTAND UNDER MARSHALLER INSTRUCTIONS FOR FURTHER TOWING.\n- FOR ALIGNMENT WITH TAIL DIRECTED TOWARDS NORTH: \nTAXI AFTER TWY VACATION STRAIGHT VIA TAX RTE 1 WITH FURTHER TAX \nINTO STAND UNDER MARSHALLER INSTRUCTIONS OR TAX AFTER TWY VACATION\nVIA TAX RTE 2, 3 WITH STOP ON SUITABLE ACFT STAND UNDER MARSHALLER\nINSTRUCTIONS FOR FORTHER TOWING. \nEXIT FM ACFT STAND 11 BY TOWING FOR DEP COMPULSORY. \n- FOR TAX RTE 2, 3 AVAILABILITY FOR CERTAIN ACFT TYPE MOVEMENT SEE\nPAGE 2. \nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 UDII-1."
       }
     },
     {
@@ -56723,8 +56723,8 @@
         }
       },
       "properties": {
-        "title": "C4786/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:20:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHANGE OF ACFT PARKING AND ACFT MOV CHARTS ON APRON, THE FLW\nREQUIREMENTS IMPLEMENTED:\nSTAND 2: -PARKING OF ACFT ONTO STAND 2 IS PERMITTED BY TAXIING\nUNDER OWN ENGINES POWER/BY TOWING FACING WEST. \n-TAXIING OF ACFT INTO STAND 2 EXECUTED, AFTER VACATING TWY,\nSTRAIGHT ALONG TAX RTE 1 FOLLOWED BY A TURN TO THE RIGHT ALONG THE\nMARKING AND SUBSEQUENT STOP ONTO STAND BY MARSHALLER INSTRUCTION.\nTAXIING OF ACFT INTO STAND 2 EXECUTED ON REDUCED SPEED AND\nEXTRA ATTENTION OF ACFT CREW.   \n- TAXIING OF ACFT OUT OF STAND 2 BEFORE DEP SHALL BE EXECUTED ONLY\nBY TOWING."
+        "title": "C6568/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:05:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 10:\n- PARKING OF ACFT ONTO STAND 10 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 10 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2, TAX RTE 3 AND TAX INTO STAND BY MARSHALLER'S\nINSTRUCTION, OR BY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX \nRTE 1 FOLLOWED BY ACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY\nMARSHALLER'S INSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 10 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING STRAIGHT VIA TAX RTE 1\nFOLLOWED BY TAXIING INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY VIA TAX RTE 2, TAX RTE 3  FOLLOWED BY\nACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- ACFT TAX OUT OF STAND 10 BFR DEP SHALL BE EXECUTED BY TAXIING\nUNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1"
       }
     },
     {
@@ -57001,8 +57001,8 @@
         }
       },
       "properties": {
-        "title": "C4787/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:30:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHANGING OF ACFT PARKING AND MOV ON APRON FLW REQUIREMENTS\nIMPLEMENTED:\nSTAND 2A: ACFT PARKING Available BY TAX UNDER OWN ENG POWER/BY TOWING\nFACING NW.\n- ACFT TAX INTO STAND 2A Available AFTER VACATING TWY STRAIGHT ALONG\nTAX RTE 1 FOLLOWED BY RIGHT TURN ALONG MARKING AND ACFT STOP ON\nSTAND BY MARSHALLER'S INSTRUCTION. TAX INTO STAND 2A SHALL BE\nEXECUTED AT REDUCED SPEED AND ACFT CREW'S INCREASED CAUTION.\n- ACFT TAX FROM STAND 2A BEFORE DEP PERMITTED BY TOWING ONLY."
+        "title": "C6569/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:10:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGES IN GROUND MOVEMENT AND ACFT PARKING/DOCKING CHART ON\nAPN, FLW REQUIREMENTS IMPLEMENTED:\nACFT STAND 9:\n- PARKING ON STAND 9 BY TAX UNDER OWN ENGINE POWER OR BY PUSHBACK\nWITH TAIL DIRECTED TOWARDS NORTH, OR BY TOWING FACING NORTH \nALLOWED.\n- ENTRY INTO STAND 9 FOR ALIGNMENT FACING NORTH:\nAFTER VACATING TWY, TAXI WITH LEFT TURN VIA TAX RTE 2, THEN TAXI IN\nUNDER MARSHALLER INSTRUCTIONS OR TAXI AFTER TWY VACATION STRAIGHT \nVIA TAX RTE 1C WITH STOP ON TAX PATH OR OTHER SUITABLE ACFT STAND\nUNDER MARSHALLER INSTRUCTIONS FOR FURTHE TOWING.\n- ENTRY INTO STAND 9 FOR ALIGNMENT WITH TAIL DIRECTED TOWARDS \nNORTH:\nTAXI AFTER VACATING TWY STRAIGHT VIA TAX RTE 1 THEN TAX IN UNDER \nMARSHALLER INSTRUCTIONS OR TAXI AFTER TWY VACATION VIA TAX RTE 2 \nWITH STOP ON TAX PATH OR OTHER SUITABLE ACFT STAND UNDER MARSHALLER\nINSTRUCTIONS FOR FURTHER TOWING.\nTAX FM ACFT STAND 9 UNDER OWN ENG PWR OR TOWING FOR DEP BOTH \nALLOWED.\n- FOR TAX RTE 2, 3 AVAILABILITY FOR CERTAIN ACFT TYPE MOVEMENT SEE\nPAGE 2. \nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1."
       }
     },
     {
@@ -57279,8 +57279,8 @@
         }
       },
       "properties": {
-        "title": "C4788/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:30:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHANGE OF ACFT PARKING AND ACFT MOV CHARTS ON APRON, THE FLW\nREQUIREMENTS IMPLEMENTED:\nSTAND 5-7: -PARKING OF ACFT ONTO STAND 5-7 IS PERMITTED BY TAXIING\nUNDER OWN ENGINES POWER FACING NORTH, BY TOWING FACING NORTH\nOR BY TOWING TAIL TOWARDS NORTH.\n-TAXIING OF ACFT INTO STAND 5-7 EXECUTED, AFTER VACATING TWY,\nSTRAIGHT ALONG TAX RTE 1 FOLLOWED BY A TURN TO THE RIGHT ALONG THE\nMARKING AND:\nSUBSEQUENT STOP ONTO STAND BY MARSHALLER INSTRUCTION, OR\nSTOP ON TAX RTE OR ANOTHER SUITABLE STAND BY MARSHALLER INSTRUCTION\nFOR SUBSEQUENT TOWING.\n- TAXIING OF ACFT OUT OF STAND 5-7 BEFORE DEP SHALL BE EXECUTED\nUNDER OWN ENGINES POWER OR BY TOWING."
+        "title": "C6570/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:25:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 8:\n- PARKING OF ACFT ONTO STAND 8 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 8 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2 AND TAX INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX RTE 1 FOLLOWED BY\nACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 8 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING STRAIGHT VIA TAX RTE 1\nFOLLOWED BY TAXIING INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY VIA TAX RTE 2 FOLLOWED BY ACFT STOP\nON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S INSTRUCTION FOR\nFURTHER TOWING.\n- ACFT TAX OUT OF STAND 8 BFR DEP SHALL BE EXECUTED BY TAXIING\nUNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1."
       }
     },
     {
@@ -57557,8 +57557,8 @@
         }
       },
       "properties": {
-        "title": "C4789/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:45:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 8:\n- PARKING OF ACFT ONTO STAND 8 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 8 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2 AND TAX INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX RTE 1 FOLLOWED BY\nACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 8 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING STRAIGHT VIA TAX RTE 1\nFOLLOWED BY TAXIING INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY VIA TAX RTE 2 FOLLOWED BY ACFT STOP\nON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S INSTRUCTION FOR\nFURTHER TOWING.\n- ACFT TAX OUT OF STAND 8 BFR DEP SHALL BE EXECUTED BY TAXIING\nUNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2."
+        "title": "C6571/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:30:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGES IN GROUND MOVEMENT AND ACFT PARKING/DOCKING CHART ON\nAPN, FLW REQUIREMENTS IMPLEMENTED:\nSTANDS 5-7:\n- PARKING ON STANDS 5-7 ALLOWED BY TAX UNDER OWN ENGINE POWER OR\nBY PUSHBACK WITH TAIL DIRECTED TOWARDS NORTH, OR BY TOWING FACING\nNORTH.\n- ENTRY INTO STANDS 5-7:\nAFTER VACATING TWY, TAXI STRAIGHT VIA TAX RTE 1 WITH RIGHT TURN \nALONG MARKING THEN STOP UNDER MARSHALLER INSTRUCTIONS OR STOP ON \nTAX PATH OR PTHER SUITABLE ACFT STAND UNDER MARSHALLER INSTRUCTIONS\nFOR FURTHER TOWING.\nTAX FM ACFT STANDS 5-7 UNDER OWN ENG PWR OR TOWING FOR DEP BOTH\nALLOWED.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 UAII-1."
       }
     },
     {
@@ -57835,8 +57835,8 @@
         }
       },
       "properties": {
-        "title": "C4790/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 09:48:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 9:\n- PARKING OF ACFT ONTO STAND 9 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 9 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2 AND TAX INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX RTE 1C FOLLOWED BY\nACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 9 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING STRAIGHT VIA TAX RTE 1\nFOLLOWED BY TAXIING INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY VIA TAX RTE 2 FOLLOWED BY ACFT STOP\nON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S INSTRUCTION FOR\nFURTHER TOWING.\n- ACFT TAX OUT OF STAND 9 BFR DEP SHALL BE EXECUTED BY TAXIING\nUNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2."
+        "title": "C6572/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:40:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGING OF ACFT PARKING AND MOV ON APRON FLW REQUIREMENTS\nIMPLEMENTED:\nSTAND 2A: ACFT PARKING Available BY TAX UNDER OWN ENG POWER/BY TOWING\nFACING NW.\n- ACFT TAX INTO STAND 2A Available AFTER VACATING TWY STRAIGHT ALONG\nTAX RTE 1 FOLLOWED BY RIGHT TURN ALONG MARKING AND ACFT STOP ON\nSTAND BY MARSHALLER'S INSTRUCTION. TAX INTO STAND 2A SHALL BE\nEXECUTED AT REDUCED SPEED AND ACFT CREW'S INCREASED CAUTION.\n- ACFT TAX FROM STAND 2A BEFORE DEP PERMITTED BY TOWING ONLY.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1."
       }
     },
     {
@@ -58113,8 +58113,8 @@
         }
       },
       "properties": {
-        "title": "C4791/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 10:00:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 10:\n- PARKING OF ACFT ONTO STAND 10 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 10 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2, TAX RTE 3 AND TAX INTO STAND BY MARSHALLER'S\nINSTRUCTION, OR BY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX \nRTE 1 FOLLOWED BY ACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY\nMARSHALLER'S INSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 10 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING STRAIGHT VIA TAX RTE 1\nFOLLOWED BY TAXIING INTO STAND BY MARSHALLER'S INSTRUCTION, OR\nBY TAXIING AFTER VACATING TWY VIA TAX RTE 2, TAX RTE 3  FOLLOWED BY\nACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- ACFT TAX OUT OF STAND 10 BFR DEP SHALL BE EXECUTED BY TAXIING\nUNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2."
+        "title": "C6573/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:45:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHANGE OF ACFT PARKING AND ACFT MOV CHARTS ON APRON, THE FLW\nREQUIREMENTS IMPLEMENTED:\nSTAND 2: -PARKING OF ACFT ONTO STAND 2 IS PERMITTED BY TAXIING\nUNDER OWN ENGINES POWER/BY TOWING FACING WEST. \n-TAXIING OF ACFT INTO STAND 2 EXECUTED, AFTER VACATING TWY,\nSTRAIGHT ALONG TAX RTE 1 FOLLOWED BY A TURN TO THE RIGHT ALONG THE\nMARKING AND SUBSEQUENT STOP ONTO STAND BY MARSHALLER INSTRUCTION.\nTAXIING OF ACFT INTO STAND 2 EXECUTED ON REDUCED SPEED AND\nEXTRA ATTENTION OF ACFT CREW.   \n- TAXIING OF ACFT OUT OF STAND 2 BEFORE DEP SHALL BE EXECUTED ONLY\nBY TOWING.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1."
       }
     },
     {
@@ -58391,286 +58391,8 @@
         }
       },
       "properties": {
-        "title": "C4792/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 10:03:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 11:\n- PARKING OF ACFT ONTO STAND 11 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH OR TAIL TO NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 11 FOR ACFT PARKED\nFACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN TO LEFT\nVIA TAX RTE 2, TAX RTE 3 AND TAXIING INTO STAND BY MARSHALLER'S\nINSTRUCTION, OR BY TAXIING AFTER VACATING TWY STRAIGHT VIA TAX\nRTE 1 FOLLOWED BY ACFT STOP ON TAX RTE OR OTHER SUITABLE STAND BY\nMARSHALLER'S INSTRUCTION FOR FURTHER TOWING.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 11 FOR ACFT PARKED\nTAIL TO NORTH SHALL BE EXECUTED BY TAXIING AFTER VACATING TWY\nSTRAIGHT VIA TAX RTE 1 FOLLOWED BY TAX INTO STAND BY MARSHALLER'S\nINSTRUCTION, OR BY TAXIING AFTER VACATING TWY VIA TAX RTE 2, TAX\nRTE 3 FOLLOWED BY ACFT STOP ON OTHER SUITABLE STAND BY MARSHALLER'S\nINSTRUCTION FOR FURTHER TOWING.\n- ACFT TAX OUT OF STAND 11 BFR DEP PERMITTED BY TOWING ONLY.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              53.45,
-              56.916610514041416
-            ],
-            [
-              53.46495349402875,
-              56.91620861973966
-            ],
-            [
-              53.47976202053376,
-              56.9150068331121
-            ],
-            [
-              53.49428204518985,
-              56.9130168044671
-            ],
-            [
-              53.508372884815486,
-              56.910257822979816
-            ],
-            [
-              53.52189809501627,
-              56.90675662611466
-            ],
-            [
-              53.534726812883534,
-              56.90254713565789
-            ],
-            [
-              53.546735040702416,
-              56.89767012315623
-            ],
-            [
-              53.55780685740022,
-              56.892172808291235
-            ],
-            [
-              53.567835545405515,
-              56.886108394407735
-            ],
-            [
-              53.576724621672085,
-              56.8795355460482
-            ],
-            [
-              53.58438876282841,
-              56.8725178139167
-            ],
-            [
-              53.59075461571898,
-              56.86512301320025
-            ],
-            [
-              53.595761485985285,
-              56.8574225616074
-            ],
-            [
-              53.599361898766894,
-              56.84949078384004
-            ],
-            [
-              53.60152202706295,
-              56.84140418949233
-            ],
-            [
-              53.60222198475933,
-              56.83324073157114
-            ],
-            [
-              53.601455982774645,
-              56.825079052953164
-            ],
-            [
-              53.599232348191,
-              56.816997728139015
-            ],
-            [
-              53.595573407596035,
-              56.80907450763477
-            ],
-            [
-              53.59051523715655,
-              56.801385572190426
-            ],
-            [
-              53.58410728316109,
-              56.79400480395656
-            ],
-            [
-              53.576411857898805,
-              56.78700308138913
-            ],
-            [
-              53.56750351678092,
-              56.78044760444322
-            ],
-            [
-              53.5574683235539,
-              56.77440125625363
-            ],
-            [
-              53.54640301130023,
-              56.76892200710993
-            ],
-            [
-              53.53441404767345,
-              56.76406236609985
-            ],
-            [
-              53.52161661347167,
-              56.75986888532381
-            ],
-            [
-              53.5081335042211,
-              56.75638172107887
-            ],
-            [
-              53.494093964923316,
-              56.75363425587771
-            ],
-            [
-              53.479632468521075,
-              56.75165278461249
-            ],
-            [
-              53.464887448962855,
-              56.75045626759644
-            ],
-            [
-              53.45,
-              56.75005615262527
-            ],
-            [
-              53.43511255103715,
-              56.75045626759644
-            ],
-            [
-              53.42036753147893,
-              56.75165278461249
-            ],
-            [
-              53.40590603507669,
-              56.75363425587771
-            ],
-            [
-              53.3918664957789,
-              56.75638172107887
-            ],
-            [
-              53.378383386528334,
-              56.75986888532381
-            ],
-            [
-              53.365585952326555,
-              56.76406236609985
-            ],
-            [
-              53.35359698869978,
-              56.76892200710993
-            ],
-            [
-              53.34253167644611,
-              56.77440125625363
-            ],
-            [
-              53.33249648321908,
-              56.78044760444322
-            ],
-            [
-              53.3235881421012,
-              56.78700308138913
-            ],
-            [
-              53.31589271683892,
-              56.79400480395656
-            ],
-            [
-              53.309484762843454,
-              56.801385572190426
-            ],
-            [
-              53.30442659240397,
-              56.80907450763477
-            ],
-            [
-              53.300767651809,
-              56.816997728139015
-            ],
-            [
-              53.29854401722536,
-              56.825079052953164
-            ],
-            [
-              53.297778015240674,
-              56.83324073157114
-            ],
-            [
-              53.29847797293706,
-              56.84140418949233
-            ],
-            [
-              53.30063810123311,
-              56.84949078384004
-            ],
-            [
-              53.30423851401471,
-              56.8574225616074
-            ],
-            [
-              53.30924538428103,
-              56.86512301320025
-            ],
-            [
-              53.315611237171595,
-              56.8725178139167
-            ],
-            [
-              53.323275378327914,
-              56.8795355460482
-            ],
-            [
-              53.33216445459449,
-              56.886108394407735
-            ],
-            [
-              53.342193142599776,
-              56.892172808291235
-            ],
-            [
-              53.35326495929759,
-              56.89767012315623
-            ],
-            [
-              53.36527318711647,
-              56.90254713565789
-            ],
-            [
-              53.37810190498374,
-              56.90675662611466
-            ],
-            [
-              53.39162711518452,
-              56.910257822979816
-            ],
-            [
-              53.40571795481016,
-              56.9130168044671
-            ],
-            [
-              53.42023797946624,
-              56.9150068331121
-            ],
-            [
-              53.43504650597126,
-              56.91620861973966
-            ],
-            [
-              53.45,
-              56.916610514041416
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 5.0
-        }
-      },
-      "properties": {
-        "title": "C4793/25 for Izhevsk Airport",
-        "text": "From: 2025-09-08 10:15:00+00:00\nTo: 2025-12-08 23:59:00+00:00\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 12, 13:\n- PARKING OF ACFT ONTO STAND 12, 13 PERMITTED BY TAX UNDER OWN\nENGINES POWER (OR BY TOWING) TAIL TO NORTH OR BY TOWING FACING\nNOTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 12, 13 FOR ACFT\nPARKED TAIL TO NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN\nTO LEFT VIA TAX RTE 2 AND TAX INTO STAND BY MARSHALLER'S \nINSTRUCTION.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 12, 13 FOR ACFT\nPARKED FACING NORTH SHALL BE EXECUTED BY TAXIING FOLLOWED BY TURN\nTO LEFT VIA TAX RTE 2 FOLLOWED BY ACFT STOP ON TAX RTE OR OTHER\nSUITABLE STAND BY MARSHALLER'S INSTRUCTION FOR FURTHER TOWING.\n- ACFT TAX OUT OF STAND 12, 13 BFR DEP SHALL BE EXECUTED BY\nTAXIING UNDER OWN ENGINES POWER OR BY TOWING.\n- POSSIBILITY OF CERTAIN ACFT TYPE TAXIING VIA TAX RTE 2, TAX RTE 3\nSEE ON PAGE 2."
+        "title": "C6574/25 for Izhevsk Airport",
+        "text": "From: 2025-12-08 11:50:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDUE TO CHG IN CHART OF ACFT PARKING AND MOV ON APN FLW REQUIREMENTS\nINTRODUCED:\nSTAND 1:\n- PARKING OF ACFT ONTO STAND 1 PERMITTED BY TAX UNDER OWN ENGINES\nPOWER (OR BY TOWING) FACING NORTH.\n- TAX OF ACFT, AFTER VACATING TWY, INTO STAND 1 SHALL BE EXECUTED\nSTRAIGHT VIA TAX RTE 1 FOLLOWED BY ACFT STOP ON STAND BY\nMARSHALLER'S INSTRUCTION. TAX INTO STAND 1 SHALL BE EXECUTED AT\nREDUCED SPEED AND ACFT CREW'S INCREASED CAUTION.\n- ACFT TAX FROM STAND 1 BFR DEP PERMITTED BY TOWING ONLY.\nReference Aeronautical Information Publication RUSSIA Aerodrome 2.2 USII-1."
       }
     },
     {
@@ -65625,6 +65347,284 @@
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              41.483333333333334,
+              52.88327718070807
+            ],
+            [
+              41.49685995157116,
+              52.88287541056069
+            ],
+            [
+              41.51025555585589,
+              52.88167399159563
+            ],
+            [
+              41.52339042281488,
+              52.87968455990627
+            ],
+            [
+              41.536137396681056,
+              52.87692638159177
+            ],
+            [
+              41.548373139382775,
+              52.87342616307726
+            ],
+            [
+              41.55997934066566,
+              52.86921778835345
+            ],
+            [
+              41.57084387572585,
+              52.86434198588353
+            ],
+            [
+              41.58086189850064,
+              52.85884592864961
+            ],
+            [
+              41.58993685957127,
+              52.852782771491256
+            ],
+            [
+              41.59798143856655,
+              52.84621113051708
+            ],
+            [
+              41.604918381999795,
+              52.83919450993967
+            ],
+            [
+              41.61068123860392,
+              52.83180068218926
+            ],
+            [
+              41.61521498543284,
+              52.82410102759643
+            ],
+            [
+              41.61847653925007,
+              52.81616984029634
+            ],
+            [
+              41.62043514900805,
+              52.8080836072945
+            ],
+            [
+              41.62107266651615,
+              52.7999202678434
+            ],
+            [
+              41.62038369368123,
+              52.791758460413966
+            ],
+            [
+              41.618375605968644,
+              52.78367676460348
+            ],
+            [
+              41.615068452956095,
+              52.77575294530574
+            ],
+            [
+              41.610494738027256,
+              52.76806320638258
+            ],
+            [
+              41.60469908036492,
+              52.760681460920914
+            ],
+            [
+              41.597737763446794,
+              52.75367862494108
+            ],
+            [
+              41.58967817521471,
+              52.7471219411435
+            ],
+            [
+              41.58059814597491,
+              52.741074338947904
+            ],
+            [
+              41.570585190892594,
+              52.73559383669545
+            ],
+            [
+              41.55973566466507,
+              52.73073299145542
+            ],
+            [
+              41.54815383659702,
+              52.72653840140896
+            ],
+            [
+              41.5359508948587,
+              52.72305026527729
+            ],
+            [
+              41.52324388918725,
+              52.72030200272656
+            ],
+            [
+              41.51015462169362,
+              52.71831993911932
+            ],
+            [
+              41.496808495767624,
+              52.717123057398915
+            ],
+            [
+              41.483333333333334,
+              52.71672281929193
+            ],
+            [
+              41.469858170899045,
+              52.717123057398915
+            ],
+            [
+              41.456512044973046,
+              52.71831993911932
+            ],
+            [
+              41.44342277747941,
+              52.72030200272656
+            ],
+            [
+              41.43071577180797,
+              52.72305026527729
+            ],
+            [
+              41.418512830069645,
+              52.72653840140896
+            ],
+            [
+              41.4069310020016,
+              52.73073299145542
+            ],
+            [
+              41.396081475774075,
+              52.73559383669545
+            ],
+            [
+              41.38606852069176,
+              52.741074338947904
+            ],
+            [
+              41.376988491451954,
+              52.7471219411435
+            ],
+            [
+              41.368928903219874,
+              52.75367862494108
+            ],
+            [
+              41.36196758630175,
+              52.760681460920914
+            ],
+            [
+              41.35617192863941,
+              52.76806320638258
+            ],
+            [
+              41.351598213710574,
+              52.77575294530574
+            ],
+            [
+              41.348291060698024,
+              52.78367676460348
+            ],
+            [
+              41.34628297298544,
+              52.791758460413966
+            ],
+            [
+              41.34559400015051,
+              52.7999202678434
+            ],
+            [
+              41.346231517658616,
+              52.8080836072945
+            ],
+            [
+              41.3481901274166,
+              52.81616984029634
+            ],
+            [
+              41.351451681233826,
+              52.82410102759643
+            ],
+            [
+              41.35598542806275,
+              52.83180068218926
+            ],
+            [
+              41.361748284666874,
+              52.83919450993967
+            ],
+            [
+              41.36868522810012,
+              52.84621113051708
+            ],
+            [
+              41.3767298070954,
+              52.852782771491256
+            ],
+            [
+              41.38580476816602,
+              52.85884592864961
+            ],
+            [
+              41.39582279094082,
+              52.86434198588353
+            ],
+            [
+              41.406687326001,
+              52.86921778835345
+            ],
+            [
+              41.41829352728389,
+              52.87342616307726
+            ],
+            [
+              41.43052926998561,
+              52.87692638159177
+            ],
+            [
+              41.44327624385179,
+              52.87968455990627
+            ],
+            [
+              41.45641111081078,
+              52.88167399159563
+            ],
+            [
+              41.46980671509551,
+              52.88287541056069
+            ],
+            [
+              41.483333333333334,
+              52.88327718070807
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "circle",
+          "radius_nm": 5.0
+        }
+      },
+      "properties": {
+        "title": "C6564/25 for Donskoye Airport",
+        "text": "From: 2025-12-09 07:00:00+00:00\nTo: 2025-12-09 08:59:00+00:00\n\nAerodrome Available: 09 0700-0859 FOR ARR/DEP OF FLT 7R-291/194.\nARR OF ACFT OUTSIDE Aerodrome Operation HR BY PRIOR COORDINATION."
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "title": "C6409/25B02 for None",
@@ -65915,284 +65915,6 @@
       "properties": {
         "title": "C5005/25 for Ukhta Airport",
         "text": "From: 2025-09-19 07:15:00+00:00\nTo: 2025-12-19 17:00:00+00:00\n\nSTAND 1, 1A, 1B, 1C, 1D, 2, 2A, 2B, 2C, 2D\nAvailable FOR PARKING OF ALL TYPE HEL."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              53.8,
-              63.816498208790875
-            ],
-            [
-              53.85549413047305,
-              63.815284574923226
-            ],
-            [
-              53.910439648518455,
-              63.81165567314914
-            ],
-            [
-              53.96429378668915,
-              63.80564737497745
-            ],
-            [
-              54.01652538813093,
-              63.79731904141195
-            ],
-            [
-              54.06662051524563,
-              63.786752891761395
-            ],
-            [
-              54.11408782733017,
-              63.77405313198421
-            ],
-            [
-              54.1584636582049,
-              63.75934485425082
-            ],
-            [
-              54.19931673132447,
-              63.742772722291534
-            ],
-            [
-              54.23625245749395,
-              63.72449945966811
-            ],
-            [
-              54.26891676882013,
-              63.704704160316346
-            ],
-            [
-              54.29699945161773,
-              63.68358044252707
-            ],
-            [
-              54.320236950364475,
-              63.66133446894264
-            ],
-            [
-              54.338414624167875,
-              63.63818285614241
-            ],
-            [
-              54.351368446301045,
-              63.61435049798165
-            ],
-            [
-              54.35898614594897,
-              63.59006832705232
-            ],
-            [
-              54.36120779918288,
-              63.56557103848
-            ],
-            [
-              54.35802588319677,
-              63.54109479979391
-            ],
-            [
-              54.349484813891586,
-              63.51687496984997
-            ],
-            [
-              54.33567999192012,
-              63.49314384879064
-            ],
-            [
-              54.316756386295275,
-              63.4701284798394
-            ],
-            [
-              54.29290668764139,
-              63.44804852239392
-            ],
-            [
-              54.264369065191325,
-              63.42711421444367
-            ],
-            [
-              54.2314245627898,
-              63.40752444083393
-            ],
-            [
-              54.19439416956179,
-              63.38946492236286
-            ],
-            [
-              54.15363560066797,
-              63.37310653916065
-            ],
-            [
-              54.1095398228256,
-              63.35860380028235
-            ],
-            [
-              54.06252735815616,
-              63.346093469969304
-            ],
-            [
-              54.013044398559146,
-              63.335693359607085
-            ],
-            [
-              53.96155876132826,
-              63.32750129303996
-            ],
-            [
-              53.90855571523323,
-              63.32159425159479
-            ],
-            [
-              53.854533704888055,
-              63.31802770391914
-            ],
-            [
-              53.8,
-              63.31683512454243
-            ],
-            [
-              53.745466295111946,
-              63.31802770391914
-            ],
-            [
-              53.69144428476677,
-              63.32159425159479
-            ],
-            [
-              53.63844123867174,
-              63.32750129303996
-            ],
-            [
-              53.586955601440856,
-              63.335693359607085
-            ],
-            [
-              53.537472641843834,
-              63.346093469969304
-            ],
-            [
-              53.49046017717439,
-              63.35860380028235
-            ],
-            [
-              53.44636439933204,
-              63.37310653916065
-            ],
-            [
-              53.405605830438205,
-              63.38946492236286
-            ],
-            [
-              53.3685754372102,
-              63.40752444083393
-            ],
-            [
-              53.33563093480867,
-              63.42711421444367
-            ],
-            [
-              53.30709331235861,
-              63.44804852239392
-            ],
-            [
-              53.28324361370472,
-              63.47012847983939
-            ],
-            [
-              53.264320008079885,
-              63.49314384879064
-            ],
-            [
-              53.250515186108416,
-              63.51687496984997
-            ],
-            [
-              53.241974116803235,
-              63.54109479979391
-            ],
-            [
-              53.23879220081712,
-              63.56557103848
-            ],
-            [
-              53.241013854051026,
-              63.59006832705232
-            ],
-            [
-              53.24863155369896,
-              63.61435049798165
-            ],
-            [
-              53.26158537583213,
-              63.63818285614241
-            ],
-            [
-              53.27976304963553,
-              63.66133446894264
-            ],
-            [
-              53.30300054838227,
-              63.68358044252707
-            ],
-            [
-              53.331083231179875,
-              63.704704160316346
-            ],
-            [
-              53.363747542506054,
-              63.72449945966811
-            ],
-            [
-              53.40068326867553,
-              63.742772722291534
-            ],
-            [
-              53.4415363417951,
-              63.75934485425082
-            ],
-            [
-              53.485912172669835,
-              63.77405313198421
-            ],
-            [
-              53.53337948475437,
-              63.786752891761395
-            ],
-            [
-              53.58347461186907,
-              63.79731904141195
-            ],
-            [
-              53.63570621331085,
-              63.80564737497745
-            ],
-            [
-              53.68956035148154,
-              63.81165567314914
-            ],
-            [
-              53.744505869526954,
-              63.815284574923226
-            ],
-            [
-              53.8,
-              63.816498208790875
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "circle",
-          "radius_nm": 15.0
-        }
-      },
-      "properties": {
-        "title": "C6484/25 for Ukhta Airport",
-        "text": "From: 2025-12-04 11:24:00+00:00\nTo: 2025-12-11 17:00:00+00:00\n\nRunway 17 ILS (GP) Unserviceable DUE TO UNREADINESS OF GP A-ZONE."
       }
     },
     {
@@ -68415,8 +68137,8 @@
         }
       },
       "properties": {
-        "title": "C6494/25 for Usinsk Airport",
-        "text": "From: 2025-12-05 06:30:00+00:00\nTo: 2025-12-08 16:00:00+00:00\n\nRunway 13: ILS GP Unserviceable.\nFLW Procedure NOT Available:\nIAC ILS Y, ILS Z. (Aeronautical Information Publication RUSSIA, Aerodrome 2.2 UUYS-97, 99)"
+        "title": "C6577/25 for Usinsk Airport",
+        "text": "From: 2025-12-08 12:30:00+00:00\nTo: 2025-12-10 16:00:00+00:00\n\nRunway 13: ILS GP Unserviceable.\nFLW Procedure NOT Available:\nIAC ILS Y, ILS Z. (Aeronautical Information Publication RUSSIA, Aerodrome 2.2 UUYS-97, 99)"
       }
     },
     {
