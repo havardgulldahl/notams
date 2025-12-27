@@ -10575,8 +10575,8 @@
         }
       },
       "properties": {
-        "title": "G0555/25 for Abakan International Airport",
-        "text": "From: 2025-09-24 05:30:00+00:00\nTo: 2025-12-28 23:59:00+00:00\n\nRunway 02/20: Ground Based Augmentation System Channel 20412/20823 GNSS Landing System Procedure NOT PROVIDE."
+        "title": "G0717/25 for Abakan International Airport",
+        "text": "From: 2025-12-26 07:08:00+00:00\nTo: 2026-03-29 23:59:00+00:00\n\nRunway 02/20: Ground Based Augmentation System Channel 20412/20823 GNSS Landing System Procedure NOT PROVIDED."
       }
     },
     {
@@ -11423,8 +11423,8 @@
         }
       },
       "properties": {
-        "title": "G0676/25 for Igarka Airport",
-        "text": "From: 2025-12-05 08:00:00+00:00\nTo: 2025-12-30 23:59:00+00:00\n\nGround Based Augmentation System CH20543/CH20954 Unserviceable, GNSS Landing System Approach Procedure NOT PROVIDED."
+        "title": "G0716/25 for Igarka Airport",
+        "text": "From: 2025-12-26 04:48:00+00:00\nTo: 2026-03-31 23:59:00+00:00\n\nGround Based Augmentation System CH20543/CH20954 Unserviceable, GNSS Landing System Approach Procedure NOT PROVIDED."
       }
     },
     {
