@@ -18651,8 +18651,8 @@
         }
       },
       "properties": {
-        "title": "G0686/25 for Perm International Airport",
-        "text": "From: 2025-12-15 18:00:00+00:00\nTo: 2026-01-22 18:00:00+00:00\n\nGround Based Augmentation System Channel 22309, Channel 20665/21076: Procedure NOT PROVIDED\n- SID RNAV Runway 03/21 WITH DESIGNATION 1M, 1L\n  (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-139,140),\n- STAR RNAV Runway 03/21 WITH DESIGNATION 1E, 1F\n  (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-147,148),\n- IAC ILS Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-98,110),\n- IAC GNSS Landing System Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-155,156),\n- IAC RNP Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-157,158)."
+        "title": "G0008/26 for Perm International Airport",
+        "text": "From: 2026-01-15 10:40:00+00:00\nTo: 2026-03-19 18:00:00+00:00\n\nGround Based Augmentation System Channel 22309, Channel 20665/21076: Procedure NOT PROVIDED\n- SID RNAV Runway 03/21 WITH DESIGNATION 1M, 1L\n  (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-139,140),\n- STAR RNAV Runway 03/21 WITH DESIGNATION 1E, 1F\n  (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-147,148),\n- IAC ILS Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-98,110),\n- IAC GNSS Landing System Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-155,156),\n- IAC RNP Runway 03, Runway 21 (Aeronautical Information Publication PAGE Aerodrome 2.1 USPP-157,158)."
       }
     },
     {
