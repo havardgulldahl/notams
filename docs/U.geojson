@@ -27898,264 +27898,264 @@
         "coordinates": [
           [
             [
-              76.48333333333333,
-              63.44831542124223
+              78.7,
+              69.98164875457559
             ],
             [
-              77.03073726307576,
-              63.43525450979825
+              79.41467658234252,
+              69.96819939633595
             ],
             [
-              77.57143643232942,
-              63.39623303593933
+              80.11984942943978,
+              69.92803240638581
             ],
             [
-              78.09886348266888,
-              63.331731350957156
+              80.80625138080727,
+              69.86168629926685
             ],
             [
-              78.60671970017293,
-              63.242538772596
+              81.46507502365753,
+              69.77004309303963
             ],
             [
-              79.08909446226954,
-              63.12973724908714
+              82.08817048000603,
+              69.6543060416521
             ],
             [
-              79.5405682297,
-              62.99467956686702
+              82.66820842300595,
+              69.51597032726231
             ],
             [
-              79.9562957265371,
-              62.838963063657474
+              83.19880230134689,
+              69.35678832930061
             ],
             [
-              80.3320674183609,
-              62.66439993551517
+              83.67458737753616,
+              69.1787312402808
             ],
             [
-              80.66434886512944,
-              62.47298527076901
+              84.09125759412544,
+              68.9839487924228
             ],
             [
-              80.95029884585786,
-              62.26686391163496
+              84.44556409463262,
+              68.77472871764621
             ],
             [
-              81.18776822072009,
-              62.04829714909335
+              84.73528121965398,
+              68.55345732333848
             ],
             [
-              81.37528225381999,
-              61.81963011600312
+              84.95914691030043,
+              68.322582269395
             ],
             [
-              81.51200955423424,
-              61.58326057639199
+              85.11678475109196,
+              68.08457831794777
             ],
             [
-              81.59772092970249,
-              61.341609633142184
+              85.20861453170278,
+              67.84191652812197
             ],
             [
-              81.63274133809037,
-              61.0970947066113
+              85.23575740016115,
+              67.59703710641911
             ],
             [
-              81.61789783095765,
-              60.85210498386822
+              85.19994061688757,
+              67.3523259112528
             ],
             [
-              81.55446597737976,
-              60.60897940886288
+              85.10340576832215,
+              67.11009445152035
             ],
             [
-              81.44411679422342,
-              60.36998718097156
+              84.94882318768178,
+              66.87256311129767
             ],
             [
-              81.28886573966612,
-              60.13731065299439
+              84.73921434099904,
+              66.64184726922399
             ],
             [
-              81.09102488502444,
-              59.91303046775841
+              84.47788311214764,
+              66.41994595340319
             ],
             [
-              80.85315898834982,
-              59.69911274165587
+              84.16835627371542,
+              66.20873267183833
             ],
             [
-              80.57804586327221,
-              59.497398089796036
+              83.8143329531082,
+              66.00994807635303
             ],
             [
-              80.26864117125558,
-              59.30959228699244
+              83.41964257459662,
+              65.82519414768808
             ],
             [
-              79.92804756183823,
-              59.13725836785717
+              82.98821055194556,
+              65.65592962548162
             ],
             [
-              79.55948793691475,
-              58.98180998464675
+              82.52403089563974,
+              65.50346644504715
             ],
             [
-              79.16628251311423,
-              58.844505860598986
+              82.03114485831686,
+              65.36896698040954
             ],
             [
-              78.7518292917045,
-              58.726445197314014
+              81.51362475006128,
+              65.25344192812784
             ],
             [
-              78.3195875093901,
-              58.6285639158106
+              80.9755620938679,
+              65.15774869801812
             ],
             [
-              77.8730636279056,
-              58.551631631256974
+              80.42105934689826,
+              65.08259020457858
             ],
             [
-              77.41579941859986,
-              58.49624928045864
+              79.85422447458359,
+              65.028513976728
             ],
             [
-              76.95136170461629,
-              58.46284733872844
+              79.27916772451526,
+              64.99591152370107
             ],
             [
-              76.48333333333333,
-              58.45168457875777
+              78.7,
+              64.9850179120911
             ],
             [
-              76.0153049620504,
-              58.46284733872844
+              78.12083227548474,
+              64.99591152370107
             ],
             [
-              75.55086724806682,
-              58.49624928045864
+              77.54577552541642,
+              65.028513976728
             ],
             [
-              75.0936030387611,
-              58.551631631256974
+              76.97894065310174,
+              65.08259020457858
             ],
             [
-              74.64707915727658,
-              58.6285639158106
+              76.42443790613211,
+              65.15774869801812
             ],
             [
-              74.21483737496217,
-              58.726445197314014
+              75.88637524993874,
+              65.25344192812784
             ],
             [
-              73.80038415355246,
-              58.844505860598986
+              75.36885514168314,
+              65.36896698040954
             ],
             [
-              73.40717872975192,
-              58.98180998464675
+              74.87596910436027,
+              65.50346644504715
             ],
             [
-              73.03861910482846,
-              59.13725836785717
+              74.41178944805445,
+              65.65592962548162
             ],
             [
-              72.69802549541109,
-              59.30959228699244
+              73.98035742540338,
+              65.82519414768808
             ],
             [
-              72.38862080339446,
-              59.497398089796036
+              73.5856670468918,
+              66.00994807635303
             ],
             [
-              72.11350767831685,
-              59.69911274165587
+              73.23164372628459,
+              66.20873267183833
             ],
             [
-              71.87564178164224,
-              59.91303046775841
+              72.92211688785237,
+              66.41994595340319
             ],
             [
-              71.67780092700056,
-              60.13731065299439
+              72.66078565900096,
+              66.64184726922399
             ],
             [
-              71.52254987244325,
-              60.36998718097156
+              72.45117681231822,
+              66.87256311129767
             ],
             [
-              71.41220068928692,
-              60.60897940886288
+              72.29659423167786,
+              67.11009445152035
             ],
             [
-              71.34876883570902,
-              60.85210498386822
+              72.20005938311243,
+              67.3523259112528
             ],
             [
-              71.33392532857631,
-              61.0970947066113
+              72.16424259983886,
+              67.59703710641911
             ],
             [
-              71.36894573696419,
-              61.341609633142184
+              72.19138546829723,
+              67.84191652812197
             ],
             [
-              71.45465711243244,
-              61.58326057639199
+              72.28321524890805,
+              68.08457831794777
             ],
             [
-              71.59138441284668,
-              61.81963011600312
+              72.44085308969957,
+              68.322582269395
             ],
             [
-              71.77889844594658,
-              62.04829714909334
+              72.66471878034602,
+              68.55345732333848
             ],
             [
-              72.01636782080881,
-              62.26686391163496
+              72.95443590536739,
+              68.77472871764618
             ],
             [
-              72.30231780153723,
-              62.47298527076901
+              73.30874240587457,
+              68.9839487924228
             ],
             [
-              72.63459924830578,
-              62.66439993551517
+              73.72541262246385,
+              69.1787312402808
             ],
             [
-              73.01037094012958,
-              62.838963063657474
+              74.20119769865312,
+              69.35678832930061
             ],
             [
-              73.42609843696668,
-              62.99467956686702
+              74.73179157699406,
+              69.51597032726231
             ],
             [
-              73.87757220439714,
-              63.12973724908714
+              75.31182951999398,
+              69.6543060416521
             ],
             [
-              74.35994696649375,
-              63.242538772596
+              75.93492497634246,
+              69.77004309303963
             ],
             [
-              74.8678031839978,
-              63.331731350957156
+              76.59374861919274,
+              69.86168629926685
             ],
             [
-              75.39523023433725,
-              63.39623303593933
+              77.28015057056022,
+              69.92803240638581
             ],
             [
-              75.9359294035909,
-              63.43525450979825
+              77.98532341765748,
+              69.96819939633595
             ],
             [
-              76.48333333333333,
-              63.44831542124223
+              78.7,
+              69.98164875457559
             ]
           ]
         ],
@@ -28165,8 +28165,8 @@
         }
       },
       "properties": {
-        "title": "U0029/26 for None",
-        "text": "From: 2026-01-21 06:00:00+00:00\nTo: 2026-01-21 13:45:00+00:00\n\nTYUMEN FIR: SSR NIZHNEVARTOVSK (6057N 07629E) Unserviceable.\nRADAR CONTROL PROVIDED BY TAR."
+        "title": "U0052/26 for None",
+        "text": "From: 2026-01-23 00:00:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nDVORDME TAZOVSKIY PUT INTO Operation:\nCS TWK, FREQ 112.00MHZ, Channel 57X, Operation HR - HR24,\nCOORD 672902N 0784201E (PZ-90.11),\nELEV DME 30M.\nFL200 (6100M):\nAZM 163DEG DVOR - 180KM.\nReference: Aeronautical Information Publication RUSSIA GEN 2.5, ENR 4.1-10, ENRC 15."
       }
     },
     {
@@ -28945,20 +28945,6 @@
         ]
       },
       "properties": {
-        "title": "U0039/25 for None",
-        "text": "From: 2025-01-15 11:00:00+00:00\nTo: 2026-01-21 23:59:00+00:00\n\nVFR FLIGHT LEVELS NOT APPLIED TO ACFT OPS Within CLASS C AIRSPACE OF\nRUSSIAN FEDERATION."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U0216/25 for None",
         "text": "From: 2025-03-06 08:00:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nSUP 03/25 TO Aeronautical Information Publication RUSSIA PUBLISHED\nCONCERNING SECTION GEN 2.5 LIST OF RADIO NAVIGATION AIDS\nWEF APRIL 17, 2025.\nSUP 03/25 TO Aeronautical Information Publication RUSSIA PUBLISHED AT:\nHTTP: WWW.CAICA.RU/ACCESS TO ON-LINE AERONAUTICAL INFORMATION/\nOFFICIAL AERONAUTICAL INFO (Aeronautical Information Publication PRODUCTS)/ Aeronautical Information Publication SUP."
       }
@@ -29351,20 +29337,6 @@
         ]
       },
       "properties": {
-        "title": "U1592/25 for None",
-        "text": "From: 2025-12-01 14:40:00+00:00\nTo: 2026-03-01 23:59:00+00:00\n\nAS RESPONSE MEASURE TO AIRSPACE RESTRICTION ISSUED BY THE \nDEPARTMENT FOR TRANSPORT OF THE UNITED KINGDOM PROCLAIMING THAT NO\nAIRCRAFT WHICH IS OWNED, CHARTERED OR OPERATED BY ANY PERSON\nCONNECTED WITH RUSSIA, OR WHICH IS REGISTERED IN RUSSIA, OR \nOPERATE FLT IN ACCORDANCE WITH FLIGHT PLAN FILED AFTER 05 APR 2022\nWHICH INCLUDES AN AERODROME IN RUSSIA SHALL FLY WITHIN THE AIRSPACE\nOF THE UNITED KINGDOM INCLUDING ITS TERRITORIAL SEAS, \nAS PER Aeronautical Information Publication SUP 102/2025. \nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY\nINFORM OF THE PROHIBITION OF FLIGHT OPERATIONS WITHIN THE AIRSPACE\nOF THE RUSSIAN FEDERATION BY ANY AIRCRAFT OWNED, CHARTERED OR\nOPERATED BY PERSONS CONNECTED WITH THE UNITED KINGDOM \nWIE UNTIL 2359 UTC 01 MAR 2026 Estimated, EXC FOR AIRCRAFT IN \nEMERGENCY, HUMANITARIAN AND MEDICAL FLIGHTS, AS WELL AS CASES \nWHEN A SPECIAL PERMISSION TO PERFORM SUCH FLIGHTS IS GRANTED \nBY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF FOREIGN\nAFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U1641/25 for None",
         "text": "From: 2025-12-11 08:00:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nSUP 08/25 TO Aeronautical Information Publication RUSSIA PUBLISHED:\nON ENR 6.3 FREE ROURTE AIRSPACE WEF 22 JAN 2026.\nSUP 08/25 TO Aeronautical Information Publication RUSSIA PLACED ON WEBSITE\nHTTP: WWW.CAICA.RU/ACCES TO ON-LINE AERONAUTICAL INFO AND DOWNLOAD\nFILES/INTEGRATED AERONAUTICAL INFO PACKAGE OF RUSSIAN FEDERATION/\nSUP TO Aeronautical Information Publication."
       }
@@ -29535,8 +29507,8 @@
         ]
       },
       "properties": {
-        "title": "U0007/26A02 for None",
-        "text": "From: 2026-01-05 21:45:00+00:00\nTo: 2026-03-31 23:59:00+00:00\n\nAS A RETALIATORY MEASURE AGAINST THE FRENCH AUTHORITIES \n(FIR MONACO) BAN ON FLT FOR ALL ACFT REGISTERED IN RUSSIA OR\nOPERATED BY RUSSIAN CARRIERS, INCLUIDING COMMERCIAL FLT AND FLT\nUNDER A CO-SHARING AGREEMENT OR FOR SEAT RESRVATION ON ACFT OWNED,\nLEASED OR OPERATED BY RUSSIAN INDIVIDUALS OR LEGAL ENTITIES,\nORGANIZATIONS OR BODIES, AND PROHIBITION FOR LDG, TKOF OR OVERFLY\nTHE SOVEREIGN AIRSPACE OF FRANCE, EXEPT CASES OF EMERGENCY LDG OR\nEMERGENCY OVERFLY, WITH THE EXEPTION OF FLT WITH PERMISSION ISSUED\nBY FRENCH AUTHORITIES IN ACCORDANCE WITH THE EU REGULATION, \nNOTAM N0013/26.\nTHE AVIATION AUTHORITIES OF RUSSIA INFORM ABOUT THE FLT BAN FOR \nALL ACFT REGISTERED IN FRANCE OR OPERATED BY CARRIERS FROM FRANCE, \nINCLUIDING COMMERCIAL FLT AND FLT UNDER A CO-SHARING AGREEMENT OR\nFOR SEAT RESRVATION ON ACFT OWNED, LEASED OR OPERATED BY FRENCH\nINDIVIDUALS OR LEGAL ENTITIES, ORGANIZATIONS OR BODIES,\nAND PROHIBITION FOR LDG, TKOF OR OVERFLY THE SOVEREIGN AIRSPACE\nOF THE RUSSIAN FEDERATION WIE UNTIL 2359 UTC 31 OF MARCH, 2026,\nWITH THE EXEPTION OF AIRPLANES"
+        "title": "U0007/26B02 for None",
+        "text": "From: 2026-01-05 21:45:00+00:00\nTo: 2026-03-31 23:59:00+00:00\n\nEMERGENCY, HUMANITARIAN AND SAN FLT, AS WELL AS CASES WHERE SPECIAL\nPERMISSION FOR FLT IS GRANTED BY THE RUSSIAN AVIATION AUTHORITY OR \nTHE MINISTRY OF FOREIGN AFFAIRS IN ACCORDANCE WITH THE ESTABLISHED\nPROCEDURE.\nIT IS PROHIBITED TO KNOWIGNLY AND INTENTIONALLY ENGAGE IN \nACTIVITIES AIMED AT CIRCUMVENTING THESE RESTRICTIONS."
       }
     },
     {
@@ -29549,8 +29521,8 @@
         ]
       },
       "properties": {
-        "title": "U0007/26B02 for None",
-        "text": "From: 2026-01-05 21:45:00+00:00\nTo: 2026-03-31 23:59:00+00:00\n\nEMERGENCY, HUMANITARIAN AND SAN FLT, AS WELL AS CASES WHERE SPECIAL\nPERMISSION FOR FLT IS GRANTED BY THE RUSSIAN AVIATION AUTHORITY OR \nTHE MINISTRY OF FOREIGN AFFAIRS IN ACCORDANCE WITH THE ESTABLISHED\nPROCEDURE.\nIT IS PROHIBITED TO KNOWIGNLY AND INTENTIONALLY ENGAGE IN \nACTIVITIES AIMED AT CIRCUMVENTING THESE RESTRICTIONS."
+        "title": "U0007/26A02 for None",
+        "text": "From: 2026-01-05 21:45:00+00:00\nTo: 2026-03-31 23:59:00+00:00\n\nAS A RETALIATORY MEASURE AGAINST THE FRENCH AUTHORITIES \n(FIR MONACO) BAN ON FLT FOR ALL ACFT REGISTERED IN RUSSIA OR\nOPERATED BY RUSSIAN CARRIERS, INCLUIDING COMMERCIAL FLT AND FLT\nUNDER A CO-SHARING AGREEMENT OR FOR SEAT RESRVATION ON ACFT OWNED,\nLEASED OR OPERATED BY RUSSIAN INDIVIDUALS OR LEGAL ENTITIES,\nORGANIZATIONS OR BODIES, AND PROHIBITION FOR LDG, TKOF OR OVERFLY\nTHE SOVEREIGN AIRSPACE OF FRANCE, EXEPT CASES OF EMERGENCY LDG OR\nEMERGENCY OVERFLY, WITH THE EXEPTION OF FLT WITH PERMISSION ISSUED\nBY FRENCH AUTHORITIES IN ACCORDANCE WITH THE EU REGULATION, \nNOTAM N0013/26.\nTHE AVIATION AUTHORITIES OF RUSSIA INFORM ABOUT THE FLT BAN FOR \nALL ACFT REGISTERED IN FRANCE OR OPERATED BY CARRIERS FROM FRANCE, \nINCLUIDING COMMERCIAL FLT AND FLT UNDER A CO-SHARING AGREEMENT OR\nFOR SEAT RESRVATION ON ACFT OWNED, LEASED OR OPERATED BY FRENCH\nINDIVIDUALS OR LEGAL ENTITIES, ORGANIZATIONS OR BODIES,\nAND PROHIBITION FOR LDG, TKOF OR OVERFLY THE SOVEREIGN AIRSPACE\nOF THE RUSSIAN FEDERATION WIE UNTIL 2359 UTC 31 OF MARCH, 2026,\nWITH THE EXEPTION OF AIRPLANES"
       }
     },
     {
@@ -29691,6 +29663,20 @@
       "properties": {
         "title": "U0047/26 for None",
         "text": "From: 2026-01-20 08:18:00+00:00\nTo: 2026-04-20 23:59:00+00:00\n\nAS RESPONSE MEASURE TO PROHIBITION OF FLIGHTS IMPLEMENTED BY\nAUTHORITIES OF ROMANIA FOR ALL ACFT REGISTERED IN RUSSIAN\nFEDERATION AND FOR ALL ACFT OWNED, CHARTERED OR OPERATED BY\nNATURAL OR LEGAL PERSONS FROM RUSSIAN FEDERATION OR BY OPERATORS\nHOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY AUTHORITIES OF\nRUSSIAN FEDERATION, TO ENTER, EXIT OR OVERFLY ROMANIAN AIRSPACE\n(NOTAM OF ROMANIA A0346/26), AVIATION AUTHORITIES OF RUSSIAN\nFEDERATION HEREBY INFORM THAT ALL ACFT REGISTERED IN ROMANIA\nAND ALL ACFT OWNED, CHARTERED OR OPERATED BY NATURAL OR LEGAL\nPERSONS FROM ROMANIA OR BY OPERATORS HOLDING AIR OPERATOR\nCERTIFICATE (AOC) ISSUED BY ROMANIAN AUTHORITIES ARE PROHIBITED TO\nENTER, EXIT OR OVERFLY AIRSPACE OF RUSSIAN FEDERATION WIE TIL 2359\nUTC 20 APR 2026 (Estimated), EXC ACFT IN EMERGENCY, HUMANITARIAN,\nSANITARY FLT AS WELL AS CASES WHEN SPECIAL PERMISSION FOR FLT\nGRANTED BY FEDERAL AIR TRANSPORT AGENCY OF RUSSIAN FEDERATION OR\nMINISTRY OF FOREIGN AFFAIRS OF RUSSIAN FEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U0051/26 for None",
+        "text": "From: 2026-01-21 06:06:00+00:00\nTo: 2026-04-21 23:59:00+00:00\n\nAS RESPONSE MEASURE TO AIRSPACE RESTRICTION ISSUED BY THE \nDEPARTMENT FOR TRANSPORT OF THE UNITED KINGDOM PROCLAIMING THAT NO\nAIRCRAFT WHICH IS OWNED, CHARTERED OR OPERATED BY ANY PERSON\nCONNECTED WITH RUSSIA, OR WHICH IS REGISTERED IN RUSSIA, OR \nOPERATE FLT IN ACCORDANCE WITH FLIGHT PLAN FILED AFTER 05 APR 2022\nWHICH INCLUDES AN AERODROME IN RUSSIA SHALL FLY WITHIN THE AIRSPACE\nOF THE UNITED KINGDOM INCLUDING ITS TERRITORIAL SEAS, \nAS PER Aeronautical Information Publication SUP 007/26, \nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY\nINFORM OF THE PROHIBITION OF FLIGHT OPERATIONS WITHIN THE AIRSPACE\nOF THE RUSSIAN FEDERATION BY ANY AIRCRAFT OWNED, CHARTERED OR\nOPERATED BY PERSONS CONNECTED WITH THE UNITED KINGDOM \nWIE UNTIL 2359 UTC 21 APR 2026 Estimated, EXC FOR AIRCRAFT IN \nEMERGENCY, HUMANITARIAN AND MEDICAL FLIGHTS, AS WELL AS CASES \nWHEN A SPECIAL PERMISSION TO PERFORM SUCH FLIGHTS IS GRANTED \nBY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF FOREIGN\nAFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
       }
     },
     {
