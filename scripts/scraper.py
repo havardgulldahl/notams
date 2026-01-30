@@ -296,11 +296,18 @@ def main() -> None:
 if __name__ == "__main__":
     import sys, os
 
-    if len(sys.argv) == 1:
-        main()
-    else:
+    if False:  # run if debug
         parse_notam_files(
-            html_files=sys.argv[1:],  # e.g. files under current/*.html
+            html_files=pathlib.Path("current").glob("*.html"),
             airports_csv="ru-airports.csv",
             output="docs/",
         )
+        sys.exit()
+
+    if len(sys.argv) == 1:
+        main()
+    parse_notam_files(
+        html_files=sys.argv[1:],  # e.g. files under current/*.html
+        airports_csv="ru-airports.csv",
+        output="docs/",
+    )

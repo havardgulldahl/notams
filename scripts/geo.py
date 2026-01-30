@@ -13,7 +13,7 @@ Supported Geometric Patterns
 -----------------------------
 The module now supports parsing various geometric patterns from NOTAM text:
 
-1. **Circles**: 
+1. **Circles**:
    - Format: "CIRCLE RADIUS <n>KM|NM|M CENTRE <coord>"
    - Handles parentheses and spaces in coordinates: "(620536N 1294624E)"
    - Supports "CENTRE" and "CENTRED AT" variations
@@ -45,7 +45,7 @@ The module now supports parsing various geometric patterns from NOTAM text:
 Coordinate Format Support
 -------------------------
 - Standard format: DDMMSSN/SEEEDDDEW (e.g., "595835N0301229E")
-- Short format: DDMMN/SEEEDEW (e.g., "5535N03716E")  
+- Short format: DDMMN/SEEEDEW (e.g., "5535N03716E")
 - Spaces allowed: "620536N 1294624E"
 - Parentheses allowed: "(620536N1294624E)"
 """
@@ -233,7 +233,7 @@ def arc_polygon(
     n_points: int = 32,
 ) -> Dict[str, Any]:
     """Generate a polygon representing an arc between two points on a circle.
-    
+
     Args:
         center_lat, center_lon: Center of the circle in decimal degrees
         radius_nm: Radius in nautical miles
@@ -241,28 +241,32 @@ def arc_polygon(
         end_point: (lat, lon) tuple for arc end
         clockwise: True for clockwise arc, False for anticlockwise
         n_points: Number of points to use in the arc
-    
+
     Returns:
         A GeoJSON-like Polygon geometry representing the arc
     """
     R = 6371000.0  # Earth radius in meters
     radius_m = radius_nm * 1852
-    
+
     # Calculate bearings from center to start and end points
     def bearing_to_point(lat1, lon1, lat2, lon2):
         """Calculate bearing from point 1 to point 2."""
         lat1_rad = math.radians(lat1)
         lat2_rad = math.radians(lat2)
         dlon = math.radians(lon2 - lon1)
-        
+
         y = math.sin(dlon) * math.cos(lat2_rad)
-        x = math.cos(lat1_rad) * math.sin(lat2_rad) - math.sin(lat1_rad) * math.cos(lat2_rad) * math.cos(dlon)
+        x = math.cos(lat1_rad) * math.sin(lat2_rad) - math.sin(lat1_rad) * math.cos(
+            lat2_rad
+        ) * math.cos(dlon)
         brng = math.atan2(y, x)
         return (math.degrees(brng) + 360) % 360
-    
-    start_bearing = bearing_to_point(center_lat, center_lon, start_point[0], start_point[1])
+
+    start_bearing = bearing_to_point(
+        center_lat, center_lon, start_point[0], start_point[1]
+    )
     end_bearing = bearing_to_point(center_lat, center_lon, end_point[0], end_point[1])
-    
+
     # Calculate arc span
     if clockwise:
         if end_bearing < start_bearing:
@@ -274,23 +278,23 @@ def arc_polygon(
             arc_span = end_bearing - start_bearing
         else:
             arc_span = 360 - (start_bearing - end_bearing)
-    
+
     # Generate arc points
     coords: List[List[float]] = []
     coords.append([center_lon, center_lat])  # Start at center
-    
+
     lat_rad = math.radians(center_lat)
     lon_rad = math.radians(center_lon)
     d = radius_m / R
-    
+
     for i in range(n_points + 1):
         if clockwise:
             current_bearing = start_bearing - (arc_span * i / n_points)
         else:
             current_bearing = start_bearing + (arc_span * i / n_points)
-        
+
         brng_rad = math.radians(current_bearing)
-        
+
         lat2 = math.asin(
             math.sin(lat_rad) * math.cos(d)
             + math.cos(lat_rad) * math.sin(d) * math.cos(brng_rad)
@@ -300,9 +304,9 @@ def arc_polygon(
             math.cos(d) - math.sin(lat_rad) * math.sin(lat2),
         )
         coords.append([math.degrees(lon2), math.degrees(lat2)])
-    
+
     coords.append(coords[0])  # Close the polygon
-    
+
     return {
         "type": "Polygon",
         "coordinates": [coords],
@@ -315,16 +319,16 @@ def arc_polygon(
 
 
 def build_geometry(
-    notam: Notam | str,
+    notam: Notam | str | Any,
     airport_locations: Mapping[str, Mapping[str, float | str]],
     max_circle_radius_nm: float = MAX_CIRCLE_RADIUS_NM,
 ) -> Optional[Dict[str, Any]]:
     """Infer a (simplified) GeoJSON geometry for a PyNotam Notam class, or raw text.
-    
+
     This function intelligently parses NOTAM text and extracts geometric information
-    in GeoJSON format. It supports a wide variety of geometric patterns commonly 
+    in GeoJSON format. It supports a wide variety of geometric patterns commonly
     found in NOTAMs, including:
-    
+
     - Circles with various radius units (KM/NM/M)
     - Polygons from coordinate chains
     - Arc-based geometries (clockwise/anticlockwise)
@@ -332,23 +336,23 @@ def build_geometry(
     - Ellipses (oriented and non-oriented)
     - Line corridors
     - Multiple geometries within a single NOTAM
-    
+
     Args:
         notam: A Notam object, raw NOTAM text string, or stub test object
         airport_locations: Mapping of ICAO codes to location data (lat/lon)
         max_circle_radius_nm: Maximum radius for circle approximation (default 200 NM)
-    
+
     Returns:
         A GeoJSON-like dictionary with type and coordinates, or None if no
         geometry could be extracted. May include a 'meta' field with additional
         shape information for testing/debugging.
-        
+
     Examples:
         >>> text = "CIRCLE RADIUS 5KM CENTRE 612800N0401500E"
         >>> geo = build_geometry(text, {})
         >>> geo['type']
         'Polygon'
-        
+
         >>> text = "595835N0301229E-595811N0301228E-595809N0301307E-595835N0301229E"
         >>> geo = build_geometry(text, {})
         >>> geo['type']
@@ -403,17 +407,19 @@ def build_geometry(
         return {"type": "Polygon", "coordinates": [coords]}
 
     # start interpreting text
+    # Accept three forms:
+    #  1) Real pynotam.Notam instance (use decoded() text)
+    #  2) Raw string containing NOTAM textual description
+    #  3) Stub / lightweight object exposing .area / .location only (tests)
     if isinstance(notam, Notam):
-        decoded: str = notam.decoded()
-        text = decoded.upper().replace("\n", " ")
+        decoded_text: str = notam.decoded()
     elif isinstance(notam, str):
-        decoded = notam
-        text = decoded.upper().replace("\n", " ")
+        decoded_text = notam
     else:
-        # Not a Notam or string (e.g., StubNotam for testing), skip text parsing
-        text = ""
-        decoded = notam  # type: ignore
+        # No textual geometry parsing possible; leave decoded_text empty so we fall back
+        decoded_text = ""
 
+    text = decoded_text.upper().replace("\n", " ") if decoded_text else ""
     polygons: List[Dict[str, Any]] = []
 
     # ---- Circles (extended units KM / NM / M) ----
@@ -465,11 +471,11 @@ def build_geometry(
         radius_unit = m.group(4).upper()
         center_coord = m.group(5).replace(" ", "")
         end_coord = m.group(6).replace(" ", "")
-        
+
         start_ll = parse_latlon(start_coord)
         center_ll = parse_latlon(center_coord)
         end_ll = parse_latlon(end_coord)
-        
+
         if start_ll and center_ll and end_ll:
             # Convert radius to NM
             if radius_unit == "KM":
@@ -478,12 +484,11 @@ def build_geometry(
                 radius_nm = radius_val / 1852.0
             else:
                 radius_nm = radius_val
-            
+
             clockwise = "CLOCKWISE" in direction
             polygons.append(
                 arc_polygon(
-                    center_ll[0], center_ll[1], radius_nm,
-                    start_ll, end_ll, clockwise
+                    center_ll[0], center_ll[1], radius_nm, start_ll, end_ll, clockwise
                 )
             )
 
@@ -491,7 +496,7 @@ def build_geometry(
     # Pattern variant: WI SECTOR CENTRE <coord> AZM 321-144 DEG RADIUS 8KM.
     # Also: WI SECTOR BTN AZMAG 360-130 DEG FROM <coord> RADIUS 40KM
     sector_wedge_seen = False
-    
+
     # AZMAG pattern (azimuth magnetic)
     for m in re.finditer(
         r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+BTN\s+AZMAG\s+(\d{1,3})-(\d{1,3})\s+DEG\s+FROM\s+(\d{4,6}\s*[NS]\s*\d{5,7}\s*[EW])\s+RADIUS\s+([0-9]+(?:\.[0-9]+)?)\s*(KM|NM|M)",
@@ -514,7 +519,7 @@ def build_geometry(
                 sector_wedge_polygon(ll[0], ll[1], radius_nm, a_start, a_end)
             )
             sector_wedge_seen = True
-    
+
     # Standard sector pattern
     for m in re.finditer(
         r"(?:W(?:I|ITHIN)\s+)?SECTOR\s+CENTRE\s+(\d{4,6}[NS]\d{5,7}[EW])\s+AZ(?:M|IMUTH)\s+(\d{1,3})-(\d{1,3})\s+DEG(?:REES)?\s+RADIUS\s+([0-9]+(?:\.[0-9]+)?)(KM|NM|M)",
@@ -647,6 +652,8 @@ def build_geometry(
                 return {"type": "Point", "coordinates": [lon_dec, lat_dec]}
 
     # Fallback: airport location lookup (object path or we failed above)
+    print(f"====Fallback: airport location lookup (object path or we failed above===")
+
     locs = getattr(notam, "location", []) or []
     if locs:
         first = next(iter(locs), None)
@@ -658,8 +665,18 @@ def build_geometry(
 
 @dataclass
 class StubNotam:
+    """Lightweight stand-in for a pynotam.Notam used in unit tests.
+
+    Only the minimal attributes accessed by build_geometry are provided.
+    """
+
     area: Optional[Mapping[str, Any]] = None
     location: Optional[Iterable[str]] = None
+
+    # Provide a decoded() method (returning empty) so code paths treating this
+    # like a real Notam can still call .decoded() safely if ever extended.
+    def decoded(self) -> str:  # pragma: no cover - defensive
+        return ""
 
 
 if __name__ == "__main__":
