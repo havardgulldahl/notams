@@ -19513,8 +19513,8 @@
         ]
       },
       "properties": {
-        "title": "G0616/25 for None",
-        "text": "From: 2025-10-30 12:00:00+00:00\nTo: 2026-01-30 23:59:00+00:00\n\nYEKATERINBURG FIR Global Navigation Satellite System OPERATION UNRELIABLE."
+        "title": "G0020/26 for None",
+        "text": "From: 2026-01-30 10:00:00+00:00\nTo: 2026-04-30 23:59:00+00:00\n\nWithin YEKATERINBURG FIR Global Navigation Satellite System INTERRUPTION Possible."
       }
     },
     {
@@ -19791,8 +19791,8 @@
         }
       },
       "properties": {
-        "title": "G0672/25 for Kurgan Airport",
-        "text": "From: 2025-12-02 03:30:00+00:00\nTo: 2026-02-01 23:59:00+00:00\n\nGround Based Augmentation System 114.650 Channel 22321, Channel 20677/21088 FLW Procedure NOT PROVIDED:\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 02/20."
+        "title": "G0021/26 for Kurgan Airport",
+        "text": "From: 2026-01-30 17:00:00+00:00\nTo: 2026-04-30 23:59:00+00:00\n\nGround Based Augmentation System 114.650 Channel 22321 Channel 22321, Channel 20677/21088: \nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 02/20 Procedure NOT PROVIDED."
       }
     },
     {
