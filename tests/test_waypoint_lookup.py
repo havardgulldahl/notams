@@ -3,6 +3,8 @@ from __future__ import annotations
 from pathlib import Path
 from types import SimpleNamespace
 
+import pytest
+
 import scripts.waypoint_lookup as waypoint_lookup
 
 
@@ -29,3 +31,16 @@ def test_lookup_waypoint_parses_lagat_html(monkeypatch):
         "url": "https://opennav.com/waypoint/RU/LAGAT",
         "image": "/images/opennav-icon-44.png",
     }
+
+
+@pytest.mark.network
+def test_lookup_waypoint_live_network():
+    """Live network test for waypoint lookup."""
+    try:
+        data = waypoint_lookup.lookup_waypoint("LAGAT")
+    except Exception as exc:
+        pytest.skip(f"Network lookup failed: {exc}")
+
+    assert data.get("identifier") == "LAGAT"
+    assert "latitude" in data
+    assert "longitude" in data

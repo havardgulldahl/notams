@@ -2,6 +2,7 @@ import re
 import json
 import math
 from dataclasses import dataclass, field
+from functools import lru_cache
 from typing import List, Optional, Tuple, Dict, Any, Iterable, Mapping, Sequence
 
 from shapely.geometry import (
@@ -12,9 +13,12 @@ from shapely.geometry import (
     MultiPolygon,
     GeometryCollection,
 )
+from shapely.geometry.base import BaseGeometry
 from shapely.ops import transform, unary_union
 from shapely.affinity import rotate, scale
 from pyproj import CRS, Transformer
+
+from scripts.waypoint_lookup import lookup_waypoint
 
 # Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
 MAX_CIRCLE_RADIUS_NM = 200
@@ -143,6 +147,45 @@ def project_geom(geom, center: Tuple[float, float], inverse=False):
 
 def km(value: float) -> float:
     return value * 1000.0
+
+
+def normalize_notam_text(text: str) -> str:
+    """
+    Normalize NOTAM text by stripping simple HTML fragments and normalizing whitespace.
+    """
+    t = text.replace("&nbsp;", " ")
+    t = re.sub(r"<br\s*/?>", "\n", t, flags=re.I)
+    t = re.sub(r"<[^>]+>", " ", t)
+    t = re.sub(r"[\t\r]+", " ", t)
+    t = re.sub(r"\n{2,}", "\n", t)
+    t = re.sub(r"[ ]{2,}", " ", t)
+    return t.strip()
+
+
+@lru_cache(maxsize=512)
+def lookup_waypoint_coords(
+    code: str, country: str = "RU"
+) -> Optional[Tuple[float, float]]:
+    """
+    Look up a waypoint and return (lon, lat) if available.
+    """
+    if not code:
+        return None
+    try:
+        data = lookup_waypoint(code.strip().upper(), country=country)
+    except Exception:
+        return None
+
+    lat_raw = data.get("latitude") or data.get("lat")
+    lon_raw = data.get("longitude") or data.get("lon")
+    if lat_raw is None or lon_raw is None:
+        return None
+    try:
+        lat = float(lat_raw)
+        lon = float(lon_raw)
+    except (TypeError, ValueError):
+        return None
+    return (lon, lat)
 
 
 def m_from_text(val_text: str) -> float:
@@ -389,7 +432,7 @@ def build_ellipse(
 @dataclass
 class NotamGeometryPart:
     kind: str  # 'POLYGON'|'CIRCLE'|'LINE_CORRIDOR'|'SECTOR'|'ELLIPSE'
-    geom: Polygon
+    geom: BaseGeometry
     altitude_from: Dict[str, Any] = field(default_factory=dict)
     altitude_to: Dict[str, Any] = field(default_factory=dict)
     index: Optional[int] = None
@@ -521,6 +564,8 @@ LINE_EITHER_SIDE_RE = re.compile(
 )
 AREA_COORDS_RE = re.compile(r"AREA:?\s*(.+)$", re.I)
 CENTRE_INLINE_RE = re.compile(r"CENTRE\s+([0-9NS]+\s*[0-9EW]+)", re.I)
+ROUTE_SEGMENTS_RE = re.compile(r"\b([A-Z0-9]{2,6})\s*-\s*([A-Z0-9]{2,6})\b")
+ROUTE_CONTEXT_RE = re.compile(r"ATS\s+RTE\s+SEGMENTS?\s+CLSD", re.I)
 
 
 def parse_subareas(text: str) -> List[str]:
@@ -574,6 +619,25 @@ def parse_line_points(text: str) -> Optional[List[Tuple[float, float]]]:
     # Extract all coords from points_block
     coords = parse_multi_latlon_seq(points_block)
     return coords if coords else None
+
+
+def parse_route_segments(text: str) -> List[Tuple[str, str]]:
+    """
+    Extract waypoint pairs from an ATS route segment block.
+    Returns list of (from_code, to_code).
+    """
+    if not ROUTE_CONTEXT_RE.search(text):
+        return []
+
+    segments: List[Tuple[str, str]] = []
+    for line in re.split(r"[\n,]", text):
+        if "-" not in line:
+            continue
+        m = ROUTE_SEGMENTS_RE.search(line)
+        if not m:
+            continue
+        segments.append((m.group(1).upper(), m.group(2).upper()))
+    return segments
 
 
 def build_parts_from_E(
@@ -719,6 +783,25 @@ def build_parts_from_E(
                         raw=m.group(0),
                     )
                 )
+
+        # 4.5) ATS route segments: build line strings between waypoints
+        segments = parse_route_segments(sub)
+        for start_code, end_code in segments:
+            start_pt = lookup_waypoint_coords(start_code)
+            end_pt = lookup_waypoint_coords(end_code)
+            if not start_pt or not end_pt:
+                continue
+            geom = LineString([start_pt, end_pt])
+            local_parts.append(
+                NotamGeometryPart(
+                    kind="LINESTRING",
+                    geom=geom,
+                    altitude_from=f_alt,
+                    altitude_to=g_alt,
+                    index=idx,
+                    raw=f"{start_code}-{end_code}",
+                )
+            )
 
         # 5) Polygon AREA
         # May appear as "AREA:" or "AIRSPACE CLSD WI AREA:" then coords
@@ -880,7 +963,8 @@ def build_geometry(
         e_text = notam
 
     if e_text:
-        e_text = e_text.upper().replace("\n", " ").strip()
+        e_text = normalize_notam_text(e_text)
+        e_text = e_text.upper()
 
     # Parse Item E text
     # We pass empty altitude dicts as we only need the 2D geometry here
@@ -929,8 +1013,11 @@ def build_geometry(
     # Merge geometries
     try:
         final_geom = unary_union(geoms) if len(geoms) > 1 else geoms[0]
-        # Ensure result is valid
-        if not final_geom.is_valid:
+        # Ensure result is valid for area geometries
+        if not final_geom.is_valid and final_geom.geom_type in {
+            "Polygon",
+            "MultiPolygon",
+        }:
             final_geom = final_geom.buffer(0)
     except Exception:
         # Fallback for heterogeneous collections
