@@ -44,7 +44,7 @@ def test_new_shape_parsing(raw, shape, expect_type):
     import notam  # type: ignore
 
     n = notam.Notam.from_str(raw)
-    geo = build_geometry(n.decoded(), {})
+    geo = build_geometry(n, {})
     assert geo is not None, "Geometry should not be None"
     assert geo["type"] == expect_type
     meta = geo.get("meta", {})

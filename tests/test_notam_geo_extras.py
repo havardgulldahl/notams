@@ -11,7 +11,7 @@ Focus areas:
 import pytest
 from shapely.geometry import shape, Polygon, MultiPolygon
 
-from scripts.notam_geo import (
+from scripts.geo import (
     dms_token_to_deg,
     parse_latlon_pair,
     parse_multi_latlon_seq,

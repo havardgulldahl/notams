@@ -2,7 +2,7 @@ import re
 import json
 import math
 from dataclasses import dataclass, field
-from typing import List, Optional, Tuple, Dict, Any, Iterable
+from typing import List, Optional, Tuple, Dict, Any, Iterable, Mapping, Sequence
 
 from shapely.geometry import (
     Point,
@@ -16,6 +16,8 @@ from shapely.ops import transform, unary_union
 from shapely.affinity import rotate, scale
 from pyproj import CRS, Transformer
 
+# Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
+MAX_CIRCLE_RADIUS_NM = 200
 
 # ============== Utilities ==============
 
@@ -145,15 +147,20 @@ def km(value: float) -> float:
 
 def m_from_text(val_text: str) -> float:
     """
-    Convert '5KM' -> 5000, '0.5KM' -> 500, '500M' -> 500.
+    Convert '5KM' -> 5000, '0.5KM' -> 500, '500M' -> 500, '1NM' -> 1852.
     """
     t = val_text.strip().upper().replace(" ", "")
-    m = re.match(r"(\d+(?:\.\d+)?)(KM|M)", t)
+    m = re.match(r"(\d+(?:\.\d+)?)(KM|NM|M)", t)
     if not m:
         raise ValueError(f"Cannot parse distance: {val_text}")
     v, unit = m.groups()
     v = float(v)
-    return v * 1000.0 if unit == "KM" else v
+    if unit == "KM":
+        return v * 1000.0
+    elif unit == "NM":
+        return v * 1852.0
+    else:
+        return v
 
 
 def parse_alt_text(alt: str) -> Dict[str, Any]:
@@ -243,7 +250,7 @@ def build_circle(
     lon, lat = center
     p = Point(lon, lat)
     proj = project_geom(p, center=(lon, lat), inverse=False)
-    circ = proj.buffer(radius_m, resolution=max(16, n_points // 4))
+    circ = proj.buffer(radius_m, quad_segs=max(4, n_points // 4))
     return project_geom(circ, center=(lon, lat), inverse=True)
 
 
@@ -295,6 +302,60 @@ def build_sector(
     return project_geom(poly_local, center=center, inverse=True)
 
 
+def build_arc(
+    center: Tuple[float, float],
+    radius_m: float,
+    start_pt: Tuple[float, float],
+    end_pt: Tuple[float, float],
+    clockwise: bool,
+    n_points: int = 64,
+) -> Polygon:
+    """
+    Build an arc polygon.
+    """
+    p_start = Point(start_pt)
+    p_end = Point(end_pt)
+
+    # Project to local plane
+    p_s_proj = project_geom(p_start, center=center, inverse=False)
+    p_e_proj = project_geom(p_end, center=center, inverse=False)
+
+    x1, y1 = p_s_proj.x, p_s_proj.y
+    x2, y2 = p_e_proj.x, p_e_proj.y
+
+    ang_start_rad = math.atan2(y1, x1)
+    ang_end_rad = math.atan2(y2, x2)
+
+    start_deg = math.degrees(ang_start_rad)
+    end_deg = math.degrees(ang_end_rad)
+
+    # Clockwise: angle decreases. Anti-clockwise: angle increases.
+    if clockwise:
+        if end_deg > start_deg:
+            end_deg -= 360.0
+        diff = start_deg - end_deg
+    else:
+        if end_deg < start_deg:
+            end_deg += 360.0
+        diff = end_deg - start_deg
+
+    pts = [(0.0, 0.0)]
+    steps = max(4, int(n_points * (diff / 360.0)))
+    for i in range(steps + 1):
+        if clockwise:
+            a = start_deg - i * (diff / steps)
+        else:
+            a = start_deg + i * (diff / steps)
+        rad = math.radians(a)
+        pts.append((radius_m * math.cos(rad), radius_m * math.sin(rad)))
+    pts.append((0.0, 0.0))
+
+    poly_local = Polygon(pts)
+    if not poly_local.is_valid:
+        poly_local = poly_local.buffer(0)
+    return project_geom(poly_local, center=center, inverse=True)
+
+
 def build_ellipse(
     center: Tuple[float, float],
     major_km: float,
@@ -309,7 +370,7 @@ def build_ellipse(
     p = Point(lon, lat)
     proj_p = project_geom(p, center=center, inverse=False)
     # unit circle
-    circ = proj_p.buffer(1.0, resolution=max(16, n // 4))
+    circ = proj_p.buffer(1.0, quad_segs=max(4, n // 4))
     # scale by semi-axes (meters)
     a = km(major_km) / 2.0
     b = km(minor_km) / 2.0
@@ -428,19 +489,29 @@ def parse_altitude_pair(block: str) -> Tuple[Dict[str, Any], Dict[str, Any]]:
 
 # Pattern helpers
 CIRCLE_RE = re.compile(
-    r"WI\s+CIRCLE\s+RADIUS\s+([0-9.]+\s*(?:KM|M))\s+CENTRE\s+([0-9NS]+\s*[0-9EW]+)\.?",
+    r"WI\s+CIRCLE\s+RADIUS\s+([0-9.]+\s*(?:KM|NM|M))\s+CENTRE\s+([0-9NS]+\s*[0-9EW]+)\.?",
     re.I,
 )
 SECTOR_RE = re.compile(
-    r"WI\s+SECTOR\s+(?:CENTRE\s+)?([0-9NS]+\s*[0-9EW]+)\s+AZM\s+(\d+)\s*-\s*(\d+)\s*DEG\s+RADIUS\s+([0-9.]+\s*(?:KM|M))",
+    r"WI\s+SECTOR\s+(?:CENTRE\s+)?([0-9NS]+\s*[0-9EW]+)\s+AZM\s+(\d+)\s*-\s*(\d+)\s*DEG\s+RADIUS\s+([0-9.]+\s*(?:KM|NM|M))",
     re.I,
 )
 ELLIPSE_RE = re.compile(
-    r"ELLIPSE\s+CENTRE\s+([0-9NS]+\s*[0-9EW]+)\s+WITH\s+AXES\s+DIMENSIONS\s+([0-9.]+)X([0-9.]+)\s*KM\s+AZM\s+OF\s+MAJOR\s+AXIS\s+(\d+)",
+    r"ELLIPSE\s+CENTRE\s+([0-9NS]+\s*[0-9EW]+)\s+WITH\s+AXES\s+DIMENSIONS\s+([0-9.]+)X([0-9.]+)\s*(KM|NM|M)\s+AZM\s+OF\s+MAJOR\s+AXIS\s+(\d+)",
     re.I,
 )
+ARC_RE = re.compile(
+    r"(\d{4,6}[NS]\s*\d{5,7}[EW]).*?"
+    r"(?:THEN\s+)?(CLOCKWISE|ANTICLOCKWISE|COUNTER-CLOCKWISE)\s+"
+    r"(?:ALONG\s+|BY\s+)?ARC\s+(?:OF\s+A?\s*CIRCLE\s+)?"
+    r"RADIUS\s+(?:OF\s+)?([0-9]+(?:\.[0-9]+)?)\s*(KM|NM|M)\s+"
+    r"CENTR(?:E|ED\s+AT)\s+\(?\s*(\d{4,6}\s*[NS]\s*\d{5,7}\s*[EW])\s*\)?\s+"
+    r"TO\s+(\d{4,6}\s*[NS]\s*\d{5,7}\s*[EW])",
+    re.I | re.DOTALL,
+)
 LINE_EITHER_SIDE_RE = re.compile(
-    r"WI\s+([0-9.]+)\s*KM\s+EITHER\s+SIDE\s+OF\s+LINE\s+JOINING\s+POINTS:\s*(.+)$", re.I
+    r"WI\s+([0-9.]+)\s*(KM|NM|M)\s+EITHER\s+SIDE\s+OF\s+LINE\s+JOINING\s+POINTS:\s*(.+)$",
+    re.I,
 )
 AREA_COORDS_RE = re.compile(r"AREA:?\s*(.+)$", re.I)
 CENTRE_INLINE_RE = re.compile(r"CENTRE\s+([0-9NS]+\s*[0-9EW]+)", re.I)
@@ -488,7 +559,8 @@ def parse_line_points(text: str) -> Optional[List[Tuple[float, float]]]:
     m = LINE_EITHER_SIDE_RE.search(text)
     if not m:
         return None
-    _, points_str = m.groups()
+    # Group 1: width, Group 2: unit, Group 3: points text
+    points_str = m.group(3)
     # points may span multiple lines until a period
     points_str = points_str.split("\n")[0]
     # allow over multiple lines by capturing until 'F)' or end
@@ -547,9 +619,21 @@ def build_parts_from_E(
         # 3) Ellipse
         for m in ELLIPSE_RE.finditer(sub):
             center = parse_latlon_pair(m.group(1))
-            major_km = float(m.group(2))
-            minor_km = float(m.group(3))
-            azm = float(m.group(4))
+            major = float(m.group(2))
+            minor = float(m.group(3))
+            unit = m.group(4)
+            azm = float(m.group(5))
+
+            if unit == "NM":
+                major_km = major * 1.852
+                minor_km = minor * 1.852
+            elif unit == "M":
+                major_km = major / 1000.0
+                minor_km = minor / 1000.0
+            else:
+                major_km = major
+                minor_km = minor
+
             geom = build_ellipse(center, major_km, minor_km, azm)
             local_parts.append(
                 NotamGeometryPart(
@@ -562,10 +646,52 @@ def build_parts_from_E(
                 )
             )
 
+        # 3.5) Arc
+        for m in ARC_RE.finditer(sub):
+            start_coord = parse_latlon_pair(m.group(1))
+            direction = m.group(2).upper()
+            radius_val = float(m.group(3))
+            radius_unit = m.group(4).upper()
+            center_coord = parse_latlon_pair(m.group(5))
+            end_coord = parse_latlon_pair(m.group(6))
+
+            if radius_unit == "KM":
+                radius_m = radius_val * 1000.0
+            elif radius_unit == "NM":
+                radius_m = radius_val * 1852.0
+            else:  # M
+                radius_m = radius_val
+
+            clockwise = (
+                "CLOCKWISE" in direction
+                and "COUNTER" not in direction
+                and "ANTI" not in direction
+            )
+
+            geom = build_arc(center_coord, radius_m, start_coord, end_coord, clockwise)
+            local_parts.append(
+                NotamGeometryPart(
+                    kind="ARC",
+                    geom=geom,
+                    altitude_from=f_alt,
+                    altitude_to=g_alt,
+                    index=idx,
+                    raw=m.group(0),
+                )
+            )
+
         # 4) Line corridor "either side of line"
         m = LINE_EITHER_SIDE_RE.search(sub)
         if m:
-            half_width_km = float(m.group(1))
+            half_width_val = float(m.group(1))
+            unit = m.group(2)
+            if unit == "KM":
+                half_width_km = half_width_val
+            elif unit == "NM":
+                half_width_km = half_width_val * 1.852
+            else:  # M
+                half_width_km = half_width_val / 1000.0
+
             pts = parse_line_points(sub)
             if pts and len(pts) >= 2:
                 geom = build_line_corridor(pts, km(half_width_km))
@@ -706,3 +832,78 @@ def parse_notam_file_text(raw: str) -> Dict[str, Any]:
             # print(f"Error parsing block: {e}")
             continue
     return notams_to_geojson(features)
+
+
+def build_geometry(
+    notam: Any,
+    airport_locations: Mapping[str, Mapping[str, float | str]],
+    max_circle_radius_nm: float = MAX_CIRCLE_RADIUS_NM,
+) -> Optional[Dict[str, Any]]:
+    """
+    Adapter function to be compatible with scripts/geo.py build_geometry interface.
+    Extracts geometry from a Notam object (or string) using high-precision parsing.
+    """
+    e_text = ""
+    # Try pynotam Notam object attributes
+    if hasattr(notam, "body") and notam.body:
+        e_text = notam.body
+    elif hasattr(notam, "decoded"):
+        # Fallback to full decoded text
+        e_text = notam.decoded()
+    elif isinstance(notam, str):
+        e_text = notam
+
+    if e_text:
+        e_text = e_text.upper().replace("\n", " ").strip()
+
+    # Parse Item E text
+    # We pass empty altitude dicts as we only need the 2D geometry here
+    parts = build_parts_from_E(e_text, {}, {})
+    geoms = [p.geom for p in parts]
+
+    # Fallback to structured data if no geometry found in text
+    if not geoms:
+        # Check 'area' attribute (pynotam parsed structure)
+        area = getattr(notam, "area", None)
+        if isinstance(area, Mapping):
+            lat_raw = area.get("lat")
+            lon_raw = area.get("long")
+            if isinstance(lat_raw, str) and isinstance(lon_raw, str):
+                try:
+                    lat = dms_token_to_deg(lat_raw)
+                    lon = dms_token_to_deg(lon_raw)
+                    radius = area.get("radius")
+                    # Assume pynotam radius is NM
+                    if (
+                        isinstance(radius, (int, float))
+                        and radius < max_circle_radius_nm
+                    ):
+                        geoms.append(build_circle((lon, lat), radius * 1852.0))
+                    else:
+                        geoms.append(Point(lon, lat))
+                except ValueError:
+                    pass
+
+        # Check 'location' attribute (ICAO list) -> Airport lookup
+        if not geoms:
+            locs = getattr(notam, "location", []) or []
+            # pynotam location is a list
+            if locs and len(locs) > 0:
+                first = locs[0]
+                ap = airport_locations.get(first)
+                if ap:
+                    try:
+                        geoms.append(Point(float(ap["lon"]), float(ap["lat"])))
+                    except (ValueError, KeyError, TypeError):
+                        pass
+
+    if not geoms:
+        return None
+
+    # Merge geometries
+    try:
+        final_geom = unary_union(geoms) if len(geoms) > 1 else geoms[0]
+        return mapping(final_geom)
+    except Exception:
+        # Fallback for heterogeneous collections
+        return mapping(GeometryCollection(geoms))

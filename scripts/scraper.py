@@ -12,9 +12,9 @@ import notam  # pynotam library
 
 # Local geometry utilities (extracted for testability)
 try:  # Support running as module or script
-    from .geo import circle_polygon, build_geometry, MAX_CIRCLE_RADIUS_NM
+    from .geo import build_geometry, MAX_CIRCLE_RADIUS_NM
 except ImportError:  # pragma: no cover
-    from geo import circle_polygon, build_geometry, MAX_CIRCLE_RADIUS_NM  # type: ignore
+    from geo import build_geometry, MAX_CIRCLE_RADIUS_NM  # type: ignore
 
 BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
 # NOTE: MAX_CIRCLE_RADIUS_NM now imported from geo.py
