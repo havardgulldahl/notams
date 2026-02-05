@@ -18,7 +18,11 @@ from shapely.ops import transform, unary_union
 from shapely.affinity import rotate, scale
 from pyproj import CRS, Transformer
 
-from scripts.waypoint_lookup import lookup_waypoint
+try:  # Support running as module or script
+    from .waypoint_lookup import lookup_waypoint
+except ImportError:  # pragma: no cover
+    from waypoint_lookup import lookup_waypoint  # type: ignore
+
 
 # Heuristic: maximum radius (NM) we represent as a circle polygon; larger areas fallback to a point
 MAX_CIRCLE_RADIUS_NM = 200
