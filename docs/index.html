@@ -227,11 +227,11 @@
 
               // Create popup content but don't bind it yet (we'll handle clicks manually)
               layer.popupContent = createPopupContent(feature, series);
-              
+
               // Handle click on this layer
-              layer.on('click', function(e) {
+              layer.on('click', function (e) {
                 L.DomEvent.stopPropagation(e);
-                
+
                 // Find all features at the click point (may be overlapping)
                 const point = e.latlng;
                 const clickedFeatures = detectFeaturesAtPoint(point);
@@ -293,13 +293,14 @@
       const popup = L.popup({ maxWidth: 400 })
         .setLatLng(latlng)
         .setContent(layer.popupContent || createPopupContent(feature, series));
-      
+
       setupPopupHandlers(popup, feature, series);
       popup.openOn(map);
     }
 
     // Point-in-polygon algorithm (ray casting)
     function pointInPolygon(point, coords) {
+      if (!Array.isArray(coords) || coords.length === 0) return false;
       let inside = false;
       const x = point.lng;
       const y = point.lat;
@@ -326,13 +327,20 @@
         // Only check visible layers
         if (!map.hasLayer(group)) return;
 
+        if (!feature || !feature.geometry || !feature.geometry.coordinates) {
+          const featureId = feature?.properties?.notam_id || feature?.properties?.id || feature?.properties?.title || 'unknown';
+          console.warn('[notams] Skipping feature with missing geometry coordinates', { series, featureId, feature });
+          return;
+        }
+
         // Check if the click is within this feature
         let isInside = false;
-        
+
         if (feature.geometry.type === 'Point') {
-          const [lon, lat] = feature.geometry.coordinates;
+          const [lon, lat] = feature.geometry.coordinates || [];
+          if (lat === undefined || lon === undefined) return;
           const distance = Math.sqrt(
-            Math.pow(point.lat - lat, 2) + 
+            Math.pow(point.lat - lat, 2) +
             Math.pow(point.lng - lon, 2)
           );
           isInside = distance < POINT_CLICK_TOLERANCE_DEGREES;
@@ -360,7 +368,7 @@
     }
 
     // Handle map clicks to detect overlapping features
-    map.on('click', function(e) {
+    map.on('click', function (e) {
       // Find all features at the click point
       const point = e.latlng;
       const clickedFeatures = detectFeaturesAtPoint(point);
@@ -382,19 +390,19 @@
       html += `<b>${features.length} overlapping features found</b><br>`;
       html += '<p style="font-size:12px;margin:4px 0;">Click on a feature to view details:</p>';
       html += '<ul class="feature-selector">';
-      
+
       features.forEach((item, index) => {
         const { feature, series } = item;
         const color = seriesColors[series] || "#333";
         const title = feature.properties?.title || feature.properties?.text?.substring(0, 50) || 'Untitled';
         const displayTitle = title.length > 60 ? title.substring(0, 57) + '...' : title;
-        
+
         html += `<li data-feature-index="${index}">`;
         html += `<span class="series-badge" style="background-color:${color}">Series ${series}</span>`;
         html += `<span class="feature-title">${displayTitle}</span>`;
         html += '</li>';
       });
-      
+
       html += '</ul></div>';
 
       const popup = L.popup({ maxWidth: 400, className: 'multi-selector-popup' })
