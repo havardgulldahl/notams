@@ -1,4 +1,4 @@
-"""Additional tests for `scripts/notam_geo.py` parsing logic.
+"""Additional tests for `scripts/geo.py` parsing logic.
 
 Focus areas:
  - Altitude text parsing variants

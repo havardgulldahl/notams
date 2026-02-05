@@ -1,4 +1,4 @@
-"""Tests for notam_geo.py"""
+"""Tests for scripts/geo.py"""
 
 import math
 import json
