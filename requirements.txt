@@ -1,3 +1,6 @@
 pytest>=8.0.0
 shapely
 pyproj
+requests
+beautifulsoup4
+pynotam
