@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LAGAT waypoint | OpenNav</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords"
+        content="airport, nav, navaid, vor, vortac, ndb, dme, waypoint, fix, airway, air route, rnav, gps, navigation, aviation" />
+    <meta name="description"
+        content="Maps and information about LAGAT aviation waypoint △ Lat: 65° 59' 54.56&quot; N Lon: 038° 29' 02.55&quot; E • Click here to find more." />
+    <meta property="og:image" content="https://opennav.com/images/ogimage.png" />
+    <link href="https://opennav.com/waypoint/RU/LAGAT" rel="canonical" />
+    <link href="https://opennav.jp/ウェイポイント/RU/LAGAT" hreflang="ja-JP" rel="alternate" />
+    <link type="text/css" href="/fonts/Oswald.css" rel="stylesheet" />
+    <link type="text/css" href="/fonts/RobotoCondensed.css" rel="stylesheet" />
+    <link type="text/css" href="/css/opennav.css?20220306" rel="stylesheet" />
+
+    <script>window.msAdsQueue = window.msAdsQueue || [];</script>
+    <script async src="https://adsdk.microsoft.com/pubcenter/sdk.js?siteId=10321398&publisherId=252963727"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var latlng;
+        function initMaps() {
+            latlng = new google.maps.LatLng(65.998488, 38.484042);
+            var mapOptions = { zoom: 10, center: latlng, mapTypeId: google.maps.MapTypeId.HYBRID };
+            var fullmap = new google.maps.Map(document.getElementById("fullmap"), mapOptions);
+            new google.maps.Marker({ position: latlng, map: fullmap, title: "LAGAT", icon: "/images/map-marker-plane.png" });
+
+            if (typeof waypointmap === "function") { waypointmap(); }
+            if (typeof airportmap === "function") { airportmap(); }
+            if (typeof navaidmap === "function") { navaidmap(); }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="topnav-inner">
+            <input id="mobilemenu-button" type="checkbox" class="mobilemenu-checkbox" />
+            <nav>
+                <div class="logo">
+                    <a href="/"><img src="/images/opennav-icon-44.png" alt="OpenNav" /> OPENNAV</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="/" class="home">&nbsp;</a></li>
+                    <li><a href="/airportcodes">Airport codes</a></li>
+                    <li><a href="/airlinecodes">Airline codes</a></li>
+                    <li><a href="/lists">Lists</a></li>
+                    <li><a href="/quizzes">Quizzes</a></li>
+                </ul>
+                <label for="mobilemenu-button" class="mobilemenu-icon">&nbsp;</label>
+                <label for="mobilemenu-button" class="mobilemenu-x">&nbsp;</label>
+            </nav>
+            <div id="mobilemenu-overlay"></div>
+            <div class="mobilemenu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/airportcodes">Airport codes</a></li>
+                    <li><a href="/airlinecodes">Airline codes</a></li>
+                    <li><a href="/lists">Lists</a></li>
+                    <li><a href="/quizzes">Quizzes</a></li>
+                    <li><a href="https://opennav.jp/ウェイポイント/RU/LAGAT" class="lang">日本語</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <script>
+        function closemenu(e) {
+            if (!e.target.matches('#mobilemenu-button,.mobilemenu-icon,.mobilemenu-x')) {
+                document.getElementById('mobilemenu-button').checked = false;
+            }
+        }
+        document.body.addEventListener('click', closemenu);
+        document.getElementById('mobilemenu-overlay').addEventListener('touchstart', closemenu);
+    </script>
+    <div id="fullmap" class="pagetop"></div>
+    <form method="post" action="/search">
+        <div class="searchbg">
+            <div class="searchbar">
+                <input type="search" name="q" placeholder="ORD KORD O'Hare" autocomplete="off" autocapitalize="off" />
+                <input type="submit" value="SEARCH" />
+            </div>
+        </div>
+    </form>
+    <section class="data cacgacaf">
+        <div class="main" itemscope itemtype="http://schema.org/GeoCoordinates">
+            <meta itemprop="identifier" content="LAGAT" />
+            <meta itemprop="name" content="LAGAT" />
+            <meta itemprop="description" content="waypoint" />
+            <meta itemprop="latitude" content="65.998488" />
+            <meta itemprop="longitude" content="38.484042" />
+            <link itemprop="url" href="https://opennav.com/waypoint/RU/LAGAT" />
+            <link itemprop="image" href="/images/opennav-icon-44.png" />
+            <section class="contentbox">
+                <header class="title">
+                    <div class="title-icon chart-icon-waypoint"></div>
+                    <div>
+                        <h1>LAGAT</h1>
+                        <h4><span class="icon"><img src="/waypoint/RU/LAGAT/mapmarker.svg" alt="" /></span> Waypoint
+                            Information</h4>
+                    </div>
+                </header>
+                <div class="contentbody">
+                    <table class="datagrid fullwidth">
+                        <tr>
+                            <td class="datalabel"><img class="dataicon" src="/images/icon-country.svg" alt="" />Country
+                            </td>
+                            <td class="text-darkgray">RU</td>
+                        </tr>
+                        <tr>
+                            <td class="datalabel"><img class="dataicon" src="/images/icon-globe.svg" alt="" />Latitude
+                            </td>
+                            <td class="text-darkgray">65° 59' 54.56" N</td>
+                        </tr>
+                        <tr>
+                            <td class="datalabel"><img class="dataicon" src="/images/icon-globe.svg" alt="" />Longitude
+                            </td>
+                            <td class="text-darkgray">038° 29' 02.55" E</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <div class="amazonlinks">
+                <h2>Squawk 18.99 For Fun</h2>
+                <script async src="//adserve.site/amzn/a7e4d924559d528fb15dcbb07fe2997d.js"></script>
+            </div>
+
+            <section class="contentbox">
+                <header>
+                    <h3>Waypoints near LAGAT</h3>
+                </header>
+                <div class="contentbody">
+                    <table>
+                        <tr>
+                            <td>
+                                <div id="wmap"></div>
+                            </td>
+                            <td>
+                                <div class="waypointlist">
+                                    <a href="/waypoint/RU/LAGAT">LAGAT</a><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <script>
+                        function waypointmap() {
+                            const mapOptions = { zoom: 10, center: latlng, mapTypeId: google.maps.MapTypeId.HYBRID };
+                            const wmap = new google.maps.Map(document.getElementById("wmap"), mapOptions);
+                            new google.maps.Marker({ position: new google.maps.LatLng(65.998488, 38.484042), map: wmap, title: "LAGAT", icon: "/images/map-marker-plane.png" }).addListener("click", function () { window.location.href = "/waypoint/RU/LAGAT" });
+                        }
+                    </script>
+                </div>
+            </section>
+
+            <section class="contentbox">
+                <header>
+                    <h3>Airports near LAGAT</h3>
+                </header>
+                <div class="contentbody">
+                    <table>
+                        <tr>
+                            <td>
+                                <div id="amap"></div>
+                            </td>
+                            <td>
+                                <div class="airportlist">
+                                    <a href="/airport/ULMU">ULMU</a><br />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <script>
+                        function airportmap() {
+                            const mapOptions = { zoom: 9, center: latlng, mapTypeId: google.maps.MapTypeId.HYBRID };
+                            const amap = new google.maps.Map(document.getElementById("amap"), mapOptions);
+                            new google.maps.Marker({ position: new google.maps.LatLng(66.0587670784, 38.2826328278), map: amap, title: "ULMU", icon: "/images/map-marker-plane.png" }).addListener("click", function () { window.location.href = "/airport/ULMU" });
+                        }
+                    </script>
+                </div>
+            </section>
+
+
+            <div class="amazonlinks">
+                <h2>Featured Aviation Products</h2>
+                <script async src="//adserve.site/amzn/17d788dd144d145cf3daed380cf0458f.js"></script>
+            </div>
+        </div>
+        <aside>
+            <div class="contentbox">
+                <div class="contentbody">
+                    <div class="box300x250 elem-center"><a href="https://atc-sim.com/welcome"><img
+                                src="/ads/nicolas-monterrat-airport.gif" width="300" height="250" alt="Airport"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ads-sticky-sidebar">
+
+                <section class="contentbox">
+                    <header>
+                        <h3>You Might Also Like</h3>
+                    </header>
+                    <div class="contentbody">
+                        <div class="box250x100 elem-center"><a href="https://atc-sim.com/welcome"><img
+                                    src="/images/ad_250x100_atcsim.gif" width="250" height="100" alt="" /></a></div>
+                    </div>
+                </section>
+
+                <section class="contentbox">
+                    <header class="downarrow140">
+                        <h3>Bonus Offer</h3>
+                    </header>
+                    <div class="contentbody">
+                        <div class="box300x250 elem-center">
+                            <script async src="//adserve.site/amzn/f9fa890a3d2d7cd4e96bf924d3386b5e.js"></script>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </aside>
+    </section>
+    <footer class="worldmap">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="logo-wrap">
+                    <a href="/"><img src="/images/opennav-icon-44.png" alt="OpenNav" /> OpenNav</a>
+                </div>
+            </div>
+            <div class="footer-bottom columns col-4-4">
+                <div class="column col-4-1">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About OpenNav</a></li>
+                    </ul>
+                </div>
+                <div class="column col-4-1">
+                    <h4>Other Sites</h4>
+                    <ul>
+                        <li><a href="https://airportcodes.aero">Airport Codes</a></li>
+                        <li><a href="https://airlinecodes.info">Airline Codes</a></li>
+                        <li><a href="https://airlinelogos.aero">Airline Logos</a></li>
+                    </ul>
+                </div>
+                <div class="column col-4-1">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="https://atc-sim.com/welcome">Airport Game</a></li>
+                        <li><a href="https://airlinecodes.info/ME">Airline Code ME</a></li>
+                        <li><a href="https://airportcodes.aero/kix">Airport Code KIX</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=ZG2OCB2842Y">Airport Codes Video</a></li>
+                    </ul>
+                </div>
+                <div class="column col-4-1">
+                    <h4>Quizzes</h4>
+                    <ul>
+                        <li><a href="https://airlinelogos.aero/quiz">Airline Logo Quiz</a></li>
+                        <li><a href="/airliner-identification-quiz">Airliner Identification Quiz</a></li>
+                        <li><a href="/extreme-approaches-quiz">Extreme Approaches Quiz</a></li>
+                        <li><a href="/quizzes">All Quizzes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa-xqHVAj20OMSeUTFNA1AFKeyuiJFJRY&callback=initMaps"
+        async defer></script>
+</body>
+
+</html>
