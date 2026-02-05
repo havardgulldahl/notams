@@ -443,10 +443,10 @@ def build_geometry(
 
     # ---- Coordinate chains (areas) ----
     for chain_match in re.finditer(
-        r"((?:\d{4,6}[NS]\d{5,7}[EW]-){2,}\d{4,6}[NS]\d{5,7}[EW])", text
+        r"((?:\d{4,6}[NS]\d{5,7}[EW]\s*-\s*){2,}\d{4,6}[NS]\d{5,7}[EW])", text
     ):
         chain_str = chain_match.group(1)
-        chain = [c for c in chain_str.split("-") if c]
+        chain = [c.strip() for c in chain_str.split("-") if c.strip()]
         poly = polygon_from_chain(chain)
         if poly:
             polygons.append(poly)
@@ -591,12 +591,12 @@ def build_geometry(
     # ---- Line corridor (within X KM either side of line) -> extract LineString ----
     line_strings: List[Dict[str, Any]] = []
     for m in re.finditer(
-        r"W(?:I|ITHIN)\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE(?:\s+JOINING POINTS:?)?\s+((?:\d{4,6}[NS]\d{5,7}[EW]-)+\d{4,6}[NS]\d{5,7}[EW])",
+        r"W(?:I|ITHIN)\s+([0-9]+(?:\.[0-9]+)?)KM\s+EITHER SIDE OF LINE(?:\s+JOINING POINTS:?)?\s+((?:\d{4,6}[NS]\d{5,7}[EW]\s*-\s*)+\d{4,6}[NS]\d{5,7}[EW])",
         text,
     ):
         width_km = float(m.group(1))
         chain_str = m.group(2)
-        chain = [c for c in chain_str.split("-") if c]
+        chain = [c.strip() for c in chain_str.split("-") if c.strip()]
         coords: List[List[float]] = []
         for c in chain:
             ll = parse_latlon(c)
