@@ -49,6 +49,46 @@ def parse_html_list(html: str) -> List[str]:
     return files
 
 
+def extract_notam_records(raw_text: str) -> List[str]:
+    """Extract NOTAM records from raw page text.
+
+    Records start with an ICAO-style NOTAM header like:
+    (A1234/25 NOTAMN ...)
+    This avoids splitting on blank lines that may appear inside E) bodies.
+    """
+    text = raw_text.replace("\r\n", "\n").replace("\r", "\n").translate({0xA0: 0x20})
+
+    start_rx = re.compile(r"\([A-Z]\d{4}/\d{2}(?:[A-Z]\d{1,3})?\s+NOTAM[A-Z]?\b")
+    starts = [m.start() for m in start_rx.finditer(text)]
+    if not starts:
+        separated = text.replace("\n\n(", "U7U7U7U7U7U7(")
+        return [rec.strip() for rec in separated.split("U7U7U7U7U7U7") if rec.strip()]
+
+    records: List[str] = []
+    for i, start in enumerate(starts):
+        end = starts[i + 1] if i + 1 < len(starts) else len(text)
+        rec = text[start:end].strip()
+        if rec:
+            records.append(rec)
+    return records
+
+
+def normalize_record_text(record: str) -> str:
+    """Normalize a single NOTAM record to improve parser tolerance."""
+    text = record.replace("\r\n", "\n").replace("\r", "\n").translate({0xA0: 0x20})
+    # Drop ICAO section headers like "USTV:" that appear between records
+    text = re.sub(r"(?m)^[A-Z]{3,5}:\s*$\n?", "", text)
+    # Fix broken field labels like "D\n)" or "E\n)" produced by HTML line breaks
+    text = re.sub(r"([A-Z])\s*\n\s*\)", r"\1)", text)
+    # Fix malformed Q) lines that contain a double slash in the field sequence
+    text = re.sub(r"(?m)^Q\)([^\n]*)//([^\n]*)$", r"Q)\1/\2", text)
+    # Remove blank lines that appear before a field label like "\n\nA)"
+    text = re.sub(r"\n\s*\n(?=[A-Z]\))", "\n", text)
+    # Trim trailing whitespace on each line
+    text = "\n".join(line.rstrip() for line in text.split("\n"))
+    return text.strip()
+
+
 # ----------------------------
 # Abbreviation expansions
 # ----------------------------
@@ -143,16 +183,14 @@ def parse_notam_files(
         for tag in soup.find_all("font", {"color": "red"}):
             tag.decompose()
 
-        raw_text = soup.get_text("\n").translate({0xA0: 0x20})
-        separated = raw_text.replace("\n\n(", "U7U7U7U7U7U7(")  # unique separator
-        records = [
-            rec.strip() for rec in separated.split("U7U7U7U7U7U7") if rec.strip()
-        ]
+        raw_text = soup.get_text("\n")
+        records = extract_notam_records(raw_text)
 
         geojson: dict[str, Any] = {"type": "FeatureCollection", "features": []}
 
         for rec in records:
             # NOTAMS start with a paranthesis
+            rec = normalize_record_text(rec)
             if not rec.startswith("("):
                 continue
             try:
