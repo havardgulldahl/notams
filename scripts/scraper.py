@@ -34,21 +34,18 @@ def parse_html_list(html: str) -> List[str]:
     """Find NOTAM files listed on the page.
 
     Extracts file names from <td> elements that have an onclick attribute matching
-    the expected pattern. Safely handles elements without a title attribute.
+    the expected pattern.
     """
     soup = BeautifulSoup(html, "html.parser")
     files: List[str] = []
     rx = re.compile(r"location='(.*)_eng.html'")
     for node in soup.find_all("td", onclick=rx, width=""):
         if isinstance(node, Tag):
-            title_val = node.get("title")
-            if isinstance(title_val, list):  # BeautifulSoup may return list
-                if title_val:
-                    title_val = title_val[0]
-            if isinstance(title_val, str):
-                filename = title_val.strip()
-                if filename:
-                    files.append(filename)
+            onclick_val = node.get("onclick")
+            if isinstance(onclick_val, str):
+                match = rx.search(onclick_val)
+                if match:
+                    files.append(f"{match.group(1)}_eng.html")
     return files
 
 
@@ -146,7 +143,7 @@ def parse_notam_files(
         for tag in soup.find_all("font", {"color": "red"}):
             tag.decompose()
 
-        raw_text = soup.get_text("").translate({0xA0: 0x20})
+        raw_text = soup.get_text("\n").translate({0xA0: 0x20})
         separated = raw_text.replace("\n\n(", "U7U7U7U7U7U7(")  # unique separator
         records = [
             rec.strip() for rec in separated.split("U7U7U7U7U7U7") if rec.strip()
@@ -306,8 +303,9 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 1:
         main()
-    parse_notam_files(
-        html_files=sys.argv[1:],  # e.g. files under current/*.html
-        airports_csv="ru-airports.csv",
-        output="docs/",
-    )
+    else:
+        parse_notam_files(
+            html_files=sys.argv[1:],  # e.g. files under current/*.html
+            airports_csv="ru-airports.csv",
+            output="docs/",
+        )
