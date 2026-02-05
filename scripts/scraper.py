@@ -3,6 +3,7 @@ import re
 import json
 import csv
 import math
+from datetime import datetime, timezone
 from time import time
 import requests
 from bs4 import BeautifulSoup
@@ -188,6 +189,7 @@ def parse_notam_files(
 
         geojson: dict[str, Any] = {"type": "FeatureCollection", "features": []}
 
+        now_utc = datetime.now(timezone.utc)
         for rec in records:
             # NOTAMS start with a paranthesis
             rec = normalize_record_text(rec)
@@ -198,6 +200,17 @@ def parse_notam_files(
             except Exception as e:
                 print(f"Failed to decode NOTAM record: {e}")
                 failure_count += 1
+                continue
+
+            valid_till = getattr(decoded, "valid_till", None)
+            if isinstance(valid_till, datetime) and valid_till.tzinfo is None:
+                valid_till = valid_till.replace(tzinfo=timezone.utc)
+
+            if isinstance(valid_till, datetime) and valid_till < now_utc:
+                notam_id = getattr(decoded, "notam_id", "<unknown>")
+                print(
+                    f"Skipping expired NOTAM {notam_id}: valid till {valid_till.isoformat()}"
+                )
                 continue
             success_count += 1
 
