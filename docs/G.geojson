@@ -9007,8 +9007,8 @@
         ]
       },
       "properties": {
-        "title": "G0632/25 for Yuzhno-Sakhalinsk Airport",
-        "text": "From: 2025-11-07 06:30:00+00:00\nTo: 2026-02-08 23:59:00+00:00\n\nGround Based Augmentation System 113.350 Channel 22299, Channel 20655/21036: RNAV(Global Navigation Satellite System), SID/STAR RNAV\n\n(Global Navigation Satellite System), GNSS Landing System 01/19 Procedure NOT Available."
+        "title": "G0029/26 for Yuzhno-Sakhalinsk Airport",
+        "text": "From: 2026-02-08 23:22:00+00:00\nTo: 2026-08-26 23:59:00+00:00\n\nGround Based Augmentation System 113.350 Channel 22299, Channel 20655/21036: RNAV(Global Navigation Satellite System), SID/STAR RNAV\n\n(Global Navigation Satellite System), GNSS Landing System 01/19 Procedure NOT Available."
       }
     },
     {
@@ -12187,8 +12187,8 @@
         ]
       },
       "properties": {
-        "title": "G0671/25 for Irkutsk International Airport",
-        "text": "From: 2025-12-01 08:12:00+00:00\nTo: 2026-02-08 23:59:00+00:00\n\nKIRENSK Ground Based Augmentation System 114.4MHZ: Runway 09/27 GNSS Landing System Procedure NOT PROVIDED."
+        "title": "G0030/26 for Irkutsk International Airport",
+        "text": "From: 2026-02-09 00:00:00+00:00\nTo: 2026-05-08 23:59:00+00:00\n\nKIRENSK Ground Based Augmentation System 114.4MHZ: GNSS Landing System Procedure FOR Runway 09/27 NOT PROVIDED."
       }
     },
     {
