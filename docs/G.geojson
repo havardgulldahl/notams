@@ -9007,8 +9007,8 @@
         ]
       },
       "properties": {
-        "title": "G0091/26 for Bratsk Airport",
-        "text": "From: 2026-03-10 07:30:00+00:00\nTo: 2026-03-11 23:59:00+00:00\n\nGround Based Augmentation System 12 GNSS Landing System Channel 20625 NOT Available. FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 12 (Aeronautical Information Publication RUSSIA, Aerodrome 2.1 UIBB-155).\n\nGround Based Augmentation System 30 GNSS Landing System Channel 21036 NOT Available. FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 30 (Aeronautical Information Publication RUSSIA, Aerodrome 2.1 UIBB-156)."
+        "title": "G0092/26 for Bratsk Airport",
+        "text": "From: 2026-03-11 17:35:00+00:00\nTo: 2026-03-12 08:00:00+00:00\n\nGround Based Augmentation System 12 GNSS Landing System Channel 20625 Unserviceable. FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 12 (Aeronautical Information Publication RUSSIA, Aerodrome 2.1 UIBB-155).\n\nGround Based Augmentation System 30 GNSS Landing System Channel 21036 Unserviceable. FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 30 (Aeronautical Information Publication RUSSIA, Aerodrome 2.1 UIBB-156)."
       }
     },
     {
