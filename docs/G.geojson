@@ -30249,8 +30249,8 @@
         ]
       },
       "properties": {
-        "title": "G0678/25 for Volgograd International Airport",
-        "text": "From: 2025-12-05 17:29:00+00:00\nTo: 2026-03-15 12:00:00+00:00\n\nGround Based Augmentation System CH20453, CH20864: Runway 06/24 GNSS Landing System Procedure NOT PROVIDED."
+        "title": "G0094/26 for Volgograd International Airport",
+        "text": "From: 2026-03-15 07:00:00+00:00\nTo: 2026-09-14 23:59:00+00:00\n\nGround Based Augmentation System CH20453, CH20864 Unserviceable.\n\nRunway 05/23 GNSS Landing System Procedure NOT PROVIDED."
       }
     },
     {
@@ -30779,8 +30779,8 @@
         ]
       },
       "properties": {
-        "title": "G0679/25 for Volgograd International Airport",
-        "text": "From: 2025-12-05 17:45:00+00:00\nTo: 2026-03-15 12:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE Possible Within Aerodrome AREA. VECTORING PROVIDED ON CREW REQ."
+        "title": "G0095/26 for Volgograd International Airport",
+        "text": "From: 2026-03-15 07:00:00+00:00\nTo: 2026-09-14 23:59:00+00:00\n\nGlobal Navigation Satellite System Interruptions Possible Within Aerodrome AREA. VECTORING PROVIDED UPON\n\nCREW REQ."
       }
     },
     {
