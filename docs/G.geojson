@@ -18575,8 +18575,8 @@
         ]
       },
       "properties": {
-        "title": "G0139/26 for Omsk Central Airport",
-        "text": "From: 2026-03-31 22:00:00+00:00\nTo: 2026-04-01 22:00:00+00:00\n\nRNAV (Global Navigation Satellite System) SID/STAR RNAV(Global Navigation Satellite System), GLS07/25 NOT Available DUE TO Ground Based Augmentation System Channel\n\n22205, Channel 20561/20972 FAILURE."
+        "title": "G0141/26 for Omsk Central Airport",
+        "text": "From: 2026-04-01 22:00:00+00:00\nTo: 2026-04-03 05:00:00+00:00\n\nGround Based Augmentation System Channel 22205, Channel 20561/20972 FLW Procedure NOT PROVIDED:\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), GNSS Landing System 07/25."
       }
     },
     {
@@ -40341,8 +40341,8 @@
       "type": "Feature",
       "geometry": null,
       "properties": {
-        "title": "G0075/26 for None",
-        "text": "From: 2026-03-01 05:21:00+00:00\nTo: 2026-04-01 23:59:00+00:00\n\nCHECKLIST:\n\n  YEAR=2025 0341 0532 0552 0566 0567 0570 0575 0589 0596 0606 0609\n\n  0634 0669 0673 0675 0677 0678 0679 0680 0681 0682 0683 0684 0688\n\n  0693 0694 0695 0700 0703 0704 0705 0706 0708 0711 0713 0714 0715\n\n  0716 0717 0718 0722 0723 0724\n\n  YEAR=2026 0005 0007 0008 0010 0011 0013 0014 0015 0016 0017 0018\n\n  0019 0020 0021 0024 0025 0027 0028 0029 0030 0032 0033 0034 0035\n\n  0036 0039 0040 0041 0044 0046 0048 0049 0050 0051 0052 0054 0055\n\n  0056 0057 0058 0059 0060 0061 0062 0064 0065 0066 0067 0068 0069\n\n  0070 0073 0074\n\nLATEST PUBLICATIONS\n\nAIRAC Aeronautical Information Publication AMDT 03/26\n\nAeronautical Information Publication AMDT 365/11\n\nAeronautical Information Publication SUP:\n\nSUP 01/26\n\n1-SUP 06/25\n\n2-SUP 02/25\n\n4-SUP 01/24\n\nAIC G01/26"
+        "title": "G0140/26 for None",
+        "text": "From: 2026-04-01 10:20:00+00:00\nTo: 2026-05-01 23:59:00+00:00\n\nCHECKLIST:\n\n  YEAR=2025 0341 0589 0596 0606 0634 0714 0715 0722\n\n  YEAR=2026 0005 0007 0010 0011 0013 0014 0015 0016 0017 0018 0019\n\n  0020 0024 0025 0027 0028 0030 0032 0033 0034 0035 0036 0039 0040\n\n  0041 0044 0046 0048 0049 0050 0052 0055 0056 0057 0058 0060 0061\n\n  0062 0065 0066 0067 0068 0069 0070 0073 0074 0077 0078 0083 0084\n\n  0085 0086 0090 0093 0094 0095 0096 0097 0098 0099 0100 0101 0102\n\n  0105 0106 0107 0108 0110 0119 0120 0122 0123 0124 0125 0126 0130\n\n  0131 0132 0133 0134 0135 0136 0137 0138 0139\n\nLATEST PUBLICATIONS\n\nAIRAC Aeronautical Information Publication AMDT 04/26\n\nAeronautical Information Publication AMDT 365/11\n\nAeronautical Information Publication SUP:\n\nSUP 03/26\n\n1-SUP 06/25\n\n2-SUP 01/26\n\n4-SUP 01/24\n\nAIC G03/26"
       }
     },
     {
