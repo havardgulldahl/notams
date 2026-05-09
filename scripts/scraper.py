@@ -2,9 +2,8 @@ import pathlib
 import re
 import json
 import csv
-import math
 from datetime import datetime, timezone
-from time import time
+from urllib.parse import parse_qs, urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict, Any, Optional
@@ -18,6 +17,9 @@ except ImportError:  # pragma: no cover
     from geo import build_geometry, MAX_CIRCLE_RADIUS_NM  # type: ignore
 
 BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
+RUN_HISTORY_PATH = pathlib.Path("docs/run_history.json")
+RUN_HISTORY_LIMIT = 90
+ESCALATION_THRESHOLD_DAYS = 3
 # NOTE: MAX_CIRCLE_RADIUS_NM now imported from geo.py
 
 
@@ -37,17 +39,65 @@ def parse_html_list(html: str) -> List[str]:
     Extracts file names from <td> elements that have an onclick attribute matching
     the expected pattern.
     """
+    return [entry["filename"] for entry in parse_html_entries(html)]
+
+
+def parse_html_entries(html: str) -> List[dict[str, str]]:
+    """Extract direct English NOTAM file URLs from the CAICA index page."""
     soup = BeautifulSoup(html, "html.parser")
-    files: List[str] = []
-    rx = re.compile(r"location='(.*)_eng.html'")
-    for node in soup.find_all("td", onclick=rx, width=""):
+    entries: List[dict[str, str]] = []
+    seen_filenames: set[str] = set()
+    rx = re.compile(r"(?P<filename>[A-Z]\d{10}_eng\.html)")
+
+    for node in soup.find_all("td"):
         if isinstance(node, Tag):
             onclick_val = node.get("onclick")
             if isinstance(onclick_val, str):
+                direct_url = extract_direct_notam_url(onclick_val)
+                if direct_url:
+                    filename = pathlib.PurePosixPath(urlparse(direct_url).path).name
+                    if filename not in seen_filenames:
+                        entries.append({"filename": filename, "url": direct_url})
+                        seen_filenames.add(filename)
+                    continue
+
                 match = rx.search(onclick_val)
                 if match:
-                    files.append(f"{match.group(1)}_eng.html")
-    return files
+                    filename = match.group("filename")
+                    if filename not in seen_filenames:
+                        entries.append(
+                            {
+                                "filename": filename,
+                                "url": urljoin(BASE_URL, filename),
+                            }
+                        )
+                        seen_filenames.add(filename)
+    return entries
+
+
+def extract_direct_notam_url(onclick_value: str) -> Optional[str]:
+    """Extract the direct NOTAM URL from a CAICA click-counter onclick value."""
+    if "uri=" not in onclick_value:
+        return None
+
+    match = re.search(r"location='([^']+)'", onclick_value)
+    if not match:
+        return None
+
+    click_url = match.group(1)
+    parsed = urlparse(click_url)
+    uri_values = parse_qs(parsed.query).get("uri")
+    if not uri_values:
+        return None
+
+    direct_url = re.sub(r"\s+", "", uri_values[0])
+    if not direct_url.endswith("_eng.html"):
+        return None
+    if direct_url.startswith("//"):
+        return f"https:{direct_url}"
+    if direct_url.startswith("http://") or direct_url.startswith("https://"):
+        return direct_url
+    return f"https://{direct_url.lstrip('/')}"
 
 
 def extract_notam_records(raw_text: str) -> List[str]:
@@ -138,9 +188,106 @@ def polygon_geometry(
     return {"type": "Polygon", "coordinates": [lonlat]}
 
 
+def write_scrape_timestamp(timestamp: str) -> None:
+    """Persist the latest source timestamp for display and diagnostics."""
+    with open("current/.scrape_timestamp", "w", encoding="utf-8") as file:
+        file.write(timestamp)
+
+    with open("docs/scrape_timestamp", "w", encoding="utf-8") as file:
+        file.write(
+            f"20{timestamp[:2]}-{timestamp[2:4]}-{timestamp[4:6]} "
+            f"{timestamp[6:8]}:{timestamp[8:10]}"
+        )
+
+
+def load_run_history(history_path: pathlib.Path) -> list[dict[str, Any]]:
+    """Load persisted scraper run history from disk."""
+    if not history_path.exists():
+        return []
+
+    try:
+        with open(history_path, "r", encoding="utf-8") as file:
+            payload = json.load(file)
+    except (OSError, json.JSONDecodeError):
+        return []
+
+    runs = payload.get("runs", [])
+    if isinstance(runs, list):
+        return [entry for entry in runs if isinstance(entry, dict)]
+    return []
+
+
+def count_consecutive_zero_days(runs: list[dict[str, Any]]) -> int:
+    """Count consecutive zero-result days from the latest recorded run."""
+    streak = 0
+    for run in reversed(runs):
+        if run.get("zero_result"):
+            streak += 1
+            continue
+        break
+    return streak
+
+
+def persist_run_summary(
+    summary: dict[str, Any],
+    history_path: Optional[pathlib.Path] = None,
+) -> dict[str, Any]:
+    """Store the latest run summary and enrich it with streak metadata."""
+    history_path = history_path or RUN_HISTORY_PATH
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+    runs = load_run_history(history_path)
+
+    if runs and runs[-1].get("run_date") == summary.get("run_date"):
+        runs[-1] = summary
+    else:
+        runs.append(summary)
+
+    runs = runs[-RUN_HISTORY_LIMIT:]
+    streak = count_consecutive_zero_days(runs)
+    runs[-1]["consecutive_zero_days"] = streak
+    runs[-1]["escalate"] = streak >= ESCALATION_THRESHOLD_DAYS
+
+    with open(history_path, "w", encoding="utf-8") as file:
+        json.dump({"runs": runs}, file, indent=2)
+        file.write("\n")
+
+    return runs[-1]
+
+
+def build_run_summary(
+    *,
+    status: str,
+    files_found: int,
+    files_downloaded: int,
+    files_processed: int,
+    decoded_count: int,
+    decode_failures: int,
+    expired_count: int,
+    download_failures: int,
+    scrape_timestamp: Optional[str],
+    error: Optional[str] = None,
+) -> dict[str, Any]:
+    """Build a machine-readable summary for the current scraper run."""
+    zero_statuses = {"no_index_files", "zero_active_notams"}
+    return {
+        "run_date": datetime.now(timezone.utc).date().isoformat(),
+        "status": status,
+        "zero_result": status in zero_statuses,
+        "files_found": files_found,
+        "files_downloaded": files_downloaded,
+        "files_processed": files_processed,
+        "decoded_count": decoded_count,
+        "decode_failures": decode_failures,
+        "expired_count": expired_count,
+        "download_failures": download_failures,
+        "scrape_timestamp": scrape_timestamp,
+        "error": error,
+    }
+
+
 def parse_notam_files(
     html_files: list[str], airports_csv: str = "airports.csv", output: str = "."
-) -> None:
+) -> dict[str, int]:
     """Parse NOTAM HTML files, decode each record with pynotam, and output GeoJSON per class.
 
     Each HTML file is assumed to contain multiple NOTAM records separated by blank lines.
@@ -168,6 +315,8 @@ def parse_notam_files(
 
     success_count = 0
     failure_count = 0
+    expired_count = 0
+    processed_files = 0
 
     for file_path in html_files:
         try:
@@ -176,6 +325,7 @@ def parse_notam_files(
         except FileNotFoundError:
             print(f"⚠ File not found: {file_path}")
             continue
+        processed_files += 1
 
         # remove clutter (guard: title tag may be missing in minimal test HTML)
         title_tag = soup.find("title")
@@ -211,6 +361,7 @@ def parse_notam_files(
                 print(
                     f"Skipping expired NOTAM {notam_id}: valid till {valid_till.isoformat()}"
                 )
+                expired_count += 1
                 continue
             success_count += 1
 
@@ -281,68 +432,116 @@ def parse_notam_files(
         print(f"✅ Decoded NOTAMs saved to {out_path}")
 
     print(
-        f"Summary: decoded {success_count} NOTAMs, {failure_count} failed (files processed: {len(html_files)})"
+        f"Summary: decoded {success_count} NOTAMs, {failure_count} failed "
+        f"(files processed: {processed_files})"
     )
+    return {
+        "decoded_count": success_count,
+        "decode_failures": failure_count,
+        "expired_count": expired_count,
+        "files_processed": processed_files,
+    }
 
 
-def main() -> None:
+def main() -> int:
     print(f"Fetching NOTAM index page: {BASE_URL}")
     index_response = fetch(BASE_URL)
     if not index_response:
         print("Failed to fetch the NOTAM index page. Exiting.")
-        return
+        summary = build_run_summary(
+            status="index_fetch_failed",
+            files_found=0,
+            files_downloaded=0,
+            files_processed=0,
+            decoded_count=0,
+            decode_failures=0,
+            expired_count=0,
+            download_failures=0,
+            scrape_timestamp=None,
+            error="Failed to fetch the NOTAM index page.",
+        )
+        persist_run_summary(summary)
+        return 1
     html: str = index_response.text
     print("Parsing NOTAM file list...")
-    files: List[str] = parse_html_list(html)
+    entries = parse_html_entries(html)
+    files: List[str] = [entry["filename"] for entry in entries]
     print(f"Found {len(files)} NOTAM files.")
 
-    saved = 0
-    for i, f in enumerate(files, 1):
-        # check with current/.scrape_timestamp to see if we have the file already
-        try:
-            with open("current/.scrape_timestamp", "r", encoding="utf-8") as file:
-                timestamp = file.read().strip()
-                if f[1:11] == timestamp:
-                    print(f"Already downloaded this timestamp: {timestamp}")
-                    return
-        except FileNotFoundError:
-            pass
+    if not files:
+        summary = build_run_summary(
+            status="no_index_files",
+            files_found=0,
+            files_downloaded=0,
+            files_processed=0,
+            decoded_count=0,
+            decode_failures=0,
+            expired_count=0,
+            download_failures=0,
+            scrape_timestamp=None,
+            error="No NOTAM files found in the index page.",
+        )
+        persisted = persist_run_summary(summary)
+        print(f"Run summary saved to {RUN_HISTORY_PATH}")
+        print(json.dumps(persisted, indent=2))
+        return 1
 
-        url: str = BASE_URL + f
+    saved = 0
+    download_failures = 0
+    downloaded_files: list[str] = []
+    for i, entry in enumerate(entries, 1):
+        f = entry["filename"]
+        url = entry["url"]
         print(f"[{i}/{len(files)}] Downloading: {url}")
         notam_response = fetch(url)
         if notam_response:
             # store notam in current/ directory
-            with open(f"current/{f}", "w", encoding="utf-8") as file:
+            current_path = pathlib.Path("current") / f
+            with open(current_path, "w", encoding="utf-8") as file:
                 file.write(notam_response.text)
             saved += 1
+            downloaded_files.append(str(current_path))
         else:
             print(f"Skipping {url} due to download error.")
+            download_failures += 1
 
-    # extract timestamp from first file, and store it in current/.scrape_timestamp
-    try:
-        timestamp = files[0][1:11]
-        with open("current/.scrape_timestamp", "w", encoding="utf-8") as file:
-            file.write(timestamp)
-        with open("docs/scrape_timestamp", "w", encoding="utf-8") as file:
-            # convert YYMMDDHH to YYYY-MM-DD HH:MM
-            file.write(
-                f"20{timestamp[:2]}-{timestamp[2:4]}-{timestamp[4:6]} {timestamp[6:8]}:{timestamp[8:10]}"
-            )
-    except IndexError:
-        print("No files found to extract timestamp.")
+    timestamp = files[0][1:11]
+    write_scrape_timestamp(timestamp)
 
     print(f"Saved {saved} NOTAMs to current/")
 
-    parse_notam_files(
-        html_files=[f"current/{f}" for f in files],
+    parse_result = parse_notam_files(
+        html_files=downloaded_files,
         airports_csv="ru-airports.csv",
         output="docs/",
     )
 
+    status = "success"
+    error = None
+    if parse_result["decoded_count"] == 0:
+        status = "zero_active_notams"
+        error = "No active NOTAM features were decoded from the fetched files."
+
+    summary = build_run_summary(
+        status=status,
+        files_found=len(files),
+        files_downloaded=saved,
+        files_processed=parse_result["files_processed"],
+        decoded_count=parse_result["decoded_count"],
+        decode_failures=parse_result["decode_failures"],
+        expired_count=parse_result["expired_count"],
+        download_failures=download_failures,
+        scrape_timestamp=timestamp,
+        error=error,
+    )
+    persisted = persist_run_summary(summary)
+    print(f"Run summary saved to {RUN_HISTORY_PATH}")
+    print(json.dumps(persisted, indent=2))
+    return 0 if status == "success" else 1
+
 
 if __name__ == "__main__":
-    import sys, os
+    import sys
 
     if False:  # run if debug
         parse_notam_files(
@@ -353,7 +552,7 @@ if __name__ == "__main__":
         sys.exit()
 
     if len(sys.argv) == 1:
-        main()
+        sys.exit(main())
     else:
         parse_notam_files(
             html_files=sys.argv[1:],  # e.g. files under current/*.html

@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write  # to allow pushing changes
+      issues: write
     steps:
       - name: Checkout
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
@@ -20,15 +21,149 @@ jobs:
             done
           fi
       - run: pip install requests beautifulsoup4 git+https://github.com/havardgulldahl/PyNotam.git
-      - run: python scripts/scraper.py
+      - name: Run scraper
+        id: scrape
+        continue-on-error: true
+        run: python scripts/scraper.py
+      - name: Read scraper summary
+        id: summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          output_path = Path(os.environ["GITHUB_OUTPUT"])
+          history_path = Path("docs/run_history.json")
+          values = {
+              "status": "missing",
+              "zero_result": "false",
+              "decoded_count": "0",
+              "consecutive_zero_days": "0",
+              "escalate": "false",
+              "run_date": "",
+              "scrape_timestamp": "",
+          }
+
+          if history_path.exists():
+              with history_path.open("r", encoding="utf-8") as file:
+                  payload = json.load(file)
+              runs = payload.get("runs", [])
+              if runs:
+                  latest = runs[-1]
+                  values.update(
+                      {
+                          "status": str(latest.get("status", "missing")),
+                          "zero_result": str(
+                              bool(latest.get("zero_result", False))
+                          ).lower(),
+                          "decoded_count": str(
+                              latest.get("decoded_count", 0)
+                          ),
+                          "consecutive_zero_days": str(
+                              latest.get("consecutive_zero_days", 0)
+                          ),
+                          "escalate": str(
+                              bool(latest.get("escalate", False))
+                          ).lower(),
+                          "run_date": str(latest.get("run_date", "")),
+                          "scrape_timestamp": str(
+                              latest.get("scrape_timestamp", "")
+                          ),
+                      }
+                  )
+
+          with output_path.open("a", encoding="utf-8") as file:
+              for key, value in values.items():
+                  file.write(f"{key}={value}\n")
+          PY
       - name: Commit and push
+        if: always()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add current/* history/* docs/*
-          git add current/.scrape_timestamp
+          git add -A current history docs
           git commit -m "Update NOTAMs" || echo "No changes"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git push
+      - name: Open or update zero-result issue
+        if: always() && steps.summary.outputs.zero_result == 'true'
+        uses: actions/github-script@v7
+        env:
+          SCRAPE_STATUS: ${{ steps.summary.outputs.status }}
+          DECODED_COUNT: ${{ steps.summary.outputs.decoded_count }}
+          ZERO_STREAK: ${{ steps.summary.outputs.consecutive_zero_days }}
+          ESCALATE: ${{ steps.summary.outputs.escalate }}
+          RUN_DATE: ${{ steps.summary.outputs.run_date }}
+          SCRAPE_TIMESTAMP: ${{ steps.summary.outputs.scrape_timestamp }}
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const escalated = process.env.ESCALATE === 'true';
+            const title = escalated
+              ? 'NOTAM scraper alert: zero results for 3 consecutive days'
+              : 'NOTAM scraper alert: zero results detected';
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const body = [
+              'The scheduled NOTAM scrape returned zero active NOTAMs.',
+              '',
+              `- Run date: ${process.env.RUN_DATE}`,
+              `- Scrape status: ${process.env.SCRAPE_STATUS}`,
+              `- Parsed NOTAM count: ${process.env.DECODED_COUNT}`,
+              `- Consecutive zero-result days: ${process.env.ZERO_STREAK}`,
+              `- Escalated: ${process.env.ESCALATE}`,
+              `- Source timestamp: ${process.env.SCRAPE_TIMESTAMP || 'unavailable'}`,
+              `- Workflow run: ${runUrl}`,
+            ].join('\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            const existing = issues.find((issue) =>
+              issue.title.startsWith('NOTAM scraper alert:')
+            );
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner,
+                repo,
+                issue_number: existing.number,
+                title,
+                body,
+              });
+              core.info(`Updated alert issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body,
+              });
+              core.info(`Created alert issue #${created.data.number}`);
+            }
+      - name: Fail workflow for zero-result scrape
+        if: always() && steps.summary.outputs.zero_result == 'true'
+        run: |
+          echo "Zero-result scrape detected for ${ZERO_STREAK} consecutive day(s)."
+          if [ "$ESCALATE" = "true" ]; then
+            echo "Escalation threshold reached."
+          fi
+          exit 1
+        env:
+          ZERO_STREAK: ${{ steps.summary.outputs.consecutive_zero_days }}
+          ESCALATE: ${{ steps.summary.outputs.escalate }}
+      - name: Fail workflow for scraper errors
+        if: always() && steps.scrape.outcome == 'failure' && steps.summary.outputs.zero_result != 'true'
+        env:
+          SCRAPER_STATUS: ${{ steps.summary.outputs.status }}
+        run: |
+          echo "Scraper failed with status ${SCRAPER_STATUS:-unknown}."
+          exit 1
