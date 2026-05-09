@@ -1,50 +1,76 @@
 name: Fetch NOTAMs
 
-on:
+'on':
   schedule:
     - cron: "0 1 * * *"   # every day at 01 am
   workflow_dispatch:
+    inputs:
+      simulate_zero_result_issue:
+        description: Exercise zero-result issue creation in a manual run
+        required: false
+        type: boolean
+        default: false
+      simulate_interpretation_failure_issue:
+        description: Exercise interpretation-failure issue creation in a manual run
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # to allow pushing changes
+      contents: write
       issues: write
     steps:
       - name: Checkout
         run: git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY .
-      - run: |
+
+      - name: Move previous HTML to history
+        run: |
           if ls current/*.html 1> /dev/null 2>&1; then
             for z in current/*.html; do
-              git mv -kf "$z" "history/$(basename "$z")";
+              git mv -kf "$z" "history/$(basename "$z")"
             done
           fi
-      - run: pip install requests beautifulsoup4 git+https://github.com/havardgulldahl/PyNotam.git
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 git+https://github.com/havardgulldahl/PyNotam.git
+
       - name: Run scraper
         id: scrape
         continue-on-error: true
         run: python scripts/scraper.py
+
       - name: Read scraper summary
         id: summary
         if: always()
+        env:
+          SIMULATE_ZERO_RESULT: ${{ github.event.inputs.simulate_zero_result_issue || 'false' }}
+          SIMULATE_INTERPRETATION_FAILURE: ${{ github.event.inputs.simulate_interpretation_failure_issue || 'false' }}
         run: |
           python - <<'PY'
           import json
           import os
+          from datetime import datetime, timezone
           from pathlib import Path
 
           output_path = Path(os.environ["GITHUB_OUTPUT"])
           history_path = Path("docs/run_history.json")
+          failures_path = Path("docs/interpretation_failures.json")
+
           values = {
               "status": "missing",
               "zero_result": "false",
               "decoded_count": "0",
               "consecutive_zero_days": "0",
               "escalate": "false",
+              "new_failure_count": "0",
+              "simulation_mode": "false",
               "run_date": "",
               "scrape_timestamp": "",
           }
+          new_failures = []
 
           if history_path.exists():
               with history_path.open("r", encoding="utf-8") as file:
@@ -55,29 +81,71 @@ jobs:
                   values.update(
                       {
                           "status": str(latest.get("status", "missing")),
-                          "zero_result": str(
-                              bool(latest.get("zero_result", False))
-                          ).lower(),
-                          "decoded_count": str(
-                              latest.get("decoded_count", 0)
+                          "zero_result": str(bool(latest.get("zero_result", False))).lower(),
+                          "decoded_count": str(latest.get("decoded_count", 0)),
+                          "consecutive_zero_days": str(latest.get("consecutive_zero_days", 0)),
+                          "escalate": str(bool(latest.get("escalate", False))).lower(),
+                          "new_failure_count": str(
+                              latest.get("new_interpretation_failures_count", 0)
                           ),
-                          "consecutive_zero_days": str(
-                              latest.get("consecutive_zero_days", 0)
-                          ),
-                          "escalate": str(
-                              bool(latest.get("escalate", False))
-                          ).lower(),
                           "run_date": str(latest.get("run_date", "")),
-                          "scrape_timestamp": str(
-                              latest.get("scrape_timestamp", "")
-                          ),
+                          "scrape_timestamp": str(latest.get("scrape_timestamp", "")),
                       }
                   )
 
+          if failures_path.exists():
+              with failures_path.open("r", encoding="utf-8") as file:
+                  payload = json.load(file)
+              latest_new_failures = payload.get("latest_new_failures", [])
+              if isinstance(latest_new_failures, list):
+                  new_failures = latest_new_failures
+                  values["new_failure_count"] = str(len(new_failures))
+
+          run_date = values["run_date"] or datetime.now(timezone.utc).date().isoformat()
+
+          if os.environ["SIMULATE_ZERO_RESULT"].lower() == "true":
+              values.update(
+                  {
+                      "status": "simulated_zero_result",
+                      "zero_result": "true",
+                      "decoded_count": "0",
+                      "consecutive_zero_days": values["consecutive_zero_days"] or "1",
+                      "simulation_mode": "true",
+                      "run_date": run_date,
+                      "scrape_timestamp": values["scrape_timestamp"] or "simulation",
+                  }
+              )
+
+          if os.environ["SIMULATE_INTERPRETATION_FAILURE"].lower() == "true":
+              values["simulation_mode"] = "true"
+              values["run_date"] = run_date
+              new_failures = [
+                  {
+                      "signature": "workflow-smoke-test",
+                      "notam_id": "SMOKE-TEST",
+                      "first_seen_run_date": run_date,
+                      "last_seen_run_date": run_date,
+                      "last_file": "workflow_dispatch",
+                      "last_error": (
+                          "Synthetic interpretation failure for workflow smoke test"
+                      ),
+                      "last_snippet": (
+                          "(SMOKE-TEST NOTAMN\\n"
+                          "Q)TEST/QXXXX/IV/BO/E/000/999/0000N00000E005\\n"
+                          "E)Synthetic workflow smoke test record.)"
+                      ),
+                  }
+              ]
+              values["new_failure_count"] = str(len(new_failures))
+
           with output_path.open("a", encoding="utf-8") as file:
               for key, value in values.items():
-                  file.write(f"{key}={value}\n")
+                  file.write(f"{key}={value}\\n")
+              file.write("new_failures<<EOF\\n")
+              file.write(json.dumps(new_failures))
+              file.write("\\nEOF\\n")
           PY
+
       - name: Commit and push
         if: always()
         env:
@@ -89,6 +157,7 @@ jobs:
           git commit -m "Update NOTAMs" || echo "No changes"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git push
+
       - name: Open or update zero-result issue
         if: always() && steps.summary.outputs.zero_result == 'true'
         uses: actions/github-script@v7
@@ -97,6 +166,7 @@ jobs:
           DECODED_COUNT: ${{ steps.summary.outputs.decoded_count }}
           ZERO_STREAK: ${{ steps.summary.outputs.consecutive_zero_days }}
           ESCALATE: ${{ steps.summary.outputs.escalate }}
+          SIMULATION_MODE: ${{ steps.summary.outputs.simulation_mode }}
           RUN_DATE: ${{ steps.summary.outputs.run_date }}
           SCRAPE_TIMESTAMP: ${{ steps.summary.outputs.scrape_timestamp }}
         with:
@@ -104,12 +174,16 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const escalated = process.env.ESCALATE === 'true';
-            const title = escalated
+            const simulation = process.env.SIMULATION_MODE === 'true';
+            const baseTitle = escalated
               ? 'NOTAM scraper alert: zero results for 3 consecutive days'
               : 'NOTAM scraper alert: zero results detected';
+            const title = simulation ? `[test] ${baseTitle}` : baseTitle;
             const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
             const body = [
-              'The scheduled NOTAM scrape returned zero active NOTAMs.',
+              simulation
+                ? 'This is a workflow smoke test for GitHub issue creation.'
+                : 'The scheduled NOTAM scrape returned zero active NOTAMs.',
               '',
               `- Run date: ${process.env.RUN_DATE}`,
               `- Scrape status: ${process.env.SCRAPE_STATUS}`,
@@ -127,9 +201,9 @@ jobs:
               per_page: 100,
             });
 
-            const existing = issues.find((issue) =>
-              issue.title.startsWith('NOTAM scraper alert:')
-            );
+            const existing = simulation
+              ? issues.find((issue) => issue.title === title)
+              : issues.find((issue) => issue.title.startsWith('NOTAM scraper alert:'));
 
             if (existing) {
               await github.rest.issues.update({
@@ -149,17 +223,76 @@ jobs:
               });
               core.info(`Created alert issue #${created.data.number}`);
             }
+
+      - name: Open issue for new interpretation failures
+        if: always() && steps.summary.outputs.new_failure_count != '0'
+        uses: actions/github-script@v7
+        env:
+          NEW_FAILURES_JSON: ${{ steps.summary.outputs.new_failures }}
+          SIMULATION_MODE: ${{ steps.summary.outputs.simulation_mode }}
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const failures = JSON.parse(process.env.NEW_FAILURES_JSON || '[]');
+            const simulation = process.env.SIMULATION_MODE === 'true';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            for (const failure of failures) {
+              const notamId = failure.notam_id || 'unknown';
+              const baseTitle = `NOTAM interpretation failure: ${notamId} (${failure.signature})`;
+              const title = simulation ? `[test] ${baseTitle}` : baseTitle;
+              const existing = issues.find((issue) => issue.title === title);
+              if (existing) {
+                core.info(`Interpretation failure issue already open: #${existing.number}`);
+                continue;
+              }
+
+              const body = [
+                simulation
+                  ? 'This is a workflow smoke test for GitHub issue creation.'
+                  : 'The scraper encountered a NOTAM record that pynotam could not interpret.',
+                '',
+                `- NOTAM ID: ${notamId}`,
+                `- Signature: ${failure.signature}`,
+                `- Last seen file: ${failure.last_file}`,
+                `- First seen run date: ${failure.first_seen_run_date}`,
+                `- Last parser error: ${failure.last_error}`,
+                `- Workflow run: ${runUrl}`,
+                '',
+                'Snippet:',
+                '```text',
+                `${failure.last_snippet}`,
+                '```',
+              ].join('\n');
+
+              const created = await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body,
+              });
+              core.info(`Created interpretation failure issue #${created.data.number}`);
+            }
+
       - name: Fail workflow for zero-result scrape
         if: always() && steps.summary.outputs.zero_result == 'true'
+        env:
+          ZERO_STREAK: ${{ steps.summary.outputs.consecutive_zero_days }}
+          ESCALATE: ${{ steps.summary.outputs.escalate }}
         run: |
           echo "Zero-result scrape detected for ${ZERO_STREAK} consecutive day(s)."
           if [ "$ESCALATE" = "true" ]; then
             echo "Escalation threshold reached."
           fi
           exit 1
-        env:
-          ZERO_STREAK: ${{ steps.summary.outputs.consecutive_zero_days }}
-          ESCALATE: ${{ steps.summary.outputs.escalate }}
+
       - name: Fail workflow for scraper errors
         if: always() && steps.scrape.outcome == 'failure' && steps.summary.outputs.zero_result != 'true'
         env:
