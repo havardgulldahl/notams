@@ -1,0 +1,20 @@
+{
+  "runs": [
+    {
+      "run_date": "2026-05-09",
+      "status": "success",
+      "zero_result": false,
+      "files_found": 10,
+      "files_downloaded": 10,
+      "files_processed": 10,
+      "decoded_count": 2909,
+      "decode_failures": 4,
+      "expired_count": 12,
+      "download_failures": 0,
+      "scrape_timestamp": "2605091253",
+      "error": null,
+      "consecutive_zero_days": 0,
+      "escalate": false
+    }
+  ]
+}
