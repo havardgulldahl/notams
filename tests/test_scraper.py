@@ -64,6 +64,45 @@ def test_parse_notam_files_creates_geojson(tmp_path: Path, monkeypatch):
     assert "U0216/25" in data
 
 
+def test_parse_notam_files_recovers_common_malformed_records(tmp_path: Path) -> None:
+    records = [
+        (
+            "(A2119/26 NOTAMN\n"
+            "Q)UHMM/QLCXX//A/000/999/6444N17744E005\n"
+            "A)UHMA B)2604062340 C)2606300700 EST\n"
+            "E)RWY 02/20: RCLL EVERY SECOND WORKING, SPACING 30M.)"
+        ),
+        (
+            "(C2041/26 NOTAMN\n"
+            "Q)UNNT/QSPAH/IV/BO/AE/000/999/6043N07740E025\n"
+            "A)UNSS B)2605040140 C)2605311250\n"
+            "E)STREZHEVOY TWR OPR HR (AIRSPACE CLASS C) CALL SIGN KARAVAY-RADAR:\n\n"
+            "0140-1250.)"
+        ),
+        (
+            "(U0427/26 NOTAMN\n"
+            "Q)UUWV/QNDXX//E/000/999/5551N03256E150\n"
+            "A)UUWV B)2604010000 C)2612242359\n"
+            "E)DME BELY BJ 114.2MHZ CH89X: RANGE AT FL200 IS 100KM.)"
+        ),
+    ]
+
+    html_content = make_sample_html(records)
+    html_file = tmp_path / "A2605091253_eng.html"
+    html_file.write_text(html_content, encoding="utf-8")
+
+    airports_csv = tmp_path / "airports.csv"
+    write_airports_csv(airports_csv)
+
+    result = scraper.parse_notam_files(
+        [str(html_file)], airports_csv=str(airports_csv), output=str(tmp_path) + "/"
+    )
+
+    assert result["decoded_count"] == 3
+    assert result["decode_failures"] == 0
+    assert result["interpretation_failures"] == []
+
+
 # Return list of HTML files in the 'current' directory
 def get_local_html_files(directory: str) -> list[str]:
     html_files = []
@@ -116,13 +155,14 @@ def test_main_continues_when_timestamp_matches(tmp_path: Path, monkeypatch) -> N
 
     def fake_parse_notam_files(
         html_files: list[str], airports_csv: str = "airports.csv", output: str = "."
-    ) -> dict[str, int]:
+    ) -> dict[str, object]:
         parse_calls.append(html_files)
         return {
             "decoded_count": 4,
             "decode_failures": 0,
             "expired_count": 0,
             "files_processed": len(html_files),
+            "interpretation_failures": [],
         }
 
     monkeypatch.setattr(scraper, "parse_notam_files", fake_parse_notam_files)
@@ -135,6 +175,7 @@ def test_main_continues_when_timestamp_matches(tmp_path: Path, monkeypatch) -> N
     latest = history["runs"][-1]
     assert latest["status"] == "success"
     assert latest["decoded_count"] == 4
+    assert latest["new_interpretation_failures_count"] == 0
 
 
 def test_main_records_zero_result_when_index_is_empty(
@@ -220,3 +261,39 @@ def test_persist_run_summary_escalates_after_three_zero_days(
 
     history = json.loads(history_path.read_text(encoding="utf-8"))
     assert history["runs"][-1]["status"] == "zero_active_notams"
+
+
+def test_persist_interpretation_failures_detects_only_new_signatures(
+    tmp_path: Path,
+) -> None:
+    failures_path = tmp_path / "interpretation_failures.json"
+    first_failure = {
+        "signature": "deadbeef0001",
+        "notam_id": "A2119/26",
+        "file": "A2605091253_eng.html",
+        "error": "Failed to parse NOTAM (line 2, col 1)",
+        "snippet": "(A2119/26 NOTAMN ...)",
+    }
+    second_failure = {
+        "signature": "deadbeef0002",
+        "notam_id": "U0427/26",
+        "file": "U2605091253_eng.html",
+        "error": "Failed to parse NOTAM (line 2, col 1)",
+        "snippet": "(U0427/26 NOTAMN ...)",
+    }
+
+    first_state = scraper.persist_interpretation_failures(
+        [first_failure],
+        run_date="2026-05-09",
+        failures_path=failures_path,
+    )
+    second_state = scraper.persist_interpretation_failures(
+        [first_failure, second_failure],
+        run_date="2026-05-10",
+        failures_path=failures_path,
+    )
+
+    assert len(first_state["latest_new_failures"]) == 1
+    assert first_state["latest_new_failures"][0]["notam_id"] == "A2119/26"
+    assert len(second_state["latest_new_failures"]) == 1
+    assert second_state["latest_new_failures"][0]["notam_id"] == "U0427/26"

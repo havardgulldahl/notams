@@ -2,6 +2,7 @@ import pathlib
 import re
 import json
 import csv
+import hashlib
 from datetime import datetime, timezone
 from urllib.parse import parse_qs, urljoin, urlparse
 import requests
@@ -18,6 +19,7 @@ except ImportError:  # pragma: no cover
 
 BASE_URL: str = "https://www.caica.ru/ANI_Official/notam/notam_series/"
 RUN_HISTORY_PATH = pathlib.Path("docs/run_history.json")
+INTERPRETATION_FAILURES_PATH = pathlib.Path("docs/interpretation_failures.json")
 RUN_HISTORY_LIMIT = 90
 ESCALATION_THRESHOLD_DAYS = 3
 # NOTE: MAX_CIRCLE_RADIUS_NM now imported from geo.py
@@ -138,6 +140,171 @@ def normalize_record_text(record: str) -> str:
     # Trim trailing whitespace on each line
     text = "\n".join(line.rstrip() for line in text.split("\n"))
     return text.strip()
+
+
+def fill_missing_q_line_fields(record: str) -> str:
+    """Fill empty Q-line traffic and purpose fields with parser-safe defaults."""
+    updated = re.sub(
+        r"(?m)^Q\)([A-Z]{4}/[A-Z]{5})//([A-Z]{1,3})/",
+        r"Q)\1/IV/BO/\2/",
+        record,
+    )
+    return re.sub(
+        r"(?m)^Q\)([A-Z]{4}/[A-Z]{5})/([A-Z]{1,3})/(\d{3}/\d{3}/)",
+        r"Q)\1/IV/BO/\2/\3",
+        updated,
+    )
+
+
+def strip_airspace_class_parentheses(record: str) -> str:
+    """Remove parenthetical airspace class markers that break pynotam parsing."""
+    return re.sub(r"\((AIRSPACE CLASS [A-Z])\)", r"\1", record)
+
+
+def build_decode_candidates(record: str) -> list[str]:
+    """Build parser fallbacks for common malformed record patterns."""
+    candidates: list[str] = [record]
+    transforms = [
+        fill_missing_q_line_fields,
+        strip_airspace_class_parentheses,
+    ]
+
+    current_batch = [record]
+    seen = {record}
+    for transform in transforms:
+        next_batch: list[str] = []
+        for candidate in current_batch:
+            updated = transform(candidate)
+            if updated not in seen:
+                seen.add(updated)
+                candidates.append(updated)
+                next_batch.append(updated)
+        current_batch = candidates.copy()
+    return candidates
+
+
+def extract_notam_id(record: str) -> Optional[str]:
+    """Extract the NOTAM identifier from the start of a raw record."""
+    match = re.match(r"^\(([A-Z]\d{4}/\d{2}(?:[A-Z]\d{1,3})?)\s+NOTAM", record)
+    if match:
+        return match.group(1)
+    return None
+
+
+def build_interpretation_failure(
+    *,
+    file_path: str,
+    record: str,
+    error: str,
+) -> dict[str, str]:
+    """Build a stable representation of an unparsed NOTAM record."""
+    notam_id = extract_notam_id(record) or "unknown"
+    snippet = record[:1200]
+    signature_source = f"{notam_id}|{error}|{snippet[:200]}"
+    signature = hashlib.sha256(signature_source.encode("utf-8")).hexdigest()[:16]
+    return {
+        "signature": signature,
+        "notam_id": notam_id,
+        "file": pathlib.Path(file_path).name,
+        "error": error,
+        "snippet": snippet,
+    }
+
+
+def decode_notam_record(
+    record: str,
+    file_path: str,
+) -> tuple[Optional[Any], Optional[dict[str, str]]]:
+    """Decode a NOTAM record, trying targeted fallbacks before reporting failure."""
+    last_error: Optional[Exception] = None
+    for candidate in build_decode_candidates(record):
+        try:
+            return notam.Notam.from_str(candidate), None
+        except Exception as exc:  # pragma: no cover - exercised via integration tests
+            last_error = exc
+
+    failure = build_interpretation_failure(
+        file_path=file_path,
+        record=record,
+        error=str(last_error) if last_error else "Unknown parse failure",
+    )
+    return None, failure
+
+
+def load_interpretation_failures(
+    failures_path: pathlib.Path,
+) -> dict[str, Any]:
+    """Load persisted interpretation-failure state from disk."""
+    if not failures_path.exists():
+        return {"known_failures": [], "latest_new_failures": []}
+
+    try:
+        with open(failures_path, "r", encoding="utf-8") as file:
+            payload = json.load(file)
+    except (OSError, json.JSONDecodeError):
+        return {"known_failures": [], "latest_new_failures": []}
+
+    known_failures = payload.get("known_failures", [])
+    latest_new_failures = payload.get("latest_new_failures", [])
+    return {
+        "known_failures": known_failures if isinstance(known_failures, list) else [],
+        "latest_new_failures": (
+            latest_new_failures if isinstance(latest_new_failures, list) else []
+        ),
+    }
+
+
+def persist_interpretation_failures(
+    failures: list[dict[str, str]],
+    run_date: str,
+    failures_path: pathlib.Path = INTERPRETATION_FAILURES_PATH,
+) -> dict[str, Any]:
+    """Persist interpretation failures and identify which ones are newly seen."""
+    failures_path.parent.mkdir(parents=True, exist_ok=True)
+    existing = load_interpretation_failures(failures_path)
+    known_map = {
+        entry["signature"]: entry
+        for entry in existing["known_failures"]
+        if isinstance(entry, dict) and "signature" in entry
+    }
+    new_failures: list[dict[str, str]] = []
+
+    for failure in failures:
+        signature = failure["signature"]
+        if signature in known_map:
+            known_map[signature].update(
+                {
+                    "last_seen_run_date": run_date,
+                    "last_error": failure["error"],
+                    "last_file": failure["file"],
+                    "last_snippet": failure["snippet"],
+                }
+            )
+            continue
+
+        failure_entry = {
+            "signature": signature,
+            "notam_id": failure["notam_id"],
+            "first_seen_run_date": run_date,
+            "last_seen_run_date": run_date,
+            "last_error": failure["error"],
+            "last_file": failure["file"],
+            "last_snippet": failure["snippet"],
+        }
+        known_map[signature] = failure_entry
+        new_failures.append(failure_entry)
+
+    payload = {
+        "known_failures": sorted(
+            known_map.values(),
+            key=lambda entry: (entry["notam_id"], entry["signature"]),
+        ),
+        "latest_new_failures": new_failures,
+    }
+    with open(failures_path, "w", encoding="utf-8") as file:
+        json.dump(payload, file, indent=2)
+        file.write("\n")
+    return payload
 
 
 # ----------------------------
@@ -264,6 +431,8 @@ def build_run_summary(
     decode_failures: int,
     expired_count: int,
     download_failures: int,
+    interpretation_failures_count: int,
+    new_interpretation_failures_count: int,
     scrape_timestamp: Optional[str],
     error: Optional[str] = None,
 ) -> dict[str, Any]:
@@ -280,6 +449,8 @@ def build_run_summary(
         "decode_failures": decode_failures,
         "expired_count": expired_count,
         "download_failures": download_failures,
+        "interpretation_failures_count": interpretation_failures_count,
+        "new_interpretation_failures_count": new_interpretation_failures_count,
         "scrape_timestamp": scrape_timestamp,
         "error": error,
     }
@@ -287,7 +458,7 @@ def build_run_summary(
 
 def parse_notam_files(
     html_files: list[str], airports_csv: str = "airports.csv", output: str = "."
-) -> dict[str, int]:
+) -> dict[str, Any]:
     """Parse NOTAM HTML files, decode each record with pynotam, and output GeoJSON per class.
 
     Each HTML file is assumed to contain multiple NOTAM records separated by blank lines.
@@ -317,6 +488,7 @@ def parse_notam_files(
     failure_count = 0
     expired_count = 0
     processed_files = 0
+    interpretation_failures: list[dict[str, str]] = []
 
     for file_path in html_files:
         try:
@@ -345,10 +517,16 @@ def parse_notam_files(
             rec = normalize_record_text(rec)
             if not rec.startswith("("):
                 continue
-            try:
-                decoded = notam.Notam.from_str(rec)
-            except Exception as e:
-                print(f"Failed to decode NOTAM record: {e}")
+            decoded, interpretation_failure = decode_notam_record(rec, file_path)
+            if interpretation_failure:
+                print(
+                    "Failed to decode NOTAM record: "
+                    f"{interpretation_failure['error']}"
+                )
+                failure_count += 1
+                interpretation_failures.append(interpretation_failure)
+                continue
+            if decoded is None:
                 failure_count += 1
                 continue
 
@@ -440,6 +618,7 @@ def parse_notam_files(
         "decode_failures": failure_count,
         "expired_count": expired_count,
         "files_processed": processed_files,
+        "interpretation_failures": interpretation_failures,
     }
 
 
@@ -457,6 +636,8 @@ def main() -> int:
             decode_failures=0,
             expired_count=0,
             download_failures=0,
+            interpretation_failures_count=0,
+            new_interpretation_failures_count=0,
             scrape_timestamp=None,
             error="Failed to fetch the NOTAM index page.",
         )
@@ -478,6 +659,8 @@ def main() -> int:
             decode_failures=0,
             expired_count=0,
             download_failures=0,
+            interpretation_failures_count=0,
+            new_interpretation_failures_count=0,
             scrape_timestamp=None,
             error="No NOTAM files found in the index page.",
         )
@@ -515,6 +698,11 @@ def main() -> int:
         airports_csv="ru-airports.csv",
         output="docs/",
     )
+    run_date = datetime.now(timezone.utc).date().isoformat()
+    failure_state = persist_interpretation_failures(
+        parse_result["interpretation_failures"],
+        run_date=run_date,
+    )
 
     status = "success"
     error = None
@@ -531,6 +719,8 @@ def main() -> int:
         decode_failures=parse_result["decode_failures"],
         expired_count=parse_result["expired_count"],
         download_failures=download_failures,
+        interpretation_failures_count=len(parse_result["interpretation_failures"]),
+        new_interpretation_failures_count=len(failure_state["latest_new_failures"]),
         scrape_timestamp=timestamp,
         error=error,
     )
