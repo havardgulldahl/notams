@@ -179,6 +179,24 @@
       "error": "Failed to fetch the NOTAM index page.",
       "consecutive_zero_days": 0,
       "escalate": false
+    },
+    {
+      "run_date": "2026-05-19",
+      "status": "success",
+      "zero_result": false,
+      "files_found": 10,
+      "files_downloaded": 10,
+      "files_processed": 10,
+      "decoded_count": 1478,
+      "decode_failures": 0,
+      "expired_count": 1402,
+      "download_failures": 0,
+      "interpretation_failures_count": 0,
+      "new_interpretation_failures_count": 0,
+      "scrape_timestamp": "2605112253",
+      "error": null,
+      "consecutive_zero_days": 0,
+      "escalate": false
     }
   ]
 }
