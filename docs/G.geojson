@@ -22815,8 +22815,8 @@
         ]
       },
       "properties": {
-        "title": "G0714/25 for Vladikavkaz Beslan International Airport",
-        "text": "From: 2025-12-25 13:40:00+00:00\nTo: 2026-05-24 23:59:00+00:00\n\nGround Based Augmentation System Channel 20431/20842: Runway 09/27 GNSS Landing System Approach Procedure NOT PROVIDED."
+        "title": "G0215/26 for Vladikavkaz Beslan International Airport",
+        "text": "From: 2026-05-22 13:26:00+00:00\nTo: 2026-12-24 23:59:00+00:00\n\nGround Based Augmentation System Channel 20431/20842: Runway 09/27 GNSS Landing System Approach Procedure NOT PROVIDED."
       }
     },
     {
@@ -23345,8 +23345,8 @@
         ]
       },
       "properties": {
-        "title": "G0715/25 for Vladikavkaz Beslan International Airport",
-        "text": "From: 2025-12-25 13:50:00+00:00\nTo: 2026-05-24 23:59:00+00:00\n\nGlobal Navigation Satellite System FAILURE POSSIBLE Within Aerodrome AREA,\n\nRADAR VECTORING UPON FLT CREW REQ PROVIDED."
+        "title": "G0216/26 for Vladikavkaz Beslan International Airport",
+        "text": "From: 2026-05-22 13:27:00+00:00\nTo: 2026-12-24 23:59:00+00:00\n\nGlobal Navigation Satellite System FAILURE POSSIBLE Within Aerodrome AREA,\n\nRADAR VECTORING UPON FLT CREW REQ PROVIDED."
       }
     },
     {
@@ -38715,8 +38715,8 @@
         ]
       },
       "properties": {
-        "title": "G0067/26 for Nizhny Novgorod / Strigino International Airport",
-        "text": "From: 2026-02-26 10:00:00+00:00\nTo: 2026-05-26 10:00:00+00:00\n\nNIZHNY NOVGOROD/STRIGINO Ground Based Augmentation System CH22181, CH20948, CH21770:\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System) Procedure NOT PROVIDED.\n\n(Aeronautical Information Publication PAGE Aerodrome 2.1 UWGG-139,140,147,148,155,156,157,158)."
+        "title": "G0214/26 for Nizhny Novgorod / Strigino International Airport",
+        "text": "From: 2026-05-22 07:42:00+00:00\nTo: 2026-08-26 10:00:00+00:00\n\nNIZHNY NOVGOROD/STRIGINO Ground Based Augmentation System CH22181, CH20948, CH21770:\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System) Procedure NOT PROVIDED.\n\n(Reference Aeronautical Information Publication PAGE Aerodrome 2.1 UWGG-139,140,147,148,155,156,157,158)."
       }
     },
     {
