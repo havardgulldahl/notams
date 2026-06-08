@@ -32160,20 +32160,6 @@
         ]
       },
       "properties": {
-        "title": "U0186/26B03 for None",
-        "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\n2. TFC DEPARTING FROM URMM SHOULD USE FLW RTE:\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nCRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL TFC, CRUISING LEVELS\n\nODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB (FROM UZZID TO TUSAB\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL090-FL530)-\n\nN72 VOLGOGRAD/GUMRAK VORDME (WGD) (FROM TUSAB TO VOLGOGRAD/GUMRAK\n\nVORDME (WGD) UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FROM OBABI TO GEKPA\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL210-FL530).\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-\n\nDCT ZIZAR-DCT VAZLU-DCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL\n\nTFC, CRUISING LEVELS ODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB\n\n(FROM UZZID TO TUSAB UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-R807 UROBO-P135 ABNOT (FROM TUSAB TO ABNOT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.733333333333334,
-          50.0
-        ]
-      },
-      "properties": {
         "title": "U0186/26C03 for None",
         "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL070-FL530).\n\n- RESLO-DCT VENFO-DCT BINOL (UNIDIRECTIONAL WB TFC BTN FL210-510)-\n\nFOR TFC TO URSS Aerodrome.\n\n- RESLO-DCT VENFO-DCT BINOL G487 ODIRA (FROM RESLO TO BINOL\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS EVEN BTN FL210-510) -\n\nFOR TFC THRU LTAA FIR."
       }
@@ -32190,6 +32176,20 @@
       "properties": {
         "title": "U0186/26A03 for None",
         "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nFLW ATS ROUTES ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) AND SAMARA\n\nFIR (UWWW) FOR TFC TO URMM Aerodrome (WITHOUT ENTERING INTO FIR AKTOBE\n\n(UATT)):\n\n1. TFC ARRIVING TO URMM SHOULD USE FLW RTE:\n\n- ABAGI B105 NIMTA (FROM ABAGI TO NIMTA UNIDIRECTIONAL TFC,\n\nCRUISING LEVELS ODD BTN FL135-540)\n\n-B105 NATIT-DCT MOLED (FROM NIMTA TO MOLED UNIDIRECTIONAL TFC,\n\nCRUISING LEVELS EVEN BTN FL100-540)\n\n-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (FROM MOLED TO ITAKA\n\nCRUISING LEVELS EVEN BTN FL330-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-\n\nDCT MEMZA (FROM ITAKA TO MEMZA CRUISING LEVELS EVEN BTN FL180-530)-\n\nA962 OKARU.\n\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-\n\nP135 ABNOT.\n\n- ABNOT-P135 UROBO-R807 MOLED (FROM ABNOT TO MOLED CRUISING LEVELS\n\nEVEN BTN FL070-530)-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA\n\n(FROM MOLED TO ITAKA CRUISING LEVELS EVEN BTN FL330-530)-\n\nDCT OBBUD-DCT AMKOL-DCT GOTIK-DCT MEMZA (FROM ITAKA TO MEMZA\n\nCRUISING LEVELS EVEN BTN FL180-530)-A962 OKARU."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.733333333333334,
+          50.0
+        ]
+      },
+      "properties": {
+        "title": "U0186/26B03 for None",
+        "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\n2. TFC DEPARTING FROM URMM SHOULD USE FLW RTE:\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nCRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL TFC, CRUISING LEVELS\n\nODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB (FROM UZZID TO TUSAB\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL090-FL530)-\n\nN72 VOLGOGRAD/GUMRAK VORDME (WGD) (FROM TUSAB TO VOLGOGRAD/GUMRAK\n\nVORDME (WGD) UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FROM OBABI TO GEKPA\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL210-FL530).\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-\n\nDCT ZIZAR-DCT VAZLU-DCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL\n\nTFC, CRUISING LEVELS ODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB\n\n(FROM UZZID TO TUSAB UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-R807 UROBO-P135 ABNOT (FROM TUSAB TO ABNOT"
       }
     },
     {
@@ -36472,34 +36472,6 @@
         ]
       },
       "properties": {
-        "title": "U0416/26B06 for None",
-        "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nTHE ONLY RTE FOR DEP FROM URMS Aerodrome:\n\n  - AMLUG G923 LELOT DCT BEMES DCT ITAKA (FROM LELOT TFC\n\n  UNIDIRECTIONAL EB Within FL070-FL530).\n\n3. THE ONLY RTE FOR ARR TO URMO Aerodrome:\n\n - IPLED DCT REMKA DCT GASNI (TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n G914 GORAK.\n\n THE ONLY RTE FOR DEP FROM URMO Aerodrome:\n\n - GORAK R103 LELOT DCT BEMES DCT ITAKA (FROM LELOT TFC\n\n UNIDIRECTIONAL EB Within FL070-FL530).\n\n4. THE ONLY RTE FOR ARR TO URMN Aerodrome:\n\n - IPLED DCT REMKA DCT GASNI (TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n G914 TAFIK.\n\n THE ONLY RTE FOR DEP FROM URMN Aerodrome:\n\n - TAFIK G914 GORAK R103 LELOT DCT BEMES DCT ITAKA (FROM LELOT\n\n TFC UNIDIRECTIONAL EB Within FL070-FL530).\n\n5. THE ONLY RTE FOR ARR TO URMM Aerodrome:\n\n - IPLED DCT GOTIK DCT MEMZA A962 OKARU.\n\n   THE ONLY RTE FOR DEP FROM URMM Aerodrome:\n\n  - URILU R227 BEMES DCT ITAKA.\n\n6. THE ONLY RTE FOR ARR TO URMT Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA A962 RUGIK."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U0416/26C06 for None",
-        "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nTHE ONLY RTE FOR DEP FROM URMT Aerodrome:\n\n- GIRTI B494 RISKA R227 BEMES DCT ITAKA.\n\n7. THE ONLY RTE FOR ARR TO URSS Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL.\n\n   THE ONLY RTE FOR DEP FROM URSS Aerodrome:\n\n  - IRGID A944 GUBOR G487 ERSAR DCT BEMES DCT ITAKA.\n\n8. THE ONLY RTE FOR ARR TO URML Aerodrome:\n\n  - IPLED G96 RIRAN.\n\n   THE ONLY RTE FOR DEP FROM URML Aerodrome:\n\n  - BALIP DCT PIKAN (TFC UNIDIRECTIONAL EB Within FL070-FL450).\n\n  - BALIP DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL070-FL530).\n\n  - AMKOL DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL110-FL530).\n\n9. THE ONLY RTE FOR ARR TO URWI Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA (FROM IPLED TO MEMZA CRUISING LVL\n\n  EVEN Within FL180-530) A962 OKARU-N82 NIRGA-N82 IKZAL-N82\n\n  UMSUR (FROM NIRGA TO UMSUR CRUISING LVL EVEN Within FL160-430) A964\n\n  KISEL (FROM UMSUR TO KISEL TFC UNIDIRECTIONAL CRUISING LVL EVEN\n\n  Within FL060-FL300)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
         "title": "U0416/26D06 for None",
         "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nTHE ONLY RTE FOR DEP FROM URWI Aerodrome:\n\n- SOREG G481 ZUZGU-G481 NIRGA (FROM SOREG TO NIRGA CRUISING LVL\n\n  ODD Within FL150-FL390)-DCT BEMES (FROM NIRGA TO BEMES CRUISING LVL\n\n  ODD Within FL250-FL530)-DCT ITAKA (FROM BEMES TO ITAKA CRUISING LVL\n\n  ODD Within FL290-FL530).\n\nENSURE PLANNING AND USAGE:\n\n-OVERFLY CRP IKZAL Within PERIOD 0600-1535 UTC FOR ARR TO URWI Aerodrome.\n\n-OVERFLY CRP ZUZGU Within PERIOD 0615-1545 UTC FOR DEP FROM URWI Aerodrome\n\n10. THE ONLY RTE FOR ARR TO URKG Aerodrome:\n\n- IPLED DCT GOTIK-DCT MEMZA-DCT VENFO-DCT PROZR (FROM IPLED TO\n\n  PROZR CRUISING LVL EVEN Within FL240-FL400)-DCT ONMUG DCT BAKRI\n\n  (FROM PROZR TO BAKRI CRUISING LVL EVEN Within FL100-FL400) A277\n\n  LIMAS (FROM BAKRI TO LIMAS CRUISING LVL EVEN Within FL070-FL150).\n\n  THE ONLY RTE FOR DEP FROM URKG Aerodrome:\n\n- KUTON-DCT LAZAREVSKOE NDB (LA) (FROM KUTON TO LAZAREVSKOE NDB\n\n  (LA) CRUISING LVL ODD Within FL070-FL350)-B549 IPVIR B549 IRGID\n\n  (FROM LAZAREVSKOE NDB (LA) TO IRGID CRUISING LVL"
       }
@@ -36544,6 +36516,34 @@
       "properties": {
         "title": "U0416/26A06 for None",
         "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nATS RTE ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) FOR FLT TO\n\nAERODROMES URMG, URMS, URMO, URMN, URMM, URMT, URSS, URML, URWI,\n\nURKG, URKK THRU AKTOBE FIR (UATT):\n\n- IPLED DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL\n\n  (TFC UNIDIRECTIONAL WB Within FL180-FL510).\n\n- RESLO DCT VENFO DCT BINOL (TFC UNIDIRECTIONAL WB Within FL210-FL510),\n\n- ERSAR DCT BEMES DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL290-FL530).\n\n- VENFO DCT PROZR DCT BAKRI (TFC UNIDIRECTIONAL WB, Within FL240-FL400\n\n  BTN VENFO TO PROZR, Within FL100-FL400 BTN PROZR TO BAKRI),\n\n- KUTON DCT LAZAREVSKOE NDB (LA) (TFC UNIDIRECTIONAL EB Within\n\n  FL070-FL350).\n\n1. THE ONLY RTE FOR ARR TO URMG Aerodrome:\n\n  - IPLED DCT REMKA (TFC UNIDIRECTIONAL WB Within FL080-FL510).\n\n   THE ONLY RTE FOR DEP FROM URMG Aerodrome:\n\n  - PINTA G914 KIZLYAR NDB (KZ) R227 ITAKA.\n\n2. THE ONLY RTE FOR ARR TO URMS Aerodrome:\n\n  - IPLED DCT REMKA DCT GASNI(TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n  G914 AMLUG."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U0416/26B06 for None",
+        "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nTHE ONLY RTE FOR DEP FROM URMS Aerodrome:\n\n  - AMLUG G923 LELOT DCT BEMES DCT ITAKA (FROM LELOT TFC\n\n  UNIDIRECTIONAL EB Within FL070-FL530).\n\n3. THE ONLY RTE FOR ARR TO URMO Aerodrome:\n\n - IPLED DCT REMKA DCT GASNI (TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n G914 GORAK.\n\n THE ONLY RTE FOR DEP FROM URMO Aerodrome:\n\n - GORAK R103 LELOT DCT BEMES DCT ITAKA (FROM LELOT TFC\n\n UNIDIRECTIONAL EB Within FL070-FL530).\n\n4. THE ONLY RTE FOR ARR TO URMN Aerodrome:\n\n - IPLED DCT REMKA DCT GASNI (TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n G914 TAFIK.\n\n THE ONLY RTE FOR DEP FROM URMN Aerodrome:\n\n - TAFIK G914 GORAK R103 LELOT DCT BEMES DCT ITAKA (FROM LELOT\n\n TFC UNIDIRECTIONAL EB Within FL070-FL530).\n\n5. THE ONLY RTE FOR ARR TO URMM Aerodrome:\n\n - IPLED DCT GOTIK DCT MEMZA A962 OKARU.\n\n   THE ONLY RTE FOR DEP FROM URMM Aerodrome:\n\n  - URILU R227 BEMES DCT ITAKA.\n\n6. THE ONLY RTE FOR ARR TO URMT Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA A962 RUGIK."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U0416/26C06 for None",
+        "text": "From: 2026-03-26 11:40:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nTHE ONLY RTE FOR DEP FROM URMT Aerodrome:\n\n- GIRTI B494 RISKA R227 BEMES DCT ITAKA.\n\n7. THE ONLY RTE FOR ARR TO URSS Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL.\n\n   THE ONLY RTE FOR DEP FROM URSS Aerodrome:\n\n  - IRGID A944 GUBOR G487 ERSAR DCT BEMES DCT ITAKA.\n\n8. THE ONLY RTE FOR ARR TO URML Aerodrome:\n\n  - IPLED G96 RIRAN.\n\n   THE ONLY RTE FOR DEP FROM URML Aerodrome:\n\n  - BALIP DCT PIKAN (TFC UNIDIRECTIONAL EB Within FL070-FL450).\n\n  - BALIP DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL070-FL530).\n\n  - AMKOL DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL110-FL530).\n\n9. THE ONLY RTE FOR ARR TO URWI Aerodrome:\n\n  - IPLED DCT GOTIK DCT MEMZA (FROM IPLED TO MEMZA CRUISING LVL\n\n  EVEN Within FL180-530) A962 OKARU-N82 NIRGA-N82 IKZAL-N82\n\n  UMSUR (FROM NIRGA TO UMSUR CRUISING LVL EVEN Within FL160-430) A964\n\n  KISEL (FROM UMSUR TO KISEL TFC UNIDIRECTIONAL CRUISING LVL EVEN\n\n  Within FL060-FL300)."
       }
     },
     {
@@ -38134,536 +38134,6 @@
       "properties": {
         "title": "U0541/26 for None",
         "text": "From: 2026-04-21 10:20:00+00:00\nTo: 2026-10-21 23:59:00+00:00\n\nELISTA VORDME ELI 117.65MHZ (CH123Y):\n\n-DME PROVIDES Operation PERFORMANCE UP TO DIST 142KM AT ALT 6100M.\n\n-VOR Operation WO RESTRICTION."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              38.12787927135243,
-              42.84962114649734
-            ],
-            [
-              38.127474025192186,
-              42.83898791982449
-            ],
-            [
-              38.126360562259,
-              42.82838210613545
-            ],
-            [
-              38.12454192493447,
-              42.81782923502385
-            ],
-            [
-              38.12202284682607,
-              42.80735469581623
-            ],
-            [
-              38.11880973798991,
-              42.79698367674364
-            ],
-            [
-              38.114910666227566,
-              42.786741104715816
-            ],
-            [
-              38.110335334532444,
-              42.776651585838664
-            ],
-            [
-              38.10509505476973,
-              42.766739346812365
-            ],
-            [
-              38.09920271768054,
-              42.75702817734465
-            ],
-            [
-              38.092672759308094,
-              42.747541373710405
-            ],
-            [
-              38.08552112395011,
-              42.73830168358478
-            ],
-            [
-              38.07776522374741,
-              42.72933125227368
-            ],
-            [
-              38.0694238950242,
-              42.720651570460994
-            ],
-            [
-              38.0605173515006,
-              42.71228342358808
-            ],
-            [
-              38.05106713450267,
-              42.70424684297603
-            ],
-            [
-              38.041096060299196,
-              42.6965610587976
-            ],
-            [
-              38.03062816469862,
-              42.68924445499989
-            ],
-            [
-              38.019688645042876,
-              42.682314526274645
-            ],
-            [
-              38.00830379973781,
-              42.67578783716838
-            ],
-            [
-              37.9965009654633,
-              42.66967998341811
-            ],
-            [
-              37.98430845220786,
-              42.66400555559511
-            ],
-            [
-              37.97175547627569,
-              42.6587781051321
-            ],
-            [
-              37.95887209141523,
-              42.65401011280538
-            ],
-            [
-              37.94568911822079,
-              42.64971295973653
-            ],
-            [
-              37.932238071959745,
-              42.645896900974385
-            ],
-            [
-              37.91855108897954,
-              42.64257104171094
-            ],
-            [
-              37.90466085184972,
-              42.639743316180265
-            ],
-            [
-              37.89060051339501,
-              42.637420469283555
-            ],
-            [
-              37.87640361977655,
-              42.635608040977544
-            ],
-            [
-              37.86210403277911,
-              42.634310353457984
-            ],
-            [
-              37.84773585146206,
-              42.63353050116442
-            ],
-            [
-              37.8333333333333,
-              42.633270343626236
-            ],
-            [
-              37.81893081520454,
-              42.63353050116442
-            ],
-            [
-              37.80456263388749,
-              42.634310353457984
-            ],
-            [
-              37.79026304689005,
-              42.635608040977544
-            ],
-            [
-              37.77606615327159,
-              42.637420469283555
-            ],
-            [
-              37.762005814816874,
-              42.639743316180265
-            ],
-            [
-              37.74811557768706,
-              42.64257104171094
-            ],
-            [
-              37.734428594706856,
-              42.645896900974385
-            ],
-            [
-              37.72097754844581,
-              42.64971295973653
-            ],
-            [
-              37.70779457525136,
-              42.65401011280538
-            ],
-            [
-              37.69491119039091,
-              42.6587781051321
-            ],
-            [
-              37.68235821445874,
-              42.66400555559511
-            ],
-            [
-              37.6701657012033,
-              42.66967998341811
-            ],
-            [
-              37.65836286692878,
-              42.67578783716838
-            ],
-            [
-              37.646978021623724,
-              42.682314526274645
-            ],
-            [
-              37.63603850196798,
-              42.68924445499989
-            ],
-            [
-              37.625570606367404,
-              42.6965610587976
-            ],
-            [
-              37.615599532163934,
-              42.70424684297603
-            ],
-            [
-              37.606149315166,
-              42.71228342358808
-            ],
-            [
-              37.5972427716424,
-              42.720651570460994
-            ],
-            [
-              37.58890144291919,
-              42.72933125227368
-            ],
-            [
-              37.581145542716484,
-              42.73830168358478
-            ],
-            [
-              37.573993907358506,
-              42.747541373710405
-            ],
-            [
-              37.56746394898606,
-              42.75702817734465
-            ],
-            [
-              37.56157161189687,
-              42.76673934681236
-            ],
-            [
-              37.55633133213416,
-              42.776651585838664
-            ],
-            [
-              37.551756000439035,
-              42.786741104715816
-            ],
-            [
-              37.54785692867668,
-              42.796983676743636
-            ],
-            [
-              37.54464381984052,
-              42.80735469581623
-            ],
-            [
-              37.542124741732124,
-              42.81782923502385
-            ],
-            [
-              37.5403061044076,
-              42.82838210613546
-            ],
-            [
-              37.539192641474415,
-              42.83898791982449
-            ],
-            [
-              37.53878739531417,
-              42.84962114649734
-            ],
-            [
-              37.53909170629932,
-              42.86025617758156
-            ],
-            [
-              37.540105206062364,
-              42.87086738712859
-            ],
-            [
-              37.54182581486788,
-              42.88142919358376
-            ],
-            [
-              37.54424974312703,
-              42.89191612157476
-            ],
-            [
-              37.54737149708532,
-              42.902302863568565
-            ],
-            [
-              37.551183888702916,
-              42.91256434124571
-            ],
-            [
-              37.555678049737075,
-              42.92267576644073
-            ],
-            [
-              37.56084345002411,
-              42.93261270149686
-            ],
-            [
-              37.5666679199477,
-              42.94235111888375
-            ],
-            [
-              37.57313767706804,
-              42.95186745992794
-            ],
-            [
-              37.58023735687468,
-              42.96113869250601
-            ],
-            [
-              37.58795004761368,
-              42.97014236755318
-            ],
-            [
-              37.596257329127255,
-              42.978856674240845
-            ],
-            [
-              37.60513931563197,
-              42.98726049367996
-            ],
-            [
-              37.61457470234888,
-              42.995333451009586
-            ],
-            [
-              37.62454081588673,
-              43.00305596573328
-            ],
-            [
-              37.63501366826692,
-              43.01040930017012
-            ],
-            [
-              37.645968014467,
-              43.0173756058908
-            ],
-            [
-              37.65737741334722,
-              43.023937968014515
-            ],
-            [
-              37.66921429181293,
-              43.03008044724705
-            ],
-            [
-              37.68145001205489,
-              43.03578811954612
-            ],
-            [
-              37.69405494169768,
-              43.04104711330578
-            ],
-            [
-              37.706998526676735,
-              43.045844643958475
-            ],
-            [
-              37.72024936665403,
-              43.05016904589917
-            ],
-            [
-              37.733775292773494,
-              43.05400980164376
-            ],
-            [
-              37.747543447548175,
-              43.05735756814114
-            ],
-            [
-              37.76152036666346,
-              43.06020420016538
-            ],
-            [
-              37.77567206247324,
-              43.06254277072323
-            ],
-            [
-              37.78996410895939,
-              43.064367588419906
-            ],
-            [
-              37.804361727919584,
-              43.06567421173429
-            ],
-            [
-              37.81882987614343,
-              43.066459460163735
-            ],
-            [
-              37.8333333333333,
-              43.06672142220712
-            ],
-            [
-              37.84783679052317,
-              43.066459460163735
-            ],
-            [
-              37.862304938747016,
-              43.06567421173429
-            ],
-            [
-              37.87670255770721,
-              43.06436758841991
-            ],
-            [
-              37.89099460419336,
-              43.06254277072323
-            ],
-            [
-              37.90514630000314,
-              43.06020420016538
-            ],
-            [
-              37.919123219118426,
-              43.05735756814115
-            ],
-            [
-              37.9328913738931,
-              43.05400980164376
-            ],
-            [
-              37.94641730001257,
-              43.05016904589917
-            ],
-            [
-              37.959668139989866,
-              43.045844643958475
-            ],
-            [
-              37.97261172496892,
-              43.04104711330578
-            ],
-            [
-              37.98521665461172,
-              43.035788119546105
-            ],
-            [
-              37.99745237485368,
-              43.03008044724705
-            ],
-            [
-              38.00928925331937,
-              43.02393796801451
-            ],
-            [
-              38.02069865219959,
-              43.017375605890805
-            ],
-            [
-              38.03165299839968,
-              43.01040930017012
-            ],
-            [
-              38.04212585077987,
-              43.00305596573328
-            ],
-            [
-              38.05209196431771,
-              42.99533345100958
-            ],
-            [
-              38.06152735103463,
-              42.98726049367996
-            ],
-            [
-              38.070409337539346,
-              42.97885667424086
-            ],
-            [
-              38.07871661905291,
-              42.97014236755318
-            ],
-            [
-              38.08642930979192,
-              42.96113869250601
-            ],
-            [
-              38.09352898959855,
-              42.95186745992794
-            ],
-            [
-              38.099998746718896,
-              42.942351118883764
-            ],
-            [
-              38.105823216642484,
-              42.93261270149686
-            ],
-            [
-              38.110988616929525,
-              42.92267576644073
-            ],
-            [
-              38.11548277796368,
-              42.912564341245705
-            ],
-            [
-              38.11929516958128,
-              42.90230286356855
-            ],
-            [
-              38.12241692353956,
-              42.891916121574766
-            ],
-            [
-              38.12484085179872,
-              42.88142919358376
-            ],
-            [
-              38.126561460604236,
-              42.87086738712859
-            ],
-            [
-              38.12757496036728,
-              42.86025617758155
-            ],
-            [
-              38.12787927135243,
-              42.84962114649734
-            ]
-          ]
-        ]
-      },
-      "properties": {
-        "title": "U0657/26 for None",
-        "text": "From: 2026-06-01 06:00:00+00:00\nTo: 2026-06-07 16:00:00+00:00\n\nBI-DIRECTIONAL TFC ESTABLISHED ALONG ATS RTE G901 SEGMENT\n\nBALUM-KEPOL."
       }
     },
     {
@@ -62128,20 +61598,6 @@
         ]
       },
       "properties": {
-        "title": "U0186/26B03 for None",
-        "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\n2. TFC DEPARTING FROM URMM SHOULD USE FLW RTE:\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nCRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL TFC, CRUISING LEVELS\n\nODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB (FROM UZZID TO TUSAB\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL090-FL530)-\n\nN72 VOLGOGRAD/GUMRAK VORDME (WGD) (FROM TUSAB TO VOLGOGRAD/GUMRAK\n\nVORDME (WGD) UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FROM OBABI TO GEKPA\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL210-FL530).\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-\n\nDCT ZIZAR-DCT VAZLU-DCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL\n\nTFC, CRUISING LEVELS ODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB\n\n(FROM UZZID TO TUSAB UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-R807 UROBO-P135 ABNOT (FROM TUSAB TO ABNOT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.733333333333334,
-          50.0
-        ]
-      },
-      "properties": {
         "title": "U0186/26C03 for None",
         "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL070-FL530).\n\n- RESLO-DCT VENFO-DCT BINOL (UNIDIRECTIONAL WB TFC BTN FL210-510)-\n\nFOR TFC TO URSS Aerodrome.\n\n- RESLO-DCT VENFO-DCT BINOL G487 ODIRA (FROM RESLO TO BINOL\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS EVEN BTN FL210-510) -\n\nFOR TFC THRU LTAA FIR."
       }
@@ -62158,6 +61614,20 @@
       "properties": {
         "title": "U0186/26A03 for None",
         "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\nFLW ATS ROUTES ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) AND SAMARA\n\nFIR (UWWW) FOR TFC TO URMM Aerodrome (WITHOUT ENTERING INTO FIR AKTOBE\n\n(UATT)):\n\n1. TFC ARRIVING TO URMM SHOULD USE FLW RTE:\n\n- ABAGI B105 NIMTA (FROM ABAGI TO NIMTA UNIDIRECTIONAL TFC,\n\nCRUISING LEVELS ODD BTN FL135-540)\n\n-B105 NATIT-DCT MOLED (FROM NIMTA TO MOLED UNIDIRECTIONAL TFC,\n\nCRUISING LEVELS EVEN BTN FL100-540)\n\n-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (FROM MOLED TO ITAKA\n\nCRUISING LEVELS EVEN BTN FL330-530)-DCT OBBUD-DCT AMKOL-DCT GOTIK-\n\nDCT MEMZA (FROM ITAKA TO MEMZA CRUISING LEVELS EVEN BTN FL180-530)-\n\nA962 OKARU.\n\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-\n\nP135 ABNOT.\n\n- ABNOT-P135 UROBO-R807 MOLED (FROM ABNOT TO MOLED CRUISING LEVELS\n\nEVEN BTN FL070-530)-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA\n\n(FROM MOLED TO ITAKA CRUISING LEVELS EVEN BTN FL330-530)-\n\nDCT OBBUD-DCT AMKOL-DCT GOTIK-DCT MEMZA (FROM ITAKA TO MEMZA\n\nCRUISING LEVELS EVEN BTN FL180-530)-A962 OKARU."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.733333333333334,
+          50.0
+        ]
+      },
+      "properties": {
+        "title": "U0186/26B03 for None",
+        "text": "From: 2026-02-19 00:00:00+00:00\nTo: 2026-07-08 23:59:00+00:00\n\n2. TFC DEPARTING FROM URMM SHOULD USE FLW RTE:\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nCRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL TFC, CRUISING LEVELS\n\nODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB (FROM UZZID TO TUSAB\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL090-FL530)-\n\nN72 VOLGOGRAD/GUMRAK VORDME (WGD) (FROM TUSAB TO VOLGOGRAD/GUMRAK\n\nVORDME (WGD) UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FROM OBABI TO GEKPA\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL210-FL530).\n\n- URILU R227 BEMES-DCT VULFI-DCT TUVGI (FROM BEMES TO TUVGI\n\nUNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN FL290-530)-DCT EVZUN-\n\nDCT ZIZAR-DCT VAZLU-DCT UZZID (FROM TUVGI TO UZZID UNIDIRECTIONAL\n\nTFC, CRUISING LEVELS ODD BTN FL330-FL530)-DCT NOKLI-N72 TUSAB\n\n(FROM UZZID TO TUSAB UNIDIRECTIONAL TFC, CRUISING LEVELS ODD BTN\n\nFL090-FL530)-R807 UROBO-P135 ABNOT (FROM TUSAB TO ABNOT"
       }
     },
     {
