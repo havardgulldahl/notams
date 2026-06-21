@@ -3707,8 +3707,8 @@
         ]
       },
       "properties": {
-        "title": "G0262/26 for Khabarovsk Novy Airport",
-        "text": "From: 2026-06-20 00:10:00+00:00\nTo: 2026-06-20 23:59:00+00:00\n\nGround Based Augmentation System CH22309,CH20665/21487/21076/21898:\n\nRNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), RNP, GLS05L/05R/23L/23R Procedure\n\nNOT PROVIDED."
+        "title": "G0263/26 for Khabarovsk Novy Airport",
+        "text": "From: 2026-06-20 23:40:00+00:00\nTo: 2026-06-21 23:59:00+00:00\n\nGround Based Augmentation System CH22309, CH20665/21487/21076/21898:\n\nRNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), RNP, GLS05L/05R/23L/23R Procedure\n\nNOT PROVIDED."
       }
     },
     {
