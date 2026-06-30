@@ -935,6 +935,24 @@
       "error": null,
       "consecutive_zero_days": 0,
       "escalate": false
+    },
+    {
+      "run_date": "2026-06-30",
+      "status": "success",
+      "zero_result": false,
+      "files_found": 10,
+      "files_downloaded": 10,
+      "files_processed": 10,
+      "decoded_count": 3164,
+      "decode_failures": 5,
+      "expired_count": 4,
+      "download_failures": 0,
+      "interpretation_failures_count": 5,
+      "new_interpretation_failures_count": 1,
+      "scrape_timestamp": "2606300054",
+      "error": null,
+      "consecutive_zero_days": 0,
+      "escalate": false
     }
   ]
 }
