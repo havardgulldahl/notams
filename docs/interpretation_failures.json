@@ -22,18 +22,18 @@
       "signature": "cd3a8655c167f254",
       "notam_id": "A3888/26",
       "first_seen_run_date": "2026-06-23",
-      "last_seen_run_date": "2026-07-01",
+      "last_seen_run_date": "2026-07-02",
       "last_error": "Failed to parse NOTAM (line 8, col 49) snippet: 'TWY M - 22M (FROM STAND 31 OF ACFT APRON TO TWY B), STRENGTHENED'",
-      "last_file": "A2607010054_eng.html",
+      "last_file": "A2607020054_eng.html",
       "last_snippet": "(A3888/26 NOTAMN\nQ)USTV/QMNXX/IV/NBO/A/000/999/6121N07324E005\nA)USRR B)2606231000 C)PERM\nE)REF AIP PAGE AD 2.1 USRR-3 TABLE AD 2.8 APRON,TAXIWAYS AND CHECK\n\nLOCATIONS/POSITIONS DATA, POINT 2 TO READ:\n\nTWY M - 22M (FROM STAND 31 OF ACFT APRON TO TWY B), STRENGTHENED\n\nSHOULDERS 8.5M WIDE ON BOTH SIDES, REINFORCED CONCRETE (PAG-14)\n\nSTRENGTHENED BY ASPHALT-CONCRETE, PCN 51/R/B/X/T (MIXED)\n\nINSTEAD OF PUBLISHED.)"
     },
     {
       "signature": "daaf502a02bf0cef",
       "notam_id": "A3907/26",
       "first_seen_run_date": "2026-06-24",
-      "last_seen_run_date": "2026-07-01",
+      "last_seen_run_date": "2026-07-02",
       "last_error": "Failed to parse NOTAM (line 8, col 48) snippet: 'TWY H - 22M (FROM STAND 9 OF ACFT APRON TO TWY G), STRENGTHENED'",
-      "last_file": "A2607010054_eng.html",
+      "last_file": "A2607020054_eng.html",
       "last_snippet": "(A3907/26 NOTAMN\nQ)USTV/QMNXX/IV/NBO/A/000/999/6121N07324E005\nA)USRR B)2606231000 C)PERM\nE)REF AIP PAGE AD 2.1 USRR-3 TABLE AD 2.8 APRON,TAXIWAYS AND CHECK\n\nLOCATIONS/POSITIONS DATA, POINT 2 TO READ:\n\nTWY H - 22M (FROM STAND 9 OF ACFT APRON TO TWY G), STRENGTHENED\n\nSHOULDERS 8.5M WIDE ON BOTH SIDES, REINFORCED CONCRETE (PAG-14)\n\nSTRENGTHENED BY ASPHALT-CONCRETE, PCN 51/R/B/X/T (MIXED)\n\nINSTEAD OF PUBLISHED.\n\nREF AIP PAGE AD2.1 USRR-3, 13, 15, 20, 31, 39, 41.)"
     },
     {
