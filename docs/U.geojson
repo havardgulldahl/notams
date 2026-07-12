@@ -53171,6 +53171,75 @@
         "coordinates": [
           [
             [
+              35.59055555555556,
+              55.275555555555556
+            ],
+            [
+              35.53861111111111,
+              55.75277777777778
+            ],
+            [
+              35.84666666666667,
+              55.913888888888884
+            ],
+            [
+              36.821111111111115,
+              56.718333333333334
+            ],
+            [
+              37.71194444444445,
+              57.10777777777778
+            ],
+            [
+              37.99527777777778,
+              57.03777777777778
+            ],
+            [
+              39.634166666666665,
+              56.02611111111111
+            ],
+            [
+              39.99805555555556,
+              55.55
+            ],
+            [
+              38.60666666666667,
+              53.85444444444445
+            ],
+            [
+              37.6,
+              54.233333333333334
+            ],
+            [
+              35.333333333333336,
+              54.05833333333333
+            ],
+            [
+              35.25,
+              54.61666666666667
+            ],
+            [
+              35.59055555555556,
+              55.275555555555556
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "polygon"
+        }
+      },
+      "properties": {
+        "title": "U0904/26 for None",
+        "text": "From: 2026-07-11 10:07:00+00:00\nTo: 2026-08-11 23:59:00+00:00\n\nTO ATTENTION OF RUSSIAN FEDERATION AIRLINES AND ATS UNITS:\n\n1. CIV ACFT FLT Within HORIZONTAL BOUNDARIES OF MOSCOW TMA\n\n551632N0353526E-554510N0353219E-555450N0355048E-564306N0364916E-\n\n570628N0374243E-570216N0375943E-560134N0393803E-553300N0395953E-\n\n535116N0383624E-541400N0373600E-540330N0352000E-543700N0351500E-\n\n551632N0353526E\n\nAT FL (ALT) ABOVE FL160 SHALL NOT BE CARRIED OUT.\n\n2. TRANSIT FLT OF CIV AVCT VIA MOSCOW TMA AT ALL FL (ALT)\n\nSHALL NOT BE CARRIED OUT.\n\n3. ACFT FLT OF STATE AND EXPERIMENTAL AVIATION TO/FROM CIV AVIATION\n\nAerodrome AND JOINT BASED Aerodrome LOCATED Within MOSCOW TMA AT FL (ALT) ABOVE FL160\n\nSHALL NOT BE CARRIED OUT."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
               51.445172517040525,
               50.80771570482188
             ],
