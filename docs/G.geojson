@@ -3707,8 +3707,8 @@
         ]
       },
       "properties": {
-        "title": "G0305/26 for Khabarovsk Novy Airport",
-        "text": "From: 2026-07-08 22:05:00+00:00\nTo: 2026-07-16 07:00:00+00:00\n\nGround Based Augmentation System Channel 22309,Channel 20665/21487/21076/21898,Procedure NOT PROVIDED:\n\n- ILS Z CAT I/II, LOC Z RWY05L/23R (Aeronautical Information Publication RUSSIA AD2.1 UHHH-97,98),\n\n- ILS Z CAT I Runway 05R (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-99),\n\n- ILS Z CAT I, LOC Z Runway 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-100),\n\n- SID RNAV Runway 05L, 05R, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-139,140),\n\n- STAR RNAV 05L, 05R, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-147,149,150),\n\n- IAC GNSS Landing System Runway 05L, 23R, 05R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1\n\n  UHHH-155,156,157,158),\n\n- IAC RNP Runway 05L, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-159,160,161)."
+        "title": "G0312/26 for Khabarovsk Novy Airport",
+        "text": "From: 2026-07-16 05:40:00+00:00\nTo: 2026-07-27 07:00:00+00:00\n\nGround Based Augmentation System Channel 22309,Channel 20665/21487/21076/21898, FLW Procedure NOT PROVIDED:\n\n- ILS Z CAT I/II, LOC Z RWY05L/23R (Aeronautical Information Publication RUSSIA AD2.1 UHHH-97,98),\n\n- ILS Z CAT I Runway 05R (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-99),\n\n- ILS Z CAT I, LOC Z Runway 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-100),\n\n- SID RNAV Runway 05L, 05R, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-139,140),\n\n- STAR RNAV 05L, 05R, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-147,149,150),\n\n- IAC GNSS Landing System Runway 05L, 23R, 05R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1\n\n  UHHH-155,156,157,158),\n\n- IAC RNP Runway 05L, 23R, 23L (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UHHH-159,160,161)."
       }
     },
     {
