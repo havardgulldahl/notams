@@ -7982,20 +7982,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          159.28333333333333,
-          61.916666666666664
-        ]
-      },
-      "properties": {
-        "title": "U0550/26 for Sokol Airport",
-        "text": "From: 2026-04-23 01:44:00+00:00\nTo: 2026-07-23 21:30:00+00:00\n\nMAGADAN FIR SECTOR NORTH:\n\nSEVERO-EVENSK SSR (6155N 15917E) Operation HR:\n\nDAILY 2130-0900."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -8540,20 +8526,6 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point",
-        "coordinates": [
-          177.58333333333334,
-          64.8
-        ]
-      },
-      "properties": {
-        "title": "U0884/26 for Sokol Airport",
-        "text": "From: 2026-07-09 20:00:00+00:00\nTo: 2026-07-25 21:00:00+00:00\n\nMAGADAN FIR SECTOR NORTH 1: ANADYR SSR (6448N17735E) Unserviceable.\n\nRADAR CONTROL PROVIDED BY ANADYR TAR (6444N17744E)."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -9079,6 +9051,34 @@
       "properties": {
         "title": "U0926/26 for Sokol Airport",
         "text": "From: 2026-07-23 21:00:00+00:00\nTo: 2026-07-24 05:00:00+00:00\n\nP.KAMCHATSKY/YELIZOVO DVORDME PKK 113.7 MHZ Unserviceable DUE TO MAINT."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          159.28333333333333,
+          61.916666666666664
+        ]
+      },
+      "properties": {
+        "title": "U0937/26 for Sokol Airport",
+        "text": "From: 2026-07-22 00:31:00+00:00\nTo: 2026-10-23 21:30:00+00:00\n\nMAGADAN FIR SECTOR NORTH:\n\nSEVERO-EVENSK SSR (6155N 15917E) Operation HR:\n\nDAILY 2130-0900."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          177.58333333333334,
+          64.8
+        ]
+      },
+      "properties": {
+        "title": "U0938/26 for Sokol Airport",
+        "text": "From: 2026-07-22 00:35:00+00:00\nTo: 2026-08-08 21:00:00+00:00\n\nMAGADAN FIR SECTOR NORTH 1: ANADYR SSR (6448N17735E) Unserviceable.\n\nRADAR CONTROL PROVIDED BY ANADYR TAR (6444N17744E)."
       }
     },
     {
@@ -11213,6 +11213,536 @@
       "properties": {
         "title": "U0816/26 for Irkutsk International Airport",
         "text": "From: 2026-06-29 04:00:00+00:00\nTo: 2026-08-30 23:59:00+00:00\n\nIRKUTSK SSR Unserviceable DUE TO REPAIR."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              118.88973509504335,
+              57.780510297467956
+            ],
+            [
+              118.86840134359609,
+              57.65865466561157
+            ],
+            [
+              118.83612720052358,
+              57.537495936355654
+            ],
+            [
+              118.79309589179758,
+              57.417317115326725
+            ],
+            [
+              118.73951141328219,
+              57.298396222328904
+            ],
+            [
+              118.67559724327776,
+              57.18100577591126
+            ],
+            [
+              118.60159508940572,
+              57.065412309313864
+            ],
+            [
+              118.51776367494865,
+              56.95187591669722
+            ],
+            [
+              118.42437756871067,
+              56.84064982848356
+            ],
+            [
+              118.32172606149648,
+              56.73198001458645
+            ],
+            [
+              118.21011209142966,
+              56.626104814275905
+            ],
+            [
+              118.08985121954015,
+              56.523254591418514
+            ],
+            [
+              117.96127065634603,
+              56.42365141383772
+            ],
+            [
+              117.82470833953344,
+              56.32750875556334
+            ],
+            [
+              117.68051206229775,
+              56.235031220772036
+            ],
+            [
+              117.52903865144108,
+              56.146414288264246
+            ],
+            [
+              117.37065319392408,
+              56.06184407537415
+            ],
+            [
+              117.20572831023499,
+              55.98149712026552
+            ],
+            [
+              117.03464347266207,
+              55.905540181627764
+            ],
+            [
+              116.85778436632934,
+              55.834130054849155
+            ],
+            [
+              116.6755422906752,
+              55.76741340381007
+            ],
+            [
+              116.48831359891179,
+              55.705526607504474
+            ],
+            [
+              116.29649917289709,
+              55.648595620763295
+            ],
+            [
+              116.100503930772,
+              55.59673584841799
+            ],
+            [
+              115.90073636466197,
+              55.55005203230575
+            ],
+            [
+              115.69760810570695,
+              55.508638150579465
+            ],
+            [
+              115.49153351366517,
+              55.472577328844956
+            ],
+            [
+              115.28292928832889,
+              55.441941762705355
+            ],
+            [
+              115.07221409999154,
+              55.41679265134825
+            ],
+            [
+              114.85980823621342,
+              55.39718014186412
+            ],
+            [
+              114.6461332621437,
+              55.383143284036585
+            ],
+            [
+              114.43161169166859,
+              55.37470999539393
+            ],
+            [
+              114.216666666667,
+              55.37189703636067
+            ],
+            [
+              114.00172164166541,
+              55.37470999539393
+            ],
+            [
+              113.7872000711903,
+              55.383143284036585
+            ],
+            [
+              113.57352509712058,
+              55.39718014186412
+            ],
+            [
+              113.36111923334246,
+              55.41679265134825
+            ],
+            [
+              113.15040404500509,
+              55.441941762705355
+            ],
+            [
+              112.94179981966883,
+              55.472577328844956
+            ],
+            [
+              112.73572522762704,
+              55.508638150579465
+            ],
+            [
+              112.53259696867202,
+              55.55005203230575
+            ],
+            [
+              112.332829402562,
+              55.59673584841799
+            ],
+            [
+              112.13683416043692,
+              55.648595620763295
+            ],
+            [
+              111.94501973442222,
+              55.705526607504474
+            ],
+            [
+              111.75779104265882,
+              55.76741340381007
+            ],
+            [
+              111.57554896700465,
+              55.834130054849155
+            ],
+            [
+              111.39868986067192,
+              55.905540181627764
+            ],
+            [
+              111.227605023099,
+              55.98149712026552
+            ],
+            [
+              111.0626801394099,
+              56.06184407537415
+            ],
+            [
+              110.9042946818929,
+              56.146414288264246
+            ],
+            [
+              110.75282127103627,
+              56.235031220772036
+            ],
+            [
+              110.60862499380057,
+              56.327508755563336
+            ],
+            [
+              110.47206267698797,
+              56.42365141383771
+            ],
+            [
+              110.34348211379384,
+              56.523254591418514
+            ],
+            [
+              110.22322124190435,
+              56.626104814275905
+            ],
+            [
+              110.11160727183753,
+              56.73198001458645
+            ],
+            [
+              110.00895576462332,
+              56.84064982848356
+            ],
+            [
+              109.91556965838537,
+              56.95187591669722
+            ],
+            [
+              109.8317382439283,
+              57.065412309313864
+            ],
+            [
+              109.75773609005623,
+              57.18100577591126
+            ],
+            [
+              109.69382192005183,
+              57.298396222328904
+            ],
+            [
+              109.64023744153643,
+              57.417317115326725
+            ],
+            [
+              109.59720613281041,
+              57.537495936355654
+            ],
+            [
+              109.5649319897379,
+              57.65865466561157
+            ],
+            [
+              109.54359823829064,
+              57.780510297467956
+            ],
+            [
+              109.53336601899473,
+              57.90277538827619
+            ],
+            [
+              109.53437305072451,
+              58.025158637385985
+            ],
+            [
+              109.54673228254707,
+              58.14736550206634
+            ],
+            [
+              109.57053054362477,
+              58.26909884680044
+            ],
+            [
+              109.60582720251132,
+              58.390059627180584
+            ],
+            [
+              109.65265284850612,
+              58.50994760834255
+            ],
+            [
+              109.71100800903467,
+              58.628462117551216
+            ],
+            [
+              109.78086191826698,
+              58.745302830180265
+            ],
+            [
+              109.86215135333661,
+              58.860170587919576
+            ],
+            [
+              109.95477955553869,
+              58.97276824759781
+            ],
+            [
+              110.05861525472729,
+              59.08280155852541
+            ],
+            [
+              110.17349181575474,
+              59.18998006575282
+            ],
+            [
+              110.29920652615398,
+              59.29401803610362
+            ],
+            [
+              110.43552004431713,
+              59.394635403291346
+            ],
+            [
+              110.58215602712953,
+              59.49155872787179
+            ],
+            [
+              110.73880095533885,
+              59.58452216722853
+            ],
+            [
+              110.90510417384867,
+              59.67326845025162
+            ],
+            [
+              111.08067816259981,
+              59.75754985086045
+            ],
+            [
+              111.26509905173381,
+              59.83712915405382
+            ],
+            [
+              111.45790739232079,
+              59.911780607761344
+            ],
+            [
+              111.65860919109566,
+              59.98129085342886
+            ],
+            [
+              111.86667721441329,
+              60.04545982801603
+            ],
+            [
+              112.08155256305078,
+              60.10410162992568
+            ],
+            [
+              112.30264651561583,
+              60.15704534133381
+            ],
+            [
+              112.52934263424105,
+              60.20413579945668
+            ],
+            [
+              112.7609991220441,
+              60.24523430948193
+            ],
+            [
+              112.996951417613,
+              60.28021929220994
+            ],
+            [
+              113.23651500764343,
+              60.308986859896635
+            ],
+            [
+              113.47898843491974,
+              60.33145131436082
+            ],
+            [
+              113.72365647520678,
+              60.3475455621062
+            ],
+            [
+              113.96979345341033,
+              60.357221442003215
+            ],
+            [
+              114.216666666667,
+              60.360449961963695
+            ],
+            [
+              114.46353987992367,
+              60.357221442003215
+            ],
+            [
+              114.70967685812722,
+              60.3475455621062
+            ],
+            [
+              114.95434489841426,
+              60.331451314360834
+            ],
+            [
+              115.19681832569057,
+              60.308986859896635
+            ],
+            [
+              115.43638191572099,
+              60.28021929220994
+            ],
+            [
+              115.6723342112899,
+              60.24523430948193
+            ],
+            [
+              115.90399069909293,
+              60.204135799456665
+            ],
+            [
+              116.13068681771819,
+              60.15704534133383
+            ],
+            [
+              116.35178077028323,
+              60.10410162992568
+            ],
+            [
+              116.56665611892069,
+              60.04545982801603
+            ],
+            [
+              116.77472414223834,
+              59.98129085342886
+            ],
+            [
+              116.97542594101321,
+              59.911780607761344
+            ],
+            [
+              117.16823428160018,
+              59.83712915405382
+            ],
+            [
+              117.35265517073418,
+              59.75754985086045
+            ],
+            [
+              117.52822915948533,
+              59.67326845025162
+            ],
+            [
+              117.69453237799517,
+              59.58452216722853
+            ],
+            [
+              117.85117730620449,
+              59.49155872787179
+            ],
+            [
+              117.99781328901688,
+              59.394635403291346
+            ],
+            [
+              118.13412680718001,
+              59.29401803610362
+            ],
+            [
+              118.25984151757925,
+              59.18998006575282
+            ],
+            [
+              118.37471807860672,
+              59.082801558525425
+            ],
+            [
+              118.47855377779533,
+              58.97276824759781
+            ],
+            [
+              118.57118197999739,
+              58.86017058791959
+            ],
+            [
+              118.65247141506704,
+              58.745302830180265
+            ],
+            [
+              118.72232532429933,
+              58.628462117551216
+            ],
+            [
+              118.78068048482785,
+              58.509947608342564
+            ],
+            [
+              118.82750613082267,
+              58.390059627180584
+            ],
+            [
+              118.86280278970924,
+              58.26909884680045
+            ],
+            [
+              118.88660105078692,
+              58.14736550206634
+            ],
+            [
+              118.89896028260948,
+              58.025158637385985
+            ],
+            [
+              118.89996731433926,
+              57.90277538827619
+            ],
+            [
+              118.88973509504335,
+              57.780510297467956
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "title": "U0934/26 for Irkutsk International Airport",
+        "text": "From: 2026-07-21 08:00:00+00:00\nTo: 2026-10-21 08:00:00+00:00\n\nBODAYBO VORDME BDB 112.60MHZ:\n\n- VOR Operation WO LIMIT,\n\n- DME Operation AT AZM 325 DEG UP TO DIST 194KM AT FL200 (6100M)."
       }
     },
     {
@@ -45608,8 +46138,8 @@
         ]
       },
       "properties": {
-        "title": "U0931/26 for None",
-        "text": "From: 2026-07-20 14:10:00+00:00\nTo: 2026-11-18 23:59:00+00:00\n\nASTRAKHAN VORDME AST 116.10 MHZ/Channel 108X Available AS FLW:\n\n- VOR Operation WO RESTRICTION,\n\n- DME Unserviceable."
+        "title": "U0935/26 for None",
+        "text": "From: 2026-07-21 08:30:00+00:00\nTo: 2026-11-21 12:00:00+00:00\n\nASTRAKHAN VORDME AST 116.10 MHZ/Channel 108X Available AS FLW:\n\n- VOR Operation WO RESTRICTION,\n\n- DME Unserviceable."
       }
     },
     {
@@ -48538,20 +49068,6 @@
         ]
       },
       "properties": {
-        "title": "U0535/26 for None",
-        "text": "From: 2026-04-21 05:45:00+00:00\nTo: 2026-07-21 23:59:00+00:00\n\nAS RESPONSE MEASURE TO AIRSPACE RESTRICTION ISSUED BY THE\n\nDEPARTMENT FOR TRANSPORT OF THE UNITED KINGDOM PROCLAIMING THAT NO\n\nAIRCRAFT WHICH IS OWNED, CHARTERED OR OPERATED BY ANY PERSON\n\nCONNECTED WITH RUSSIA, OR WHICH IS REGISTERED IN RUSSIA, OR\n\nOPERATE FLT IN ACCORDANCE WITH FLIGHT PLAN FILED AFTER 05 APR 2022\n\nWHICH INCLUDES AN AERODROME IN RUSSIA SHALL FLY WITHIN THE AIRSPACE\n\nOF THE UNITED KINGDOM INCLUDING ITS TERRITORIAL SEAS,\n\nAS PER Aeronautical Information Publication SUP 007/26,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY\n\nINFORM OF THE PROHIBITION OF FLIGHT OPERATIONS WITHIN THE AIRSPACE\n\nOF THE RUSSIAN FEDERATION BY ANY AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED BY PERSONS CONNECTED WITH THE UNITED KINGDOM\n\nWIE UNTIL 2359 UTC 21 JUL 2026 Estimated, EXC FOR AIRCRAFT IN EMERGENCY,\n\nHUMANITARIAN AND MEDICAL FLIGHTS, AS WELL AS CASES WHEN THE SPECIAL\n\nPERMISSION TO PERFORM SUCH FLIGHTS IS GRANTED BY THE FEDERAL AIR\n\nTRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U0559/26 for None",
         "text": "From: 2026-05-01 00:00:00+00:00\nTo: 2026-07-31 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF LATVIAN AUTHORITIES STIPULATING\n\nTHAT ALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF RUSSIAN FEDERATION, AND ALL\n\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nAUTHORITIES OF THE RUSSIAN FEDERATION, ARE PROHIBITED TO ENTER,\n\nEXIT OR OVERFLY LATVIAN AIRSPACE EXCEPT HUMANITARIAN FLIGHTS,\n\nMEDICAL FLIGHTS AND LEASED AIRCRAFT RETURN FLIGHTS UNDER\n\nPERMISSIONS ISSUED BY APPROPRIATE LATVIAN AUTHORITIES AND IN CASES\n\nOF EMERG LANDING OR EMERG OVERFLIGHT AS PER NOTAM A1726/26,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY DECLARE THAT\n\nALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF LATVIA, AND ALL OPERATORS\n\nHOLDING AOC ISSUED BY LATVIAN AUTHORITIES ARE PROHIBITED TO\n\nENTER, EXIT AND OVERFLY AIRSPACE OF RUSSIAN FEDERATION FM\n\n00.00 UTC 01.05.TIL 2359 UTC 31.06.2026 Estimated, EXCEPT ACFT IN\n\nEMERGENCY,HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS AS WELL AS CASES\n\nWHEN SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS GRANTED BY\n\nFEDERAL AIR TRANSPORT AGENCY OR MINISTRY OF FOREIGN AFFAIRS OF\n\nRUSSIAN FEDERATION AS APPROPRIATE."
       }
@@ -48582,34 +49098,6 @@
       "properties": {
         "title": "U0566/26 for None",
         "text": "From: 2026-04-25 05:10:00+00:00\nTo: 2026-07-25 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF CZECH\n\nREPUBLIC AS TO ALL ACFT OWNED, CHARTERED, OPERATED OR OTHERWISE\n\nCONTROLLED BY CITIZENS OF RUSSIAN FEDERATION AND ALL OPERATORS\n\nHOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY RUSSIAN FEDERATION\n\nAUTHORITIES ARE PROHIBITED TO ENTER, EXIT OR OVERFLY AIRSPACE OF\n\nCZECH REPUBLIC (AS PER Aeronautical Information Publication SUP 16/22), AVIATION AUTHORITIES OF\n\nRUSSIAN FEDERATION HEREBY NOTIFY THAT ALL ACFT OWNED, CHARTERED,\n\nOPERATED OR OTHERWISE CONTROLLED BY CITIZENS OF CZECH REPUBLIC OR\n\nBY ANY OPERATOR HOLDING AIR OPERATOR CERTIFCIATE (AOC) ISSUED BY\n\nAUTHORITIES OF CZECH REPUBLIC ARE PROHIBITED TO ENTER, EXIT AND\n\nOVERFLY AIRSPACE OF RUSSIAN FEDERATION WIE TIL 2359 UTC\n\n25 JUL 2026 Estimated, EXC FOR ACFT IN EMERGENCY SITUATION AND FLIGHTS\n\nOPERATED UNDER SPECIAL PERMISSION GRANTED BY FEDERAL AIR TRANSPORT\n\nAGENCY OR MINISTRY OF FOREIGN AFFAIRS OF RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U0580/26B02 for None",
-        "text": "From: 2026-04-28 18:00:00+00:00\nTo: 2026-07-27 18:00:00+00:00\n\nARE PROHIBITED TO ENTER, EXIT OR OVERFLY THE AIRSPACE OF THE\n\nRUSSIAN FEDERATION WIE UNTIL 1800 UTC 27 JUL 2026 Estimated, EXCEPT FOR\n\nAIRCRAFT IN EMERGENCY, HUMANITARIAN OR MEDICAL FLIGHTS AS WELL AS\n\nCASES WHEN SPECIAL PERMISSION FOR OPERATIONS IS GRANTED BY THE\n\nFEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF\n\nTHE RUSSIAN FEDERATION AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U0580/26A02 for None",
-        "text": "From: 2026-04-28 18:00:00+00:00\nTo: 2026-07-27 18:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE CANADIAN AUTHORITIES PROHIBITING\n\nALL AIRCRAFT, REGARDLESS OF THE STATE OF REGISTRY, DIRECTLY OR\n\nINDIRECTLY OWNED, CHARTERED, LEASED, OPERATED OR OTHERWISE\n\nCONTROLLED BY PERSON CONNECTED WITH EITHER THE RUSSIAN FEDERATION\n\nOR OF BELARUS OR BY CORPORATION OR ENTITY THAT IS INCORPORATED OR\n\nFORMED UNDER THE LAWS OF THE RUSSIAN FEDERATION OR BELARUS, AND\n\nALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nRUSSIAN FEDERATION AND/OR BELARUSIAN AUTHORITIES TO ENTER, EXIT OR\n\nOVERFLY CANADA'S TERRITORIAL AIRSPACE (INCLUDING FLT WITHIN 12NM\n\nOF CANADA'S COASTS) WITH EXCEPTIONS FOR ACFT EXPERIENCING INFLIGHT\n\nEMERGENCY, AND REVOKING ALL AUTHORIZATIONS OBTAINED PRIOR TO 27\n\nFEB 2022 FOR ACFT AND OPERATORS SUBJECT TO CANADIAN NOTAM\n\n(SEE NOTAM OF CANADA G1192/26),\n\nRUSSIAN AVIATION AUTHORITIES HEREBY DECLARE THAT ALL ACFT,\n\nREGARDLESS OF STATE OF REGISTRY, DIRECTLY OR INDIRECTLY OWNED,\n\nCHARTERED, LEASED, OPERATED OR OTHERWISE CONTROLLED BY PERSON\n\nCONNECTED WITH CANADA OR BY CORPORATION OR ENTITY THAT IS\n\nINCORPORATED OR FORMED UNDER THE LAWS OF CANADA, AND ALL\n\nOPERATORS HOLDING AOC ISSUED BY CANADIAN AUTHORITIES"
       }
     },
     {
@@ -49674,6 +50162,48 @@
       "properties": {
         "title": "U0928/26 for None",
         "text": "From: 2026-07-20 06:12:00+00:00\nTo: 2026-10-20 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF NORWAY\n\nAS TO ALL RUSSIAN REGISTERED ACFT AND ACFT OWNED, CHARTERED,\n\nOPERATED OR OTHERWISE CONTROLLED BY NATURAL OR LEGAL PERSONS OF\n\nRUSSIAN FEDERATION OR BY OPERATORS HOLDING AIR OPERATOR\n\nCERTIFICATE (AOC) ISSUED BY RUSSIAN FEDERATION AUTHORITIES ARE\n\nPROHIBITED TO ENTER, EXIT AND OVERFLY AIRSPACE OVER TERRITORY\n\nOF NORWAY (Aeronautical Information Publication SUP 12/2024), AVIATION AUTHORITIES OF RUSSIAN\n\nFEDERATION HEREBY DECLARE THAT ALL ACFT REGISTERED IN NORWAY AS\n\nWELL AS ACFT OWNED, CHARTERED OR OPERATED BY NATURAL OR LEGAL\n\nPERSONS OF NORWAY, OR BY OPERATORS HOLDING AIR OPERATOR\n\nCERTIFCIATE (AOC) ISSUED BY AUTHORITIES OF NORWAY, ARE PROHIBITED\n\nTO ENTER, EXIT OR OVERFLY AIRSPACE OVER TERRITORY OF RUSSIAN\n\nFEDERATION WIE UNTIL 2359 UTC 20 OCT 2026 Estimated, EXCEPT FOR ACFT IN\n\nEMERGENCY, HUMANITARIAN OR MEDICAL FLIGHTS AND CASES, WHEN SPECIAL\n\nPERMISSION FOR OPS GRANTED BY FEDERAL AIR TRANSPORT AGENCY OR\n\nMINISTRY OF FOREIGN AFFAIRS OF RUSSIAN FEDERATION AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U0933/26 for None",
+        "text": "From: 2026-07-21 05:33:00+00:00\nTo: 2026-10-21 23:59:00+00:00\n\nAS RESPONSE MEASURE TO AIRSPACE RESTRICTION ISSUED BY THE\n\nDEPARTMENT FOR TRANSPORT OF THE UNITED KINGDOM PROCLAIMING THAT NO\n\nAIRCRAFT WHICH IS OWNED, CHARTERED OR OPERATED BY ANY PERSON\n\nCONNECTED WITH RUSSIA, OR WHICH IS REGISTERED IN RUSSIA, OR\n\nOPERATE FLT IN ACCORDANCE WITH FLIGHT PLAN FILED AFTER 05 APR 2022\n\nWHICH INCLUDES AN AERODROME IN RUSSIA SHALL FLY WITHIN THE AIRSPACE\n\nOF THE UNITED KINGDOM INCLUDING ITS TERRITORIAL SEAS,\n\nAS PER Aeronautical Information Publication SUP 007/26,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY\n\nINFORM OF THE PROHIBITION OF FLIGHT OPERATIONS WITHIN THE AIRSPACE\n\nOF THE RUSSIAN FEDERATION BY ANY AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED BY PERSONS CONNECTED WITH THE UNITED KINGDOM,\n\nEXC FOR AIRCRAFT IN EMERGENCY,\n\nHUMANITARIAN AND MEDICAL FLIGHTS, AS WELL AS CASES WHEN THE SPECIAL\n\nPERMISSION TO PERFORM SUCH FLIGHTS IS GRANTED BY THE FEDERAL AIR\n\nTRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U0936/26A02 for None",
+        "text": "From: 2026-07-21 16:54:00+00:00\nTo: 2026-10-19 18:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE CANADIAN AUTHORITIES PROHIBITING\n\nALL AIRCRAFT, REGARDLESS OF THE STATE OF REGISTRY, DIRECTLY OR\n\nINDIRECTLY OWNED, CHARTERED, LEASED, OPERATED OR OTHERWISE\n\nCONTROLLED BY PERSON CONNECTED WITH EITHER THE RUSSIAN FEDERATION\n\nOR OF BELARUS OR BY CORPORATION OR ENTITY THAT IS INCORPORATED OR\n\nFORMED UNDER THE LAWS OF THE RUSSIAN FEDERATION OR BELARUS, AND\n\nALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nRUSSIAN FEDERATION AND/OR BELARUSIAN AUTHORITIES TO ENTER, EXIT OR\n\nOVERFLY CANADA'S TERRITORIAL AIRSPACE (INCLUDING FLT WITHIN 12NM\n\nOF CANADA'S COASTS) WITH EXCEPTIONS FOR ACFT EXPERIENCING INFLIGHT\n\nEMERGENCY, AND REVOKING ALL AUTHORIZATIONS OBTAINED PRIOR TO 27\n\nFEB 2022 FOR ACFT AND OPERATORS SUBJECT TO CANADIAN NOTAM\n\n(SEE NOTAM OF CANADA G2420/26),\n\nRUSSIAN AVIATION AUTHORITIES HEREBY DECLARE THAT ALL ACFT,\n\nREGARDLESS OF STATE OF REGISTRY, DIRECTLY OR INDIRECTLY OWNED,\n\nCHARTERED, LEASED, OPERATED OR OTHERWISE CONTROLLED BY PERSON\n\nCONNECTED WITH CANADA OR BY CORPORATION OR ENTITY THAT IS\n\nINCORPORATED OR FORMED UNDER THE LAWS OF CANADA, AND ALL\n\nOPERATORS HOLDING AOC ISSUED BY CANADIAN AUTHORITIES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U0936/26B02 for None",
+        "text": "From: 2026-07-21 16:54:00+00:00\nTo: 2026-10-19 18:00:00+00:00\n\nARE PROHIBITED TO ENTER, EXIT OR OVERFLY THE AIRSPACE OF THE\n\nRUSSIAN FEDERATION, EXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN\n\nOR MEDICAL FLIGHTS AS WELL AS CASES WHEN SPECIAL PERMISSION FOR\n\nOPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE\n\nMINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
       }
     },
     {
