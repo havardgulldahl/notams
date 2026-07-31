@@ -1057,8 +1057,8 @@
         ]
       },
       "properties": {
-        "title": "G0226/26 for Yakutsk Airport",
-        "text": "From: 2026-05-27 02:00:00+00:00\nTo: 2026-07-31 23:59:00+00:00\n\nBRIEF Ground Based Augmentation System Disruptions (LESS THAN 15 MIN) Possible Within Aerodrome AREA DUE TO\n\nINTERFERENCE OF UNKNOWN SOURCE. USE Alternate Approach Procedure OR VECTORING IN\n\nCASE OF Disruptions."
+        "title": "G0326/26 for Yakutsk Airport",
+        "text": "From: 2026-07-30 07:05:00+00:00\nTo: 2026-09-30 23:59:00+00:00\n\nBRIEF Ground Based Augmentation System Disruptions (LESS THAN 15 MIN) Possible Within Aerodrome AREA DUE TO\n\nINTERFERENCE OF UNKNOWN SOURCE. USE Alternate Approach Procedure OR VECTORING IN\n\nCASE OF Disruptions."
       }
     },
     {
@@ -36605,20 +36605,6 @@
       "properties": {
         "title": "G0074/26 for Koltsovo Airport",
         "text": "From: 2026-02-27 10:50:00+00:00\nTo: 2026-08-27 07:00:00+00:00\n\nEXPECT MISSING OF Global Navigation Satellite System SIGNALS Within Aerodrome AREA."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          60.8,
-          56.75
-        ]
-      },
-      "properties": {
-        "title": "G0174/26 for None",
-        "text": "From: 2026-04-30 10:00:00+00:00\nTo: 2026-07-30 23:59:00+00:00\n\nWithin YEKATERINBURG FIR Global Navigation Satellite System INTERRUPTION Possible."
       }
     },
     {
