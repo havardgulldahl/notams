@@ -4767,8 +4767,8 @@
         ]
       },
       "properties": {
-        "title": "G0184/26 for Sokol Airport",
-        "text": "From: 2026-05-05 03:40:00+00:00\nTo: 2026-08-06 09:30:00+00:00\n\nRunway 28: GNSS Landing System Approach NOT PROVIDED BY Ground Based Augmentation System CH21076."
+        "title": "G0340/26 for Sokol Airport",
+        "text": "From: 2026-08-06 07:00:00+00:00\nTo: 2027-02-06 09:30:00+00:00\n\nRunway 28: GNSS Landing System Approach NOT PROVIDED BY Ground Based Augmentation System CH21076."
       }
     },
     {
@@ -27585,8 +27585,8 @@
         ]
       },
       "properties": {
-        "title": "G0034/26 for Mineralnyye Vody Airport",
-        "text": "From: 2026-02-11 13:20:00+00:00\nTo: 2026-08-22 23:59:00+00:00\n\nGlobal Navigation Satellite System Interruptions Possible Within Aerodrome AREA.\n\nVECTORING PROVIDED BY REQ."
+        "title": "G0341/26 for Mineralnyye Vody Airport",
+        "text": "From: 2026-08-06 14:40:00+00:00\nTo: 2027-02-22 23:59:00+00:00\n\nGlobal Navigation Satellite System Interruptions Possible Within Aerodrome AREA.\n\nVECTORING PROVIDED ON REQ."
       }
     },
     {
@@ -28115,8 +28115,8 @@
         ]
       },
       "properties": {
-        "title": "G0035/26 for Mineralnyye Vody Airport",
-        "text": "From: 2026-02-11 13:30:00+00:00\nTo: 2026-08-21 14:00:00+00:00\n\nGround Based Augmentation System Channel 22309, Channel 20665/21076: GNSS Landing System Runway 11/29 Procedure NOT SUPPORTED\n\n(Aeronautical Information Publication Aerodrome 2.1 IAC URMM-155,156)."
+        "title": "G0342/26 for Mineralnyye Vody Airport",
+        "text": "From: 2026-08-06 14:40:00+00:00\nTo: 2027-02-22 14:00:00+00:00\n\nGround Based Augmentation System Channel 22309, Channel 20665/21076: IAC GNSS Landing System Runway 11/29 Procedure NOT PROVIDED\n\n(Aeronautical Information Publication PAGE Aerodrome 2.1 URMM-155,156)."
       }
     },
     {
