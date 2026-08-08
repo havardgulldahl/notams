@@ -13777,8 +13777,8 @@
         ]
       },
       "properties": {
-        "title": "G0195/26 for Kotlas Airport",
-        "text": "From: 2026-05-13 15:35:00+00:00\nTo: 2026-08-19 23:59:00+00:00\n\nGround Based Augmentation System Channel 20551/20962: FLW Procedure NOT PROVIDED:\n\nSID RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-127, 128),\n\nSTAR RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-129, 130),\n\nIAC GNSS Landing System Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-131, 132),\n\nIAC RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-133, 134)."
+        "title": "G0344/26 for Kotlas Airport",
+        "text": "From: 2026-08-07 12:00:00+00:00\nTo: 2026-11-19 23:59:00+00:00\n\nGround Based Augmentation System Channel 20551/20962 Unserviceable, FLW Procedure NOT Available:\n\nSID RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-127, 128),\n\nSTAR RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-129, 130),\n\nIAC GNSS Landing System Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-131, 132),\n\nIAC RNP Runway 12/30 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULKK-133, 134)."
       }
     },
     {
@@ -18547,8 +18547,8 @@
         ]
       },
       "properties": {
-        "title": "G0185/26 for Vologda Airport",
-        "text": "From: 2026-05-08 00:00:00+00:00\nTo: 2026-08-07 23:59:00+00:00\n\nGround Based Augmentation System Channel 22269, Channel 20625/21036: THE FLW Procedure NOT PROVIDED\n\n- SID RNAV Runway 15/33 DESIGNATED 1F/1E\n\n  (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-127,128),\n\n- STAR RNAV Runway 15/33 DESIGNATED 1L/1K\n\n  (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-129,130),\n\n- IAC GNSS Landing System Runway 15/33 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-131, 132),\n\n- IAC RNP Runway 15/33 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-133, 134)."
+        "title": "G0343/26 for Vologda Airport",
+        "text": "From: 2026-08-07 08:30:00+00:00\nTo: 2026-11-07 23:59:00+00:00\n\nGround Based Augmentation System Channel 22269, Channel 20625/21036: FLW Procedure NOT PROVIDED:\n\n- SID RNAV Runway 15/33 DESIGNATED 1F/1E\n\n  (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-127,128),\n\n- STAR RNAV Runway 15/33 DESIGNATED 1L/1K\n\n  (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-129,130),\n\n- IAC GNSS Landing System Runway 15/33 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-131, 132),\n\n- IAC RNP Runway 15/33 (Aeronautical Information Publication PAGE Aerodrome 2.3 ULWW-133, 134)."
       }
     },
     {
