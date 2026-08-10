@@ -5827,8 +5827,8 @@
         ]
       },
       "properties": {
-        "title": "G0196/26 for Yelizovo Airport",
-        "text": "From: 2026-05-14 00:00:00+00:00\nTo: 2026-08-13 23:59:00+00:00\n\nGround Based Augmentation System 113.350 Channel 22269 (530955.6N 1582652.2E):\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 34L Procedure NOT PROVIDED."
+        "title": "G0346/26 for Yelizovo Airport",
+        "text": "From: 2026-08-09 22:15:00+00:00\nTo: 2026-11-13 23:59:00+00:00\n\nGround Based Augmentation System 113.350 Channel 22269, Channel 21858 (530955.6N 1582652.2E):\n\nRNAV (Global Navigation Satellite System), SID/STAR RNAV (Global Navigation Satellite System), GNSS Landing System 34L Procedure NOT PROVIDED."
       }
     },
     {
