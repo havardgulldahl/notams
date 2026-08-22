@@ -32885,8 +32885,8 @@
         ]
       },
       "properties": {
-        "title": "G0228/26 for Sochi International Airport",
-        "text": "From: 2026-05-27 06:00:00+00:00\nTo: 2026-08-27 12:00:00+00:00\n\nGlobal Navigation Satellite System FAILURE POSSIBLE Within Aerodrome AIRSPACE.\n\nVECTORING WILL BE PROVEDED UPON REQUEST OF ACFT CREW."
+        "title": "G0366/26 for Sochi International Airport",
+        "text": "From: 2026-08-21 07:59:00+00:00\nTo: 2026-11-27 12:00:00+00:00\n\nGlobal Navigation Satellite System INTERRUPTION POSSIBLE Within Aerodrome AREA.\n\nVECTORING WILL BE PROVEDED BY ACFT CREW REQUEST."
       }
     },
     {
@@ -37677,8 +37677,8 @@
         ]
       },
       "properties": {
-        "title": "G0351/26 for Roshchino International Airport",
-        "text": "From: 2026-08-14 00:00:00+00:00\nTo: 2026-08-21 23:59:00+00:00\n\nGround Based Augmentation System Channel 21898/20665, Channel 21487/21076, Channel 22309:\n\nFLW Procedure NOT PROVIDED:\n\nGNSS Landing System 03/21, 12/30, SID/STAR RNAV (Global Navigation Satellite System) RNAV (Global Navigation Satellite System)\n\n(Aeronautical Information Publication Aerodrome 2.1 USTR-139, 140, 141, 142, 147, 148, 149, 150, 155, 156,\n\n157, 158)."
+        "title": "G0365/26 for Roshchino International Airport",
+        "text": "From: 2026-08-21 06:10:00+00:00\nTo: 2026-08-28 23:59:00+00:00\n\nGround Based Augmentation System Channel 21898/20665, Channel 21487/21076, Channel 22309:\n\nFLW Procedure NOT PROVIDED:\n\nGNSS Landing System 03/21, 12/30, SID/STAR RNAV (Global Navigation Satellite System) RNAV (Global Navigation Satellite System)\n\n(Aeronautical Information Publication Aerodrome 2.1 USTR-139, 140, 141, 142, 147, 148, 149, 150, 155, 156,\n\n157, 158)."
       }
     },
     {
