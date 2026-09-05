@@ -34475,8 +34475,8 @@
         ]
       },
       "properties": {
-        "title": "G0234/26 for Elista Airport",
-        "text": "From: 2026-05-29 11:00:00+00:00\nTo: 2026-09-07 23:59:00+00:00\n\nPOS Global Navigation Satellite System SIGNAL FAILURE Within Aerodrome AREA."
+        "title": "G0393/26 for Elista Airport",
+        "text": "From: 2026-09-04 11:05:00+00:00\nTo: 2026-12-08 23:59:00+00:00\n\nPOS Global Navigation Satellite System SIGNAL FAILURE Within Aerodrome AREA."
       }
     },
     {
@@ -38737,8 +38737,8 @@
         ]
       },
       "properties": {
-        "title": "G0383/26 for Roshchino International Airport",
-        "text": "From: 2026-08-28 06:00:00+00:00\nTo: 2026-09-04 23:59:00+00:00\n\nGround Based Augmentation System Channel 21898/20665, Channel 21487/21076, Channel 22309:\n\nFLW Procedure NOT PROVIDED:\n\nGNSS Landing System 03/21, 12/30, SID/STAR RNAV (Global Navigation Satellite System) RNAV (Global Navigation Satellite System)\n\n(Aeronautical Information Publication Aerodrome 2.1 USTR-139, 140, 141, 142, 147, 148, 149, 150, 155, 156,\n\n157, 158)."
+        "title": "G0392/26 for Roshchino International Airport",
+        "text": "From: 2026-09-04 07:20:00+00:00\nTo: 2026-12-04 23:59:00+00:00\n\nGround Based Augmentation System Channel 21898/20665, Channel 21487/21076, Channel 22309:\n\nGNSS Landing System 03/21, 12/30, SID/STAR RNAV (Global Navigation Satellite System), RNAV (Global Navigation Satellite System) PROCEDURES\n\nNOT SUPPORTED\n\nAeronautical Information Publication PAGES Aerodrome 2.1 USTR-139,140,141,142,147,148,149,150,155,\n\n156,157,158."
       }
     },
     {
