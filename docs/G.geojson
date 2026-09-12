@@ -15367,8 +15367,8 @@
         ]
       },
       "properties": {
-        "title": "G0250/26 for None",
-        "text": "From: 2026-06-16 00:00:00+00:00\nTo: 2026-09-15 23:59:00+00:00\n\nGround Based Augmentation System Channel 20585/20996: FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 11/29 (Aeronautical Information Publication PAGE Aerodrome 2.2 ULMK-155,156)."
+        "title": "G0404/26 for None",
+        "text": "From: 2026-09-11 13:26:00+00:00\nTo: 2026-12-15 23:59:00+00:00\n\nGround Based Augmentation System Channel 20585/20996: FLW Procedure NOT PROVIDED:\n\nIAC GNSS Landing System Runway 11/29 (Aeronautical Information Publication PAGE Aerodrome 2.2 ULMK-155,156)."
       }
     },
     {
@@ -41387,8 +41387,8 @@
         ]
       },
       "properties": {
-        "title": "G0251/26 for Tunoshna Airport",
-        "text": "From: 2026-06-11 15:17:00+00:00\nTo: 2026-09-24 23:59:00+00:00\n\nGlobal Navigation Satellite System FAILURE Possible Within Aerodrome AREA.\n\nGround Based Augmentation System CH20826, CH20415: RNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), GNSS Landing System 05/23\n\nProcedure NOT PROVIDED."
+        "title": "G0403/26 for Tunoshna Airport",
+        "text": "From: 2026-09-11 08:55:00+00:00\nTo: 2026-12-24 23:59:00+00:00\n\nGlobal Navigation Satellite System FAILURE Possible Within Aerodrome AREA.\n\nGround Based Augmentation System CH20826, CH20415: RNAV(Global Navigation Satellite System), SID/STAR RNAV(Global Navigation Satellite System), GNSS Landing System 05/23\n\nProcedure NOT PROVIDED."
       }
     },
     {
