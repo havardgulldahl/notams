@@ -15897,8 +15897,8 @@
         ]
       },
       "properties": {
-        "title": "G0253/26 for Murmansk Airport",
-        "text": "From: 2026-06-16 00:00:00+00:00\nTo: 2026-09-15 23:59:00+00:00\n\nGround Based Augmentation System Channel 21036: IAC GNSS Landing System Runway 31 Procedure NOT PROVIDED.\n\n(Aeronautical Information Publication PAGE Aerodrome 2.1 ULMM-156)."
+        "title": "G0408/26 for Murmansk Airport",
+        "text": "From: 2026-09-14 09:50:00+00:00\nTo: 2026-12-15 23:59:00+00:00\n\nGround Based Augmentation System Channel 21036: IAC GNSS Landing System Runway 31 PROCEDURES NOT SUPPORTED\n\n(Aeronautical Information Publication PAGE Aerodrome 2.1 ULMM-156)."
       }
     },
     {
