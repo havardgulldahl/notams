@@ -42447,8 +42447,8 @@
         ]
       },
       "properties": {
-        "title": "G0255/26 for Lipetsk Airport",
-        "text": "From: 2026-06-16 08:00:00+00:00\nTo: 2026-09-16 20:59:00+00:00\n\nGround Based Augmentation System Unserviceable DUE TO LACK OF FLTCK.\n\nDO NOT USE IAC:\n\n- IAC GNSS Landing System Runway 15 (Aeronautical Information Publication PAGE Aerodrome 2.1 UUOL-155),\n\n- IAC GNSS Landing System Runway 33 (Aeronautical Information Publication PAGE Aerodrome 2.1 UUOL-156)."
+        "title": "G0410/26 for Lipetsk Airport",
+        "text": "From: 2026-09-16 07:00:00+00:00\nTo: 2026-12-16 20:59:00+00:00\n\nGround Based Augmentation System Unserviceable DUE TO LACK OF FLTCK.\n\nFLW Procedure SHALL NOT BE USED:\n\n- IAC GNSS Landing System Runway 15 (Aeronautical Information Publication PAGE Aerodrome 2.1 UUOL-155),\n\n- IAC GNSS Landing System Runway 33 (Aeronautical Information Publication PAGE Aerodrome 2.1 UUOL-156)."
       }
     },
     {
