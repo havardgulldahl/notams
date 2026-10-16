@@ -1,24 +1,6 @@
 {
   "runs": [
     {
-      "run_date": "2026-07-06",
-      "status": "success",
-      "zero_result": false,
-      "files_found": 10,
-      "files_downloaded": 10,
-      "files_processed": 10,
-      "decoded_count": 3068,
-      "decode_failures": 2,
-      "expired_count": 5,
-      "download_failures": 0,
-      "interpretation_failures_count": 2,
-      "new_interpretation_failures_count": 0,
-      "scrape_timestamp": "2607060454",
-      "error": null,
-      "consecutive_zero_days": 0,
-      "escalate": false
-    },
-    {
       "run_date": "2026-07-07",
       "status": "success",
       "zero_result": false,
@@ -1616,6 +1598,24 @@
       "interpretation_failures_count": 4,
       "new_interpretation_failures_count": 0,
       "scrape_timestamp": "2610150454",
+      "error": null,
+      "consecutive_zero_days": 0,
+      "escalate": false
+    },
+    {
+      "run_date": "2026-10-16",
+      "status": "success",
+      "zero_result": false,
+      "files_found": 10,
+      "files_downloaded": 10,
+      "files_processed": 10,
+      "decoded_count": 2812,
+      "decode_failures": 4,
+      "expired_count": 3,
+      "download_failures": 0,
+      "interpretation_failures_count": 4,
+      "new_interpretation_failures_count": 0,
+      "scrape_timestamp": "2610160454",
       "error": null,
       "consecutive_zero_days": 0,
       "escalate": false
