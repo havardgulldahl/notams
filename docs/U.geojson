@@ -29544,6 +29544,34 @@
     {
       "type": "Feature",
       "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.9,
+          44.85
+        ]
+      },
+      "properties": {
+        "title": "U1406/26 for None",
+        "text": "From: 2026-10-14 11:26:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nALL NOTAM PUBLISHED BY UKRAINE FOR SIMFEROPOL FIR INCLUDING NOTAM\n\nA0096/26 DATED 14 OCT 2026, BEAR NO LEGAL POWER AND ISSUED IN\n\nVIOLATION OF CONVENTION ON INTERNATIONAL CIVIL AVIATION.\n\nVALID AERONAUTICAL INFORMATION FOR SIMFEROPOL FIR IS PUBLISHED BY\n\nRUSSIAN FEDERATION. FOR FLIGHT SAFETY REASONS RUSSIAN FEDERATION\n\nNOT RECOMMEND TO USE INFORMATION PUBLISHED BY OTHER COUNTRIES\n\nWHICH CONTRADICTS INFORMATION PUBLISHED BY RUSSIAN FEDERATION."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.96666666666667,
+          45.05
+        ]
+      },
+      "properties": {
+        "title": "U1411/26 for None",
+        "text": "From: 2026-10-15 13:40:00+00:00\nTo: 2027-01-20 23:59:00+00:00\n\nALL NOTAM OF ALL SERIES ISSUED BY UKRAINE ON SIMFEROPOL FIR,\n\nAERODROMES AND RADIO NAVIGATION AIDS LOCATED IN THE TERRITORY OF\n\nTHE REPUBLIC OF CRIMEA ARE NULL AND VOID.\n\nATS Within SIMFEROPOL FIR IS PROVIDED IN ACCORDANCE WITH Aeronautical Information Publication OF RUSSIAN\n\nFEDERATION. ALL RADIO NAVIGATION AIDS ARE OPERATIONAL AND PROVIDE\n\nATS Within SIMFEROPOL FIR AND AT SIMFEROPOL Aerodrome."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
@@ -29806,22 +29834,8 @@
         }
       },
       "properties": {
-        "title": "U1395/26 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1396/26D04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
+        "title": "U1414/26 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
       }
     },
     {
@@ -29945,8 +29959,8 @@
         }
       },
       "properties": {
-        "title": "U1396/26A04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
+        "title": "U1415/26A04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
       }
     },
     {
@@ -29959,8 +29973,8 @@
         ]
       },
       "properties": {
-        "title": "U1396/26B04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
+        "title": "U1415/26B04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
       }
     },
     {
@@ -29973,8 +29987,8 @@
         ]
       },
       "properties": {
-        "title": "U1396/26C04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
+        "title": "U1415/26C04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
       }
     },
     {
@@ -29982,27 +29996,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          33.9,
-          44.85
+          41.43333333333333,
+          48.81666666666667
         ]
       },
       "properties": {
-        "title": "U1406/26 for None",
-        "text": "From: 2026-10-14 11:26:00+00:00\nTo: 9999-12-31 23:59:59.999999\n\nALL NOTAM PUBLISHED BY UKRAINE FOR SIMFEROPOL FIR INCLUDING NOTAM\n\nA0096/26 DATED 14 OCT 2026, BEAR NO LEGAL POWER AND ISSUED IN\n\nVIOLATION OF CONVENTION ON INTERNATIONAL CIVIL AVIATION.\n\nVALID AERONAUTICAL INFORMATION FOR SIMFEROPOL FIR IS PUBLISHED BY\n\nRUSSIAN FEDERATION. FOR FLIGHT SAFETY REASONS RUSSIAN FEDERATION\n\nNOT RECOMMEND TO USE INFORMATION PUBLISHED BY OTHER COUNTRIES\n\nWHICH CONTRADICTS INFORMATION PUBLISHED BY RUSSIAN FEDERATION."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          33.96666666666667,
-          45.05
-        ]
-      },
-      "properties": {
-        "title": "U1411/26 for None",
-        "text": "From: 2026-10-15 13:40:00+00:00\nTo: 2027-01-20 23:59:00+00:00\n\nALL NOTAM OF ALL SERIES ISSUED BY UKRAINE ON SIMFEROPOL FIR,\n\nAERODROMES AND RADIO NAVIGATION AIDS LOCATED IN THE TERRITORY OF\n\nTHE REPUBLIC OF CRIMEA ARE NULL AND VOID.\n\nATS Within SIMFEROPOL FIR IS PROVIDED IN ACCORDANCE WITH Aeronautical Information Publication OF RUSSIAN\n\nFEDERATION. ALL RADIO NAVIGATION AIDS ARE OPERATIONAL AND PROVIDE\n\nATS Within SIMFEROPOL FIR AND AT SIMFEROPOL Aerodrome."
+        "title": "U1415/26D04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -39237,20 +39237,6 @@
         ]
       },
       "properties": {
-        "title": "U0850/26B03 for None",
-        "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\n2. DEP URMG Aerodrome:\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\nCRUISING LVL ODD FL090-FL530)-N72 VOLGOGRAD/GUMRAK VORDME (WGD)\n\n(FM TUSAB TO VOLGOGRAD/GUMRAK VORDME (WGD) UNIDIRECTIONAL, CRUISING\n\nLVL ODD FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FM OBABI TO\n\nGEKPA UNIDIRECTIONAL, CRUISING LVL ODD FL210-FL530).\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\n CRUISING LVL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.733333333333334,
-          50.0
-        ]
-      },
-      "properties": {
         "title": "U0850/26C03 for None",
         "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\nODD FL090-FL530)-R807 UROBO-P135 ABNOT (FM TUSAB TO ABNOT\n\nUNIDIRECTIONAL, CRUISING LVL ODD FL070-FL530)."
       }
@@ -39267,6 +39253,20 @@
       "properties": {
         "title": "U0850/26A03 for None",
         "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\nATS RTE ESTABLISHED URRV FIR AND UWWW FIR FOR FLT TO URMG Aerodrome (WO\n\nCROSSING UATT FIR):\n\n1. ARR URMG Aerodrome:\n\n- ABAGI B105 NIMTA (FM ABAGI TO NIMTA UNIDIRECTIONAL, CRUISING LVL\n\nODD FL135-540)-B105 NATIT-DCT MOLED (FM NIMTA TO MOLED\n\nUNIDIRECTIONAL, CRUISING LVL EVEN FL100-540)-N50 LIDUS-G242 ZELENGA\n\nNDB (ZG)-DCT ITAKA (FM MOLED TO ITAKA CRUISING LVL EVEN FL330-530)-\n\nDCT OBBUD-DCT AMKOL-DCT REMKA (FM ITAKA TO REMKA CRUISING LVL EVEN\n\nWithin FL080-510).\n\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-P135\n\nABNOT.\n\n- ABNOT-P135 UROBO-R807 MOLED (FM ABNOT TO MOLED CRUISING LVL EVEN\n\nFL070-530)-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (FM MOLED TO\n\nITAKA CRUISING LVL EVEN FL330-530)-DCT OBBUD-DCT AMKOL-DCT REMKA\n\n(FM ITAKA TO REMKA CRUISING LVL EVEN FL080-510)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.733333333333334,
+          50.0
+        ]
+      },
+      "properties": {
+        "title": "U0850/26B03 for None",
+        "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\n2. DEP URMG Aerodrome:\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\nCRUISING LVL ODD FL090-FL530)-N72 VOLGOGRAD/GUMRAK VORDME (WGD)\n\n(FM TUSAB TO VOLGOGRAD/GUMRAK VORDME (WGD) UNIDIRECTIONAL, CRUISING\n\nLVL ODD FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FM OBABI TO\n\nGEKPA UNIDIRECTIONAL, CRUISING LVL ODD FL210-FL530).\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\n CRUISING LVL"
       }
     },
     {
@@ -46589,34 +46589,6 @@
         ]
       },
       "properties": {
-        "title": "U1324/26E06 for None",
-        "text": "From: 2026-10-25 00:00:00+00:00\nTo: 2027-03-27 23:59:00+00:00\n\nGUBOR G487 ERSAR-DCT BEMES-DCT ITAKA (FROM ERSAR TO ITAKA CRUISING\n\nLVL ODD Within FL290-FL530).\n\nENSURE PLANNING AND Operation:\n\n- ARR TO URKG Aerodrome CROSS CRP ONMUG BTN 0530-1630UTC.\n\n- DEP FROM URKG Aerodrome CROSS CRP IPVIR BTN 0600-1700UTC.\n\n11. THE ONLY RTE FOR ARR TO URKK Aerodrome:\n\n- IPLED DCT GOTIK-DCT MEMZA-DCT VENFO-DCT PROZR (FROM IPLED\n\n  TO PROZR CRUISING LVL EVEN Within FL240-FL400)-DCT UZMEG DCT MOBIT\n\n  (FROM PROZR TO MOBIT CRUISING LVL EVEN Within FL100-FL400)-B949\n\n  DZHUBGA NDB (DV)(FROM MOBIT TO DZHUBGA NDB (DV) CRUISING LVL\n\n  EVEN Within FL100-FL300)-B949 SMOLENSKAYA NDB (SM) (FROM DZHUBGA NDB\n\n  (DV) TO SMOLENSKAYA NDB (SM) CRUISING LVL EVEN Within FL080-FL300).\n\nTHE ONLY RTE FOR DEP FROM URKK Aerodrome:\n\n- SMOLENSKAYA NDB (SM)-B950 SIBAN (FROM SMOLENSKAYA NDB (SM) TO\n\n  SIBAN CRUISING LVL ODD Within FL110-FL250)-B950 AGOY NDB (AG) (FROM\n\n  SIBAN TO AGOY NDB (AG) CRUISING LVL ODD Within FL130-FL350)-B549"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
-        "title": "U1324/26F06 for None",
-        "text": "From: 2026-10-25 00:00:00+00:00\nTo: 2027-03-27 23:59:00+00:00\n\nLAZAREVSKOE NDB (LA) (FROM AGOY NDB (AG) TO LAZAREVSKOE NDB (LA)\n\nCRUISING LVL ODD Within FL150-FL350)\n\n- B549 IPVIR-B549 IRGID (FROM LAZAREVSKOE NDB (LA) TO IRGID\n\nCRUISING LVL ODD Within FL150-FL370)\n\n- A944 GUBOR-G487 ERSAR-DCT BEMES-DCT ITAKA (FROM ERSAR TO ITAKA\n\nCRUISING LVL ODD Within FL290-FL530).\n\nENSURE PLANNING AND Operation:\n\n- ARR TO URKK Aerodrome CROSS CRP UZMEG BTN 0500-1930UTC.\n\n- DEP FROM URKK Aerodrome CROSS CRP IPVIR BTN 0530-2000UTC.\n\nWITHOUT FURTHER EXTENDING TIME PERIOD."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.0,
-          47.0
-        ]
-      },
-      "properties": {
         "title": "U1324/26A06 for None",
         "text": "From: 2026-10-25 00:00:00+00:00\nTo: 2027-03-27 23:59:00+00:00\n\nATS RTE ESTABLISHED Within ROSTOV-NA-DONU FIR (URRV) FOR FLT TO\n\nAERODROMES URMG, URMS, URMO, URMN, URMM, URMT, URSS, URML, URWI,\n\nURKG, URKK THRU AKTOBE FIR (UATT):\n\n- IPLED DCT GOTIK DCT MEMZA DCT VENFO DCT BINOL\n\n  (TFC UNIDIRECTIONAL WB Within FL180-FL510).\n\n- RESLO DCT VENFO DCT BINOL (TFC UNIDIRECTIONAL WB Within FL210-FL510),\n\n- ERSAR DCT BEMES DCT ITAKA (TFC UNIDIRECTIONAL EB Within FL290-FL530).\n\n- VENFO DCT PROZR DCT BAKRI (TFC UNIDIRECTIONAL WB, Within FL240-FL400\n\n  FROM VENFO TO PROZR, Within FL100-FL400 FROM PROZR TO BAKRI),\n\n- KUTON DCT LAZAREVSKOE NDB (LA) (TFC UNIDIRECTIONAL EB Within\n\n  FL070-FL350).\n\n1. THE ONLY RTE FOR ARR TO URMG Aerodrome:\n\n- IPLED DCT REMKA (TFC UNIDIRECTIONAL WB Within FL080-FL510).\n\n   THE ONLY RTE FOR DEP FROM URMG Aerodrome:\n\n- PINTA G914 KIZLYAR NDB (KZ) R227 ITAKA.\n\n2. THE ONLY RTE FOR ARR TO URMS Aerodrome:\n\n- IPLED DCT REMKA DCT GASNI(TFC UNIDIRECTIONAL WB Within FL080-FL510)\n\n  G914 AMLUG."
       }
@@ -46666,531 +46638,29 @@
     {
       "type": "Feature",
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              38.127958496412646,
-              42.866287593552315
-            ],
-            [
-              38.12755311185544,
-              42.85565439855426
-            ],
-            [
-              38.126439320343465,
-              42.84504861751547
-            ],
-            [
-              38.12462016535619,
-              42.834495779938415
-            ],
-            [
-              38.12210038204774,
-              42.824021275048985
-            ],
-            [
-              38.11888638246318,
-              42.8136502909684
-            ],
-            [
-              38.114986236827725,
-              42.803407754488006
-            ],
-            [
-              38.110409650984685,
-              42.793318271587346
-            ],
-            [
-              38.10516794006602,
-              42.78340606883303
-            ],
-            [
-              38.09927399848629,
-              42.77369493579269
-            ],
-            [
-              38.09274226635793,
-              42.7642081685955
-            ],
-            [
-              38.08558869243189,
-              42.754968514766205
-            ],
-            [
-              38.07783069367387,
-              42.74599811945656
-            ],
-            [
-              38.06948711159145,
-              42.737318473193575
-            ],
-            [
-              38.06057816543313,
-              42.72895036126003
-            ],
-            [
-              38.051125402383974,
-              42.720913814817884
-            ],
-            [
-              38.04115164488775,
-              42.713228063881225
-            ],
-            [
-              38.03068093522862,
-              42.70591149224007
-            ],
-            [
-              38.01973847750924,
-              42.69898159443198
-            ],
-            [
-              38.00835057716525,
-              42.69245493485285
-            ],
-            [
-              37.99654457815881,
-              42.686347109094186
-            ],
-            [
-              37.984348797996546,
-              42.68067270758763
-            ],
-            [
-              37.97179246071943,
-              42.67544528163331
-            ],
-            [
-              37.95890562801405,
-              42.67067731188281
-            ],
-            [
-              37.94571912859662,
-              42.666380179342
-            ],
-            [
-              37.932264486022405,
-              42.662564138953584
-            ],
-            [
-              37.918573845074704,
-              42.659238295814056
-            ],
-            [
-              37.90467989688874,
-              42.656410584073214
-            ],
-            [
-              37.8906158029664,
-              42.65408774855986
-            ],
-            [
-              37.87641511823919,
-              42.65227532917063
-            ],
-            [
-              37.86211171333674,
-              42.65097764805421
-            ],
-            [
-              37.847739696219385,
-              42.650197799616166
-            ],
-            [
-              37.8333333333333,
-              42.649937643365426
-            ],
-            [
-              37.818926970447215,
-              42.650197799616166
-            ],
-            [
-              37.80455495332986,
-              42.65097764805421
-            ],
-            [
-              37.79025154842741,
-              42.65227532917063
-            ],
-            [
-              37.7760508637002,
-              42.65408774855986
-            ],
-            [
-              37.76198676977786,
-              42.656410584073214
-            ],
-            [
-              37.7480928215919,
-              42.659238295814056
-            ],
-            [
-              37.734402180644196,
-              42.662564138953584
-            ],
-            [
-              37.72094753806998,
-              42.666380179342
-            ],
-            [
-              37.70776103865255,
-              42.67067731188281
-            ],
-            [
-              37.69487420594717,
-              42.67544528163331
-            ],
-            [
-              37.682317868670054,
-              42.68067270758763
-            ],
-            [
-              37.67012208850778,
-              42.686347109094186
-            ],
-            [
-              37.65831608950135,
-              42.69245493485285
-            ],
-            [
-              37.64692818915736,
-              42.69898159443198
-            ],
-            [
-              37.635985731437984,
-              42.70591149224007
-            ],
-            [
-              37.62551502177885,
-              42.713228063881225
-            ],
-            [
-              37.615541264282626,
-              42.720913814817884
-            ],
-            [
-              37.60608850123347,
-              42.72895036126003
-            ],
-            [
-              37.597179555075144,
-              42.737318473193575
-            ],
-            [
-              37.58883597299273,
-              42.74599811945656
-            ],
-            [
-              37.5810779742347,
-              42.754968514766205
-            ],
-            [
-              37.57392440030867,
-              42.7642081685955
-            ],
-            [
-              37.56739266818031,
-              42.77369493579269
-            ],
-            [
-              37.56149872660058,
-              42.783406068833024
-            ],
-            [
-              37.556257015681915,
-              42.79331827158735
-            ],
-            [
-              37.551680429838875,
-              42.803407754488006
-            ],
-            [
-              37.54778028420341,
-              42.8136502909684
-            ],
-            [
-              37.54456628461886,
-              42.82402127504898
-            ],
-            [
-              37.54204650131041,
-              42.834495779938415
-            ],
-            [
-              37.54022734632313,
-              42.845048617515474
-            ],
-            [
-              37.53911355481116,
-              42.85565439855426
-            ],
-            [
-              37.538708170253955,
-              42.866287593552315
-            ],
-            [
-              37.53901253366731,
-              42.87692259401839
-            ],
-            [
-              37.54002627686822,
-              42.88753377407494
-            ],
-            [
-              37.54174731984328,
-              42.89809555222801
-            ],
-            [
-              37.54417187226099,
-              42.908582453155574
-            ],
-            [
-              37.54729443915829,
-              42.918969169364566
-            ],
-            [
-              37.55110783082102,
-              42.92923062256528
-            ],
-            [
-              37.555603176867486,
-              42.93934202461198
-            ],
-            [
-              37.56076994453303,
-              42.94927893785798
-            ],
-            [
-              37.56659596114208,
-              42.95901733477376
-            ],
-            [
-              37.57306744074229,
-              42.96853365667789
-            ],
-            [
-              37.58016901486387,
-              42.977804871430834
-            ],
-            [
-              37.5878837673542,
-              42.98680852994407
-            ],
-            [
-              37.5961932732266,
-              42.99552282135842
-            ],
-            [
-              37.60507764144867,
-              43.003926626748125
-            ],
-            [
-              37.61451556158394,
-              43.01199957121021
-            ],
-            [
-              37.62448435418792,
-              43.019722074201795
-            ],
-            [
-              37.63496002484713,
-              43.027075397991794
-            ],
-            [
-              37.64591732173778,
-              43.034041694098086
-            ],
-            [
-              37.657329796568824,
-              43.04060404758517
-            ],
-            [
-              37.669169868762026,
-              43.04674651910326
-            ],
-            [
-              37.68140889271087,
-              43.052454184554314
-            ],
-            [
-              37.694017227948805,
-              43.05771317227758
-            ],
-            [
-              37.70696431204701,
-              43.062510697652215
-            ],
-            [
-              37.720218736051784,
-              43.06683509502234
-            ],
-            [
-              37.73374832226247,
-              43.070675846856275
-            ],
-            [
-              37.747520204142056,
-              43.074023610059065
-            ],
-            [
-              37.76150090814439,
-              43.07687023936553
-            ],
-            [
-              37.7756564372351,
-              43.07920880774821
-            ],
-            [
-              37.7899523558763,
-              43.08103362378361
-            ],
-            [
-              37.80435387624018,
-              43.08234024592788
-            ],
-            [
-              37.81882594541119,
-              43.0831254936619
-            ],
-            [
-              37.8333333333333,
-              43.0833874554746
-            ],
-            [
-              37.84784072125541,
-              43.0831254936619
-            ],
-            [
-              37.86231279042642,
-              43.08234024592789
-            ],
-            [
-              37.8767143107903,
-              43.08103362378361
-            ],
-            [
-              37.8910102294315,
-              43.0792088077482
-            ],
-            [
-              37.90516575852221,
-              43.07687023936555
-            ],
-            [
-              37.919146462524544,
-              43.07402361005907
-            ],
-            [
-              37.93291834440412,
-              43.070675846856275
-            ],
-            [
-              37.946447930614816,
-              43.06683509502234
-            ],
-            [
-              37.95970235461959,
-              43.062510697652215
-            ],
-            [
-              37.972649438717795,
-              43.05771317227758
-            ],
-            [
-              37.98525777395574,
-              43.052454184554314
-            ],
-            [
-              37.997496797904574,
-              43.04674651910326
-            ],
-            [
-              38.00933687009777,
-              43.04060404758517
-            ],
-            [
-              38.02074934492882,
-              43.034041694098086
-            ],
-            [
-              38.03170664181947,
-              43.02707539799179
-            ],
-            [
-              38.04218231247867,
-              43.01972207420179
-            ],
-            [
-              38.05215110508266,
-              43.01199957121021
-            ],
-            [
-              38.061589025217934,
-              43.003926626748125
-            ],
-            [
-              38.07047339343999,
-              42.99552282135843
-            ],
-            [
-              38.0787828993124,
-              42.986808529944085
-            ],
-            [
-              38.08649765180273,
-              42.97780487143084
-            ],
-            [
-              38.0935992259243,
-              42.96853365667789
-            ],
-            [
-              38.10007070552452,
-              42.95901733477377
-            ],
-            [
-              38.10589672213357,
-              42.94927893785798
-            ],
-            [
-              38.111063489799115,
-              42.93934202461198
-            ],
-            [
-              38.115558835845576,
-              42.92923062256528
-            ],
-            [
-              38.11937222750831,
-              42.918969169364566
-            ],
-            [
-              38.12249479440561,
-              42.908582453155574
-            ],
-            [
-              38.124919346823326,
-              42.89809555222801
-            ],
-            [
-              38.12664038979838,
-              42.88753377407494
-            ],
-            [
-              38.12765413299929,
-              42.87692259401838
-            ],
-            [
-              38.127958496412646,
-              42.866287593552315
-            ]
-          ]
+          44.0,
+          47.0
         ]
       },
       "properties": {
-        "title": "U1337/26 for None",
-        "text": "From: 2026-10-12 06:00:00+00:00\nTo: 2026-10-16 16:00:00+00:00\n\nATS RTE SEGMENT IS BI-DERECTIONAL: G901 BALUM-KEPOL."
+        "title": "U1324/26E06 for None",
+        "text": "From: 2026-10-25 00:00:00+00:00\nTo: 2027-03-27 23:59:00+00:00\n\nGUBOR G487 ERSAR-DCT BEMES-DCT ITAKA (FROM ERSAR TO ITAKA CRUISING\n\nLVL ODD Within FL290-FL530).\n\nENSURE PLANNING AND Operation:\n\n- ARR TO URKG Aerodrome CROSS CRP ONMUG BTN 0530-1630UTC.\n\n- DEP FROM URKG Aerodrome CROSS CRP IPVIR BTN 0600-1700UTC.\n\n11. THE ONLY RTE FOR ARR TO URKK Aerodrome:\n\n- IPLED DCT GOTIK-DCT MEMZA-DCT VENFO-DCT PROZR (FROM IPLED\n\n  TO PROZR CRUISING LVL EVEN Within FL240-FL400)-DCT UZMEG DCT MOBIT\n\n  (FROM PROZR TO MOBIT CRUISING LVL EVEN Within FL100-FL400)-B949\n\n  DZHUBGA NDB (DV)(FROM MOBIT TO DZHUBGA NDB (DV) CRUISING LVL\n\n  EVEN Within FL100-FL300)-B949 SMOLENSKAYA NDB (SM) (FROM DZHUBGA NDB\n\n  (DV) TO SMOLENSKAYA NDB (SM) CRUISING LVL EVEN Within FL080-FL300).\n\nTHE ONLY RTE FOR DEP FROM URKK Aerodrome:\n\n- SMOLENSKAYA NDB (SM)-B950 SIBAN (FROM SMOLENSKAYA NDB (SM) TO\n\n  SIBAN CRUISING LVL ODD Within FL110-FL250)-B950 AGOY NDB (AG) (FROM\n\n  SIBAN TO AGOY NDB (AG) CRUISING LVL ODD Within FL130-FL350)-B549"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0,
+          47.0
+        ]
+      },
+      "properties": {
+        "title": "U1324/26F06 for None",
+        "text": "From: 2026-10-25 00:00:00+00:00\nTo: 2027-03-27 23:59:00+00:00\n\nLAZAREVSKOE NDB (LA) (FROM AGOY NDB (AG) TO LAZAREVSKOE NDB (LA)\n\nCRUISING LVL ODD Within FL150-FL350)\n\n- B549 IPVIR-B549 IRGID (FROM LAZAREVSKOE NDB (LA) TO IRGID\n\nCRUISING LVL ODD Within FL150-FL370)\n\n- A944 GUBOR-G487 ERSAR-DCT BEMES-DCT ITAKA (FROM ERSAR TO ITAKA\n\nCRUISING LVL ODD Within FL290-FL530).\n\nENSURE PLANNING AND Operation:\n\n- ARR TO URKK Aerodrome CROSS CRP UZMEG BTN 0500-1930UTC.\n\n- DEP FROM URKK Aerodrome CROSS CRP IPVIR BTN 0530-2000UTC.\n\nWITHOUT FURTHER EXTENDING TIME PERIOD."
       }
     },
     {
@@ -49155,442 +48625,6 @@
         "coordinates": [
           [
             [
-              39.4,
-              43.8
-            ],
-            [
-              30.583333333333332,
-              43.5
-            ],
-            [
-              30.416666666666668,
-              44.25
-            ],
-            [
-              29.983333333333334,
-              45.15
-            ],
-            [
-              29.566666666666666,
-              45.416666666666664
-            ],
-            [
-              28.733333333333334,
-              45.21666666666667
-            ],
-            [
-              28.516666666666666,
-              45.5
-            ],
-            [
-              29.116666666666667,
-              46.38333333333333
-            ],
-            [
-              30.116666666666667,
-              46.416666666666664
-            ],
-            [
-              29.15,
-              48.0
-            ],
-            [
-              27.716666666666665,
-              48.45
-            ],
-            [
-              26.8,
-              48.416666666666664
-            ],
-            [
-              25.0,
-              47.8
-            ],
-            [
-              22.983333333333334,
-              48.05
-            ],
-            [
-              22.15,
-              48.416666666666664
-            ],
-            [
-              22.85,
-              49.03333333333333
-            ],
-            [
-              22.733333333333334,
-              49.55
-            ],
-            [
-              24.066666666666666,
-              50.416666666666664
-            ],
-            [
-              23.6,
-              51.53333333333333
-            ],
-            [
-              23.635555555555555,
-              51.94222222222222
-            ],
-            [
-              24.134722222222223,
-              51.99166666666667
-            ],
-            [
-              26.352500000000003,
-              52.57055555555556
-            ],
-            [
-              31.671944444444446,
-              52.277499999999996
-            ],
-            [
-              31.581944444444446,
-              52.32833333333333
-            ],
-            [
-              31.62611111111111,
-              52.4925
-            ],
-            [
-              31.5575,
-              52.51777777777777
-            ],
-            [
-              31.674722222222222,
-              52.56222222222222
-            ],
-            [
-              31.56722222222222,
-              52.59638888888889
-            ],
-            [
-              31.5,
-              52.69333333333333
-            ],
-            [
-              31.592777777777776,
-              52.73444444444444
-            ],
-            [
-              31.586944444444445,
-              52.79388888888889
-            ],
-            [
-              31.243333333333336,
-              53.03444444444444
-            ],
-            [
-              31.389166666666664,
-              53.09805555555556
-            ],
-            [
-              31.401944444444442,
-              53.21194444444445
-            ],
-            [
-              31.57777777777778,
-              53.19361111111111
-            ],
-            [
-              31.628333333333334,
-              53.23111111111111
-            ],
-            [
-              31.919722222222223,
-              53.10138888888889
-            ],
-            [
-              32.236111111111114,
-              53.10444444444445
-            ],
-            [
-              32.447222222222216,
-              53.21027777777778
-            ],
-            [
-              32.48833333333334,
-              53.30361111111111
-            ],
-            [
-              32.73361111111111,
-              53.3325
-            ],
-            [
-              32.757222222222225,
-              53.45805555555556
-            ],
-            [
-              32.473333333333336,
-              53.54833333333333
-            ],
-            [
-              32.41111111111111,
-              53.651111111111106
-            ],
-            [
-              32.5,
-              53.690555555555555
-            ],
-            [
-              32.45888888888889,
-              53.73027777777778
-            ],
-            [
-              32.36555555555556,
-              53.718611111111116
-            ],
-            [
-              32.13,
-              53.814166666666665
-            ],
-            [
-              31.770555555555553,
-              53.796388888888885
-            ],
-            [
-              31.888333333333332,
-              54.05888888888889
-            ],
-            [
-              31.317777777777778,
-              54.244166666666665
-            ],
-            [
-              31.266666666666666,
-              54.4
-            ],
-            [
-              35.25,
-              54.61666666666667
-            ],
-            [
-              35.333333333333336,
-              54.05833333333333
-            ],
-            [
-              37.6,
-              54.233333333333334
-            ],
-            [
-              41.36666666666667,
-              52.733333333333334
-            ],
-            [
-              43.95,
-              48.78333333333333
-            ],
-            [
-              43.65,
-              47.733333333333334
-            ],
-            [
-              46.88333333333333,
-              47.833333333333336
-            ],
-            [
-              47.71666666666667,
-              46.21666666666667
-            ],
-            [
-              49.166666666666664,
-              44.11666666666667
-            ],
-            [
-              41.36666666666667,
-              45.63333333333333
-            ],
-            [
-              39.4,
-              43.8
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "polygon"
-        }
-      },
-      "properties": {
-        "title": "U1395/26 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1396/26D04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
-            [
-              39.941751,
-              48.19487
-            ],
-            [
-              43.265,
-              46.48
-            ]
-          ],
-          [
-            [
-              36.590132,
-              44.99977
-            ],
-            [
-              37.18999075982151,
-              44.60361182778472
-            ]
-          ],
-          [
-            [
-              37.18999075982151,
-              44.60361182778472
-            ],
-            [
-              39.088538,
-              43.349775
-            ]
-          ],
-          [
-            [
-              36.590132,
-              44.99977
-            ],
-            [
-              37.178187835521456,
-              44.49822759543944
-            ]
-          ],
-          [
-            [
-              37.178187835521456,
-              44.49822759543944
-            ],
-            [
-              38.573333,
-              43.308333
-            ]
-          ],
-          [
-            [
-              41.48019,
-              45.254839
-            ],
-            [
-              40.565172,
-              45.44983
-            ]
-          ],
-          [
-            [
-              37.820167,
-              44.208106
-            ],
-            [
-              38.735185,
-              43.93978
-            ]
-          ],
-          [
-            [
-              37.420096,
-              46.658142
-            ],
-            [
-              41.505188,
-              45.321507
-            ]
-          ],
-          [
-            [
-              37.080173,
-              43.623087
-            ],
-            [
-              37.178187835521456,
-              44.49822759543944
-            ]
-          ],
-          [
-            [
-              37.178187835521456,
-              44.49822759543944
-            ],
-            [
-              37.18999075982151,
-              44.60361182778472
-            ]
-          ],
-          [
-            [
-              37.18999075982151,
-              44.60361182778472
-            ],
-            [
-              37.420096,
-              46.658142
-            ]
-          ]
-        ],
-        "meta": {
-          "shape": "linestring"
-        }
-      },
-      "properties": {
-        "title": "U1396/26A04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1396/26B04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1396/26C04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
               49.0320291314384,
               48.33888227806667
             ],
@@ -50112,6 +49146,442 @@
       "properties": {
         "title": "U1398/26 for None",
         "text": "From: 2026-10-12 12:00:00+00:00\nTo: 2027-01-21 23:59:00+00:00\n\nSOLODNIKI DME SLK 116.90 MHZ/CH116X Operation UP TO DIST 128KM."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.4,
+              43.8
+            ],
+            [
+              30.583333333333332,
+              43.5
+            ],
+            [
+              30.416666666666668,
+              44.25
+            ],
+            [
+              29.983333333333334,
+              45.15
+            ],
+            [
+              29.566666666666666,
+              45.416666666666664
+            ],
+            [
+              28.733333333333334,
+              45.21666666666667
+            ],
+            [
+              28.516666666666666,
+              45.5
+            ],
+            [
+              29.116666666666667,
+              46.38333333333333
+            ],
+            [
+              30.116666666666667,
+              46.416666666666664
+            ],
+            [
+              29.15,
+              48.0
+            ],
+            [
+              27.716666666666665,
+              48.45
+            ],
+            [
+              26.8,
+              48.416666666666664
+            ],
+            [
+              25.0,
+              47.8
+            ],
+            [
+              22.983333333333334,
+              48.05
+            ],
+            [
+              22.15,
+              48.416666666666664
+            ],
+            [
+              22.85,
+              49.03333333333333
+            ],
+            [
+              22.733333333333334,
+              49.55
+            ],
+            [
+              24.066666666666666,
+              50.416666666666664
+            ],
+            [
+              23.6,
+              51.53333333333333
+            ],
+            [
+              23.635555555555555,
+              51.94222222222222
+            ],
+            [
+              24.134722222222223,
+              51.99166666666667
+            ],
+            [
+              26.352500000000003,
+              52.57055555555556
+            ],
+            [
+              31.671944444444446,
+              52.277499999999996
+            ],
+            [
+              31.581944444444446,
+              52.32833333333333
+            ],
+            [
+              31.62611111111111,
+              52.4925
+            ],
+            [
+              31.5575,
+              52.51777777777777
+            ],
+            [
+              31.674722222222222,
+              52.56222222222222
+            ],
+            [
+              31.56722222222222,
+              52.59638888888889
+            ],
+            [
+              31.5,
+              52.69333333333333
+            ],
+            [
+              31.592777777777776,
+              52.73444444444444
+            ],
+            [
+              31.586944444444445,
+              52.79388888888889
+            ],
+            [
+              31.243333333333336,
+              53.03444444444444
+            ],
+            [
+              31.389166666666664,
+              53.09805555555556
+            ],
+            [
+              31.401944444444442,
+              53.21194444444445
+            ],
+            [
+              31.57777777777778,
+              53.19361111111111
+            ],
+            [
+              31.628333333333334,
+              53.23111111111111
+            ],
+            [
+              31.919722222222223,
+              53.10138888888889
+            ],
+            [
+              32.236111111111114,
+              53.10444444444445
+            ],
+            [
+              32.447222222222216,
+              53.21027777777778
+            ],
+            [
+              32.48833333333334,
+              53.30361111111111
+            ],
+            [
+              32.73361111111111,
+              53.3325
+            ],
+            [
+              32.757222222222225,
+              53.45805555555556
+            ],
+            [
+              32.473333333333336,
+              53.54833333333333
+            ],
+            [
+              32.41111111111111,
+              53.651111111111106
+            ],
+            [
+              32.5,
+              53.690555555555555
+            ],
+            [
+              32.45888888888889,
+              53.73027777777778
+            ],
+            [
+              32.36555555555556,
+              53.718611111111116
+            ],
+            [
+              32.13,
+              53.814166666666665
+            ],
+            [
+              31.770555555555553,
+              53.796388888888885
+            ],
+            [
+              31.888333333333332,
+              54.05888888888889
+            ],
+            [
+              31.317777777777778,
+              54.244166666666665
+            ],
+            [
+              31.266666666666666,
+              54.4
+            ],
+            [
+              35.25,
+              54.61666666666667
+            ],
+            [
+              35.333333333333336,
+              54.05833333333333
+            ],
+            [
+              37.6,
+              54.233333333333334
+            ],
+            [
+              41.36666666666667,
+              52.733333333333334
+            ],
+            [
+              43.95,
+              48.78333333333333
+            ],
+            [
+              43.65,
+              47.733333333333334
+            ],
+            [
+              46.88333333333333,
+              47.833333333333336
+            ],
+            [
+              47.71666666666667,
+              46.21666666666667
+            ],
+            [
+              49.166666666666664,
+              44.11666666666667
+            ],
+            [
+              41.36666666666667,
+              45.63333333333333
+            ],
+            [
+              39.4,
+              43.8
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "polygon"
+        }
+      },
+      "properties": {
+        "title": "U1414/26 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              39.941751,
+              48.19487
+            ],
+            [
+              43.265,
+              46.48
+            ]
+          ],
+          [
+            [
+              36.590132,
+              44.99977
+            ],
+            [
+              37.18999075982151,
+              44.60361182778472
+            ]
+          ],
+          [
+            [
+              37.18999075982151,
+              44.60361182778472
+            ],
+            [
+              39.088538,
+              43.349775
+            ]
+          ],
+          [
+            [
+              36.590132,
+              44.99977
+            ],
+            [
+              37.178187835521456,
+              44.49822759543944
+            ]
+          ],
+          [
+            [
+              37.178187835521456,
+              44.49822759543944
+            ],
+            [
+              38.573333,
+              43.308333
+            ]
+          ],
+          [
+            [
+              41.48019,
+              45.254839
+            ],
+            [
+              40.565172,
+              45.44983
+            ]
+          ],
+          [
+            [
+              37.820167,
+              44.208106
+            ],
+            [
+              38.735185,
+              43.93978
+            ]
+          ],
+          [
+            [
+              37.420096,
+              46.658142
+            ],
+            [
+              41.505188,
+              45.321507
+            ]
+          ],
+          [
+            [
+              37.080173,
+              43.623087
+            ],
+            [
+              37.178187835521456,
+              44.49822759543944
+            ]
+          ],
+          [
+            [
+              37.178187835521456,
+              44.49822759543944
+            ],
+            [
+              37.18999075982151,
+              44.60361182778472
+            ]
+          ],
+          [
+            [
+              37.18999075982151,
+              44.60361182778472
+            ],
+            [
+              37.420096,
+              46.658142
+            ]
+          ]
+        ],
+        "meta": {
+          "shape": "linestring"
+        }
+      },
+      "properties": {
+        "title": "U1415/26A04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1415/26B04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1415/26C04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1415/26D04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -54266,34 +53736,6 @@
         ]
       },
       "properties": {
-        "title": "U0913/26B02 for None",
-        "text": "From: 2026-07-16 06:37:00+00:00\nTo: 2026-10-16 23:59:00+00:00\n\nEstimated, EXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN AND MEDICAL\n\nFLIGHTS AS WELL AS CASES WHEN SPECIAL PERMISSION FOR FLIGHT\n\nOPERATIONS IS GRANTED BY FEDERAL AIR TRANSPORT AGENCY OR MINISTRY\n\nOF FOREIGN AFFAIRS OF RUSSIAN FEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U0913/26A02 for None",
-        "text": "From: 2026-07-16 06:37:00+00:00\nTo: 2026-10-16 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF PORTUGAL\n\nSTIPULATING THAT ANY AIRCRAFT OPERATED BY RUSSIAN AIR CARRIERS,\n\nINCLUDING AS MARKETING CARRIERS IN CODE-SHARING OR BLOCKED-SPACE\n\nARRANGEMENTS, ANY RUSSIAN REGISTERED AIRCRAFT OR NON-RUSSIAN\n\nREGISTERED AIRCRAFT WHICH OWNED, CHARTERED OR OTHERWISE CONTROLLED\n\nBY ANY RUSSIAN NATURAL PERSON OR LEGAL ENTITY/BODY, ARE PROHIBITED\n\nTO LAND IN, TAKEOFF FROM OR OVERFLY PORTUGUESE TERRITORY AS PER\n\nAeronautical Information Publication SUP 044/2026,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY INFORM THAT\n\nALL AIRCRAFT OPERATED BY PORTUGUESE AIR CARRIERS INCLUDING\n\nMARKETING CARRIERS IN CODE-SHARING OR BLOCKED-SPACE ARRANGEMENTS,\n\nANY PORTUGUESE REGISTERED OR ANY NON-PORTUGUESE REGISTERED\n\nAIRCRAFT WHICH OWNED OR CHARTERED, OR OTHERWISE CONTROLLED BY ANY\n\nPORTUGUESE NATURAL PERSON OR LEGAL ENTITY/BODY ARE PROHIBITED TO\n\nLAND IN/TAKEOFF FROM/OVERFLY TERRITORY OF RUSSIAN FEDERATION\n\nWIE UNTIL 2359 16 OCT"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
         "title": "U0921/26 for None",
         "text": "From: 2026-07-17 17:39:00+00:00\nTo: 2026-10-17 23:59:00+00:00\n\nAS A RESPONSE MESURE TO THE DECISION OF ALBANIAN AVIATION\n\nAUTHORITIES TO PROHIBIT ALL ACFT OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN FEDERATION AND ALL\n\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\n\nRUSSIAN FEDERATION AUTHORITIES FROM ENTERING, EXITING AND\n\nOVERFLYING THE AIRSPACE OF ALBANIA AS PER NOTAM A0185/26,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM\n\nOF THE PROHIBITION FOR ALL ACFT OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF ALBANIA AND ALL OPERATORS\n\nHOLDING AOC ISSUED BY ALBANIAN AUTHORITIES TO ENTER, EXIT AND\n\nOVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION EXCEPT FOR AIRCRAFT\n\nIN AN EMERGENCY, HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS AND IN CASES\n\nWHEN A SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS GRANTED BY THE\n\nFEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF\n\nTHE RUSSIAN FEDERATION, AS APPROPRIATE."
       }
@@ -54702,6 +54144,148 @@
       "properties": {
         "title": "U1250/26 for None",
         "text": "From: 2026-09-15 13:35:00+00:00\nTo: 2026-11-29 23:59:00+00:00\n\nAS RESPONSE MEASURE TO THE DECISION OF ITALIAN AVIATION\n\nAUTHORITIES STIPULATING THAT ANY AIRCRAFT OPERATED BY RUSSIAN AIR\n\nCARRIERS, INCLUDING AS MARKETING CARRIER IN CODE-SHARING OR\n\nBLOCKED-SPACE ARANGEMENTS, OR ANY RUSSIAN REGISTERED ACFT OR\n\nNON-RUSSIAN-REGISTERED AIRCRAFT OWNED, CHARTERED, OR OTHERWISE\n\nCONTROLLED BY ANY RUSSIAN NATURAL OR LEGAL PERSON, ENTITY OR BODY,\n\nIS PROHIBITED TO LAND IN, TKOF FROM OR OVERFLY OF ITALIAN TERRITORY\n\n(NOTAM OF ITALY E2369/26), AVIATION AUTHORITIES OF RUSSIAN\n\nFEDERATION HEREBY INFORM THAT ANY AIRCRAFT OPERATED BY ITALIAN AIR\n\nCARRIERS INCLUDING MARKETING AS CARRIER IN CODE-SHARING OR BLOCKED\n\nSPACE ARRANGEMENTS, OR ANY ITALIAN REGISTERED OR NON-ITALIAN\n\nREGISTERED AIRCRAFT OWNED, CHARTERED, OR OTHERWISE CONTROLLED BY\n\nITALIAN NATURAL OR LEGAL PERSONS, ARE PROHIBITED TO LAND IN, TKOF\n\nFROM OR OVERFLY TERRITORY OF RUSSIAN FEDERATION, EXC ACFT IN\n\nEMERGENCY, HUM FLT, MEDICAL FLIGHTS AND CASES WHEN SPECIAL\n\nPERMISSION FOR FLT OPS GRANTED BY FEDERAL AIR TRANSPORT AGENCY OR\n\nMINISTRY OF FOREIGN AFFAIRS OF RUSSIAN FEDERATION AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1262/26 for None",
+        "text": "From: 2026-09-16 14:50:00+00:00\nTo: 2026-11-16 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF LATVIAN AUTHORITIES STIPULATING\n\nTHAT ALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF RUSSIAN FEDERATION, AND ALL\n\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nAUTHORITIES OF THE RUSSIAN FEDERATION, ARE PROHIBITED TO ENTER,\n\nEXIT OR OVERFLY LATVIAN AIRSPACE EXCEPT HUMANITARIAN FLIGHTS,\n\nMEDICAL FLIGHTS AND LEASED AIRCRAFT RETURN FLIGHTS UNDER\n\nPERMISSIONS ISSUED BY APPROPRIATE LATVIAN AUTHORITIES AND IN CASES\n\nOF EMERG LANDING OR EMERG OVERFLIGHT AS PER NOTAM A5225/26,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY DECLARE THAT\n\nALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF LATVIA, AND ALL OPERATORS\n\nHOLDING AOC ISSUED BY LATVIAN AUTHORITIES ARE PROHIBITED TO\n\nENTER, EXIT AND OVERFLY AIRSPACE OF RUSSIAN FEDERATION, EXCEPT ACFT\n\nIN EMERGENCY,HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS AS WELL AS CASES\n\nWHEN SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS GRANTED BY\n\nFEDERAL AIR TRANSPORT AGENCY OR MINISTRY OF FOREIGN AFFAIRS OF\n\nRUSSIAN FEDERATION AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1269/26 for None",
+        "text": "From: 2026-09-20 05:35:00+00:00\nTo: 2026-12-20 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE AVIATION AUTHORITIES\n\nOF THE KINGDOM OF DENMARK, GREENLAND AND THE FAROE ISLANDS THAT ALL\n\nAIRCRAFT OWNED, CHARTERED OR OPERATED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION, HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\n\nRUSSIAN FEDERATION AUTHORITIES, OR REGISTERED IN THE RUSSIAN\n\nFEDERATION SHALL NOT ENTER, EXIT OR OVERFLY THE AIRSPACE OVER THE\n\nTERRITORY OF THE KINGDOM OF DENMARK (INCLUDING GREENLAND AND THE\n\nFAROE ISLANDS), INCLUDING THE AIRSPACE OVER THE TERRITORIAL SEAS,\n\nAS PER Aeronautical Information Publication SUP 33/23, Aeronautical Information Publication SUP 10/23, THE AVIATION AUTHORITIES OF\n\nRUSSIAN FEDERATION HEREBY NOTIFY THAT ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED BY CITIZENS OF KINGDOM OF DENMARK (INCLUDING GREENLAND\n\nAND THE FAROE ISLANDS), AIR OPERATORS HOLDING AOC ISSUED BY THE\n\nAUTORITIES OF THE KINGDOM OF DENMARK (INCLUDING GREENLAND AND THE\n\nFAROE ISLANDS), OR REGISTERED IN THE KINGDOM OF DENMARK (INCLUDING\n\nGREENLAND AND THE FAROE ISLANDS), ARE PROHIBITED FROM ENTERING,\n\nEXITING OR OVERFLYING THE AIRSPACE OF THE RUSSIAN FEDERATION,\n\nINCLUDING THE AIRSPACE OVER THE TERRITORIAL SEAS, EXCEPT FOR\n\nAIRCRAFT IN AN EMERGENCY, HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS\n\nAND IN CASES WHEN A SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS\n\nGRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF\n\nFOREIGN AFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1288/26 for None",
+        "text": "From: 2026-09-23 05:45:00+00:00\nTo: 2026-12-23 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF\n\nNETHERLANDS STIPULATING THAT ALL AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED BY NATURAL OR LEGAL PERSONS FROM THE RUSSIAN FEDERATION\n\nOR BY OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nTHE RUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED TO ENTER, EXIT\n\nOR OVERFLY THE NETHERLANDS, AS STATED IN NETHERLANDS Aeronautical Information Publication SUP 06/23,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM\n\nTHAT ALL AIRCRAFT OWNED, CHARTERED OR OPERATED BY NATURAL OR LEGAL\n\nPERSONS OF THE NETHERLANDS OR BY OPERATORS HOLDING AOC ISSUED BY\n\nTHE DUTCH AUTHORITIES ARE PROHIBITED FROM ENTERING, EXITING OR\n\nOVERFLYING THE AIRSPACE OF THE RUSSIAN FEDERATION, EXCEPT FOR\n\nAIRCRAFT IN EMERGENCY, HUMANITARIAN AND AMBULANCE FLIGHTS AS WELL\n\nAS IN CASES WHEN A SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS\n\nGRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF\n\nFOREIGN AFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1317/26 for None",
+        "text": "From: 2026-09-28 08:08:00+00:00\nTo: 2026-12-22 12:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE MALTESE AVIATION\n\nAUTHORITIES STIPULATING THAT ALL AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION AND ALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\n\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED FROM\n\nTAKING OFF, LANDING OR OVERFLYING THE TERRITORY OF THE REPUBLIC OF\n\nMALTA, AS PER NOTAM A1873/26, THE AVIATION AUTHORITIES OF THE\n\nRUSSIAN FEDERATION HEREBY INFORM THAT ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE REPUBLIC OF\n\nMALTA, AND ALL OPERATORS HOLDING AOC ISSUED BY MALTESE AUTHORITIES,\n\nAND AIRCRAFT REGISTERED IN MALTA, ARE PROHIBITED FROM TAKING OFF,\n\nLANDING OR OVERFLYING THE TERRITORY OF THE RUSSIAN FEDERATION,\n\nEXCEPT FOR HUMANITARIAN, SAR FLIGHTS, EMERGENCY LANDING OR\n\nEMERGENCY OVERFLIGHT, AND CASES WHEN A SPECIAL PERMISSION FOR\n\nFLIGHT OPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR\n\nTHE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1318/26 for None",
+        "text": "From: 2026-09-28 08:43:00+00:00\nTo: 2026-12-16 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE PROHIBITION BY THE AVIATION\n\nAUTHORITIES OF BULGARIA STIPULATING THAT ALL ACFT OWNED, CHARTERED\n\nOR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION AND ALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\n\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES, ARE BANNED FROM\n\nENTRY, EXIT AND OVERFLIGHT OF THE BULGARIAN AIRSPACE, AS PER NOTAM\n\nA1134/26, THE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION\n\nHEREBY INFORM OF THE PROHIBITION OF ENTRY, EXIT AND OVERFLIGHT OF\n\nTHE AIRSPACE OF THE RUSSIAN FEDERATION AFFECTING ALL ACFT OWNED,\n\nCHARTERED OR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF\n\nBULGARIA AND ALL OPERATORS HOLDING AOC ISSUED BY THE AUTHORITIES\n\nOF BULGARIA, EXCEPT FOR HUMANITARIAN FLIGHTS, SAR FLIGHTS,\n\nEMERGENCY LANDING/OVERFLIGHT AND FLIGHTS WHEN A SPECIAL PERMISSION\n\nFOR FLIGHT OPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT\n\nAGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION\n\nAS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1340/26 for None",
+        "text": "From: 2026-10-01 07:09:00+00:00\nTo: 2027-01-01 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF HUNGARY\n\nSTIPULATING THAT ALL AIRCRAFT REGISTERED IN RUSSIAN FEDERATION AND\n\nALL AIRCRAFT OWNED, CHARTERED OR OPERATED BY ANY RUSSIAN NATURAL\n\nOR LEGAL PERSON AND ALL OPERATORS HOLDING OPERATING LICENCE (OL)\n\nOR ITS EQUIVALENT ISSUED BY RUSSIAN FEDERATION AUTHORITIES,\n\nINCLUDING COMMERCIAL AIR CARRIERS, ARE PROHIBITED TO ENTER/EXIT OR\n\nOVERFLY HUNGARIAN AIRSPACE, AS PER Aeronautical Information Publication SUP 002/2026,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY INFORM THAT ALL\n\nAIRCRAFT REGISTERED IN HUNGARY AND ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED BY ANY NATURAL OR LEGAL PERSON OF HUNGARY, AIR\n\nCARRIERS HOLDING OL OR ITS EQUIVALENT ISSUED BY HUNGARIAN\n\nAUTHORITIES, INCLUDING COMMERCIAL AIR CARRIERS, ARE PROHIBITED TO\n\nENTER/EXIT OR OVERFLY AIRSPACE OF RUSSIAN FEDERATION, EXCEPT FOR\n\nAIRCRAFT IN EMERGENCY, HUMANITARIAN FLIGHTS, AMBULANCE FLIGHTS AND\n\nCASES WHEN SPECIAL PERMISSION FOR FLT OPS IS GRANTED BY FEDERAL AIR\n\nTRANSPORT AGENCY OR MINISTRY OF FOREIGN AFFAIRS OF RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1341/26 for None",
+        "text": "From: 2026-10-01 07:23:00+00:00\nTo: 2027-01-01 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE PROHIBITION BY THE AUTHORITIES OF THE\n\nREPUBLIC OF SLOVAKIA STIPULATING THAT ALL AIRCRAFT OWNED,\n\nCHARTERED, OPERATED OR OTHERWISE CONTROLLED BY CITIZENS OF THE\n\nRUSSIAN FEDERATION AND ALL AIR CARRIERS HOLDING AIR OPERATOR\n\nCERTIFICATE (AOC) ISSUED BY THE AUTHORITIES OF THE RUSSIAN\n\nFEDERATION ARE FORBIDDEN TO ENTRY, EXIT OR OVERFLY THE SLOVAKIAN\n\nAIRSPACE PURSUANT TO AIRAC Aeronautical Information Publication SUP 3/23,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM\n\nTHAT ALL AIRCRAFT OWNED, CHARTERED, OPERATED OR OTHERWISE\n\nCONTROLLED BY CITIZENS OF SLOVAKIA AND ALL OPERATORS HOLDING AOC\n\nISSUED BY THE AUTHORITIES OF SLOVAKIA ARE PROHIBITED TO ENTER, EXIT\n\nOR OVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION, EXCEPT FOR ACFT\n\nIN AN EMERGENCY, HUMANITARIAN FLIGHTS, AMBULANCE FLIGHTS AND OTHERS\n\nPOSSESSING A SPECIAL PERMISSION FOR FLT GRANTED BY THE FEDERAL AIR\n\nTRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "title": "U1342/26B02 for None",
+        "text": "From: 2026-10-01 10:18:00+00:00\nTo: 2026-11-01 23:59:00+00:00\n\n1295 1297 1299 1300 1301 1302 1305 1306 1307 1308 1309 1312 1313\n\n  1314 1316 1317 1318 1321 1323 1324 1325 1326 1327 1328 1329 1330\n\n  1331 1332 1333 1334 1335 1336 1337 1338 1339 1340 1341\n\nLATEST PUBLICATIONS\n\nAIRAC Aeronautical Information Publication AMDT 11/26\n\nAeronautical Information Publication AMDT 365/11\n\nAeronautical Information Publication SUP:\n\nSUP 07/26\n\n1-SUP 03/26\n\n2-SUP 01/26\n\n4-SUP 02/26\n\nAIC 11/26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "title": "U1342/26A02 for None",
+        "text": "From: 2026-10-01 10:18:00+00:00\nTo: 2026-11-01 23:59:00+00:00\n\nCHECKLIST:\n\n  YEAR=2021 0018 0048 0052 0053\n\n  YEAR=2022 0081 0486 0609 0788 0941 1324 1448\n\n  YEAR=2023 0920 1184 1486\n\n  YEAR=2024 1046 1311\n\n  YEAR=2025 0373 0601 1686\n\n  YEAR=2026 0080 0105 0107 0110 0158 0318 0344 0348 0424 0427 0470\n\n  0503 0523 0524 0540 0584 0663 0726 0734 0780 0781 0785 0817 0818\n\n  0820 0821 0823 0824 0825 0826 0827 0828 0829 0830 0831 0832 0833\n\n  0834 0835 0836 0837 0838 0839 0840 0841 0842 0843 0844 0845 0846\n\n  0847 0848 0849 0850 0851 0852 0853 0855 0856 0857 0858 0859 0864\n\n  0880 0885 0886 0887 0888 0902 0913 0920 0921 0922 0928 0929 0930\n\n  0933 0934 0936 0937 0943 0944 0945 0953 0954 0955 0965 0967 0968\n\n  0971 0980 0984 0988 0989 0991 0995 0998 1003 1006 1009 1010 1020\n\n  1021 1028 1030 1034 1036 1038 1042 1043 1044 1045 1047 1048 1059\n\n  1061 1064 1067 1074 1077 1078 1084 1095 1126 1143 1145 1147 1149\n\n  1150 1151 1152 1157 1158 1163 1164 1173 1174 1176 1180 1187 1188\n\n  1191 1194 1202 1203 1211 1232 1236 1245 1246 1250 1255 1257 1258\n\n  1262 1269 1275 1276 1277 1278 1279 1288 1289 1291 1292 1293 1294"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1403/26A02 for None",
+        "text": "From: 2026-10-13 21:00:00+00:00\nTo: 2027-01-11 18:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE CANADIAN AUTHORITIES PROHIBITING\n\nALL AIRCRAFT, REGARDLESS OF THE STATE OF REGISTRY, DIRECTLY OR\n\nINDIRECTLY OWNED, CHARTERED, LEASED, OPERATED OR OTHERWISE\n\nCONTROLLED BY PERSON CONNECTED WITH EITHER THE RUSSIAN FEDERATION\n\nOR OF BELARUS OR BY CORPORATION OR ENTITY THAT IS INCORPORATED OR\n\nFORMED UNDER THE LAWS OF THE RUSSIAN FEDERATION OR BELARUS, AND\n\nALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nRUSSIAN FEDERATION AND/OR BELARUSIAN AUTHORITIES TO ENTER, EXIT OR\n\nOVERFLY CANADA'S TERRITORIAL AIRSPACE INCLUDING FLT WITHIN 12NM\n\nOF CANADA'S COASTS WITH EXCEPTIONS FOR ACFT EXPERIENCING INFLIGHT\n\nEMERGENCY, AND REVOKING ALL AUTHORIZATIONS OBTAINED PRIOR TO\n\n27.02.2022 FOR ACFT AND OPERATORS SUBJECT TO CANADIAN NOTAM\n\nG3676/26.\n\nRUSSIAN AVIATION AUTHORITIES HEREBY DECLARE THAT ALL ACFT,\n\nREGARDLESS OF STATE OF REGISTRY, DIRECTLY OR INDIRECTLY OWNED,\n\nCHARTERED, LEASED, OPERATED OR OTHERWISE CONTROLLED BY PERSON\n\nCONNECTED WITH CANADA OR BY CORPORATION OR ENTITY THAT IS\n\nINCORPORATED OR FORMED UNDER THE LAWS OF CANADA, AND ALL\n\nOPERATORS HOLDING AOC ISSUED BY CANADIAN AUTHORITIES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.266666666666666,
+          55.583333333333336
+        ]
+      },
+      "properties": {
+        "title": "U1403/26B02 for None",
+        "text": "From: 2026-10-13 21:00:00+00:00\nTo: 2027-01-11 18:00:00+00:00\n\nARE PROHIBITED TO ENTER, EXIT OR OVERFLY THE AIRSPACE OF THE\n\nRUSSIAN FEDERATION, EXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN\n\nOR MEDICAL FLIGHTS AS WELL AS CASES WHEN SPECIAL PERMISSION FOR\n\nOPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE\n\nMINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
       }
     },
     {
@@ -55230,8 +54814,8 @@
         ]
       },
       "properties": {
-        "title": "U1257/26 for None",
-        "text": "From: 2026-09-16 06:43:00+00:00\nTo: 2026-10-16 23:59:00+00:00\n\nATTENTION AIR OPERATORS OF THE RUSSIAN FEDERATION.\n\nRESTRICTIONS BY THE FEDERAL AIR TRANSPORT AGENCY OF THE RUSSIAN\n\nFEDRATION IMPOSED ON OVERNIGHT FLIGHTS BTN 2200 AND 0400 UTC\n\nFROM AIRPORTS OF THE RUSSIAN FEDERATION TO THE AIRPORTS OF THE\n\nSTATE OF ISRAEL DUE TO FLIGHT SAFETY REASONS.\n\nDECISIONS TO CARRY OUT DAY-TIME FLIGHTS TO THE STATE OF ISRAEL\n\nTAKEN BY AIRLINES MUST BE BASED ON RISK ASSESSMENT CONCERNING\n\nRECOMMENDATIONS OF ICAO DOC 10084, 2ND EDITION, 2018."
+        "title": "U1412/26 for None",
+        "text": "From: 2026-10-16 05:48:00+00:00\nTo: 2026-11-16 23:59:00+00:00\n\nATTENTION AIR OPERATORS OF THE RUSSIAN FEDERATION.\n\nRESTRICTIONS BY THE FEDERAL AIR TRANSPORT AGENCY OF THE RUSSIAN\n\nFEDRATION IMPOSED ON OVERNIGHT FLIGHTS BTN 2200 AND 0400 UTC\n\nFROM AIRPORTS OF THE RUSSIAN FEDERATION TO THE AIRPORTS OF THE\n\nSTATE OF ISRAEL DUE TO FLIGHT SAFETY REASONS.\n\nDECISIONS TO CARRY OUT DAY-TIME FLIGHTS TO THE STATE OF ISRAEL\n\nTAKEN BY AIRLINES MUST BE BASED ON RISK ASSESSMENT CONCERNING\n\nRECOMMENDATIONS OF ICAO DOC 10084, 2ND EDITION, 2018."
       }
     },
     {
@@ -55244,8 +54828,8 @@
         ]
       },
       "properties": {
-        "title": "U1262/26 for None",
-        "text": "From: 2026-09-16 14:50:00+00:00\nTo: 2026-11-16 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF LATVIAN AUTHORITIES STIPULATING\n\nTHAT ALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF RUSSIAN FEDERATION, AND ALL\n\nOPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nAUTHORITIES OF THE RUSSIAN FEDERATION, ARE PROHIBITED TO ENTER,\n\nEXIT OR OVERFLY LATVIAN AIRSPACE EXCEPT HUMANITARIAN FLIGHTS,\n\nMEDICAL FLIGHTS AND LEASED AIRCRAFT RETURN FLIGHTS UNDER\n\nPERMISSIONS ISSUED BY APPROPRIATE LATVIAN AUTHORITIES AND IN CASES\n\nOF EMERG LANDING OR EMERG OVERFLIGHT AS PER NOTAM A5225/26,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY DECLARE THAT\n\nALL AIRCRAFT INCLUDING UAV, OWNED, CHARTERED, OPERATED OR\n\nOTHERWISE CONTROLLED BY CITIZENS OF LATVIA, AND ALL OPERATORS\n\nHOLDING AOC ISSUED BY LATVIAN AUTHORITIES ARE PROHIBITED TO\n\nENTER, EXIT AND OVERFLY AIRSPACE OF RUSSIAN FEDERATION, EXCEPT ACFT\n\nIN EMERGENCY,HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS AS WELL AS CASES\n\nWHEN SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS GRANTED BY\n\nFEDERAL AIR TRANSPORT AGENCY OR MINISTRY OF FOREIGN AFFAIRS OF\n\nRUSSIAN FEDERATION AS APPROPRIATE."
+        "title": "U1413/26A02 for None",
+        "text": "From: 2026-10-16 06:00:00+00:00\nTo: 2027-01-16 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF PORTUGAL\n\nSTIPULATING THAT ANY AIRCRAFT OPERATED BY RUSSIAN AIR CARRIERS,\n\nINCLUDING MARKETING CARRIERS IN CODE-SHARING OR BLOCKED-SPACE\n\nARRANGEMENTS, ANY RUSSIAN REGISTERED AIRCRAFT OR NON-RUSSIAN\n\nREGISTERED AIRCRAFT WHICH OWNED, CHARTERED OR OTHERWISE CONTROLLED\n\nBY ANY RUSSIAN NATURAL PERSON OR LEGAL ENTITY/BODY, ARE PROHIBITED\n\nTO LAND IN, TAKEOFF FROM OR OVERFLY PORTUGUESE TERRITORY AS PER\n\nAeronautical Information Publication SUP 044/2026,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY INFORM THAT\n\nALL AIRCRAFT OPERATED BY PORTUGUESE AIR CARRIERS INCLUDING\n\nMARKETING CARRIERS IN CODE-SHARING OR BLOCKED-SPACE ARRANGEMENTS,\n\nANY PORTUGUESE REGISTERED OR ANY NON-PORTUGUESE REGISTERED\n\nAIRCRAFT WHICH OWNED OR CHARTERED, OR OTHERWISE CONTROLLED BY ANY\n\nPORTUGUESE NATURAL PERSON OR LEGAL ENTITY/BODY ARE PROHIBITED TO\n\nLAND IN/TAKEOFF FROM/OVERFLY TERRITORY OF RUSSIAN FEDERATION,"
       }
     },
     {
@@ -55258,122 +54842,8 @@
         ]
       },
       "properties": {
-        "title": "U1269/26 for None",
-        "text": "From: 2026-09-20 05:35:00+00:00\nTo: 2026-12-20 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE AVIATION AUTHORITIES\n\nOF THE KINGDOM OF DENMARK, GREENLAND AND THE FAROE ISLANDS THAT ALL\n\nAIRCRAFT OWNED, CHARTERED OR OPERATED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION, HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY THE\n\nRUSSIAN FEDERATION AUTHORITIES, OR REGISTERED IN THE RUSSIAN\n\nFEDERATION SHALL NOT ENTER, EXIT OR OVERFLY THE AIRSPACE OVER THE\n\nTERRITORY OF THE KINGDOM OF DENMARK (INCLUDING GREENLAND AND THE\n\nFAROE ISLANDS), INCLUDING THE AIRSPACE OVER THE TERRITORIAL SEAS,\n\nAS PER Aeronautical Information Publication SUP 33/23, Aeronautical Information Publication SUP 10/23, THE AVIATION AUTHORITIES OF\n\nRUSSIAN FEDERATION HEREBY NOTIFY THAT ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED BY CITIZENS OF KINGDOM OF DENMARK (INCLUDING GREENLAND\n\nAND THE FAROE ISLANDS), AIR OPERATORS HOLDING AOC ISSUED BY THE\n\nAUTORITIES OF THE KINGDOM OF DENMARK (INCLUDING GREENLAND AND THE\n\nFAROE ISLANDS), OR REGISTERED IN THE KINGDOM OF DENMARK (INCLUDING\n\nGREENLAND AND THE FAROE ISLANDS), ARE PROHIBITED FROM ENTERING,\n\nEXITING OR OVERFLYING THE AIRSPACE OF THE RUSSIAN FEDERATION,\n\nINCLUDING THE AIRSPACE OVER THE TERRITORIAL SEAS, EXCEPT FOR\n\nAIRCRAFT IN AN EMERGENCY, HUMANITARIAN FLIGHTS, MEDICAL FLIGHTS\n\nAND IN CASES WHEN A SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS\n\nGRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF\n\nFOREIGN AFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1288/26 for None",
-        "text": "From: 2026-09-23 05:45:00+00:00\nTo: 2026-12-23 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF\n\nNETHERLANDS STIPULATING THAT ALL AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED BY NATURAL OR LEGAL PERSONS FROM THE RUSSIAN FEDERATION\n\nOR BY OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nTHE RUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED TO ENTER, EXIT\n\nOR OVERFLY THE NETHERLANDS, AS STATED IN NETHERLANDS Aeronautical Information Publication SUP 06/23,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM\n\nTHAT ALL AIRCRAFT OWNED, CHARTERED OR OPERATED BY NATURAL OR LEGAL\n\nPERSONS OF THE NETHERLANDS OR BY OPERATORS HOLDING AOC ISSUED BY\n\nTHE DUTCH AUTHORITIES ARE PROHIBITED FROM ENTERING, EXITING OR\n\nOVERFLYING THE AIRSPACE OF THE RUSSIAN FEDERATION, EXCEPT FOR\n\nAIRCRAFT IN EMERGENCY, HUMANITARIAN AND AMBULANCE FLIGHTS AS WELL\n\nAS IN CASES WHEN A SPECIAL PERMISSION FOR FLIGHT OPERATIONS IS\n\nGRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE MINISTRY OF\n\nFOREIGN AFFAIRS OF THE RUSSIAN FEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1317/26 for None",
-        "text": "From: 2026-09-28 08:08:00+00:00\nTo: 2026-12-22 12:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE DECISION OF THE MALTESE AVIATION\n\nAUTHORITIES STIPULATING THAT ALL AIRCRAFT OWNED, CHARTERED OR\n\nOPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION AND ALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\n\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES ARE PROHIBITED FROM\n\nTAKING OFF, LANDING OR OVERFLYING THE TERRITORY OF THE REPUBLIC OF\n\nMALTA, AS PER NOTAM A1873/26, THE AVIATION AUTHORITIES OF THE\n\nRUSSIAN FEDERATION HEREBY INFORM THAT ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE REPUBLIC OF\n\nMALTA, AND ALL OPERATORS HOLDING AOC ISSUED BY MALTESE AUTHORITIES,\n\nAND AIRCRAFT REGISTERED IN MALTA, ARE PROHIBITED FROM TAKING OFF,\n\nLANDING OR OVERFLYING THE TERRITORY OF THE RUSSIAN FEDERATION,\n\nEXCEPT FOR HUMANITARIAN, SAR FLIGHTS, EMERGENCY LANDING OR\n\nEMERGENCY OVERFLIGHT, AND CASES WHEN A SPECIAL PERMISSION FOR\n\nFLIGHT OPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR\n\nTHE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1318/26 for None",
-        "text": "From: 2026-09-28 08:43:00+00:00\nTo: 2026-12-16 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE PROHIBITION BY THE AVIATION\n\nAUTHORITIES OF BULGARIA STIPULATING THAT ALL ACFT OWNED, CHARTERED\n\nOR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF THE RUSSIAN\n\nFEDERATION AND ALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC)\n\nISSUED BY THE RUSSIAN FEDERATION AUTHORITIES, ARE BANNED FROM\n\nENTRY, EXIT AND OVERFLIGHT OF THE BULGARIAN AIRSPACE, AS PER NOTAM\n\nA1134/26, THE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION\n\nHEREBY INFORM OF THE PROHIBITION OF ENTRY, EXIT AND OVERFLIGHT OF\n\nTHE AIRSPACE OF THE RUSSIAN FEDERATION AFFECTING ALL ACFT OWNED,\n\nCHARTERED OR OPERATED, OR OTHERWISE CONTROLLED BY CITIZENS OF\n\nBULGARIA AND ALL OPERATORS HOLDING AOC ISSUED BY THE AUTHORITIES\n\nOF BULGARIA, EXCEPT FOR HUMANITARIAN FLIGHTS, SAR FLIGHTS,\n\nEMERGENCY LANDING/OVERFLIGHT AND FLIGHTS WHEN A SPECIAL PERMISSION\n\nFOR FLIGHT OPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT\n\nAGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION\n\nAS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1340/26 for None",
-        "text": "From: 2026-10-01 07:09:00+00:00\nTo: 2027-01-01 23:59:00+00:00\n\nAS RESPONSE MEASURE TO DECISION OF AVIATION AUTHORITIES OF HUNGARY\n\nSTIPULATING THAT ALL AIRCRAFT REGISTERED IN RUSSIAN FEDERATION AND\n\nALL AIRCRAFT OWNED, CHARTERED OR OPERATED BY ANY RUSSIAN NATURAL\n\nOR LEGAL PERSON AND ALL OPERATORS HOLDING OPERATING LICENCE (OL)\n\nOR ITS EQUIVALENT ISSUED BY RUSSIAN FEDERATION AUTHORITIES,\n\nINCLUDING COMMERCIAL AIR CARRIERS, ARE PROHIBITED TO ENTER/EXIT OR\n\nOVERFLY HUNGARIAN AIRSPACE, AS PER Aeronautical Information Publication SUP 002/2026,\n\nAVIATION AUTHORITIES OF RUSSIAN FEDERATION HEREBY INFORM THAT ALL\n\nAIRCRAFT REGISTERED IN HUNGARY AND ALL AIRCRAFT OWNED, CHARTERED\n\nOR OPERATED BY ANY NATURAL OR LEGAL PERSON OF HUNGARY, AIR\n\nCARRIERS HOLDING OL OR ITS EQUIVALENT ISSUED BY HUNGARIAN\n\nAUTHORITIES, INCLUDING COMMERCIAL AIR CARRIERS, ARE PROHIBITED TO\n\nENTER/EXIT OR OVERFLY AIRSPACE OF RUSSIAN FEDERATION, EXCEPT FOR\n\nAIRCRAFT IN EMERGENCY, HUMANITARIAN FLIGHTS, AMBULANCE FLIGHTS AND\n\nCASES WHEN SPECIAL PERMISSION FOR FLT OPS IS GRANTED BY FEDERAL AIR\n\nTRANSPORT AGENCY OR MINISTRY OF FOREIGN AFFAIRS OF RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1341/26 for None",
-        "text": "From: 2026-10-01 07:23:00+00:00\nTo: 2027-01-01 23:59:00+00:00\n\nAS A RESPONSE MEASURE TO THE PROHIBITION BY THE AUTHORITIES OF THE\n\nREPUBLIC OF SLOVAKIA STIPULATING THAT ALL AIRCRAFT OWNED,\n\nCHARTERED, OPERATED OR OTHERWISE CONTROLLED BY CITIZENS OF THE\n\nRUSSIAN FEDERATION AND ALL AIR CARRIERS HOLDING AIR OPERATOR\n\nCERTIFICATE (AOC) ISSUED BY THE AUTHORITIES OF THE RUSSIAN\n\nFEDERATION ARE FORBIDDEN TO ENTRY, EXIT OR OVERFLY THE SLOVAKIAN\n\nAIRSPACE PURSUANT TO AIRAC Aeronautical Information Publication SUP 3/23,\n\nTHE AVIATION AUTHORITIES OF THE RUSSIAN FEDERATION HEREBY INFORM\n\nTHAT ALL AIRCRAFT OWNED, CHARTERED, OPERATED OR OTHERWISE\n\nCONTROLLED BY CITIZENS OF SLOVAKIA AND ALL OPERATORS HOLDING AOC\n\nISSUED BY THE AUTHORITIES OF SLOVAKIA ARE PROHIBITED TO ENTER, EXIT\n\nOR OVERFLY THE AIRSPACE OF THE RUSSIAN FEDERATION, EXCEPT FOR ACFT\n\nIN AN EMERGENCY, HUMANITARIAN FLIGHTS, AMBULANCE FLIGHTS AND OTHERS\n\nPOSSESSING A SPECIAL PERMISSION FOR FLT GRANTED BY THE FEDERAL AIR\n\nTRANSPORT AGENCY OR THE MINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN\n\nFEDERATION, AS APPROPRIATE."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "title": "U1342/26B02 for None",
-        "text": "From: 2026-10-01 10:18:00+00:00\nTo: 2026-11-01 23:59:00+00:00\n\n1295 1297 1299 1300 1301 1302 1305 1306 1307 1308 1309 1312 1313\n\n  1314 1316 1317 1318 1321 1323 1324 1325 1326 1327 1328 1329 1330\n\n  1331 1332 1333 1334 1335 1336 1337 1338 1339 1340 1341\n\nLATEST PUBLICATIONS\n\nAIRAC Aeronautical Information Publication AMDT 11/26\n\nAeronautical Information Publication AMDT 365/11\n\nAeronautical Information Publication SUP:\n\nSUP 07/26\n\n1-SUP 03/26\n\n2-SUP 01/26\n\n4-SUP 02/26\n\nAIC 11/26"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "title": "U1342/26A02 for None",
-        "text": "From: 2026-10-01 10:18:00+00:00\nTo: 2026-11-01 23:59:00+00:00\n\nCHECKLIST:\n\n  YEAR=2021 0018 0048 0052 0053\n\n  YEAR=2022 0081 0486 0609 0788 0941 1324 1448\n\n  YEAR=2023 0920 1184 1486\n\n  YEAR=2024 1046 1311\n\n  YEAR=2025 0373 0601 1686\n\n  YEAR=2026 0080 0105 0107 0110 0158 0318 0344 0348 0424 0427 0470\n\n  0503 0523 0524 0540 0584 0663 0726 0734 0780 0781 0785 0817 0818\n\n  0820 0821 0823 0824 0825 0826 0827 0828 0829 0830 0831 0832 0833\n\n  0834 0835 0836 0837 0838 0839 0840 0841 0842 0843 0844 0845 0846\n\n  0847 0848 0849 0850 0851 0852 0853 0855 0856 0857 0858 0859 0864\n\n  0880 0885 0886 0887 0888 0902 0913 0920 0921 0922 0928 0929 0930\n\n  0933 0934 0936 0937 0943 0944 0945 0953 0954 0955 0965 0967 0968\n\n  0971 0980 0984 0988 0989 0991 0995 0998 1003 1006 1009 1010 1020\n\n  1021 1028 1030 1034 1036 1038 1042 1043 1044 1045 1047 1048 1059\n\n  1061 1064 1067 1074 1077 1078 1084 1095 1126 1143 1145 1147 1149\n\n  1150 1151 1152 1157 1158 1163 1164 1173 1174 1176 1180 1187 1188\n\n  1191 1194 1202 1203 1211 1232 1236 1245 1246 1250 1255 1257 1258\n\n  1262 1269 1275 1276 1277 1278 1279 1288 1289 1291 1292 1293 1294"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1403/26A02 for None",
-        "text": "From: 2026-10-13 21:00:00+00:00\nTo: 2027-01-11 18:00:00+00:00\n\nAS A RESPONSE MEASURE TO THE CANADIAN AUTHORITIES PROHIBITING\n\nALL AIRCRAFT, REGARDLESS OF THE STATE OF REGISTRY, DIRECTLY OR\n\nINDIRECTLY OWNED, CHARTERED, LEASED, OPERATED OR OTHERWISE\n\nCONTROLLED BY PERSON CONNECTED WITH EITHER THE RUSSIAN FEDERATION\n\nOR OF BELARUS OR BY CORPORATION OR ENTITY THAT IS INCORPORATED OR\n\nFORMED UNDER THE LAWS OF THE RUSSIAN FEDERATION OR BELARUS, AND\n\nALL OPERATORS HOLDING AIR OPERATOR CERTIFICATE (AOC) ISSUED BY\n\nRUSSIAN FEDERATION AND/OR BELARUSIAN AUTHORITIES TO ENTER, EXIT OR\n\nOVERFLY CANADA'S TERRITORIAL AIRSPACE INCLUDING FLT WITHIN 12NM\n\nOF CANADA'S COASTS WITH EXCEPTIONS FOR ACFT EXPERIENCING INFLIGHT\n\nEMERGENCY, AND REVOKING ALL AUTHORIZATIONS OBTAINED PRIOR TO\n\n27.02.2022 FOR ACFT AND OPERATORS SUBJECT TO CANADIAN NOTAM\n\nG3676/26.\n\nRUSSIAN AVIATION AUTHORITIES HEREBY DECLARE THAT ALL ACFT,\n\nREGARDLESS OF STATE OF REGISTRY, DIRECTLY OR INDIRECTLY OWNED,\n\nCHARTERED, LEASED, OPERATED OR OTHERWISE CONTROLLED BY PERSON\n\nCONNECTED WITH CANADA OR BY CORPORATION OR ENTITY THAT IS\n\nINCORPORATED OR FORMED UNDER THE LAWS OF CANADA, AND ALL\n\nOPERATORS HOLDING AOC ISSUED BY CANADIAN AUTHORITIES"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.266666666666666,
-          55.583333333333336
-        ]
-      },
-      "properties": {
-        "title": "U1403/26B02 for None",
-        "text": "From: 2026-10-13 21:00:00+00:00\nTo: 2027-01-11 18:00:00+00:00\n\nARE PROHIBITED TO ENTER, EXIT OR OVERFLY THE AIRSPACE OF THE\n\nRUSSIAN FEDERATION, EXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN\n\nOR MEDICAL FLIGHTS AS WELL AS CASES WHEN SPECIAL PERMISSION FOR\n\nOPERATIONS IS GRANTED BY THE FEDERAL AIR TRANSPORT AGENCY OR THE\n\nMINISTRY OF FOREIGN AFFAIRS OF THE RUSSIAN FEDERATION AS\n\nAPPROPRIATE."
+        "title": "U1413/26B02 for None",
+        "text": "From: 2026-10-16 06:00:00+00:00\nTo: 2027-01-16 23:59:00+00:00\n\nEXCEPT FOR AIRCRAFT IN EMERGENCY, HUMANITARIAN AND MEDICAL\n\nFLIGHTS AS WELL AS CASES WHEN SPECIAL PERMISSION FOR FLIGHT\n\nOPERATIONS IS GRANTED BY FEDERAL AIR TRANSPORT AGENCY OR MINISTRY\n\nOF FOREIGN AFFAIRS OF RUSSIAN FEDERATION, AS APPROPRIATE."
       }
     },
     {
@@ -64829,22 +64299,8 @@
         }
       },
       "properties": {
-        "title": "U1395/26 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          41.43333333333333,
-          48.81666666666667
-        ]
-      },
-      "properties": {
-        "title": "U1396/26D04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
+        "title": "U1414/26 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nTEMPO DANGER AREA ACT Within:\n\n434800N0392400E-433000N0303500E-441500N0302500E-450900N0295900E-\n\n452500N0293400E-451300N0284400E-453000N0283100E-462300N0290700E-\n\n462500N0300700E-480000N0290900E-482700N0274300E-482500N0264800E-\n\n474800N0250000E-480300N0225900E-482500N0220900E-490200N0225100E-\n\n493300N0224400E-502500N0240400E-513200N0233600E-515632N0233808E-\n\n515930N0240805E-523414N0262109E-521639N0314019E-521942N0313455E-\n\n522933N0313734E-523104N0313327E-523344N0314029E-523547N0313402E-\n\n524136N0313000E-524404N0313534E-524738N0313513E-530204N0311436E-\n\n530553N0312321E-531243N0312407E-531137N0313440E-531352N0313742E-\n\n530605N0315511E-530616N0321410E-531237N0322650E-531813N0322918E-\n\n531957N0324401E-532729N0324526E-533254N0322824E-533904N0322440E-\n\n534126N0323000E-534349N0322732E-534307N0322156E-534851N0320748E-\n\n534747N0314614E-540332N0315318E-541439N0311904E-542400N0311600E-\n\n543700N0351500E-540330N0352000E-541400N0373600E-524400N0412200E-\n\n484700N0435700E-474400N0433900E-475000N0465300E-461300N0474300E-\n\n440700N0491000E-453800N0412200E-434800N0392400E."
       }
     },
     {
@@ -64968,8 +64424,8 @@
         }
       },
       "properties": {
-        "title": "U1396/26A04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
+        "title": "U1415/26A04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nATS RTE SEGMENTS CLSD:\n\nA100 KRASNYY SULIN NDB(KL)- ARNAD\n\nA102 BABUR-NALEM\n\nA225 GUKOL-TIKNA\n\nA245 ANAKA-ARNAD\n\nA277 GAMAN-LAMET\n\nA712 TAMAK-DIBRO\n\nA805 GAMAN-PIRIL\n\nA808 BASED-AMEPU\n\nA813 KENEN-KRASNYY SULIN NDB(KL)\n\nA87  TAMAK-AZABI\n\nA901 EGORLYKSKAYA NDB(ER)-NIRGA\n\nA902 PARAT-DIBRO\n\nA914 KONSTANTINOVSK NDB(KA)-BAGAYEVSKIY NDB(BA)\n\nA915 UPADA-BEBID\n\nA916 MOROZOVSK VORDME(MOR)-GAMTU\n\nA917 UNRID-INBAL\n\nA924 DERUG-RALAN\n\nA961 SMOLENSKAYA NDB(SM)-ELISTA VORDME(ELI)\n\nA962 NETMI-KULED\n\nA963 STAVROPOL/SHPAKOVSKOYE VORDME(STW)-NEPUT\n\nA964 ELISTA VORDME (ELI)-NOKLI\n\nB145 EGORLYKSKAYA NDB(ER)-UST-LABINSK NDB(NZ)\n\nB147 REDMA-TISOM\n\nB238 AMDEL-TEDRU\n\nB367 LIMAS-MOBIT\n\nB450 OGURA-OLPIS\n\nB491 RANIS-PALER\n\nB493 FASAD-TIKNA\n\nB494 OLGIN-LEGNA\n\nB549 RENAT-AGOY NDB (AG)\n\nB820 KRASNODAR/PASHKOVSKY VORDME(KND)-LENIR\n\nB945 ZENZELI NDB(UP)-AMKOL\n\nB947 TAMAK-PARAT\n\nB950 LAMET-AGOY NDB (AG)\n\nB967 ROKMO-DOBEK\n\nB967 SUPED-NUGRI\n\nG118 EGORLYKSKAYA NDB(ER)-KRASNYY SULIN NDB(KL)\n\nG128 NATIT-EGORLYKSKAYA NDB(ER)\n\nG247 OGURA-SMOLENSKAYA NDB(SM)\n\nG364 TOKNO-GAMTU\n\nG476 REDMA-OLGIN\n\nG481 ELISTA VORDME (ELI)-TONGI\n\nG487 ZELENGA NDB(ZG)-UGBES"
       }
     },
     {
@@ -64982,8 +64438,8 @@
         ]
       },
       "properties": {
-        "title": "U1396/26B04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
+        "title": "U1415/26B04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nG534 GOTIL-TOROS\n\nG822 SOTUB-OLENA\n\nG823 TOKNO-RIDLA\n\nG835 RIDLA-TIBET\n\nG900 OBABI-LODBI\n\nG901 RUTEP-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nG904 FASAD-UNRID\n\nG918 KULED-NOSAK\n\nG919 TIKHORETSK NDB(UH)-KULOM\n\nG923 ELISTA VORDME(ELI)-OLPIS\n\nL4   OSBEM-TITAG\n\nL4   LINRU-KUBOK\n\nL749 BUGOR-DOSED\n\nL850 TISOM-BAMUP\n\nL851 ADINA-ROMOK\n\nL856 GODBI-SALAR\n\nL91  USSEZ-KEPED\n\nL96  TISOR-TIMTU\n\nL98  LOGBO-KUGOS\n\nL981 POGOD-SOBLO\n\nL99  TUREL-SOBLO\n\nM136 MAPUT-AMDAN\n\nM406 TISOM-OTPOL\n\nM435 LAROM-RASIL\n\nM54  UMSIS-DIMOB\n\nM55  TOBLO-ABUTO\n\nM63  LUMAT-UTALU\n\nM64  LULED-LUMAT\n\nM747 TALAM-MAPUT\n\nM850 NIKOLA NDB(NL)-IPKOR\n\nM853 REBKO-UTOMU\n\nM853 NALEG-TUMIT\n\nM854 SUGUL-RASIL\n\nM856 DIGAM-ROMOK\n\nM860 DIGAM-KUGOS\n\nM861 BIRMA-ROMOK\n\nM986 TIRAS-ABUTO\n\nM987 KUBOK-LUGIL\n\nM995 ROROL-FORMA\n\nN156 MASOL-SUPUD\n\nN166 UMSIS-EMGER\n\nN180 RONIT-SUPUD\n\nN181 OBARO-PIMEN\n\nN190 GEMRO-PALER\n\nN191 BUSAP-GAMAN\n\nN50  LASKA-LIDUS\n\nN50  OBABI-UDAPO\n\nN604 INKOM-NIBTA\n\nN604 GOBUN-LUGIL\n\nN609 GODBI-ULNER\n\nN613 SOGTA-INKOM\n\nN72  TURAT-VOLGOGRAD/GUMRAK VORDME(WGD)\n\nN72  NOKLI-KUDAS\n\nN82  UMSUR-RODAT\n\nP142 GOBUN-ELRIS\n\nP148 TUMIT-UMKEL\n\nP163 RINGU-DOSED\n\nP29  SUBOG-SUMOL"
       }
     },
     {
@@ -64996,8 +64452,22 @@
         ]
       },
       "properties": {
-        "title": "U1396/26C04 for None",
-        "text": "From: 2026-10-11 06:15:00+00:00\nTo: 2026-10-19 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
+        "title": "U1415/26C04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nP29  BERUN-FORMA\n\nP567 OLENA-OTRAD\n\nP604 RUKIN-GIMKI\n\nP987 GUMLA-BETEG\n\nR122 ELISTA VORDME(ELI)-AZABI\n\nR230 OLENA-RUTEP\n\nR242 ABLOG-AMEPU\n\nR710 ZELENGA NDB(ZG)-ROKMO\n\nR720 ROSTOV NA DONU/PLATOV VORDME(ROS)-APVUL\n\nR807 NIRGA-TONGI\n\nT145 INRUG-ARNAD\n\nT248 RALUR-NIKOLA NDB(NL)\n\nT273 ASKIL-DIVEK\n\nT294 GODBI-ABUTO\n\nT296 BERUN-BUKUB\n\nT322 UBONA-TENRI\n\nT323 UBONA-BUKUB\n\nT325 UNORI-LEKDO\n\nT344 TURAT-OBARO\n\nT379 DERFU-DOSAB\n\nT383 ELRIS-ASDES\n\nT384 BEPLU-INKIN\n\nT386 PETUK-ATLOG\n\nT387 AMAMU-OLARA\n\nT461 LIMPI-OLFID\n\nT464 INBUS-GODBI\n\nT469 BERUN-TENRI\n\nT502 TISOM-NIKOLA NDB(NL)\n\nT504 SUGUL-BERTU\n\nT515 INBAK-MABEP\n\nT521 INBUS-OBARO\n\nT535 MABIR-NULNA\n\nT542 RIRAB-AMAMU\n\nT555 RENAT-ROMOK\n\nT557 TISNI-BERUN\n\nT561 SIROTINSKAYA NDB(ST)-GODBI\n\nT611 PEPOR-RAMUT\n\nT614 LINRU-OSPER\n\nT628 NEGLE-RAMUT\n\nT685 NISUT-RENAT\n\nT687 OLENA-NISUT\n\nT688 NEROB-TOKNO\n\nT748 KANON-RINGU\n\nT795 OBESI-UROBI\n\nT817 ARNAD-SIMFEROPOL VORDME(SI)\n\nT828 EMGAS-NIBIM\n\nT829 ANIGI-AMKAT\n\nT832 EMGAS-ATLOG\n\nT835 UNIGA-NETOT\n\nW316 ANAKA-AMEPU\n\nW323 VOLGOGRAD/GUMRAK VORDME(WGD)-KONSTANTINOVSK NDB(KA)\n\nW343 SMOLENSKAYA NDB(SM)-ANAKA\n\nW54  UST-LABINSK NDB(NZ)-PELEM"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          41.43333333333333,
+          48.81666666666667
+        ]
+      },
+      "properties": {
+        "title": "U1415/26D04 for None",
+        "text": "From: 2026-10-16 07:38:00+00:00\nTo: 2026-10-25 00:44:00+00:00\n\nW70  ANAKA-AMEPU\n\nW79  AMEPU-ULKOT\n\nW87  DUBOS-LIDUS\n\nW93  RYAZANSKAYA NDB(XT)-KURAD\n\nKR379 TIVPO-IGZAR\n\nKR380 KANON-FITEZ\n\nKR382 VILFE-LIDTE\n\nKR383 ONFAS-IRFON\n\nKR384 OTVEK-LOZBO\n\nKR386 KANON-IPGUR\n\nKR387 BEPLU-TUGPI\n\nKR389 NETOT-INKIN\n\nKR391 ZUDME-OLFID\n\nKR392 TEKVE-TISNI\n\nKR702 TISNI-POSTO\n\nKR708 RONUM-OKTYABRSKIY NDB(FE)\n\nKR841 PILOK-APSOK\n\nKR843 GIKSU-PIMEN\n\nKR844 GIBRA-PEMIP\n\nKR845 ORTOG-ROKBU\n\nKR846 MIPMI-OTNUD."
       }
     },
     {
@@ -65262,20 +64732,6 @@
         ]
       },
       "properties": {
-        "title": "U0850/26B03 for None",
-        "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\n2. DEP URMG Aerodrome:\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\nCRUISING LVL ODD FL090-FL530)-N72 VOLGOGRAD/GUMRAK VORDME (WGD)\n\n(FM TUSAB TO VOLGOGRAD/GUMRAK VORDME (WGD) UNIDIRECTIONAL, CRUISING\n\nLVL ODD FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FM OBABI TO\n\nGEKPA UNIDIRECTIONAL, CRUISING LVL ODD FL210-FL530).\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\n CRUISING LVL"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.733333333333334,
-          50.0
-        ]
-      },
-      "properties": {
         "title": "U0850/26C03 for None",
         "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\nODD FL090-FL530)-R807 UROBO-P135 ABNOT (FM TUSAB TO ABNOT\n\nUNIDIRECTIONAL, CRUISING LVL ODD FL070-FL530)."
       }
@@ -65292,6 +64748,20 @@
       "properties": {
         "title": "U0850/26A03 for None",
         "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\nATS RTE ESTABLISHED URRV FIR AND UWWW FIR FOR FLT TO URMG Aerodrome (WO\n\nCROSSING UATT FIR):\n\n1. ARR URMG Aerodrome:\n\n- ABAGI B105 NIMTA (FM ABAGI TO NIMTA UNIDIRECTIONAL, CRUISING LVL\n\nODD FL135-540)-B105 NATIT-DCT MOLED (FM NIMTA TO MOLED\n\nUNIDIRECTIONAL, CRUISING LVL EVEN FL100-540)-N50 LIDUS-G242 ZELENGA\n\nNDB (ZG)-DCT ITAKA (FM MOLED TO ITAKA CRUISING LVL EVEN FL330-530)-\n\nDCT OBBUD-DCT AMKOL-DCT REMKA (FM ITAKA TO REMKA CRUISING LVL EVEN\n\nWithin FL080-510).\n\n- OKMID-T778 TERDI-P165 DAFOS-P135 KRASNOARMEYSK NDB (KR)-P135\n\nABNOT.\n\n- ABNOT-P135 UROBO-R807 MOLED (FM ABNOT TO MOLED CRUISING LVL EVEN\n\nFL070-530)-N50 LIDUS-G242 ZELENGA NDB (ZG)-DCT ITAKA (FM MOLED TO\n\nITAKA CRUISING LVL EVEN FL330-530)-DCT OBBUD-DCT AMKOL-DCT REMKA\n\n(FM ITAKA TO REMKA CRUISING LVL EVEN FL080-510)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.733333333333334,
+          50.0
+        ]
+      },
+      "properties": {
+        "title": "U0850/26B03 for None",
+        "text": "From: 2026-07-09 00:00:00+00:00\nTo: 2026-11-25 23:59:00+00:00\n\n2. DEP URMG Aerodrome:\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\nCRUISING LVL ODD FL090-FL530)-N72 VOLGOGRAD/GUMRAK VORDME (WGD)\n\n(FM TUSAB TO VOLGOGRAD/GUMRAK VORDME (WGD) UNIDIRECTIONAL, CRUISING\n\nLVL ODD FL090-FL530)-G481 OBABI-DCT VUVNE-DCT GEKPA (FM OBABI TO\n\nGEKPA UNIDIRECTIONAL, CRUISING LVL ODD FL210-FL530).\n\n- PINTA G914 KIZLYAR NDB (KZ)-DCT VULFI-DCT TUVGI (FM PINTA TO\n\nTUVGI CRUISING LVL ODD FL070-FL510)-DCT EVZUN-DCT ZIZAR-DCT VAZLU-\n\nDCT UZZID (FM TUVGI TO UZZID UNIDIRECTIONAL, CRUISING LVL ODD FL330\n\n-FL530)-DCT NOKLI-N72 TUSAB (FM UZZID TO TUSAB UNIDIRECTIONAL,\n\n CRUISING LVL"
       }
     },
     {
