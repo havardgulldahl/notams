@@ -9537,8 +9537,8 @@
         ]
       },
       "properties": {
-        "title": "G0496/26 for Bratsk Airport",
-        "text": "From: 2026-11-14 04:53:00+00:00\nTo: 2026-12-14 23:59:00+00:00\n\nGround Based Augmentation System G12A CH20625 Unserviceable.\n\nProcedure NOT Available: IAC GNSS Landing System Runway 12 (Aeronautical Information Publication RUSSIA Aerodrome 2.1 UIBB-156)."
+        "title": "G0499/26 for Bratsk Airport",
+        "text": "From: 2026-11-17 03:20:00+00:00\nTo: 2026-12-14 23:59:00+00:00\n\nGround Based Augmentation System G12A CH20625 Unserviceable.\n\nProcedure NOT Available: IAC GNSS Landing System Runway 12 (Aeronautical Information Publication RUSSIA PAGE Aerodrome 2.1 UIBB-155)."
       }
     },
     {
@@ -25465,8 +25465,8 @@
         ]
       },
       "properties": {
-        "title": "G0355/26 for Gelendzhik Airport",
-        "text": "From: 2026-08-15 07:00:00+00:00\nTo: 2026-11-16 23:59:00+00:00\n\nGlobal Navigation Satellite System Operation Within Aerodrome AREA UNRELIABLE.\n\nVECTORING PROVIDED O/R Within ESTABLISHED RTE."
+        "title": "G0498/26 for Gelendzhik Airport",
+        "text": "From: 2026-11-16 07:20:00+00:00\nTo: 2026-12-30 23:59:00+00:00\n\nGlobal Navigation Satellite System Operation Within Aerodrome AREA UNRELIABLE.\n\nVECTORING PROVIDED O/R OF ACFT CREW Within ESTABLISHED RTE."
       }
     },
     {
